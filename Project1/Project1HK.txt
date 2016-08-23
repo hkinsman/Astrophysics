@@ -1,0 +1,1198 @@
+Computational Astrophysics Project 1 Investigation of Lutz-Kelker bias, through
+Monte Carlo simulations, on estimation of
+stellar distance using trigonometric parallax
+Howard Kinsman
+February 25, 2016
+Abstract
+Monte Carlo simulations were carried out with a randomly generated sample of 400,000 stars and derived absolute magnitudes and
+distances were retrieved from the sample with assumed parallax and
+photometric errors. The resulting derived data were compared with
+the ’true’ data and the error dispersion was found to be consistent
+with the well known Lutz-Kelker bias.
+
+Keywords: Lutz-Kelker bias, Monte Carlo simulation, stars: distances,
+magnitude, parallax
+
+1
+
+Introduction
+
+The Lutz-Kelker bias was ﬁrst quantiﬁed (Lutz and Kelker, 1973) using the
+absolute magnitude of stars estimated with trigonometric parallax. It occurs
+because the number of observable stars increases with the square of the distance. For any given parallax measurement there will be an error which will
+give an upper and lower bound of retrieved distance, and stars at a smaller
+distance and stars further away can scatter into this volume, however as there
+are more stars outside the sampled volume than inside, the sample will be
+biased. This eﬀect causes a systematic bias such that measured parallaxes
+will on average yield too small distances (Oudmaijer et al., 1997). Monte
+Carlo simulations are ideally placed to investigate this phenomenom and
+provide corrections and the necessary calibration to trigonometric parallax
+measurements.
+1
+
+2
+
+Monte Carlo simulations
+
+Four Monte Carlo simulations were carried out, each with a sample of 400,000
+stars having a true absolute magnitude of 0.6 (with a Gaussian dispersion
+of 0.001 mag.). The stars were assigned true distances of between 1pc and
+8Kpc. A small σ photometric error of 0.01 mag. in the measurement of the
+retrieved absolute magnitude was assumed in each case. Please note that the
+original LKbiasMSc.f program had a small bug associated with photometric
+error - this was corrected prior to running these simulations. Only stars
+within a retrieved distance of 4Kpc were considered.
+
+2.1
+
+Task 1
+
+For this simulation a constant spatial density distribution of stars was assumed. This simulation employed a constant parallax error of 50 microarcsec.
+There was no apparent magnitude limit. The total mean and standard deviation of the retrieved absolute magnitudes are shown in Table 1 together with
+the mean and standard deviations after the results were split into 1000pc
+bins. This is shown graphically in Figures 1 to 4. A scatter plot of retrieved
+absolute magnitude as a function of retrieved distance is shown in Figure 5.
+Figures 6 and 7 show the number distribution of stars for true and retrieved
+distance respectively.
+Distance (pc)
+Total
+0-1000
+1001-2000
+2001-3000
+3001-4000
+
+Mean
+1.0355
+0.6122
+0.6945
+0.8561
+1.1057
+
+Std Deviation
+0.4797
+0.1055
+0.2049
+0.3629
+0.4977
+
+Table 1: Mean retrieved absolute magnitudes (Task 1)
+
+2
+
+45
+
+40
+
+35
+
+Distribution
+
+30
+
+25
+
+20
+
+15
+
+10
+
+5
+
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 1: Task 1 - Distribution of Retrieved Abs. Mag. (0-1000 pc)
+
+350
+
+300
+
+Distribution
+
+250
+
+200
+
+150
+
+100
+
+50
+
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 2: Task 1 - Distribution of Retrieved Abs. Mag. (1001-2000 pc)
+
+3
+
+1200
+
+1000
+
+Distribution
+
+800
+
+600
+
+400
+
+200
+
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 3: Task 1 - Distribution of Retrieved Abs. Mag. (2001-3000 pc)
+
+2500
+
+2000
+
+Distribution
+
+1500
+
+1000
+
+500
+
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 4: Task 1 - Distribution of Retrieved Abs. Mag. (3001-4000 pc)
+
+4
+
+3
+
+Retrieved Absolute Magnitude
+
+2.5
+
+2
+
+1.5
+
+1
+
+0.5
+
+0
+
+-0.5
+0
+
+500
+
+1000
+
+1500
+2000
+2500
+Retrieved Distance (pc)
+
+3000
+
+3500
+
+4000
+
+Figure 5: Task 1 - Retrived Absolute Magntude as a function of Retrieved
+Distance
+
+3000
+
+2500
+
+Distribution
+
+2000
+
+1500
+
+1000
+
+500
+
+0
+0
+
+500
+
+1000
+
+1500
+2000
+2500
+True Distance (pc)
+
+3000
+
+3500
+
+4000
+
+Figure 6: Task 1 - Number distribution of stars by True Distance
+
+5
+
+9000
+
+8000
+
+7000
+
+Distribution
+
+6000
+
+5000
+
+4000
+
+3000
+
+2000
+
+1000
+
+0
+0
+
+500
+
+1000
+
+1500
+2000
+2500
+Retrieved Distance (pc)
+
+3000
+
+3500
+
+4000
+
+Figure 7: Task 1 - Number distribution of stars by Retrieved Distance
+
+6
+
+2.2
+
+Task 2
+
+This simulation used the same parameters as Task 1 except an apparent
+magnitude limit of 14 was assumed. Table 2 and ﬁgures 8 to 14 are the same
+plots as used for Task 1.
+Distance (pc)
+Total
+0-1000
+1001-2000
+2001-3000
+3001-4000
+
+Mean
+0.7992
+0.6069
+0.6915
+0.8363
+0.7929
+
+Std Deviation
+0.3082
+0.1182
+0.1963
+0.3252
+0.3061
+
+Table 2: Mean retrieved absolute magnitudes (Task 2)
+
+45
+
+40
+
+35
+
+Distribution
+
+30
+
+25
+
+20
+
+15
+
+10
+
+5
+
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 8: Task 2 - Distribution of Retrieved Abs. Mag. (0-1000 pc)
+
+7
+
+350
+
+300
+
+Distribution
+
+250
+
+200
+
+150
+
+100
+
+50
+
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 9: Task 2 - Distribution of Retrieved Abs. Mag. (1001-2000 pc)
+
+1200
+
+1000
+
+Distribution
+
+800
+
+600
+
+400
+
+200
+
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 10: Task 2 - Distribution of Retrieved Abs. Mag. (2001-3000 pc)
+
+8
+
+2500
+
+2000
+
+Distribution
+
+1500
+
+1000
+
+500
+
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 11: Task 2 - Distribution of Retrieved Abs. Mag. (3001-4000 pc)
+
+2
+
+Retrieved Absolute Magnitude
+
+1.5
+
+1
+
+0.5
+
+0
+
+-0.5
+0
+
+500
+
+1000
+
+1500
+2000
+2500
+Retrieved Distance (pc)
+
+3000
+
+3500
+
+4000
+
+Figure 12: Task 2 - Retrived Absolute Magntude as a function of Retrieved
+Distance
+
+9
+
+3000
+
+2500
+
+Distribution
+
+2000
+
+1500
+
+1000
+
+500
+
+0
+0
+
+500
+
+1000
+
+1500
+2000
+2500
+True Distance (pc)
+
+3000
+
+3500
+
+4000
+
+Figure 13: Task 2 - Number distribution of stars by True Distance
+
+4000
+
+3500
+
+3000
+
+Distribution
+
+2500
+
+2000
+
+1500
+
+1000
+
+500
+
+0
+0
+
+500
+
+1000
+
+1500
+2000
+2500
+Retrieved Distance (pc)
+
+3000
+
+3500
+
+4000
+
+Figure 14: Task 2 - Number distribution of stars by Retrieved Distance
+
+10
+
+2.3
+
+Task 3
+
+This simulation used the same parameters as Task 1 except the spatial density
+of stars was no longer assumed to be constant but decreasing as R−2 where
+R is the distance between 1pc and 8Kpc. Table 3 and ﬁgures 15 to 21 are
+the same plots as used for Task 1.
+Distance (pc)
+Total
+0-1000
+1001-2000
+2001-3000
+3001-4000
+
+Mean
+0.7859
+0.6095
+0.6528
+0.7404
+0.8842
+
+Std Deviation
+0.3785
+0.0792
+0.1822
+0.3158
+0.4541
+
+Table 3: Mean retrieved absolute magnitudes (Task 3)
+
+3000
+
+2500
+
+Distribution
+
+2000
+
+1500
+
+1000
+
+500
+
+0
+-1
+
+-0.2
+
+0.6
+
+1.4
+
+2.2
+
+3
+
+Retrieved Absolute Magnitude
+
+Figure 15: Task 3 - Distribution of Retrieved Abs. Mag. (0-1000 pc)
+
+11
+
+5000
+4500
+4000
+3500
+
+Distribution
+
+3000
+2500
+2000
+1500
+1000
+500
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 16: Task 3 - Distribution of Retrieved Abs. Mag. (1001-2000 pc)
+
+5000
+4500
+4000
+3500
+
+Distribution
+
+3000
+2500
+2000
+1500
+1000
+500
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 17: Task 3 - Distribution of Retrieved Abs. Mag. (2001-3000 pc)
+
+12
+
+5000
+4500
+4000
+3500
+
+Distribution
+
+3000
+2500
+2000
+1500
+1000
+500
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 18: Task 3 - Distribution of Retrieved Abs. Mag. (3001-4000 pc)
+
+3
+
+2.5
+
+Retrieved Absolute Magnitude
+
+2
+
+1.5
+
+1
+
+0.5
+
+0
+
+-0.5
+
+-1
+0
+
+500
+
+1000
+
+1500
+2000
+2500
+Retrieved Distance (pc)
+
+3000
+
+3500
+
+4000
+
+Figure 19: Task 3 - Retrived Absolute Magntude as a function of Retrieved
+Distance
+
+13
+
+8000
+
+7000
+
+6000
+
+Distribution
+
+5000
+
+4000
+
+3000
+
+2000
+
+1000
+
+0
+0
+
+500
+
+1000
+
+1500
+2000
+2500
+True Distance (pc)
+
+3000
+
+3500
+
+4000
+
+Figure 20: Task 3 - Number distribution of stars by True Distance
+
+14000
+
+12000
+
+Distribution
+
+10000
+
+8000
+
+6000
+
+4000
+
+2000
+
+0
+0
+
+500
+
+1000
+
+1500
+2000
+2500
+Retrieved Distance (pc)
+
+3000
+
+3500
+
+4000
+
+Figure 21: Task 3 - Number distribution of stars by Retrieved Distance
+
+14
+
+2.4
+
+Task 4
+
+This simulation used the same parameters as Task 2 (an apparent magnitude
+limit of 14) except the parallax error was no longer assumed to be constant
+but had a GAIA-like error distribution. Table 4 and ﬁgures 22 to 28 are the
+same plots as used for Task 1.
+Distance (pc)
+Total
+0-1000
+1001-2000
+2001-3000
+3001-4000
+
+Mean
+0.6286
+0.5866
+0.6017
+0.61
+0.6376
+
+Std Deviation
+0.0944
+0.0834
+0.0239
+0.0554
+0.1067
+
+Table 4: Mean retrieved absolute magnitudes (Task 4)
+
+60
+
+50
+
+Distribution
+
+40
+
+30
+
+20
+
+10
+
+0
+-1
+
+-0.2
+
+0.6
+
+1.4
+
+2.2
+
+3
+
+Retrieved Absolute Magnitude
+
+Figure 22: Task 4 - Distribution of Retrieved Abs. Mag. (0-1000 pc)
+
+15
+
+800
+
+700
+
+600
+
+Distribution
+
+500
+
+400
+
+300
+
+200
+
+100
+
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 23: Task 4 - Distribution of Retrieved Abs. Mag. (1001-2000 pc)
+
+3500
+
+3000
+
+Distribution
+
+2500
+
+2000
+
+1500
+
+1000
+
+500
+
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 24: Task 4 - Distribution of Retrieved Abs. Mag. (2001-3000 pc)
+
+16
+
+7000
+
+6000
+
+Distribution
+
+5000
+
+4000
+
+3000
+
+2000
+
+1000
+
+0
+-1
+
+-0.2
+
+0.6
+1.4
+Retrieved Absolute Magnitude
+
+2.2
+
+3
+
+Figure 25: Task 4 - Distribution of Retrieved Abs. Mag. (3001-4000 pc)
+
+1.2
+
+1.1
+
+Retrieved Absolute Magnitude
+
+1
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+0
+
+500
+
+1000
+
+1500
+2000
+2500
+Retrieved Distance (pc)
+
+3000
+
+3500
+
+4000
+
+Figure 26: Task 4 - Retrived Absolute Magntude as a function of Retrieved
+Distance
+
+17
+
+4000
+
+3500
+
+3000
+
+Distribution
+
+2500
+
+2000
+
+1500
+
+1000
+
+500
+
+0
+0
+
+500
+
+1000
+
+1500
+2000
+2500
+True Distance (pc)
+
+3000
+
+3500
+
+4000
+
+Figure 27: Task 4 - Number distribution of stars by True Distance
+
+6000
+
+5000
+
+Distribution
+
+4000
+
+3000
+
+2000
+
+1000
+
+0
+0
+
+500
+
+1000
+
+1500
+2000
+2500
+Retrieved Distance (pc)
+
+3000
+
+3500
+
+4000
+
+Figure 28: Task 4 - Number distribution of stars by Retrieved Distance
+
+18
+
+3
+
+Discussion
+
+The mean of the total sample, 1.0355 as shown in Table 1, has clearly diverged
+from the true mean absolute magnitude of 0.6. With a dispersion (standard
+deviation) of 0.4797 it is not a true representive of the sample: there is a
+bias. Table 1 and Figures 1 to 4 from the Task 1 simulation show that the
+margin of error in retrieved absolute magnitude grows with the retrieved
+distance. Stars within 2Kpc are showing a mean absolute magnitude that is
+approximately 0.6 but for more distant stars the standard deviation grows
+sharply with distance. The scatter plot in Figure 5 illustrates this further
+with a strong tendency towards larger (less bright) absolute magnitudes with
+greater distance.
+Figures 6 and 7 help explain the above error margin by showing that the
+number distribution of stars selected by retrieved distance is far greater than
+those selected by true distance. This is consistent with the Lutz-Kelker bias:
+the retrieved distances are seen to be smaller than they acually are, causing
+a greater number of more distant stars to be pulled into the sample than
+nearby stars, creating a bias.
+In addition to the Lutz-Kelker bias another form of bias needs to be
+taken into account and that is caused by error propogation. In this case as
+R = 1/p (R=distance, p=parallax) there is an inverse relationship between
+the measurement (parallax) and the derived quantity (distance) which leads
+to an asymmetric error i.e. the error will become greater the more distant
+the star.
+In Task 2 an apparent magnitude limit of 14 was assumed. This simulation resulted in a much improved total mean absolute magnitude and
+lower error dispersions in the various bins in Table 2 and Figures 8 to 11.
+This can be attributed to the number distribution of stars sampled for true
+and retrieved distances, as can be seen in Figures 13 and 14 the number of
+stars in both ﬁgures are similar. Lutz determined that in a magnitude limited sample the Lutz-Kelker corrections should not be applied (Lutz, 1983).
+There is however a bias still associated with a magnitude limited sample:
+the Malmquist bias, which is the preferential selection of intrinsically bright
+objects.
+Task 3 assumed a stellar spatial density decreasing by R−2 whereas the
+previous simulations all assumed a constant spatial density. The results,
+Table 3 and Figures 15 to 21 again show a reduction in the error. So it
+seems that an exponentially declining spatial stellar density does go some
+way to counteract the Lutz-Kelker bias. The Milky Way is disk shaped so
+is clearly not uniform in structure and some Kutz-Kelker calibrations do
+attempt to take scale height, direction and large scale structure into account
+19
+
+(Smith, 1999). There is an exponential decrease of projected density with
+galactocentric radius for spiral galaxies (Smith, 1999).
+Finally, Task 4 introduced a Gaia-like error approximation, together with
+the apparent magnitude limit of 14 from Task 2. This simulation produced
+results with very low margins of error, see Table 4 and Figures 22 to 28, even
+at large distances. Lutz-Kelker corrections and calibration therefore can, and
+should, be taken into account when estimating distance with trigonometric
+parallax. However, as can be seen from the Gaia-like error corrections, these
+calibrations themselves also need revision as technological improvements increase the accuracy of parallax measurements.
+
+References
+Lutz, T.E., Nearby Stars and the Stellar Luminosity Function, 1983, IAU
+Coll, 76
+Lutz, T.E., Kelker, D.H., On the use of Trigonometric Parallaxes for the
+Calibration of Luminosity Systems: Theory, 1973, Publications of the Astronomical Society of the Paciﬁc, 85, 573
+Oudmaijer. R.D., Groenewegen, M.A.T., Schrijver, H., The Lutz-Kelker bias
+in trigonometric parallaxes, 1997, Monthly Notices of the Royal Astronomical Society, 294, 41-46
+Smith, H., The Lutz-Kelker eﬀect in the Hipparcus era and beyond, 1998,
+Modern Astrometry and Astrodynamics, 1999
+
+20
+
+

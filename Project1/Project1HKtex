@@ -1,0 +1,20 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{epsfig}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+
+\author{Howard Kinsman}
+\title{Computational Astrophysics Project 1 - Investigation of Lutz-Kelver bias through Monte Carlo simulations}
+\begin{document}
+\maketitle
+
+This is my first \LaTeX\ document!
+
+\centering
+\includegraphics{./Graph1}
+
+
+\end{document}

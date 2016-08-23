@@ -1,0 +1,5 @@
+#Tue Aug 23 21:40:22 SAST 2016
+EnableVPG=false
+FortranIncludePaths=/DoubleBars\n
+FortranModulePaths=/DoubleBars\n
+eclipse.preferences.version=1

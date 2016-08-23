@@ -1,0 +1,1241 @@
+Computational Astrophysics Project 3
+Howard Kinsman
+May 6, 2016
+
+1
+1.1
+
+Problem 1B: Heat Conduction
+Part a
+
+In order to solve this problem it is ﬁrst necessary to set the initial and boundary conditions. Variables A, B and C were deﬁned according to equation 15
+in the notes. Variable A was set to µ because of µun in equation 15. In
+j−1
+Octave this is simply:
+A = mu;
+Variable B was set to:
+B = 1−(2∗mu∗(1+(1/( j − 1 ) ) ) ) ;
+
+This is in order to satisfy 1 − 2µ(1 +
+set to:
+
+1
+)un
+j
+j−1
+
+in equation 15. Finally C was
+
+C = mu∗(1+(2/( j − 1 ) ) ) ;
+
+2
+This satisﬁes the last part of equation 15: µ(1 + j−1 )µn .
+j+1
+The boundary condition at the surface was set to zero:
+
+unew (N) = 0 ;
+The boundary condition at the centre was set to the value above it on each
+iteration i.e. the boundary condition at the centre cannot be calculated so
+it is just assumed to be the same as the value above it. In Octave this was
+coded as:
+unew ( 1 ) = unew ( 2 ) ;
+The problem required the distributions to be between τ = 0 and τ = 0.2 so I
+1
+modiﬁed the total time steps to be 2400 because ∆x = 1/ (N − 1) = 49 and
+1
+τn
+2
+so ∆τ = µ∆x = 12005 which leads to n = ∆τ + 1 and so n = 2402.
+1
+
+The plot of the temperature distribution is shown in Fig. 1. Each line
+represents a timestep of 100. At time 1 the temperature gradient is almost
+vertical as there has been no time for cooling but at a time of 100 the temperature gradient forms a steep curve. The curve gets gradually less steep
+as time goes on until at time 2400 the curve has ﬂattened considerably and
+the temperature at the centre has cooled to approximately 0.3.
+1
+
+0.8
+
+u
+
+0.6
+
+0.4
+
+0.2
+
+0
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+x
+
+Figure 1: Plot of temperature distribution
+
+1.2
+
+Part b
+
+The following lines of code in Octave retrieve the temperature when it has
+cooled to exactly half its initial value. The ﬁrst line retrieves all values at
+position 2 i.e. the centre (the actual centre is position 1 but this was just set
+to be the same as position 2 in the boundary conditions). The second line
+ﬁnds the smallest timestep value (n) where temperature (u) is less than 1/2.
+u1 = approx ( 2 , : ) ;
+nc = min ( f i n d ( u1 < 0 . 5 ) )
+The timestep value n retrieved from the above has a value of 1629. τn =
+1628
+(n − 1)∆τ = 12005 . From the notes τ is in units of t/ (a2 /η). Therefore time
+in seconds=τ (a2 /η) where a = 100, 000m and η = 10−6 m2 sec, giving the
+time it takes the centre to cool to half its initial temperature as 4.3 × 107
+years.
+Full source code listing for Problem 1B is in Appendix 1.
+2
+
+2
+2.1
+
+Problem 2: Circular Binary
+Part a
+
+For a binary system where the centre of mass is at the origin then: m1 r1 =
+m2 r2 and we can express the stars positions using just their mass. The more
+massive star would lie closer to the centre of mass at a radius that is inversely
+proportional to its mass. The equation of motion (for the primary star) is
+given by:
+Gmp ms
+d2 xp
+(xs − xp )
+(1)
+mp 2 =
+dt
+|xs − xp |3
+˜
+If we substitute mp = mmp , xp = axp , xs = axs and t = t a3 /Gm into
+˜
+˜
+˜
+equation 1 then this leads to:
+mmp
+˜
+
+d2 axp
+˜
+˜
+d t a3 /Gm
+
+2
+
+=
+
+Gmmp mms
+˜
+˜
+(axs − axp )
+˜
+˜
+|axs − axp |3
+˜
+˜
+
+(2)
+
+Rearranging, we get:
+amp Gm2 d2 xp
+˜
+˜
+Gm2 mp ms a
+˜ ˜
+(xs − xp )
+˜
+˜
+=
+3 dt2
+˜
+|axs − axp |3
+˜
+˜
+a
+The
+
+amp Gm2
+˜
+a3
+
+(3)
+
+cancel from both sides leaving:
+d2 xp
+˜
+ms a
+˜
+(xs − xp )
+˜
+˜
+=
+˜2
+|xs − xp |3
+˜
+˜
+dt
+
+(4)
+
+The primary star is positioned on the negative side of the x axis, hence
+ms cos(π), whilst the secondary star is on the positive side, hence mp cos(0).
+They both sit on the x axis initially so y = 0. Both of their velocities are
+zero in the x direction i.e. −ms sin(π) and −mp sin(0) respectively. The
+stars initial velocities are the time derivatives of the initial positions. The
+primary star has negative velocity i.e. downwards given by ms cos(π) whilst
+the secondary star has a positive velocity: mp cos(0), so the orbit is anticlockwise. The initial conditions for this problem are given below. These are
+assuming an initial phase of φ = 0.
+rp = (ms cos (π) , ms sin (π))
+
+(5)
+
+rs = (mp cos (0) , mp sin (0))
+
+(6)
+
+r˙p = (−ms sin (π) , ms cos (π))
+
+(7)
+
+3
+
+rs = (−mp sin (0) , mp cos (0))
+˙
+
+(8)
+
+The orbital period is given by:
+T = 2π
+and so in dimensionless units of
+
+2.2
+
+a3
+G (M1 + M2 )
+
+(9)
+
+(a3 /Gm) the period is simply 2π.
+
+Parts b + c
+
+Assuming that mp = 3, then mp = 0.75 and ms = 0.25. I set the ﬁnal time to
+ms
+be 6π to allow the stars to orbit three times. In Octave the intial conditions
+were set as follows:
+mp
+ms
+x(1)
+x(2)
+x(3)
+x(4)
+x(5)
+x(6)
+x(7)
+x(8)
+tmax
+
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+
+. 7 5 ; % primary mass
+. 2 5 ; % s e c o n d a r y mass
+ms∗ c o s ( p i ) ; % primary x
+ms∗ s i n ( p i ) ; % primary y
+−ms∗ s i n ( p i ) ; % primary vx
+ms∗ c o s ( p i ) ; % primary vy
+mp∗ c o s ( 0 ) ; % s e c o n d a r y x
+mp∗ s i n ( 0 ) ; % s e c o n d a r y y
+−mp∗ s i n ( 0 ) ; % s e c o n d a r y vx
+mp∗ c o s ( 0 ) ; % s e c o n d a r y vy
+6∗ p i ; % f i n a l time
+
+The full source code listing for Problem 2 is in Appendix 2.
+The plot of the two stars is shown in Fig. 2. As can be seen the orbits are
+circular with the more massive primary star (in blue) orbiting closer to the
+centre of mass. The less massive secondary star (in red) lies much further
+out.
+
+4
+
+0.8
+0.6
+0.4
+
+y
+
+0.2
+0
+-0.2
+-0.4
+-0.6
+-0.8
+-1
+
+-0.5
+
+0
+x
+
+0.5
+
+1
+
+Figure 2: Plot of circular binary system
+
+2.3
+
+Part d
+
+The plot of energy in the system is shown in Fig. 3. The plot shows that the
+derived energy in the system (blue circles) and the exact energy (red line)
+match. The total energy in the system is constant and negative. The exact
+p
+energy in the system was calculated using Eexact = −m2 ms . This is derived
+as below, for total energy in orbit (potential and kinetic):
+E=−
+
+Gm1 m2 1 2
++ mv
+r
+2
+
+(10)
+
+Eliminate v by equating it with gravity:
+E=−
+
+Gm1 m2 1 m1 m2
++ G
+r
+2
+r
+
+(11)
+
+Kinetic energy therefore is -1/2 of potential energy, so this simpliﬁes to:
+E = −G
+Eexact =
+
+−mp ms
+2
+
+m1 m2
+2r
+
+is in dimensionless units of Gm2 /a.
+
+5
+
+(12)
+
+0
+
+E
+
+-0.05
+
+-0.1
+
+-0.15
+
+-0.2
+0
+
+2
+
+4
+
+6
+
+8
+
+10 12 14 16 18
+t
+
+Figure 3: Plot of energy in binary system
+
+6
+
+3
+3.1
+
+Problem 3: Hypervelocity Stars
+Part a
+
+In order to plot the stellar orbits in the black hole rest frame it is ﬁrst
+necessary to set the initial conditions. As the binary system is moving in a
+parabola the equations of motion for the centre of mass of parabola are:
+Xcm = (Rcos(f ), Rsin(f )),
+
+R=
+
+2Rp
+1 + cos(f )
+
+(13)
+
+This leads to the following equation for the initial angle given that the initial
+radius is 10Rtidal and D = Rp /Rtidal = 3:
+f0 = −cos−1 −1 +
+because
+
+2Rp
+10Rtidal
+
+D
+5
+
+(14)
+
+= 1 + cos(f ). This was encoded into Octave as:
+
+f=−a c o s (−1+D/ 5 ) ;
+Initial time was set according to the following equation:
+√
+2 3/2
+D tan(f0 /2)(3 + tan2 (f0 /2))
+t0 =
+3
+
+(15)
+
+In Octave this was set as follows:
+t = ( s q r t ( 2 ) / 3 ) ∗ (Dˆ ( 3 / 2 ) ) ∗ tan ( f /2)∗(3+( tan ( f / 2 ) ) ˆ 2 ) ;
+The initial radius is equal to 10Rtidal and Rtidal = (M/m)1/3 a so in units of
+a, R was calculated as follows in Octave:
+Rt=mbˆ ( 1 / 3 ) ;
+R=Rt ∗ 1 0 ;
+
+The initial positions of the stars relative to the black hole are given by the
+position of the centre of mass plus the positions of the stars as they orbit
+each other in circles. The initial position of the centre of mass was calculated
+as follows:
+
+Xx=R∗ c o s ( f ) ;
+Xy=R∗ s i n ( f ) ;
+The initial positions of the stars were calculated in a similar fashion to Problem 2, however a phase of pi/2 was used. In order to calculate the initial
+velocities of the stars we ﬁrst need the initial velocity of the centre of mass.
+7
+
+This was achieved by taking the derivatives of equation 13 and by using the
+deriviative of the true anomaly, the angle f:
+√
+˙ = 2 D−3/2 (1 + cos(f ))2
+(16)
+f
+4
+The above equation is derived from:
+√
+GM 2
+(1 + cos(f ))2
+3
+Rp 4
+
+df
+=
+dt
+
+(17)
+
+3
+Here the GM = D−3/2 in dimensionless units. We note that M = Rtidal . So
+3
+Rp
+therefore it follows that:
+
+GM
+=
+3
+Rp
+
+3
+GRtidal
+3
+Rp
+
+(18)
+
+and so, dropping the G for dimensionless units, we have:
+3
+Rtidal
+Rp
+=
+3
+rp
+Rtidal
+
+−3/2
+
+= D−3/2
+
+(19)
+
+The derivative of equation 13 is as follows:
+2Rp f˙sin(f )
+˙
+R=
+(1 + cos(f ))2
+which gives:
+˙
+R=
+
+2Rp
+
+√
+
+2 −3/2
+D
+sin(f )(1
+4
+
++ cos(f ))2
+(1 + cos(f ))2
+
+(20)
+
+(21)
+
+This simplies immediately to:
+Rp D−3/2 sin(f )
+˙
+√
+R=
+2
+This can be rewritten as:
+
+As D =
+
+Rp
+Rtidal
+
+(22)
+
+Rp sin(f )
+˙
+√
+R=
+D 2D
+
+(23)
+
+and Rtidal = M 1/3 we ﬁnally get:
+M 1/3 sin(f )
+˙
+√
+R=
+2D
+8
+
+(24)
+
+˙
+Substituting R and f˙ into equation 13 and applying the product rule
+˙
+˙
+gives us the following equations for Xx and Xy :
+˙
+˙
+Xx = Rcos(f ) − Rf˙sin(f )
+
+(25)
+
+˙
+˙
+Xy = Rf˙cos(f ) + sin(f )R
+
+(26)
+
+This was encoded in to Octave as follows:
+r d o t =(mbˆ ( 1 / 3 ) / ( s q r t (2∗D) ) ) ∗ s i n ( f ) ;
+f d o t =( s q r t ( 2 ) / 4 ) ∗ (Dˆ( −3/2))∗(1+ c o s ( f ) ) ˆ 2 ;
+xdotx=( r d o t ∗ c o s ( f )) −(R∗ f d o t ∗ s i n ( f ) ) ;
+xdoty=(R∗ f d o t ∗ c o s ( f ))+( s i n ( f )∗ r d o t ) ;
+
+Finally the initial conditions are ready to be set as follows:
+x(1)
+x(2)
+x(3)
+x(4)
+x(5)
+x(6)
+x(7)
+x(8)
+
+=
+=
+=
+=
+=
+=
+=
+=
+
+Xx+(ms∗ c o s ( p i /2+ p i ) ) ; % x : primary s t a r
+Xy+(ms∗ s i n ( p i /2+ p i ) ) ; % y
+xdotx+(−ms∗ s i n ( p i /2+ p i ) ) ; % dx/ dt
+xdoty+(ms∗ c o s ( p i /2+ p i ) ) ; % dy/ dt
+Xx+(mp∗ c o s ( p i / 2 ) ) ; % x : s e c o n d a r y s t a r
+Xy+(mp∗ s i n ( p i / 2 ) ) ; % y
+xdotx+(−mp∗ s i n ( p i / 2 ) ) ; % dx/ dt
+xdoty+(mp∗ c o s ( p i / 2 ) ) ; % dy/ dt
+
+The full source code listing for Problem 3 is in Appendix 3.
+Fig. 4 shows the plot of the stars as the approach the black hole in a
+parabola. With a penetration factor of D = RRp = 3 they can be seen to be
+tidal
+orbitting each other and successfully maintain their orbits as they pass the
+black hole at periastron.
+
+9
+
+1000
+
+y
+
+500
+
+0
+
+-500
+
+-1000
+-600400200 0 200400
+- x
+
+Figure 4: Plot of binary system in BH rest frame where D=3
+
+3.2
+
+Part b
+
+Fig. 5 shows a plot of the same data as in Problem 1 except the plot is in
+the comoving frame of the secondary star. This was achieved by subtracting
+the position of the primary star from the position of the secondary star. The
+was coded into Octave as follows:
+p l o t ( xs−xp , ys−yp , ’ r : ’ )
+
+10
+
+1.5
+1
+
+y
+
+0.5
+0
+-0.5
+-1
+-1.5
+-1.5
+
+-1
+
+-0.5
+
+0
+x
+
+0.5
+
+1
+
+1.5
+
+Figure 5: Plot of primary star in comoving frame of secondary star D=3
+The binary system is clearly not destabilised by the black hole.
+
+3.3
+
+Part c
+
+Fig. 6 is a plot of the energy of the binary system. It shows the energy is
+oscillating from positive to negative between the two stars as they orbit each
+other. The amplitude of the plot can be seen to be increasing as the stars
+approach the black hole reaching a maximum at periastron before starting
+to decrease as they move away from the inﬂuence of the black hole. The
+system has a total energy of zero and the energy of the one star is always
+the negative of the other.
+
+11
+
+20
+
+10
+
+E
+
+0
+
+-10
+
+-20
+
+-30
+-20 -15 -10
+
+-5
+
+0
+t
+
+5
+
+10
+
+15
+
+20
+
+Figure 6: Plot of energy in binary system D=3
+
+3.4
+
+Part d
+
+The code was then re-run but this time with Rp = 0.1Rtidal . Fig. 7 is a
+plot again in the rest frame of the black hole. The binary system is clearly
+disrupted by the black hole. The two stars are orbitting each until the closest
+approach to the black hole where they separate.
+
+12
+
+300
+200
+y
+
+100
+0
+-100
+-200
+-1000
+
+-800
+
+-600
+
+-400
+x
+
+-200
+
+0
+
+200
+
+Figure 7: Plot of binary system in BH rest frame where D=0.1
+A plot of the secondary star in the comoving frame of the primary star,
+Fig. 8, shows the secondary star to be initially in orbit with the primary star
+but then leaves the binary system on a separate trajectory.
+40
+
+30
+
+y
+
+20
+
+10
+
+0
+
+-10
+-15-10 -5 0
+
+5
+
+x
+
+Figure 8: Plot of primary star in comoving frame of secondary star D=0.1
+A plot of the energy of the system, Fig. 9, shows that the energy is
+13
+
+initially oscillating as in Part c but after the closest approach to the black
+hole the energy no longer oscillates between the two stars after the system
+is disrupted. The primary star (blue) ends up with a high negative energy
+whilst the secondary star (red) has a high positive energy.
+20
+15
+10
+
+E
+
+5
+0
+-5
+-10
+-15
+-20
+-20 -15 -10
+
+-5
+
+0
+t
+
+5
+
+10
+
+15
+
+20
+
+Figure 9: Plot of energy in binary system D=0.1
+
+3.5
+
+Part e
+
+The velocity of the ejected star (secondary star in this case) can be calculated
+by using Ek = 1/2mv 2 so
+v = 2E/M
+(27)
+From Fig. 9, and from the output ﬁle, the energy of the ejected star tends
+towards 19 as r approaches ∞. E here is in units of Gm2 /a so, in kms
+units, Gm2 /a = 5.4 × 1040 and so E = 1041 J. From equation 27 we get
+1,017,849m/s, and so the ejected star is travelling at approximately 1000km/s
+at r = ∞.
+
+3.6
+
+Part f
+
+Throughout this project I had assumed that the lower mass star would always
+be ejected from the system, so I chose to investigate this further to see if my
+assumptions were correct. I ran the above simulation 8 times whilst varying
+the initial phase of the binary system i.e. pi/4, pi/2, 3pi/4, pi, 5pi/4, 3pi/2,
+14
+
+7pi/4 and 2pi. The results were surprsing because in exactly half the runs
+the lower mass star was ejected and half the larger mass star. With an initial
+phase of pi/4 to pi the lower mass star was ejected, whilst from 5pi/4 to 2pi
+the larger mass star was ejected, see Fig. 10. This suggests that this process
+is independent of the mass of the star.
+
+300
+200
+y
+
+100
+0
+-100
+-200
+-1000
+
+-800
+
+-600
+
+-400
+x
+
+-200
+
+0
+
+200
+
+Figure 10: Plot of binary system in BH rest frame where D=0.1 and
+Phase=2Pi
+This may be possibly due to the energy in the system. The total energy
+in the system is zero so the energy of the one star is always equal to the
+negative of the other. The star which is ejected may be the one that is in the
+phase with positive energy at the time of closest approach to the black hole.
+Astronomical observations could conﬁrm whether indeed we do detect
+similar numbers of high mass hypervelocity stars as we do low mass hypervelocity stars.
+
+15
+
+4
+
+Appendix 1 - Problem 1B code
+
+% problem1B .m
+% Time e v o l u t i o n o f t e m p e r a t u r e d i s t r i b u t i o n u : s p h e r i c a l system
+% D e f i n e A, B, C, unew ( 1 ) and unew (N)
+%
+%
+%
+%
+%
+%
+
+When you w r i t e code , i t i s a good p r a c t i c e t o add comments t h a t
+d e s c r i b e t h e code . Comments a l l o w o t h e r s t o understand your code ,
+and can refresh your memory when you return t o i t l a t e r .
+Add comments t o Octave code u s i n g t h e p e r c e n t (%) symbol .
+Comment l i n e s can appear anywhere i n a program f i l e , and you can
+append comments t o t h e end o f a l i n e o f code . s e e s e c t i o n 2 6 , Octave t u
+
+mu
+= 0.2;
+N
+= 50;
+steps = 2400;
+u
+= ones (N, 1 ) ;
+u (N) = 0 ;
+approx = [ ] ;
+for n=1: s t e p s
+approx ( : , n)=u ;
+
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+
+mu=dt /dx ˆ2
+grid p o i n t s
+t o t a l time−s t e p s
+i n i t i a l c o n d i t i o n : u = 1 anywhere
+boundary c o n d i t i o n a t t h e surface
+empty a r r a y
+time e v o l u t i o n
+D i s t r i b u t i o n u a t each s t e p saved i n matrix : approx
+s e e s e c t i o n 5 , Octave t u t o r i a l for t h e colon .
+Add a new column t o approx matrix i n each t i m e s t e p .
+k−th column o f approx g i v e s u a t t i m e s t e p k .
+
+for j =2:N−1
+A = mu;
+% s e e Eq ( 1 5 ) and d e f i n e A, B, C
+B = 1−(2∗mu∗(1+(1/( j − 1 ) ) ) ) ;
+C = mu∗(1+(2/( j − 1 ) ) ) ;
+unew ( j )= A∗u ( j −1)+B∗u ( j )+C∗u ( j +1);
+end
+unew ( 1 ) = unew ( 2 ) ; % boundary c o n d i t i o n a t t h e c e n t r e
+unew (N) = 0 ; % boundary c o n d i t i o n a t t h e surface
+u = unew ;
+% update t h e d i s t r i b u t i o n
+end
+u1 = approx ( 2 , : ) ;
+% time e v o l u t i o n o f t e m p e r a t u r e a t t h e c e n t e r j =1
+nc = min( find ( u1 < 0 . 5 ) ) % c r i t i c a l t i m e s t e p : c e n t r a l temp becomes < 0 . 5 .
+x=linspace ( 0 , 1 ,N ) ;
+% g e n e r a t e N p o i n t s between 0 and 1 .
+plot ( x , approx ( : , [ 1 : 1 0 0 : s t e p s ] ) ) % plot t e m p e r t u r e d i s t r i b u t i o n s
+% d i s t r i b u t i o n s a t n=1, 1 0 1 , 2 0 1 , 3 0 1 . . .
+16
+
+% s e e s e c t i o n 5 and 6 , Octave t u t o r i a l
+xlabel ( ’ x ’ , ’ F o n t S i z e ’ , 2 0 )
+ylabel ( ’ u ’ , ’ F o n t S i z e ’ , 2 0 )
+
+17
+
+5
+%
+%
+%
+%
+
+Appendix 2 - Problem 2 code
+t h i s i s t h e main code t o e s t i m a t e t h e b i n a r y e v o l u t i o n
+two f u n c t i o n s : e n e r g y .m and RK4 .m a r e used i n t h i s code .
+See s e c t i o n 2 4 , Octave t u t o r i a l for Function m f i l e s
+−
+D e f i n e mp, ms , x(1) −x ( 8 ) and tmax
+
+clear ; c l f
+h
+= 1 . d−2; % time−s t e p s i z e
+Ns
+= 100 ; % sampling
+%−−−−−−−−−−−−−−−−−
+mp
+= . 7 5 ; % primary mass
+ms
+= . 2 5 ; % s e c o n d a r y mass
+x ( 1 ) = ms∗ cos ( pi ) ; % primary x
+x ( 2 ) = ms∗ sin ( pi ) ; % primary y
+x ( 3 ) = −ms∗ sin ( pi ) ; % primary vx
+x ( 4 ) = ms∗ cos ( pi ) ; % primary vy
+x ( 5 ) = mp∗ cos ( 0 ) ; % s e c o n d a r y x
+x ( 6 ) = mp∗ sin ( 0 ) ; % s e c o n d a r y y
+x ( 7 ) = −mp∗ sin ( 0 ) ; % s e c o n d a r y vx
+x ( 8 ) = mp∗ cos ( 0 ) ; % s e c o n d a r y vy
+tmax = 6∗ pi ; % f i n a l time
+%−−−−−−−−−−−−−−−−−
+t
+= 0 ; % i n i t i a l time
+tprint = t ;
+dtp
+= ( tmax−t ) / Ns ;
+while t < tmax
+i f t >= t p r i n t
+E = e n e r g y ( x , mp, ms ) ;
+% Estimat b i n a r y e n e r g y
+v = [ t x(1) x(2) x(5) x(6) E ] ;
+save out v − a s c i i −append % save t h e v v e c t o r i n t h e f i l e out
+t p r i n t = t p r i n t + dtp ;
+end
+x = RK4( h , t , x , mp, ms ) ; % Runge−Kutta method
+t = t+h ;
+end
+function dxdt = f ( t , x , mp, ms)
+% The v e c t o r F . s e e e q u a t i i o n 29
+% input v a r i a b l e s : t , x , mp, ms
+% output v a r i a b l e s : dxdt
+18
+
+r = sqrt ( ( x(1) −x ( 5 ) ) ˆ 2 + ( x(2) −x ( 6 ) ) ˆ 2 ) ;
+dxdt ( 1 ) = x ( 3 ) ;
+dxdt ( 2 ) = x ( 4 ) ;
+dxdt ( 3 ) = ms∗( x(5) −x ( 1 ) ) / r ˆ 3 ;
+dxdt ( 4 ) = ms∗( x(6) −x ( 2 ) ) / r ˆ 3 ;
+dxdt ( 5 ) = x ( 7 ) ;
+dxdt ( 6 ) = x ( 8 ) ;
+dxdt ( 7 ) = mp∗( x(1) −x ( 5 ) ) / r ˆ 3 ;
+dxdt ( 8 ) = mp∗( x(2) −x ( 6 ) ) / r ˆ 3 ;
+
+function Etot=e n e r g y ( x , mp, ms)
+% binary energy
+% input v a r i a b l e s : x , mp, ms
+% output v a r i a b l e s : Eot
+vp2 = x (3)ˆ2+ x ( 4 ) ˆ 2 ; % t h e s q u a r e o f t h e primary s t a r v e l o c i t y
+vs2 = x (7)ˆ2+ x ( 8 ) ˆ 2 ; % t h e s q u a r e o f t h e s e c o n d a r y s t a r v e l o c i t y
+r
+= sqrt ( ( x(5) −x ( 1 ) ) ˆ 2 + ( x(6) −x ( 2 ) ) ˆ 2 ) ; % b i n a r y s e p a r a t i o n
+Etot= (mp/2)∗ vp2+(ms/2)∗ vs2−mp∗ms/ r ; % b i n a r y e n e r g y : k i n e t i c + p o t e n t i a l
+function xout=RK4( h , t , x , mp, ms)
+% Runge−Kutta method
+% input v a r i a b l e s : h , t , x , mp, ms
+% output v a r i a b l e s : xout
+% function f .m i s used
+k1
+= h∗ f ( t , x ,
+mp, ms ) ;
+k2
+= h∗ f ( t+h / 2 , x+k1 / 2 ,mp, ms ) ;
+k3
+= h∗ f ( t+h / 2 , x+k2 / 2 ,mp, ms ) ;
+k4
+= h∗ f ( t+h , x+k3 ,
+mp, ms ) ;
+xout = x+k1/6+k2/3+k3/3+k4 / 6 ;
+% plot t h e o r b i t s o f t h e two s t a r s
+clear ; c l f ;
+load out
+% load t h e data f i l e out
+xp=out ( : , 2 ) ; % t h e primary s t a r
+yp=out ( : , 3 ) ;
+xs=out ( : , 4 ) ; % t h e s e c o n d a r y s t a r
+ys=out ( : , 5 ) ;
+plot ( xp , yp ) % plot t h e o r b i t o f t h e primary s t a r
+hold on
+% hold ON h o l d s t h e c u r r e n t plot and a l l axis p r o p e r t i e s
+% so t h a t s u b s e q u e n t g r a p h i n g commands add t o t h e e x i s t i n g
+% graph without r e s e t t i n g t h e c o l o r and l i n e s t y l e .
+19
+
+plot ( xs , ys , ’ r : ’ ) % plot t h e o r b i t o f t h e s e c o n d a r y s t a r
+xlabel ( ’ x ’ , ’ F o n t S i z e ’ , 2 0 )
+ylabel ( ’ y ’ , ’ F o n t S i z e ’ , 2 0 )
+ylim ( [ − 0 . 8 0 . 8 ] ) % p l o t t i n g range from x=−0.8 t o 0 . 8 .
+set ( gca , ’ F o n t s i z e ’ , 2 0 )
+axis e q u a l
+% plot t h e e v o l u t i o n o f t h e b i n a r y e n e r g y ( i t s h o u l d be a c o n s t a n t ) .
+% D e f i n mp, ms , and tmax
+clear ; c l f ;
+%−−−−−−−−−−−−−−−−
+mp
+= .75;
+ms
+= .25;
+tmax = 6∗ pi ;
+%−−−−−−−−−−−−−−−−
+load out % load t h e data f i l e out
+t
+= out ( : , 1 ) ; % time
+E
+= out ( : , 6 ) ; % e n e r g y
+e x a c t = −mp∗ms / 2 ; % a n a l y t i c e s t i m a t e
+plot ( t , E , ’ o ’ ) % n u m e r i c a l e n e r g y
+hold on
+plot ( [ 0 tmax ] , [ e x a c t e x a c t ] , ’ r ’ ) % e x a c t l i n e
+xlabel ( ’ t ’ , ’ F o n t S i z e ’ , 2 0 )
+ylabel ( ’E ’ , ’ F o n t S i z e ’ , 2 0 )
+xlim ( [ 0 tmax ] )
+ylim ( [ − 0 . 2 0 ] )
+set ( gca , ’ F o n t s i z e ’ , 2 0 )
+
+20
+
+6
+
+Appendix 3 - Problem 3 code
+
+function [ t , x ] = i n i t i a l c (D, mb, mp, ms)
+% input v a l i a b l e s : D, mb, mp, ms . D=Rp/ R t i d a l i s t h e p e n e t r a t i o n f a c t o r .
+% out v a r i a b l e s : t and x . Note t h a t x i s a v e c t o r .
+% D e f i n e t h e i n i t i a l v a l u e s o f t and x as f u n c t i o n s o f t h e input v a l i a b l e
+phase=2∗pi ;
+f=−acos(−1+D/ 5 ) ;
+t = ( sqrt ( 2 ) / 3 ) ∗ (Dˆ ( 3 / 2 ) ) ∗ tan ( f /2)∗(3+( tan ( f / 2 ) ) ˆ 2 ) ; % i n i t i a l time
+Rt=mbˆ ( 1 / 3 ) ;
+R=Rt ∗ 1 0 ;
+Xx=R∗ cos ( f ) ;
+Xy=R∗ sin ( f ) ;
+r d o t =(mbˆ ( 1 / 3 ) / ( sqrt (2∗D) ) ) ∗ sin ( f ) ;
+f d o t =(sqrt ( 2 ) / 4 ) ∗ (Dˆ( −3/2))∗(1+ cos ( f ) ) ˆ 2 ;
+xdotx=( r d o t ∗ cos ( f )) −(R∗ f d o t ∗ sin ( f ) ) ;
+xdoty=(R∗ f d o t ∗ cos ( f ))+( sin ( f )∗ r d o t ) ;
+x ( 1 ) = Xx+(ms∗ cos ( phase+pi ) ) ; % x : primary s t a r
+x ( 2 ) = Xy+(ms∗ sin ( phase+pi ) ) ; % y
+x ( 3 ) = xdotx+(−ms∗ sin ( phase+pi ) ) ; % dx/ dt
+x ( 4 ) = xdoty+(ms∗ cos ( phase+pi ) ) ; % dy/ dt
+x ( 5 ) = Xx+(mp∗ cos ( phase ) ) ; % x : s e c o n d a r y s t a r
+x ( 6 ) = Xy+(mp∗ sin ( phase ) ) ; % y
+x ( 7 ) = xdotx+(−mp∗ sin ( phase ) ) ; % dx/ dt
+x ( 8 ) = xdoty+(mp∗ cos ( phase ) ) ; % dy/ dt
+function dxdt = f ( t , x , mb, mp, ms)
+% a new input v a r i a b e l mb has been added .
+% i n c l u d e t h e BH g r a v i t y terms . s e e eq 3 8 .
+rp = sqrt ( x (1)ˆ2+ x ( 2 ) ˆ 2 ) ;
+r s = sqrt ( x (5)ˆ2+ x ( 6 ) ˆ 2 ) ;
+r = sqrt ( ( x(5) −x ( 1 ) ) ˆ 2 + ( x(6) −x ( 2 ) ) ˆ 2 ) ;
+dxdt ( 1 ) = x ( 3 ) ;
+dxdt ( 2 ) = x ( 4 ) ;
+dxdt ( 3 ) = ( (mb/ rp ˆ3)∗( −x ( 1 ) ) ) + ( ( ms/ r ˆ 3 ) ∗ ( x(5) −x ( 1 ) ) ) ;
+dxdt ( 4 ) = ( (mb/ rp ˆ3)∗( −x ( 2 ) ) ) + ( ( ms/ r ˆ 3 ) ∗ ( x(6) −x ( 2 ) ) ) ;
+dxdt ( 5 ) = x ( 7 ) ;
+dxdt ( 6 ) = x ( 8 ) ;
+dxdt ( 7 ) = ( (mb/ r s ˆ3)∗( −x ( 5 ) ) ) + ( (mp/ r ˆ 3 ) ∗ ( x(1) −x ( 5 ) ) ) ;
+dxdt ( 8 ) = ( (mb/ r s ˆ3)∗( −x ( 6 ) ) ) + ( (mp/ r ˆ 3 ) ∗ ( x(2) −x ( 6 ) ) ) ;
+21
+
+% The d i s r u p t i o n o f a b i n a r y by a m a s s i v e BH
+% t h e main code
+% d e f i n e mb, mp, ms . These a r e d i m e n s i o n l e s s masses .
+clear
+% c l e a r a l l v a r i a b l e s and f u n c t i o n s from memory
+D
+= 0.1;
+% p e n e t r a t i o n f a c t o r : Rp/ R t i d a l
+h
+= 1 . d−3;
+% time−s t e p s i z e
+Ns
+= 10000;
+% sampling
+mb
+= 1 e6 ;
+% BH mass i n u n i t s o f t h e b i n a r y mass m
+mp
+= .75;
+% primary s t a r mass i n u n i t s o f m
+ms
+= .25;
+% s e c o n d a r y s t a r mass i n u n i t s o f m
+[ t , x ] = i n i t i a l c (D, mb, mp, ms ) ; % D e f i n e t h e i n i t i a l v a l u e s o f t and x .
+tmax
+= −t ;
+tprint = t ;
+dtp
+= ( tmax−t ) / Ns ;
+while t < tmax
+i f t >= t p r i n t
+[ Ep , Es ] = e n e r g y ( x , mb, mp, ms ) ;
+v = [ t x ( 1 ) x ( 2 ) x ( 5 ) x ( 6 ) Ep Es ] ;
+save out v − a s c i i −append
+t p r i n t = t p r i n t + dtp ;
+end
+x = RK4( h , t , x , mb, mp, ms ) ;
+t = t+h ;
+end
+clear ; c l f ;
+out=load ( ’ out ’ ) ; % load t h e data f i l e out
+t =out ( : , 1 ) ; % time
+xp=out ( : , 2 ) ; % t h e p o s i t i o n o f t h e primary s t a r
+yp=out ( : , 3 ) ;
+xs=out ( : , 4 ) ; % t h e p o s i t i o n o f t h e s e c o n d a r y s t a r
+ys=out ( : , 5 ) ;
+Ep=out ( : , 6 ) ; % t h e e n e r g y o f t h e primary s t a r
+Es=out ( : , 7 ) ; % t h e e n e r g y o f t h e s e c o n d a r y s t a r
+%plot ( xp , yp ) ;
+%hold on
+plot ( xs−xp , ys−yp , ’ r : ’ )
+xlabel ( ’ x ’ , ’ F o n t s i z e ’ , 2 0 )
+ylabel ( ’ y ’ , ’ F o n t s i z e ’ , 2 0 )
+22
+
+set ( gca , ’ F o n t s i z e ’ , 2 0 )
+axis e q u a l
+%plot ( t , Ep , ’ o ’ )
+%hold on
+%plot ( t , Es , ’ r ’ )
+%xlabel ( ’ t ’ , ’ F o n t s i z e ’ , 2 0 )
+%ylabel ( ’E ’ , ’ F o n t s i z e ’ , 2 0 )
+%set ( gca , ’ F o n t s i z e ’ , 2 0 )
+function xout=RK4( h , t , x , mb, mp, ms)
+% Runge−Kutta method
+% input v a r i a b l e s : h , t , x , mb, mp, ms
+% output v a r i a b l e s : xout
+% a new input v a r i a b l e mb i s added .
+k1
+= h∗ f ( t , x ,
+mb, mp, ms ) ;
+k2
+= h∗ f ( t+h / 2 , x+k1 / 2 ,mb, mp, ms ) ;
+k3
+= h∗ f ( t+h / 2 , x+k2 / 2 ,mb, mp, ms ) ;
+k4
+= h∗ f ( t+h , x+k3 ,
+mb, mp, ms ) ;
+xout = x+k1/6+k2/3+k3/3+k4 / 6 ;
+function [ Ep , Es]= e n e r g y ( x , mb, mp, ms)
+% t h e e n e r g i e s o f t h e two s t a r s
+% input v a r i a b l e s : x , mb, mp, ms . x i s a v e c t o r v a r i a b l e .
+% out v a r i a b l e s : Ep , Es
+rp = sqrt ( x (1)ˆ2+ x ( 2 ) ˆ 2 ) ;
+% BH
+−primary s e p a r a t i o n
+vp2 =
+x (3)ˆ2+ x ( 4 ) ˆ 2 ;
+% s q u r e o f primary v e l o c i t y
+r s = sqrt ( x (5)ˆ2+ x ( 6 ) ˆ 2 ) ;
+% BH e c o n d a r y
+−s
+vs2 =
+x (7)ˆ2+ x ( 8 ) ˆ 2 ;
+% squre of secondary v e l o c i t y
+r p s = sqrt ( ( x(5) −x ( 1 ) ) ˆ 2 + ( x(6) −x ( 2 ) ) ˆ 2 ) ; % primary−s e c o n d a r y
+Ep = (mp/2)∗ vp2−mb∗mp/ rp−mp∗ms/ r p s ;
+% primary e n e r g y
+Es = (ms/2)∗ vs2−mb∗ms/ r s −mp∗ms/ r p s ;
+% secondary energy
+
+23
+
+

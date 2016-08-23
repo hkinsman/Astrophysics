@@ -1,0 +1,15 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{epsfig}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+\begin{document}
+This is my first \LaTeX\ document!
+
+\centering
+\includegraphics{./Graph1}
+
+
+\end{document}

@@ -1,0 +1,24 @@
+reset
+#set term png #output terminal and file
+set term postscript eps enhanced color
+set output "Graph1.eps"
+set tics out nomirror
+
+set ylabel "Jacobi Integral"
+set xlabel "Time"
+plot "fort.9" using 1:6 notitle
+
+set output "Graph2.eps"
+set ylabel "Y position"
+set xlabel "X position"
+plot "fort.9" using 2:3 notitle
+
+set output "Graph3.eps"
+set ylabel "dY/dT"
+set xlabel "dX/dT"
+plot "fort.9" using 4:5  notitle
+
+set output "Graph4.eps"
+set ylabel "Radius"
+set xlabel "Time"
+plot "fort.9" using 1:7 notitle

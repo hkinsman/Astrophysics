@@ -1,0 +1,16 @@
+reset
+#set term png #output terminal and file
+set term postscript eps enhanced color
+set xtics 10
+set mxtics 5
+set output "Graph1.eps"
+set tics out nomirror
+
+set ylabel "PSD"
+set xlabel "Frequency"
+plot "fort.25" using ((2*pi*($1-1))/(8192*.02)):2 notitle
+
+set output "Graph2.eps"
+set ylabel "PSD (Log 10)"
+set xlabel "Frequency"
+plot "fort.25" using ((2*pi*($1-1))/(8192*.02)):3 notitle

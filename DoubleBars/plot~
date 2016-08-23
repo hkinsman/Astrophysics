@@ -1,0 +1,23 @@
+reset
+#set term png #output terminal and file
+set term postscript eps enhanced color
+set output "Graph1.eps"
+set tics out nomirror
+
+set output "Graph1.eps"
+set ylabel "Y position"
+set xlabel "X position"
+plot "fort.9" using 2:4 notitle with dots, \
+ "fort.9" using 10:12 notitle with dots, \
+"fort.9" using 14:16 notitle with dots
+# "fort.9" using 10:12 notitle with dots
+
+#set output "Graph3.eps"
+#set ylabel "dY/dT"
+#set xlabel "dX/dT"
+#plot "fort.9" using 4:5  notitle
+
+#set output "Graph4.eps"
+#set ylabel "Radius"
+#set xlabel "Time"
+#plot "fort.9" using 7:8 notitle

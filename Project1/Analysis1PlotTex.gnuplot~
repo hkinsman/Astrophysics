@@ -1,0 +1,98 @@
+reset
+#set term png #output terminal and file
+set terminal latex
+set output "Graph1.tex"
+set tics out nomirror
+
+set ylabel "Retrieved Absolute Magnitude"
+set xlabel "Retrieved Distance (pc)"
+set title "Retrived Absolute Magntude as a function of Retrieved Distance"
+plot "LKNew.dat" using 6:8 notitle
+
+#set offset graph 0.05,0.05,0.05,0.0
+
+set style fill solid 0.5 #fillstyle
+width=200
+set boxwidth width
+bin(x,width)=width*floor(x/width)+width/2.0
+set xlabel "True Distance (pc)"
+set ylabel "Distribution"
+set title "Number distribution of stars by True Distance"
+set output "Graph2.tex"
+plot "LKNew.dat" using (bin($2,width)):(1.0) smooth freq with boxes notitle
+set xlabel "Retrieved Distance (pc)"
+set ylabel "Distribution"
+set title "Number distribution of stars by Retrieved Distance"
+set output "Graph3.tex"
+plot "LKNew.dat" using (bin($6,width)):(1.0) smooth freq with boxes notitle
+
+#n=12
+#max=1.2
+#min=0
+n=40
+max=3.0
+min=-1.0
+width=(max-min)/n
+bin(x,width)=width*floor(x/width)+width/2.0
+set xrange [min:max]
+set yrange [0:]
+set xlabel "Retrieved Absolute Magnitude"
+set ylabel "Distribution"
+set xtics min,(max-min)/5,max
+set boxwidth width
+set tics out nomirror
+set title "Distribution of Retrieved Absolute Magnitude for Retrieved Distance 0-1000 pc"
+set output "Bin1.tex"
+plot "Bin1000.dat" using (bin($8,width)):(1.0) smooth freq with boxes notitle
+
+#n=20
+#max=2.0
+#min=0
+n=40
+max=3.0
+min=-1.0
+width=(max-min)/n
+bin(x,width)=width*floor(x/width)+width/2.0
+set xrange [min:max]
+set yrange [0:]
+set xlabel "Retrieved Absolute Magnitude"
+set ylabel "Distribution"
+set xtics min,(max-min)/5,max
+set boxwidth width
+set tics out nomirror
+set title "Distribution of Retrieved Absolute Magnitude for Retrieved Distance 1001-2000 pc"
+set output "Bin2000.tex"
+plot "Bin2000.dat" using (bin($8,width)):(1.0) smooth freq with boxes notitle
+
+n=40
+max=3.0
+min=-1
+width=(max-min)/n
+bin(x,width)=width*floor(x/width)+width/2.0
+set xrange [min:max]
+set yrange [0:]
+set xlabel "Retrieved Absolute Magnitude"
+set ylabel "Distribution"
+set xtics min,(max-min)/5,max
+set boxwidth width
+set tics out nomirror
+set title "Distribution of Retrieved Absolute Magnitude for Retrieved Distance 2001-3000 pc"
+set output "Bin3.tex"
+plot "Bin3000.dat" using (bin($8,width)):(1.0) smooth freq with boxes notitle
+
+n=40
+max=3.0
+min=-1.0
+width=(max-min)/n
+bin(x,width)=width*floor(x/width)+width/2.0
+set xrange [min:max]
+set yrange [0:]
+set xlabel "Retrieved Absolute Magnitude"
+set ylabel "Distribution"
+set xtics min,(max-min)/5,max
+set boxwidth width
+set tics out nomirror
+set title "Distribution of Retrieved Absolute Magnitude for Retrieved Distance 3001-4000 pc"
+set output "Bin4.tex"
+plot "Bin4000.dat" using (bin($8,width)):(1.0) smooth freq with boxes notitle
+
