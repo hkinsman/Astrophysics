@@ -22,7 +22,7 @@
 
      step = 1.e-6 !vary step size
      start=0.
-     end=10 !vary end time
+     end=20 !vary end time
      m1 = 1
      m2 = .05
      m3 = .000005

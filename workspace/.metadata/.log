@@ -501,3 +501,12 @@ java.io.FileNotFoundException
 !MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples/doc-html/swt_clipboard_ex.html cannot be opened.
 !SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-24 09:45:29.157
 !MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.ui.examples.javaeditor/doc-html/ui_javaeditor_ex.html cannot be opened.
+
+!ENTRY org.eclipse.core.resources 2 2 2016-08-24 12:49:14.295
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2016-08-24 12:49:14.297
+!MESSAGE The project description file (.project) for 'DoubleBars2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2016-08-24 12:49:14.297
+!MESSAGE The project description file (.project) for 'DoubleBars3' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2016-08-24 12:49:14.297
+!MESSAGE The project description file (.project) for 'Test' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.

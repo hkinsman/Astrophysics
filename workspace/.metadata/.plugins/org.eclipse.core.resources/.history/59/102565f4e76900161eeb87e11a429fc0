@@ -22,7 +22,7 @@
 
      step = 1.e-6 !vary step size
      start=0.
-     end=10 !vary end time
+     end=20 !vary end time
      m1 = 1
      m2 = .05
      m3 = .000005
@@ -55,6 +55,18 @@
      real, intent(out) :: dydx(NVAR)
      real :: dist1,dist2,dist3, dist4, dist5, dist6,dist7,dist8,dist9,dist10,dist11,dist12,r1,r2,r3,r4,r5,r6
 
+!    dist1 = y(5)-y(1)  !x2-x1
+!    dist2 = y(7)-y(3) !y2-y1
+!    r1=sqrt(dist1**2+dist2**2)
+!    dydx(1) = y(2)
+!    dydx(2) = (m2*dist1)/(r1**3)
+!    dydx(3) = y(4)
+!    dydx(4) = (m2*dist2)/(r1**3)
+!    dydx(5) = y(6)
+!    dydx(6) = (-m1*dist1)/(r1**3)
+!    dydx(7) = y(8)
+!    dydx(8) = (-m1*dist2)/(r1**3)
+
     dist1 = y(5)-y(1)  !x2-x1
     dist2 = y(7)-y(3) !y2-y1
     dist3 = y(9)-y(1) !x3-x1
@@ -74,6 +86,7 @@
     r4=sqrt(dist7**2+dist8**2)   !r23
     r5=sqrt(dist9**2+dist10**2)  !r24
     r6=sqrt(dist11**2+dist12**2) !r34
+
 
     dydx(1) = y(2) !dx1
     dydx(2) = ((m2*dist1)/(r1**3)) + ((m3*dist3)/(r2**3)) + ((m4*dist5)/(r3**3))! dvx1
