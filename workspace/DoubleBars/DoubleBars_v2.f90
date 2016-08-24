@@ -19,132 +19,92 @@
  contains
 
    subroutine initialconditions
-     real :: A, B, C, omega, szebehely, E, U, T, E0
-     
-!m1=m3=M=1 - Outer Bar - constant
-!m2=m4=u=m - Inner Bar - variable
-!x1=-x3 - Outer
-!x2=-x4 - Inner
-!Vx1=-Vx3 - Outer
-!Vx2=-Vx4 - Inner
 
-     step = 1.e-1 !vary step size
-     m=.1 !vary mass of inner bar
+     step = 1.e-6 !vary step size
      start=0.
      end=20 !vary end time
-     x1=.4 !x coord of outer bar
-     x2=.2 !vary x coord of inner bar
      m1 = 1
-     m2 = m
-     m3 = 1
-     m4 = m
-     szebehely=.9 ! vary Szebehely constant - angular momentum
-     E0=-1.2 ! Total energy 
-     
-     omega=sqrt(szebehely/(-E0)) ! angular momentum
+     m2 = .05
+     m3 = .000005
+     m4 = .000005
 
-     ys(1) = x1     ! m1,x
-     ys(2) = 0   ! m1,vx
-     ys(3) = 0        ! m1,y
+     ys(1) = 0     ! m1,x
+     ys(2) = 0  ! m1,vx
+     ys(3) = 0       ! m1,y
+     ys(4) = -.05		!m1,vy
      
-     ys(5) = x2         ! m2,x
+     ys(5) = 1         ! m2,x
      ys(6) = 0          ! m2,vx
      ys(7) = 0         ! m2,y
-    
-     ys(9) = -ys(1)       ! m3,x
-     ys(10) = -ys(2)       ! m3,vx
-     ys(11) = -ys(3)        ! m3,y
-     
-     ys(13) = -ys(5)     ! m4,x
-     ys(14) = -ys(6)      ! m4,vx
-     ys(15) = -ys(7)        ! m4,y
-     
-     U=(m2/(abs(ys(5)-ys(1))))+(m3/(abs(ys(9)-ys(1))))+(m4/(abs(ys(13)-ys(1))))+ &
-          (m2/(abs(ys(9)-ys(5))))+((m4*m2)/(abs(ys(13)-ys(5))))+(m4/(abs(ys(13)-ys(9)))) !Potental Energy
+     ys(8) = 1		!m2,vy
 
-     A=1+((1/m)*(x1/x2)**2)
-     B=(omega*x1)/(m*x2)**2
-     C=((omega**2)/(4*x2**2))-U-E0
-     
-     ys(4) = (B-sqrt((B**2)-(4*A*C)))/(2*A)       ! m1,vy
-     ys(8) = (omega/(2*x2))-(m*ys(4)*(x1/x2))        ! m2,vy
-     ys(12) = -ys(4)        ! m3,vy
-     ys(16) = -ys(8)        ! m4,vy
+     ys(9) = 1.17       ! m3,x
+     ys(10) = 0       ! m3,vx
+     ys(11) = 0        ! m3,y
+     ys(12) = .5		!m3, vy
+
+     ys(13) = -.59     ! m4,x
+     ys(14) = 0      ! m4,vx
+     ys(15) = 0        ! m4,y
+	ys(16) = -1				!m4, vy
 
    end subroutine initialconditions
 
    subroutine derivs(x,y,dydx)
      real, intent(in) :: x,y(NVAR)
      real, intent(out) :: dydx(NVAR)
-     real :: dist1,dist2,dist3, dist4, dist5, dist6,r1,r2,r3
+     real :: dist1,dist2,dist3, dist4, dist5, dist6,dist7,dist8,dist9,dist10,dist11,dist12,r1,r2,r3,r4,r5,r6
 
-   ! dist1 = y(5)-y(1)  !x2-x1
-   ! dist4 = y(7)-y(3) !y2-y1
-   ! r10=sqrt(dist1**2+dist4**2) 
-   ! dydx(1) = y(2)  
-   ! dydx(2) = (m2*dist1)/(r10**3)
-   ! dydx(3) = y(4)
-   ! dydx(4) = (m2*dist4)/(r10**3)
-   ! dydx(5) = y(6)
-   ! dydx(6) = (-m1*dist1)/(r10**3)
-   ! dydx(7) = y(8)
-   ! dydx(8) = (-m1*dist4)/(r10**3)
+!    dist1 = y(5)-y(1)  !x2-x1
+!    dist2 = y(7)-y(3) !y2-y1
+!    r1=sqrt(dist1**2+dist2**2)
+!    dydx(1) = y(2)
+!    dydx(2) = (m2*dist1)/(r1**3)
+!    dydx(3) = y(4)
+!    dydx(4) = (m2*dist2)/(r1**3)
+!    dydx(5) = y(6)
+!    dydx(6) = (-m1*dist1)/(r1**3)
+!    dydx(7) = y(8)
+!    dydx(8) = (-m1*dist2)/(r1**3)
 
     dist1 = y(5)-y(1)  !x2-x1
-    dist2 = y(9)-y(1) !x3-x1
-    dist3 = y(13)-y(1) !x4-x1
-    dist4 = y(7)-y(3) !y2-y1
-    dist5 = y(11)-y(3) !y3-y1
+    dist2 = y(7)-y(3) !y2-y1
+    dist3 = y(9)-y(1) !x3-x1
+    dist4 = y(11)-y(3) !y3-y1
+    dist5 = y(13)-y(1) !x4-x1
     dist6 = y(15)-y(3) !y4-y1
-    r1=sqrt(dist1**2+dist4**2) 
-    r2=sqrt(dist2**2+dist5**2)
-    r3=sqrt(dist3**2+dist6**2)
-    dydx(1) = y(2)          !dX/dt=Vx
-    dydx(2) = (m*((dist1/(r1**3))+(dist3/(r3**3))))+(dist2/(r2**3))  !dVx/dt
-    dydx(3) = y(4)          !dY/dt=Vy
-    dydx(4) = (m*((dist4/(r1**3))+(dist6/(r3**3))))+(dist6/(r2**3))   !dVy/dt
+    dist7 = y(9)-y(5)    !x3-x2
+    dist8 = y(11)-y(7)  !y3-y2
+    dist9 = y(13)-y(5) !x4-x2
+    dist10 =y(15)-y(7) !y4-y2
+    dist11 =y(13)-y(9) !x4-x3
+    dist12 =y(15)-y(11) !y4-y3
 
-    dist1 = y(1)-y(5)  !x1-x2
-    dist2 = y(9)-y(5)  !x3-x2
-    dist3 = y(13)-y(5) !x4-x2
-    dist4 = y(2)-y(7)  !y1-y2
-    dist5 = y(11)-y(7) !y3-y2
-    dist6 = y(15)-y(7) !y4-y2
-    r1=sqrt(dist1**2+dist4**2)
-    r2=sqrt(dist2**2+dist5**2)
-    r3=sqrt(dist3**2+dist6**2)
-    dydx(5) = y(6)          !dX/dt=Vx
-    dydx(6) = (dist1/(r1**3))+(dist2/(r2**3))+((m*dist3)/(r3**3))  !dVx/dt
-    dydx(7) = y(8)          !dY/dt=Vy
-    dydx(8) = (dist4/(r1**3))+(dist5/(r2**3))+((m*dist6)/(r3**3))   !dVy/dt
+    r1=sqrt(dist1**2+dist2**2)  !r12
+    r2=sqrt(dist3**2+dist4**2)  !r13
+    r3=sqrt(dist5**2+dist6**2) !r14
+    r4=sqrt(dist7**2+dist8**2)   !r23
+    r5=sqrt(dist9**2+dist10**2)  !r24
+    r6=sqrt(dist11**2+dist12**2) !r34
 
-    dist1 = y(1)-y(9) !x1-x3
-    dist2 = y(5)-y(9) !x2-x3
-    dist3 = y(13)-y(9) !x4-x3
-    dist4 = y(3)-y(11) !y1-y3
-    dist5 = y(7)-y(11) !y2-y3
-    dist6 = y(15)-y(11) !y4-y3
-    r1=sqrt(dist1**2+dist4**2)
-    r2=sqrt(dist2**2+dist5**2)
-    r3=sqrt(dist3**2+dist6**2)
-    dydx(9) = y(10)          !dX/dt=Vx
-    dydx(10) = (dist1/(r1**3))+(m*((dist2/(r2**3))+(dist3/(r3**3))))   !dVx/dt
-    dydx(11) = y(12)          !dY/dt=Vy
-    dydx(12) = (dist4/(r1**3))+(m*((dist5/(r2**3))+(dist6/(r3**3))))   !dVy/dt
-     
-    dist1 = y(1)-y(13) !x1-x4
-    dist2 = y(5)-y(13) !x2-x4
-    dist3 = y(9)-y(13) !x3-x4
-    dist4 = y(3)-y(15) !y1-y4
-    dist5 = y(7)-y(15) !y2-y4
-    dist6 = y(11)-y(15) !y3-y4
-    r1=sqrt(dist1**2+dist4**2)
-    r2=sqrt(dist2**2+dist5**2)
-    r3=sqrt(dist3**2+dist6**2)
-    dydx(13) = y(14)          !dX/dt=Vx
-    dydx(14) = (dist1/(r1**3))+((m*dist2)/(r2**3))+(dist3/(r3**3))   !dVx/dt
-    dydx(15) = y(16)          !dY/dt=Vy
-    dydx(16) = (dist4/(r1**3))+((m*dist5)/(r2**3))+(dist6/(r3**3))    !dVy/dt
+
+    dydx(1) = y(2) !dx1
+    dydx(2) = ((m2*dist1)/(r1**3)) + ((m3*dist3)/(r2**3)) + ((m4*dist5)/(r3**3))! dvx1
+    dydx(3) = y(4) !dy1
+    dydx(4) = ((m2*dist2)/(r1**3)) + ((m3*dist4)/(r2**3)) + ((m4*dist6)/(r3**3)) ! dvy1
+    dydx(5) = y(6) !dx2
+    dydx(6) = ((-m1*dist1)/(r1**3)) + ((m3*dist7)/(r4**3)) + ((m4*dist9)/(r5**3)) !dvx2
+    dydx(7) = y(8) !dy2
+    dydx(8) = ((-m1*dist2)/(r1**3)) + ((m3*dist8)/(r4**3)) + ((m4*dist10)/(r5**3))   !dvy2
+    dydx(9) = y(10) !dx3
+    dydx(10) = ((-m1*dist3)/(r2**3)) + ((-m2*dist7)/(r4**3)) + ((m4*dist11)/(r6**3))   !dvx3
+    dydx(11) = y(12) !dy3
+    dydx(12) = ((-m1*dist4)/(r2**3)) + ((-m2*dist8)/(r4**3))  + ((m4*dist12)/(r6**3))   !dvy3
+    dydx(13) = y(14) !dx4
+    dydx(14) = ((-m1*dist5)/(r3**3)) + ((-m2*dist9)/(r5**3)) + ((-m3*dist11)/(r6**3))    !dvx4
+    dydx(15) = y(16) !dy4
+	dydx(16) = ((-m1*dist6)/(r3**3)) + ((-m2*dist10)/(r5**3)) + ((-m3*dist12)/(r6**3))        !dvx4
+
    end subroutine derivs
 
    subroutine odeint(ystart,x1,x2,eps,h1,hmin)
