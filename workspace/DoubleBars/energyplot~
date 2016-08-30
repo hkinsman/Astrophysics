@@ -1,0 +1,1 @@
+plot "fort.9" using 18:19 lc rgb "#0000FF" notitle  with dots

@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="Default free-form Fortran source file template" key="LastUsedSourceTemplate"/>
+	<section name="org.eclipse.cdt.internal.ui.browser.opentype.OpenTypeActionSettings">
+		<item value="true" key="show_structs"/>
+		<item value="true" key="show_lowlevel"/>
+		<item value="true" key="show_macros"/>
+		<item value="true" key="show_variables"/>
+		<item value="638" key="width"/>
+		<item value="true" key="show_functions"/>
+		<item value="true" key="show_enums"/>
+		<item value="741" key="height"/>
+		<item value="true" key="show_classes"/>
+		<item value="true" key="show_typedefs"/>
+		<item value="true" key="show_namespaces"/>
+		<item value="true" key="show_unions"/>
+		<item value="27" key="y"/>
+		<item value="481" key="x"/>
+	</section>
 </section>

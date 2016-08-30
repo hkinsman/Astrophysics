@@ -2,27 +2,28 @@
    implicit none
    integer, parameter :: NVAR=16 ,NMAX=50,KMAXX=10000
    integer :: kmax=0,i,j
-   real :: ys(NVAR),xp(KMAXX),yp(NMAX,KMAXX),m1,m2,m3,m4,x1,x2,m, start, end, step
+   real :: ys(NVAR),xp(KMAXX),yp(NMAX,KMAXX),m1,m2,m3,m4,m, start, end, step, energy(KMAXX)
    real, parameter :: PI=4*ATAN(1.)
 
    call initialconditions
    call odeint(ys,start,end,step,1.e-8,0.0)
 
    do i=1,kmax
-      write(9,33) xp(i), (yp(j,i),j=1,NVAR),i
-      if(xp(i)==x2) then
+      call calcenergy
+      write(9,33) xp(i), (yp(j,i),j=1,NVAR),i,energy(i)
+      if(xp(i)==end) then
           exit
       end if
    end do
- 33 format(17f10.4,i5)
+ 33 format(17f10.4,i5,f10.4)
 
  contains
 
    subroutine initialconditions
 
-     step = 1.e-6 !vary step size
+     step = 1.e-7 !vary step size
      start=0.
-     end=10 !vary end time
+     end=20 !vary end time
      m1 = 1
      m2 = .05
      m3 = .000005
@@ -43,7 +44,7 @@
      ys(11) = 0        ! m3,y
      ys(12) = .5		!m3, vy
 
-     ys(13) = -.4     ! m4,x
+     ys(13) = -.2     ! m4,x
      ys(14) = 0      ! m4,vx
      ys(15) = 0        ! m4,y
 	ys(16) = -1				!m4, vy
@@ -93,6 +94,30 @@
 	dydx(16) = ((-m1*dist6)/(r3**3)) + ((-m2*dist10)/(r5**3)) + ((-m3*dist12)/(r6**3))        !dvx4
 
    end subroutine derivs
+
+   subroutine calcenergy
+   real :: vel1,vel2,vel3,vel4,distance,kinetic, potential
+
+	vel1 = yp(2,i)**2+yp(4,i)**2
+	vel2 = yp(6,i)**2+yp(8,i)**2
+	vel3 = yp(10,i)**2+yp(12,i)**2
+	vel4 = yp(14,i)**2+yp(16,i)**2
+	distance  = sqrt(((yp(5,i)-yp(1,i))**2)+((yp(7,i)-yp(3,i)))**2)
+	potential = (m2*m1)/distance
+	distance  = sqrt(((yp(9,i)-yp(1,i))**2)+((yp(11,i)-yp(3,i)))**2)
+	potential = potential+((m3*m1)/distance)
+	distance  = sqrt(((yp(9,i)-yp(5,i))**2)+((yp(11,i)-yp(7,i)))**2)
+	potential = potential+((m3*m2)/distance)
+	distance  = sqrt(((yp(13,i)-yp(1,i))**2)+((yp(15,i)-yp(3,i)))**2)
+	potential = potential+((m4*m1)/distance)
+	distance  = sqrt(((yp(13,i)-yp(5,i))**2)+((yp(15,i)-yp(7,i)))**2)
+	potential = potential+((m4*m2)/distance)
+	distance  = sqrt(((yp(13,i)-yp(9,i))**2)+((yp(15,i)-yp(11,i)))**2)
+	potential = potential+((m4*m3)/distance)
+
+	kinetic= ((m1/2)*vel1)+((m2/2)*vel2)+((m3/2)*vel3)+((m4/2)*vel4) !-mp*ms/r
+   	energy(i)=kinetic-potential
+   end subroutine calcenergy
 
    subroutine odeint(ystart,x1,x2,eps,h1,hmin)
      real, intent(in) :: eps,h1,hmin,x1,x2

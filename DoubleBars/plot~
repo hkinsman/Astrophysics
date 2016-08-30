@@ -7,10 +7,10 @@ set tics out nomirror
 set output "Graph1.eps"
 set ylabel "Y position"
 set xlabel "X position"
-plot "fort.9" using 2:4 notitle with dots, \
- "fort.9" using 10:12 notitle with dots, \
-"fort.9" using 14:16 notitle with dots
-# "fort.9" using 10:12 notitle with dots
+plot "fort.9" using 2:4 lc rgb "red" notitle  with dots, \
+ "fort.9" using 6:8 lc rgb "blue" notitle  with dots, \
+"fort.9" using 10:12 lc rgb "green" notitle  with dots, \
+ "fort.9" using 14:16 lc rgb "yellow" notitle  with dots
 
 #set output "Graph3.eps"
 #set ylabel "dY/dT"
