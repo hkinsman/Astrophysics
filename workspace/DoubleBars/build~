@@ -1,0 +1,23 @@
+cd ~/git/workspace/DoubleBars
+gfortran -g DoubleBars_v2.f90 -o doublebars
+./doublebars
+gnuplot plot
+gnuplot energyplot
+okular Orbit.eps
+#okular Energy.eps
+read -p "Stable orbit? " -n 1 -r
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+   read -p "Folder name: " orbitname
+   mkdir -p results/$orbitname
+   cp DoubleBars_v2.f90 results/$orbitname/DoubleBars_v2.f90
+   mv fort.9 results/$orbitname/fort.9
+   mv Energy.eps results/$orbitname/Energy.eps
+   mv Orbit.eps results/$orbitname/Orbit.eps
+fi
+if [[ $REPLY =~ ^[Nn]$ ]]
+then
+   rm fort.9 
+   rm Energy.eps
+   rm Orbit.eps 
+fi
