@@ -23,37 +23,37 @@
 
      step = 1.e-5 !vary step size
      start=0.
-     end=100 !vary end time
+     end=35 !vary end time
 !     m1 = 1
 !     m2 = .05
 !     m3 = .000005
 !     m4 = .000005
 !      m1=.5
 !      m2=.5
-      m1=.5   !blue
-      m2=.5  !red
-      m3=.05    !black
-      m4=.05   !orange
+		m1=.5   !blue
+		m2=.5  !red
+      m3=.02    !black
+      m4=.02   !orange
 
      ys(1) = -.5     ! m1,x
      ys(2) = 0  ! m1,vx
      ys(3) = 0       ! m1,y
-     ys(4) = -.9		!m1,vy
+     ys(4) = -.75		!m1,vy
      
      ys(5) = .5         ! m2,x
      ys(6) = 0          ! m2,vx
      ys(7) = 0         ! m2,y
-     ys(8) = .9	!m2,vy
+     ys(8) = .75	!m2,vy
 
-     ys(9) = -.05    ! m3,x
+     ys(9) = -.02    ! m3,x
      ys(10) = 0       ! lm3,vx
      ys(11) = 0        ! m3,y
-     ys(12) = -.15!-.01		!m3, vy
+     ys(12) = -.1 !-.01		!m3, vy
 
-     ys(13) = .05     ! m4,x
+     ys(13) = .02     ! m4,x
      ys(14) = 0     ! m4,vx
      ys(15) = 0        ! m4,y
-	ys(16) = .15!.01		!m4, vy
+	ys(16) = .1!.01		!m4, vy
 
 !     ys(1) = 0     ! m1,x
 !     ys(2) = 0  ! m1,vx

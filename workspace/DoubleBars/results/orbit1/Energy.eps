@@ -1,0 +1,1765 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: Energy.eps
+%%Creator: gnuplot 4.2 patchlevel 6 
+%%CreationDate: Wed Sep 21 14:09:29 2016
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 410 302
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following 6 true/false flags may be edited by hand if required
+% The unit line width may also be changed
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Rounded false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+%
+/vshift -46 def
+/dl1 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+Level1 {} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (Energy.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 4.2 patchlevel 6 )
+  /Author (LJMU Astrophysics v2.3DL 2015/16)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Wed Sep 21 14:09:29 2016)
+  /DOCINFO pdfmark
+end
+} ifelse
+%
+% Gnuplot Prolog Version 4.2 (August 2006)
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+% Default Line colors
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default Line Types
+/LTw {PL [] 1 setgray} def
+/LTb {BL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [4 dl1 2 dl2] LC1 DL} def
+/LT2 {PL [2 dl1 3 dl2] LC2 DL} def
+/LT3 {PL [1 dl1 1.5 dl2] LC3 DL} def
+/LT4 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC5 DL} def
+/LT6 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 4 dl2] LC8 DL} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  gsave 1 setgray fill grestore clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+ 2 lt
+	{/InterpretLevel1 true def}
+	{/InterpretLevel1 Level1 def}
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {show} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     show 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} bind def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get stringwidth pop add} {pop} ifelse} ifelse} forall} bind def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+end
+%%EndProlog
+gnudict begin
+gsave
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+1.000 UL
+LTb
+1029 4872 M
+-63 0 V
+stroke
+882 4872 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.1255)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1029 4117 M
+-63 0 V
+stroke
+882 4117 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.125)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1029 3362 M
+-63 0 V
+stroke
+882 3362 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.1245)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1029 2608 M
+-63 0 V
+stroke
+882 2608 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.124)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1029 1853 M
+-63 0 V
+stroke
+882 1853 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.1235)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1029 1098 M
+-63 0 V
+stroke
+882 1098 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.123)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1029 343 M
+-63 0 V
+stroke
+882 343 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.1225)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1029 343 M
+0 -63 V
+stroke
+1029 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0)]
+] -46.7 MCshow
+1.000 UL
+LTb
+2023 343 M
+0 -63 V
+stroke
+2023 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 200)]
+] -46.7 MCshow
+1.000 UL
+LTb
+3016 343 M
+0 -63 V
+stroke
+3016 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 400)]
+] -46.7 MCshow
+1.000 UL
+LTb
+4010 343 M
+0 -63 V
+stroke
+4010 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 600)]
+] -46.7 MCshow
+1.000 UL
+LTb
+5003 343 M
+0 -63 V
+stroke
+5003 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 800)]
+] -46.7 MCshow
+1.000 UL
+LTb
+5997 343 M
+0 -63 V
+stroke
+5997 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1000)]
+] -46.7 MCshow
+1.000 UL
+LTb
+6990 343 M
+0 -63 V
+stroke
+6990 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1200)]
+] -46.7 MCshow
+1.000 UL
+LTb
+1.000 UL
+LTb
+1029 4872 N
+0 -4529 V
+5961 0 V
+0 4529 V
+-5961 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+1.000 UP
+1.000 UL
+LT0
+0.00 0.00 1.00 C 1034 2457 Pnt
+1039 2457 Pnt
+1044 2457 Pnt
+1049 2457 Pnt
+1054 2457 Pnt
+1059 2457 Pnt
+1064 2457 Pnt
+1069 2457 Pnt
+1074 2457 Pnt
+1079 2457 Pnt
+1084 2457 Pnt
+1089 2457 Pnt
+1094 2457 Pnt
+1099 2457 Pnt
+1104 2457 Pnt
+1108 2457 Pnt
+1113 2457 Pnt
+1118 2457 Pnt
+1123 2457 Pnt
+1128 2457 Pnt
+1133 2457 Pnt
+1138 2457 Pnt
+1143 2457 Pnt
+1148 2457 Pnt
+1153 2457 Pnt
+1158 2457 Pnt
+1163 2457 Pnt
+1168 2457 Pnt
+1173 2457 Pnt
+1178 2457 Pnt
+1183 2457 Pnt
+1188 2457 Pnt
+1193 2457 Pnt
+1198 2457 Pnt
+1203 2457 Pnt
+1208 2457 Pnt
+1213 2457 Pnt
+1218 2457 Pnt
+1223 2457 Pnt
+1228 2457 Pnt
+1233 2457 Pnt
+1238 2457 Pnt
+1243 2457 Pnt
+1248 2457 Pnt
+1253 2457 Pnt
+1258 2457 Pnt
+1262 2457 Pnt
+1267 2457 Pnt
+1272 2457 Pnt
+1277 2457 Pnt
+1282 2457 Pnt
+1287 2457 Pnt
+1292 2457 Pnt
+1297 2457 Pnt
+1302 2457 Pnt
+1307 2457 Pnt
+1312 2457 Pnt
+1317 2457 Pnt
+1322 2457 Pnt
+1327 2457 Pnt
+1332 2457 Pnt
+1337 2457 Pnt
+1342 2457 Pnt
+1347 2457 Pnt
+1352 2457 Pnt
+1357 2457 Pnt
+1362 2457 Pnt
+1367 2457 Pnt
+1372 2457 Pnt
+1377 2457 Pnt
+1382 2457 Pnt
+1387 2457 Pnt
+1392 2457 Pnt
+1397 2457 Pnt
+1402 2457 Pnt
+1407 2457 Pnt
+1411 2457 Pnt
+1416 2457 Pnt
+1421 2457 Pnt
+1426 2457 Pnt
+1431 2457 Pnt
+1436 2457 Pnt
+1441 2457 Pnt
+1446 2457 Pnt
+1451 2457 Pnt
+1456 2457 Pnt
+1461 2457 Pnt
+1466 2457 Pnt
+1471 2457 Pnt
+1476 2457 Pnt
+1481 2457 Pnt
+1486 2457 Pnt
+1491 2457 Pnt
+1496 2457 Pnt
+1501 2457 Pnt
+1506 2457 Pnt
+1511 2457 Pnt
+1516 2457 Pnt
+1521 2457 Pnt
+1526 2457 Pnt
+1531 2457 Pnt
+1536 2457 Pnt
+1541 2457 Pnt
+1546 2457 Pnt
+1551 2457 Pnt
+1556 2457 Pnt
+1561 2457 Pnt
+1565 2457 Pnt
+1570 2457 Pnt
+1575 2457 Pnt
+1580 2457 Pnt
+1585 2457 Pnt
+1590 2457 Pnt
+1595 2457 Pnt
+1600 2457 Pnt
+1605 2457 Pnt
+1610 2457 Pnt
+1615 2457 Pnt
+1620 2457 Pnt
+1625 2457 Pnt
+1630 2457 Pnt
+1635 2457 Pnt
+1640 2457 Pnt
+1645 2457 Pnt
+1650 2457 Pnt
+1655 2457 Pnt
+1660 2457 Pnt
+1665 2457 Pnt
+1670 2457 Pnt
+1675 2457 Pnt
+1680 2457 Pnt
+1685 2457 Pnt
+1690 2457 Pnt
+1695 2457 Pnt
+1700 2457 Pnt
+1705 2457 Pnt
+1710 2457 Pnt
+1715 2457 Pnt
+1719 2457 Pnt
+1724 2457 Pnt
+1729 2457 Pnt
+1734 2457 Pnt
+1739 2457 Pnt
+1744 2457 Pnt
+1749 2457 Pnt
+1754 2457 Pnt
+1759 2457 Pnt
+1764 2457 Pnt
+1769 2457 Pnt
+1774 2457 Pnt
+1779 2457 Pnt
+1784 2457 Pnt
+1789 2457 Pnt
+1794 2457 Pnt
+1799 2457 Pnt
+1804 2457 Pnt
+1809 2457 Pnt
+1814 2457 Pnt
+1819 2457 Pnt
+1824 2457 Pnt
+1829 2457 Pnt
+1834 2457 Pnt
+1839 2457 Pnt
+1844 2457 Pnt
+1849 2457 Pnt
+1854 2457 Pnt
+1859 2457 Pnt
+1864 2457 Pnt
+1869 2457 Pnt
+1873 2457 Pnt
+1878 2457 Pnt
+1883 2457 Pnt
+1888 2457 Pnt
+1893 2457 Pnt
+1898 2457 Pnt
+1903 2457 Pnt
+1908 2457 Pnt
+1913 2457 Pnt
+1918 2457 Pnt
+1923 2457 Pnt
+1928 2457 Pnt
+1933 2457 Pnt
+1938 2457 Pnt
+1943 2457 Pnt
+1948 2457 Pnt
+1953 2457 Pnt
+1958 2457 Pnt
+1963 2457 Pnt
+1968 2457 Pnt
+1973 2457 Pnt
+1978 2457 Pnt
+1983 2457 Pnt
+1988 2457 Pnt
+1993 2457 Pnt
+1998 2457 Pnt
+2003 2457 Pnt
+2008 2457 Pnt
+2013 2457 Pnt
+2018 2457 Pnt
+2023 2457 Pnt
+2027 2457 Pnt
+2032 2457 Pnt
+2037 2457 Pnt
+2042 2457 Pnt
+2047 2457 Pnt
+2052 2457 Pnt
+2057 2457 Pnt
+2062 2457 Pnt
+2067 2457 Pnt
+2072 2457 Pnt
+2077 2457 Pnt
+2082 2457 Pnt
+2087 2457 Pnt
+2092 2457 Pnt
+2097 2457 Pnt
+2102 2457 Pnt
+2107 2457 Pnt
+2112 2457 Pnt
+2117 2457 Pnt
+2122 2457 Pnt
+2127 2457 Pnt
+2132 2457 Pnt
+2137 2457 Pnt
+2142 2457 Pnt
+2147 2457 Pnt
+2152 2457 Pnt
+2157 2457 Pnt
+2162 2457 Pnt
+2167 2457 Pnt
+2172 2457 Pnt
+2176 2457 Pnt
+2181 2457 Pnt
+2186 2457 Pnt
+2191 2457 Pnt
+2196 2457 Pnt
+2201 2457 Pnt
+2206 2457 Pnt
+2211 2457 Pnt
+2216 2457 Pnt
+2221 2457 Pnt
+2226 2457 Pnt
+2231 2457 Pnt
+2236 2457 Pnt
+2241 2457 Pnt
+2246 2457 Pnt
+2251 2457 Pnt
+2256 2457 Pnt
+2261 2457 Pnt
+2266 2457 Pnt
+2271 2457 Pnt
+2276 2457 Pnt
+2281 2457 Pnt
+2286 2457 Pnt
+2291 2457 Pnt
+2296 2457 Pnt
+2301 2457 Pnt
+2306 2457 Pnt
+2311 2457 Pnt
+2316 2457 Pnt
+2321 2457 Pnt
+2326 2457 Pnt
+2330 2457 Pnt
+2335 2457 Pnt
+2340 2457 Pnt
+2345 2457 Pnt
+2350 2457 Pnt
+2355 2457 Pnt
+2360 2457 Pnt
+2365 2457 Pnt
+2370 2457 Pnt
+2375 2457 Pnt
+2380 2457 Pnt
+2385 2457 Pnt
+2390 2457 Pnt
+2395 2457 Pnt
+2400 2457 Pnt
+2405 2457 Pnt
+2410 2457 Pnt
+2415 2457 Pnt
+2420 2457 Pnt
+2425 2457 Pnt
+2430 2457 Pnt
+2435 2457 Pnt
+2440 2457 Pnt
+2445 2457 Pnt
+2450 2457 Pnt
+2455 2457 Pnt
+2460 2457 Pnt
+2465 2457 Pnt
+2470 2457 Pnt
+2475 2457 Pnt
+2480 2457 Pnt
+2484 2457 Pnt
+2489 2457 Pnt
+2494 2457 Pnt
+2499 2457 Pnt
+2504 2457 Pnt
+2509 2457 Pnt
+2514 2457 Pnt
+2519 2457 Pnt
+2524 2457 Pnt
+2529 2457 Pnt
+2534 2457 Pnt
+2539 2457 Pnt
+2544 2457 Pnt
+2549 2457 Pnt
+2554 2457 Pnt
+2559 2457 Pnt
+2564 2457 Pnt
+2569 2457 Pnt
+2574 2457 Pnt
+2579 2457 Pnt
+2584 2457 Pnt
+2589 2457 Pnt
+2594 2457 Pnt
+2599 2457 Pnt
+2604 2457 Pnt
+2609 2457 Pnt
+2614 2457 Pnt
+2619 2457 Pnt
+2624 2457 Pnt
+2629 2457 Pnt
+2634 2457 Pnt
+2638 2457 Pnt
+2643 2457 Pnt
+2648 2457 Pnt
+2653 2457 Pnt
+2658 2457 Pnt
+2663 2457 Pnt
+2668 2457 Pnt
+2673 2457 Pnt
+2678 2457 Pnt
+2683 2457 Pnt
+2688 2457 Pnt
+2693 2457 Pnt
+2698 2457 Pnt
+2703 2457 Pnt
+2708 2457 Pnt
+2713 2457 Pnt
+2718 2457 Pnt
+2723 2457 Pnt
+2728 2457 Pnt
+2733 2457 Pnt
+2738 2457 Pnt
+2743 2457 Pnt
+2748 2457 Pnt
+2753 2457 Pnt
+2758 2457 Pnt
+2763 2457 Pnt
+2768 2457 Pnt
+2773 2457 Pnt
+2778 2457 Pnt
+2783 2457 Pnt
+2787 2457 Pnt
+2792 2457 Pnt
+2797 2457 Pnt
+2802 2457 Pnt
+2807 2457 Pnt
+2812 2457 Pnt
+2817 2457 Pnt
+2822 2457 Pnt
+2827 2457 Pnt
+2832 2457 Pnt
+2837 2457 Pnt
+2842 2457 Pnt
+2847 2457 Pnt
+2852 2457 Pnt
+2857 2457 Pnt
+2862 2457 Pnt
+2867 2457 Pnt
+2872 2457 Pnt
+2877 2457 Pnt
+2882 2457 Pnt
+2887 2457 Pnt
+2892 2457 Pnt
+2897 2457 Pnt
+2902 2457 Pnt
+2907 2457 Pnt
+2912 2457 Pnt
+2917 2457 Pnt
+2922 2457 Pnt
+2927 2457 Pnt
+2932 2457 Pnt
+2937 2457 Pnt
+2941 2457 Pnt
+2946 2457 Pnt
+2951 2457 Pnt
+2956 2457 Pnt
+2961 2457 Pnt
+2966 2457 Pnt
+2971 2457 Pnt
+2976 2457 Pnt
+2981 2457 Pnt
+2986 2457 Pnt
+2991 2457 Pnt
+2996 2457 Pnt
+3001 2457 Pnt
+3006 2457 Pnt
+3011 2457 Pnt
+3016 2457 Pnt
+3021 2457 Pnt
+3026 2457 Pnt
+3031 2457 Pnt
+3036 2457 Pnt
+3041 2457 Pnt
+3046 2457 Pnt
+3051 2457 Pnt
+3056 2457 Pnt
+3061 2457 Pnt
+3066 2457 Pnt
+3071 2457 Pnt
+3076 2457 Pnt
+3081 2457 Pnt
+3086 2457 Pnt
+3091 2457 Pnt
+3095 2457 Pnt
+3100 2457 Pnt
+3105 2457 Pnt
+3110 2457 Pnt
+3115 2457 Pnt
+3120 2457 Pnt
+3125 2457 Pnt
+3130 2457 Pnt
+3135 2457 Pnt
+3140 2457 Pnt
+3145 2457 Pnt
+3150 2457 Pnt
+3155 2457 Pnt
+3160 2457 Pnt
+3165 2457 Pnt
+3170 2457 Pnt
+3175 2457 Pnt
+3180 2457 Pnt
+3185 2457 Pnt
+3190 2457 Pnt
+3195 2457 Pnt
+3200 2457 Pnt
+3205 2457 Pnt
+3210 2457 Pnt
+3215 2457 Pnt
+3220 2457 Pnt
+3225 2457 Pnt
+3230 2457 Pnt
+3235 2457 Pnt
+3240 2457 Pnt
+3245 2457 Pnt
+3249 2457 Pnt
+3254 2457 Pnt
+3259 2457 Pnt
+3264 2457 Pnt
+3269 2457 Pnt
+3274 2457 Pnt
+3279 2457 Pnt
+3284 2457 Pnt
+3289 2457 Pnt
+3294 2457 Pnt
+3299 2457 Pnt
+3304 2457 Pnt
+3309 2457 Pnt
+3314 2457 Pnt
+3319 2457 Pnt
+3324 2457 Pnt
+3329 2457 Pnt
+3334 2457 Pnt
+3339 2457 Pnt
+3344 2457 Pnt
+3349 2457 Pnt
+3354 2457 Pnt
+3359 2457 Pnt
+3364 2457 Pnt
+3369 2457 Pnt
+3374 2457 Pnt
+3379 2457 Pnt
+3384 2457 Pnt
+3389 2457 Pnt
+3394 2457 Pnt
+3398 2457 Pnt
+3403 2457 Pnt
+3408 2457 Pnt
+3413 2457 Pnt
+3418 2457 Pnt
+3423 2457 Pnt
+3428 2457 Pnt
+3433 2457 Pnt
+3438 2457 Pnt
+3443 2457 Pnt
+3448 2457 Pnt
+3453 2457 Pnt
+3458 2457 Pnt
+3463 2457 Pnt
+3468 2457 Pnt
+3473 2457 Pnt
+3478 2457 Pnt
+3483 2457 Pnt
+3488 2457 Pnt
+3493 2457 Pnt
+3498 2457 Pnt
+3503 2457 Pnt
+3508 2457 Pnt
+3513 2457 Pnt
+3518 2457 Pnt
+3523 2457 Pnt
+3528 2457 Pnt
+3533 2457 Pnt
+3538 2457 Pnt
+3543 2457 Pnt
+3548 2457 Pnt
+3552 2457 Pnt
+3557 2457 Pnt
+3562 2457 Pnt
+3567 2457 Pnt
+3572 2457 Pnt
+3577 2457 Pnt
+3582 2457 Pnt
+3587 2457 Pnt
+3592 2457 Pnt
+3597 2457 Pnt
+3602 2457 Pnt
+3607 2457 Pnt
+3612 2457 Pnt
+3617 2457 Pnt
+3622 2457 Pnt
+3627 2457 Pnt
+3632 2457 Pnt
+3637 2457 Pnt
+3642 2457 Pnt
+3647 2457 Pnt
+3652 2457 Pnt
+3657 2457 Pnt
+3662 2457 Pnt
+3667 2457 Pnt
+3672 2457 Pnt
+3677 2457 Pnt
+3682 2457 Pnt
+3687 2457 Pnt
+3692 2457 Pnt
+3697 2457 Pnt
+3702 2457 Pnt
+3706 2457 Pnt
+3711 2457 Pnt
+3716 2457 Pnt
+3721 2457 Pnt
+3726 2457 Pnt
+3731 2457 Pnt
+3736 2457 Pnt
+3741 2457 Pnt
+3746 2457 Pnt
+3751 2457 Pnt
+3756 2457 Pnt
+3761 2457 Pnt
+3766 2457 Pnt
+3771 2457 Pnt
+3776 2457 Pnt
+3781 2457 Pnt
+3786 2457 Pnt
+3791 2457 Pnt
+3796 2457 Pnt
+3801 2457 Pnt
+3806 2457 Pnt
+3811 2457 Pnt
+3816 2457 Pnt
+3821 2457 Pnt
+3826 2457 Pnt
+3831 2457 Pnt
+3836 2457 Pnt
+3841 2457 Pnt
+3846 2457 Pnt
+3851 2457 Pnt
+3856 2457 Pnt
+3860 2457 Pnt
+3865 2457 Pnt
+3870 2457 Pnt
+3875 2457 Pnt
+3880 2457 Pnt
+3885 2457 Pnt
+3890 2457 Pnt
+3895 2457 Pnt
+3900 2457 Pnt
+3905 2457 Pnt
+3910 2457 Pnt
+3915 2457 Pnt
+3920 2457 Pnt
+3925 2457 Pnt
+3930 2457 Pnt
+3935 2457 Pnt
+3940 2457 Pnt
+3945 2457 Pnt
+3950 2457 Pnt
+3955 2457 Pnt
+3960 2457 Pnt
+3965 2457 Pnt
+3970 2457 Pnt
+3975 2457 Pnt
+3980 2457 Pnt
+3985 2457 Pnt
+3990 2457 Pnt
+3995 2457 Pnt
+4000 2457 Pnt
+4005 2457 Pnt
+4010 2457 Pnt
+4014 2457 Pnt
+4019 2457 Pnt
+4024 2457 Pnt
+4029 2457 Pnt
+4034 2457 Pnt
+4039 2457 Pnt
+4044 2457 Pnt
+4049 2457 Pnt
+4054 2457 Pnt
+4059 2457 Pnt
+4064 2457 Pnt
+4069 2457 Pnt
+4074 2457 Pnt
+4079 2457 Pnt
+4084 2457 Pnt
+4089 2457 Pnt
+4094 2457 Pnt
+4099 2457 Pnt
+4104 2457 Pnt
+4109 2457 Pnt
+4114 2457 Pnt
+4119 2457 Pnt
+4124 2457 Pnt
+4129 2457 Pnt
+4134 2457 Pnt
+4139 2457 Pnt
+4144 2457 Pnt
+4149 2457 Pnt
+4154 2457 Pnt
+4159 2457 Pnt
+4163 2457 Pnt
+4168 2457 Pnt
+4173 2457 Pnt
+4178 2457 Pnt
+4183 2457 Pnt
+4188 2457 Pnt
+4193 2457 Pnt
+4198 2457 Pnt
+4203 2457 Pnt
+4208 2457 Pnt
+4213 2457 Pnt
+4218 2457 Pnt
+4223 2457 Pnt
+4228 2457 Pnt
+4233 2457 Pnt
+4238 2457 Pnt
+4243 2457 Pnt
+4248 2457 Pnt
+4253 2457 Pnt
+4258 2457 Pnt
+4263 2457 Pnt
+4268 2457 Pnt
+4273 2457 Pnt
+4278 2457 Pnt
+4283 2457 Pnt
+4288 2457 Pnt
+4293 2457 Pnt
+4298 2457 Pnt
+4303 2457 Pnt
+4308 2457 Pnt
+4313 2457 Pnt
+4317 2457 Pnt
+4322 2457 Pnt
+4327 2457 Pnt
+4332 2457 Pnt
+4337 2457 Pnt
+4342 2457 Pnt
+4347 2457 Pnt
+4352 2457 Pnt
+4357 2457 Pnt
+4362 2457 Pnt
+4367 2457 Pnt
+4372 2457 Pnt
+4377 2457 Pnt
+4382 2457 Pnt
+4387 2457 Pnt
+4392 2457 Pnt
+4397 2457 Pnt
+4402 2457 Pnt
+4407 2457 Pnt
+4412 2457 Pnt
+4417 2457 Pnt
+4422 2457 Pnt
+4427 2457 Pnt
+4432 2457 Pnt
+4437 2457 Pnt
+4442 2457 Pnt
+4447 2457 Pnt
+4452 2457 Pnt
+4457 2457 Pnt
+4462 2457 Pnt
+4467 2457 Pnt
+4471 2457 Pnt
+4476 2457 Pnt
+4481 2457 Pnt
+4486 2457 Pnt
+4491 2457 Pnt
+4496 2457 Pnt
+4501 2457 Pnt
+4506 2457 Pnt
+4511 2457 Pnt
+4516 2457 Pnt
+4521 2457 Pnt
+4526 2457 Pnt
+4531 2457 Pnt
+4536 2457 Pnt
+4541 2457 Pnt
+4546 2457 Pnt
+4551 2457 Pnt
+4556 2457 Pnt
+4561 2457 Pnt
+4566 2457 Pnt
+4571 2457 Pnt
+4576 2457 Pnt
+4581 2457 Pnt
+4586 2457 Pnt
+4591 2457 Pnt
+4596 2457 Pnt
+4601 2457 Pnt
+4606 2457 Pnt
+4611 2457 Pnt
+4616 2457 Pnt
+4621 2457 Pnt
+4625 2457 Pnt
+4630 2457 Pnt
+4635 2457 Pnt
+4640 2457 Pnt
+4645 2457 Pnt
+4650 2457 Pnt
+4655 2457 Pnt
+4660 2457 Pnt
+4665 2457 Pnt
+4670 2457 Pnt
+4675 2457 Pnt
+4680 2457 Pnt
+4685 2457 Pnt
+4690 2457 Pnt
+4695 2457 Pnt
+4700 2457 Pnt
+4705 2457 Pnt
+4710 2457 Pnt
+4715 2457 Pnt
+4720 2457 Pnt
+4725 2457 Pnt
+4730 2457 Pnt
+4735 2457 Pnt
+4740 2457 Pnt
+4745 2457 Pnt
+4750 2457 Pnt
+4755 2457 Pnt
+4760 2457 Pnt
+4765 2457 Pnt
+4770 2457 Pnt
+4774 2457 Pnt
+4779 2457 Pnt
+4784 2457 Pnt
+4789 2457 Pnt
+4794 2457 Pnt
+4799 2457 Pnt
+4804 2457 Pnt
+4809 2457 Pnt
+4814 2457 Pnt
+4819 2457 Pnt
+4824 2457 Pnt
+4829 2457 Pnt
+4834 2457 Pnt
+4839 2457 Pnt
+4844 2457 Pnt
+4849 2457 Pnt
+4854 2457 Pnt
+4859 2457 Pnt
+4864 2457 Pnt
+4869 2457 Pnt
+4874 2457 Pnt
+4879 2457 Pnt
+4884 2457 Pnt
+4889 2457 Pnt
+4894 2457 Pnt
+4899 2457 Pnt
+4904 2457 Pnt
+4909 2457 Pnt
+4914 2457 Pnt
+4919 2457 Pnt
+4924 2457 Pnt
+4928 2457 Pnt
+4933 2457 Pnt
+4938 2457 Pnt
+4943 2457 Pnt
+4948 2457 Pnt
+4953 2457 Pnt
+4958 2457 Pnt
+4963 2457 Pnt
+4968 2457 Pnt
+4973 2457 Pnt
+4978 2457 Pnt
+4983 2457 Pnt
+4988 2457 Pnt
+4993 2457 Pnt
+4998 2457 Pnt
+5003 2457 Pnt
+5008 2457 Pnt
+5013 2457 Pnt
+5018 2457 Pnt
+5023 2457 Pnt
+5028 2457 Pnt
+5033 2457 Pnt
+5038 2457 Pnt
+5043 2457 Pnt
+5048 2457 Pnt
+5053 2457 Pnt
+5058 2457 Pnt
+5063 2457 Pnt
+5068 2457 Pnt
+5073 2457 Pnt
+5078 2457 Pnt
+5082 2457 Pnt
+5087 2457 Pnt
+5092 2457 Pnt
+5097 2457 Pnt
+5102 2457 Pnt
+5107 2457 Pnt
+5112 2457 Pnt
+5117 2457 Pnt
+5122 2457 Pnt
+5127 2457 Pnt
+5132 2457 Pnt
+5137 2457 Pnt
+5142 2457 Pnt
+5147 2457 Pnt
+5152 2457 Pnt
+5157 2457 Pnt
+5162 2457 Pnt
+5167 2457 Pnt
+5172 2457 Pnt
+5177 2457 Pnt
+5182 2457 Pnt
+5187 2457 Pnt
+5192 2457 Pnt
+5197 2457 Pnt
+5202 2457 Pnt
+5207 2457 Pnt
+5212 2457 Pnt
+5217 2457 Pnt
+5222 2457 Pnt
+5227 2457 Pnt
+5232 2457 Pnt
+5236 2457 Pnt
+5241 2457 Pnt
+5246 2457 Pnt
+5251 2457 Pnt
+5256 2457 Pnt
+5261 2457 Pnt
+5266 2457 Pnt
+5271 2457 Pnt
+5276 2457 Pnt
+5281 2457 Pnt
+5286 2457 Pnt
+5291 2457 Pnt
+5296 2457 Pnt
+5301 2457 Pnt
+5306 2457 Pnt
+5311 2457 Pnt
+5316 2457 Pnt
+5321 2457 Pnt
+5326 2457 Pnt
+5331 2457 Pnt
+5336 2457 Pnt
+5341 2457 Pnt
+5346 2457 Pnt
+5351 2457 Pnt
+5356 2457 Pnt
+5361 2457 Pnt
+5366 2457 Pnt
+5371 2457 Pnt
+5376 2457 Pnt
+5381 2457 Pnt
+5385 2457 Pnt
+5390 2457 Pnt
+5395 2457 Pnt
+5400 2457 Pnt
+5405 2457 Pnt
+5410 2457 Pnt
+5415 2457 Pnt
+5420 2457 Pnt
+5425 2457 Pnt
+5430 2457 Pnt
+5435 2457 Pnt
+5440 2457 Pnt
+5445 2457 Pnt
+5450 2457 Pnt
+5455 2457 Pnt
+5460 2457 Pnt
+5465 2457 Pnt
+5470 2457 Pnt
+5475 2457 Pnt
+5480 2457 Pnt
+5485 2457 Pnt
+5490 2457 Pnt
+5495 2457 Pnt
+5500 2457 Pnt
+5505 2457 Pnt
+5510 2457 Pnt
+5515 2457 Pnt
+5520 2457 Pnt
+5525 2457 Pnt
+5530 2457 Pnt
+5535 2457 Pnt
+5539 2457 Pnt
+5544 2457 Pnt
+5549 2457 Pnt
+5554 2457 Pnt
+5559 2457 Pnt
+5564 2457 Pnt
+5569 2457 Pnt
+5574 2457 Pnt
+5579 2457 Pnt
+5584 2457 Pnt
+5589 2457 Pnt
+5594 2457 Pnt
+5599 2457 Pnt
+5604 2457 Pnt
+5609 2457 Pnt
+5614 2457 Pnt
+5619 2457 Pnt
+5624 2457 Pnt
+5629 2457 Pnt
+5634 2457 Pnt
+5639 2457 Pnt
+5644 2457 Pnt
+5649 2457 Pnt
+5654 2457 Pnt
+5659 2457 Pnt
+5664 2457 Pnt
+5669 2457 Pnt
+5674 2457 Pnt
+5679 2457 Pnt
+5684 2457 Pnt
+5689 2457 Pnt
+5693 2457 Pnt
+5698 2457 Pnt
+5703 2457 Pnt
+5708 2457 Pnt
+5713 2457 Pnt
+5718 2457 Pnt
+5723 2457 Pnt
+5728 2457 Pnt
+5733 2457 Pnt
+5738 2457 Pnt
+5743 2457 Pnt
+5748 2457 Pnt
+5753 2457 Pnt
+5758 2457 Pnt
+5763 2457 Pnt
+5768 2457 Pnt
+5773 2457 Pnt
+5778 2457 Pnt
+5783 2457 Pnt
+5788 2457 Pnt
+5793 2457 Pnt
+5798 2457 Pnt
+5803 2457 Pnt
+5808 2457 Pnt
+5813 2457 Pnt
+5818 2457 Pnt
+5823 2457 Pnt
+5828 2457 Pnt
+5833 2457 Pnt
+5838 2457 Pnt
+5843 2457 Pnt
+5847 2457 Pnt
+5852 2457 Pnt
+5857 2457 Pnt
+5862 2457 Pnt
+5867 2457 Pnt
+5872 2457 Pnt
+5877 2457 Pnt
+5882 2457 Pnt
+5887 2457 Pnt
+5892 2457 Pnt
+5897 2457 Pnt
+5902 2457 Pnt
+5907 2457 Pnt
+5912 2457 Pnt
+5917 2457 Pnt
+5922 2457 Pnt
+5927 2457 Pnt
+5932 2457 Pnt
+5937 2457 Pnt
+5942 2457 Pnt
+5947 2457 Pnt
+5952 2457 Pnt
+5957 2457 Pnt
+5962 2457 Pnt
+5967 2457 Pnt
+5972 2457 Pnt
+5977 2457 Pnt
+5982 2457 Pnt
+5987 2457 Pnt
+5992 2457 Pnt
+5997 2457 Pnt
+6001 2457 Pnt
+6006 2457 Pnt
+6011 2457 Pnt
+6016 2457 Pnt
+6021 2457 Pnt
+6026 2457 Pnt
+6031 2457 Pnt
+6036 2457 Pnt
+6041 2457 Pnt
+6046 2457 Pnt
+6051 2457 Pnt
+6056 2457 Pnt
+6061 2457 Pnt
+6066 2457 Pnt
+6071 2457 Pnt
+6076 2457 Pnt
+6081 2457 Pnt
+6086 2457 Pnt
+6091 2457 Pnt
+6096 2457 Pnt
+6101 2457 Pnt
+6106 2457 Pnt
+6111 2457 Pnt
+6116 2457 Pnt
+6121 2457 Pnt
+6126 2457 Pnt
+6131 2457 Pnt
+6136 2457 Pnt
+6141 2457 Pnt
+6146 2457 Pnt
+6150 2457 Pnt
+6155 2457 Pnt
+6160 2457 Pnt
+6165 2457 Pnt
+6170 2457 Pnt
+6175 2457 Pnt
+6180 2457 Pnt
+6185 2457 Pnt
+6190 2457 Pnt
+6195 2457 Pnt
+6200 2457 Pnt
+6205 2457 Pnt
+6210 2457 Pnt
+6215 2457 Pnt
+6220 2457 Pnt
+6225 2457 Pnt
+6230 2457 Pnt
+6235 2457 Pnt
+6240 2457 Pnt
+6245 2457 Pnt
+6250 2457 Pnt
+6255 2457 Pnt
+6260 2457 Pnt
+6265 2457 Pnt
+6270 2457 Pnt
+6275 2457 Pnt
+6280 2457 Pnt
+6285 2457 Pnt
+6290 2457 Pnt
+6295 2457 Pnt
+6300 2457 Pnt
+6304 2457 Pnt
+6309 2457 Pnt
+6314 2457 Pnt
+6319 2457 Pnt
+6324 2457 Pnt
+6329 2457 Pnt
+6334 2457 Pnt
+6339 2457 Pnt
+6344 2457 Pnt
+6349 2457 Pnt
+6354 2457 Pnt
+6359 2457 Pnt
+6364 2457 Pnt
+6369 2457 Pnt
+6374 2457 Pnt
+6379 2457 Pnt
+6384 2457 Pnt
+6389 2457 Pnt
+6394 2457 Pnt
+6399 2457 Pnt
+6404 2457 Pnt
+6409 2457 Pnt
+6414 2457 Pnt
+6419 2457 Pnt
+6424 2457 Pnt
+6429 2457 Pnt
+6434 2457 Pnt
+6439 2457 Pnt
+6444 2457 Pnt
+6449 2457 Pnt
+6454 2457 Pnt
+6458 2457 Pnt
+6463 2457 Pnt
+6468 2457 Pnt
+6473 2457 Pnt
+6478 2457 Pnt
+6483 2457 Pnt
+6488 2457 Pnt
+6493 2457 Pnt
+6498 2457 Pnt
+6503 2457 Pnt
+6508 2457 Pnt
+6513 2457 Pnt
+6518 2457 Pnt
+6523 2457 Pnt
+6528 2457 Pnt
+6533 2457 Pnt
+6538 2457 Pnt
+6543 2457 Pnt
+6548 2457 Pnt
+6553 2457 Pnt
+6558 2457 Pnt
+6563 2457 Pnt
+6568 2457 Pnt
+6573 2457 Pnt
+6578 2457 Pnt
+6583 2457 Pnt
+6588 2457 Pnt
+6593 2457 Pnt
+6598 2457 Pnt
+6603 2457 Pnt
+6608 2457 Pnt
+6612 2457 Pnt
+6617 2457 Pnt
+6622 2457 Pnt
+6627 2457 Pnt
+6632 2457 Pnt
+6637 2457 Pnt
+6642 2457 Pnt
+6647 2457 Pnt
+6652 2457 Pnt
+6657 2457 Pnt
+6662 2457 Pnt
+6667 2457 Pnt
+6672 2457 Pnt
+6677 2457 Pnt
+6682 2457 Pnt
+6687 2457 Pnt
+6692 2457 Pnt
+6697 2457 Pnt
+6702 2457 Pnt
+6707 2457 Pnt
+6712 2457 Pnt
+6717 2457 Pnt
+6722 2457 Pnt
+6727 2457 Pnt
+6732 2457 Pnt
+6737 2457 Pnt
+6742 2457 Pnt
+6747 2457 Pnt
+6752 2457 Pnt
+6757 2457 Pnt
+6761 2457 Pnt
+6766 2457 Pnt
+6771 2457 Pnt
+6776 2457 Pnt
+6781 2457 Pnt
+6786 2457 Pnt
+6791 2457 Pnt
+6796 2457 Pnt
+6801 2457 Pnt
+1.000 UL
+LTb
+1029 4872 N
+0 -4529 V
+5961 0 V
+0 4529 V
+-5961 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica

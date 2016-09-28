@@ -1,1 +1,10 @@
+reset
+#set term png #output terminal and file
+set term postscript eps enhanced color
+set output "Energy.eps"
+set tics out nomirror
+
+set output "Graph2.eps"
+#set ylabel "Y position"
+#set xlabel "X position"
 plot "fort.9" using 18:19 lc rgb "#0000FF" notitle  with dots
