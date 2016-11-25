@@ -1,0 +1,99 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{listings}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+\author{Howard Kinsman}
+\title{Observational Astrophysics Problem Set 1}
+\begin{document}
+\maketitle
+\section{Question 1}
+In order to derive Wiens's Displacement Law we need to find the maximum of Planck's Law, to do this we set the derivative to be zero: 
+\begin{equation}
+\frac{dI_\lambda(T)}{d\lambda} = \frac{d}{d\lambda}\left(\frac{2hc^2}{\lambda^5}\left(e^{\frac{hc}{\lambda kT}}-1\right)^{-1}\right) = 0
+\end{equation}
+Using the product rule $duv=vdu+udv$ yields the following:
+\begin{equation}
+\frac{-10hc^2}{\lambda^6}\left(e^{\frac{hc}{\lambda kT}}-1\right)^{-1}-\frac{2hc^2}{\lambda^5}\left(\frac{-hc}{\lambda^2kT}\right)\left(e^{\frac{hc}{\lambda kT}}\right)\left(e^{\frac{hc}{\lambda kT}}-1\right)^{-2} = 0
+\end{equation}
+As we are setting the equation to zero we can divide out the multiplicative terms giving:
+\begin{equation}
+\frac{-2hc^2}{\lambda^6}\left(e^{\frac{hc}{\lambda kT}}-1\right)^{-1}\left[5-\frac{hc}{\lambda kT}e^{\frac{hc}{\lambda kT}}\left(e^{\frac{hc}{\lambda kT}}-1\right)^{-1}\right] = 0
+\end{equation}
+If we now substitute $x=\frac{hc}{\lambda kT}$ we obtain:
+\begin{equation}
+5-xe^x\left(e^x-1\right)^{-1}
+\end{equation}
+which gives:
+\begin{equation}
+xe^x = 5(e^x-1)
+\end{equation}
+This equation has to be solved numerically however when solved for wavelength in nm and temperature in Kelvin we get:
+\begin{equation}
+\lambda_{max}=\frac{hc}{x}\frac{1}{kT}=\frac{2.89776829x10^6 nm . K}{T}
+\end{equation}
+
+\section{Question 2}
+Specific intensity is distance independent because it contains the solid angle subtended by the source. If the source is unresolved i.e. at great distances like most stars
+then this solid angle cannot be measured and instead of measuring specific intensity we would be measuring flux.
+
+\section{Question 3}
+The probability that a measurement is smaller than average by 2.5$\sigma$ is given by:
+\begin{equation}
+\int_{-\infty}^{\mu+2,5\sigma}\frac{1}{\sigma\sqrt{2\pi}}exp\left(-\frac{\left(x-\mu\right)^2}{2\sigma^2}\right)dt
+\end{equation}
+From the error table we get .99959 so the probability can be calculated as $1-(.5+.99959/2)\approx .0002$ or $.02\%$
+
+\section{Question 4}
+$B-V=8.35-7.81=0.54$ so from the table the spectral type is likely to be F8 with an effective temperature of 6250K.
+It's absolute magnitude $M_v=4$ and so it's distance can be calculated using $D=10^{\left[\left(m-M+5\right)/5\right]} pc$ which 
+equals $10^{\left[\left(7.81-4+5\right)/5\right]}=57.8 pc$.
+The luminosity can be calculated from the bolometric magnitude so $\left(3\times10^{28}\right)\times10^{-0.4M_{bol}}=3.6\times10^{26} W$.
+
+\section{Question 5}
+\subsection{Part a}
+Flux is given by $F=\frac{L}{4\pi r^2} W/m^2$ so solar luminosity is $3.846\times10^{26}W$ making Vega luminosity $1.538\times10^{28}$. 
+Therefore Vega flux at Earth is $\frac{1.538\times10^{28}}{\left(4\pi 2.47\times10^{17}/right)^2}=2.52\times10^{-7} W/m^2$.
+\subsection{Part b}
+Flux density is also given by the inverse square rule so again $F_lambda=\frac{L}{4\pi r^2}$ but units are different so converting to cgs units we get:
+$1W=10^7 erg s^{-1}$. Luminosity of Vega $=3.846\times10^{33} erg s^{-1}$. $8pc=2.469\times10^{19} cm$.
+
+\subsection{Part c}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

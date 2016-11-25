@@ -1,0 +1,77 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{listings}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+\author{Howard Kinsman}
+\title{Observational Astrophysics Problem Set 1}
+\begin{document}
+\maketitle
+\section{Question 1}
+In order to derive Wiens's Displacement Law we need to find the maximum of Planck's Law function, to do this we set the derivative to be zero: 
+\begin{equation}
+\frac{dI_\lambda(T)}{d\lambda} = \frac{d}{d\lambda}\left(\frac{2hc^2}{\lambda^5}\left(e^{\frac{hc}{\lambda kT}}-1\right)^{-1}\right) = 0
+\end{equation}
+Using the product rule $duv=vdu+udv$ yields the following:
+\begin{equation}
+\frac{-10hc^2}{\lambda^6}\left(e^{\frac{hc}{\lambda kT}}-1\right)^{-1}-\frac{2hc^2}{\lambda^5}\left(\frac{-hc}{\lambda^2kT}\right)\left(e^{\frac{hc}{\lambda kT}}\right)\left(e^{\frac{hc}{\lambda kT}}-1\right)^{-2} = 0
+\end{equation}
+As we are setting the equation to zero we can divide out the multiplicative terms giving:
+\begin{equation}
+\frac{-2hc^2}{\lambda^6}\left(e^{\frac{hc}{\lambda kT}}-1\right)^{-1}\left[5-\frac{hc}{\lambda kT}e^{\frac{hc}{\lambda kT}}\left(e^{\frac{hc}{\lambda kT}}-1\right)^{-1}\right] = 0
+\end{equation}
+If we now substitute $x=\frac{hc}{\lambda kT}$ we obtain:
+\begin{equation}
+5-xe^x\left(e^x-1\right)^{-1}
+\end{equation}
+which gives:
+\begin{equation}
+xe^x = 5(e^x-1)
+\end{equation}
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width=0.75\textwidth]{./problem1_1}l
+% \caption{Plot of temperature distribution}
+% \label{fig:problem1_1}
+% \end{figure}
+
+% \subsection{Part b}
+% The following lines of code in Octave retrieve the temperature when it has cooled to exactly half its initial value. The first line retrieves all values at position 2 i.e. the centre (the actual centre is position 1 but this was just set to be the same as position 2 in the boundary conditions). The second line finds the smallest timestep value (n) where temperature (u) is less than 1/2. 
+% \begin{lstlisting}
+% u1 = approx(2,:);
+% nc = min(find(u1<0.5))
+% \end{lstlisting}
+% The timestep value n retrieved from the above has a value of 1629. $\tau_n=(n-1)\Delta_{\tau}=\frac{1628}{12005}$. From the notes $\tau$ is in units of $t/\left(a^2/\eta\right)$. Therefore time in seconds=$\tau\left(a^2/\eta\right)$ where $a=100,000m$ and $\eta=10^{-6}m^2 sec$, giving the time it takes the centre to cool to half its initial temperature as $4.3\times 10^7$ years.
+% 
+% Full source code listing for Problem 1B is in Appendix 1.
+% 
+% \newpage
+% \section{Problem 2: Circular Binary}
+% \subsection{Part a} 
+% For a binary system where the centre of mass is at the origin then: $m_1\mathbf{r_1}=m_2\mathbf{r_2}$ and we can express the stars positions using just their mass. The more massive star would lie closer to the centre of mass at a radius that is inversely proportional to its mass.
+% The equation of motion (for the primary star) is given by:
+% \begin{equation}
+% m_p\frac{d^2\mathbf{x_p}}{dt^2}=\frac{Gm_pm_s}{|\mathbf{x_s}-\mathbf{x_p}|^3}\left(\mathbf{x_s}-\mathbf{x_p}\right)
+% \end{equation}
+% If we substitute $\mathbf{m_p}=m\mathbf{\tilde{m_p}}$, $\mathbf{x_p}=a\mathbf{\tilde{x_p}}$, $\mathbf{x_s}=a\mathbf{\tilde{x_s}}$ and $t=\tilde{t}\sqrt{a^3/Gm}$ into equation 1 then this leads to:
+% \begin{equation}
+% m\mathbf{\tilde{m_p}}\frac{d^2a\mathbf{\tilde{x_p}}}{d\left(\tilde{t}\sqrt{a^3/Gm}\right)^2}=\frac{Gm\mathbf{\tilde{m_p}}m\mathbf{\tilde{m_s}}}{|a\mathbf{\tilde{x_s}}-a\mathbf{\tilde{x_p}}|^3}(a\mathbf{\tilde{x_s}}-a\mathbf{\tilde{x_p}})
+% \end{equation}
+% Rearranging, we get:
+% \begin{equation}
+% \frac{a\mathbf{\tilde{m_p}}Gm^2d^2\mathbf{\tilde{x_p}}}{a^3d{\tilde{t}}^2}=\frac{Gm^2\mathbf{\tilde{m_p}}\mathbf{\tilde{m_s}}a}{|a\mathbf{\tilde{x_s}}-a\mathbf{\tilde{x_p}}|^3}(\mathbf{\tilde{x_s}}-\mathbf{\tilde{x_p}})
+% \end{equation}
+% The $\frac{a\mathbf{\tilde{m_p}}Gm^2}{a^3}$ cancel from both sides leaving:
+% \begin{equation}
+% \frac{d^2\mathbf{\tilde{x_p}}}{d\tilde{t}^2}=\frac{\mathbf{\tilde{m_s}}a}{|\mathbf{\tilde{x_s}}-\mathbf{\tilde{x_p}}|^3}(\mathbf{\tilde{x_s}}-\mathbf{\tilde{x_p}})
+% \end{equation}
+
+
+
+\end{document}
+
+

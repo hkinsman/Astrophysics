@@ -1,0 +1,207 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{listings}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+\author{Howard Kinsman}
+\title{MSc Project - Modelling a Double Barred Galaxy as a Double Binary}
+\begin{document}
+\maketitle
+\section{Introduction}
+The aim of this project was to create a simple model of a double barred galaxy using a double binary.
+
+\section{Methods}
+Fortran 90 was selected as the language of choice in order to avoid the fixed line limitations of Fortran 77.
+The model was created using OdeInt from Numerical Recipes. I first converted OdeInt to Fortran 90 for this purpose.
+\newline
+The classical equations of motion for an n-body problem are:
+\begin{equation}
+m_i\mathbf{\ddot{r}}=\sum_{i\neq{j}}\frac{{m_i}{m_j}}{r^3_{ij}}\mathbf{r_{ij}}
+\qquad
+i=1,2,3...
+\end{equation}
+where $\mathbf{r_i}=\left(x_i,y_j\right)$ and $\mathbf{r_{ij}}=\mathbf{r_j}-\mathbf{r_i}$. So for a four body problem 
+this equation results in the following:
+\begin{equation}
+\ddot{\mathbf{r_1}}=\frac{m_2\mathbf{r_{12}}}{r^3_{12}}+\frac{m_3\mathbf{r_{13}}}{r^3_{13}}+\frac{m_4\mathbf{r_{14}}}{r^3_{14}}
+\end{equation}
+\begin{equation}
+\ddot{\mathbf{r_2}}=\frac{m_1\mathbf{r_{21}}}{r^3_{21}}+\frac{m_3\mathbf{r_{23}}}{r^3_{23}}+\frac{m_4\mathbf{r_{24}}}{r^3_{24}}
+\end{equation}
+\begin{equation}
+\ddot{\mathbf{r_3}}=\frac{m_1\mathbf{r_{31}}}{r^3_{31}}+\frac{m_2\mathbf{r_{32}}}{r^3_{32}}+\frac{m_4\mathbf{r_{34}}}{r^3_{34}}
+\end{equation}
+\begin{equation}
+\ddot{\mathbf{r_4}}=\frac{m_1\mathbf{r_{41}}}{r^3_{41}}+\frac{m_2\mathbf{r_{42}}}{r^3_{42}}+\frac{m_3\mathbf{r_{43}}}{r^3_{43}}
+\end{equation}
+The above equations were encoded into Fortran. A full code listing is supplied in a separate file.
+\subsection{Initial Conditions}
+As a starting point both the outer binary and inner binary were placed in circular orbits and tested separately and then combined to ensure a stable
+starting point. The inner binary had initially a neglible mass.
+The outer binary initial conditions were:
+\begin{lstlisting}
+m1=.5, m2=.5, x1=-.5, x2=.5, y1=0, y2=0,
+vx1=0, vx2=0, vy1=-.5, vy2=.5
+\end{lstlisting}
+and for the inner binary:
+\begin{lstlisting}
+m3=.001, m3=.001, x3=-.001, x4=.001, y3=0, y4=0, 
+vx3=0, vx4=0, vy3=-.5, vy4=.5
+\end{lstlisting}
+A plot of this initial configuration is shown in Fig. \ref{fig:stablebase}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/stablebase/Orbit.eps}
+\caption{Initial stable configuration}
+\label{fig:stablebase}
+\end{figure}
+The inner binary is only visible as a point at the centre of the outer binary.
+I then proceeded to perturb the system by gradually increasing the mass of the inner binary. As the system became unstable I componensated for
+the increasing mass of the inner binary by increasing the velocity of the outer binary and also decreasing the velocity and increasing the binary 
+separation of the inner binary. In many of the configurations the systems were inherently unstable and produced collisions with some 
+or all of the bodies being ejected from the system. These were rejected and only 'stable' configurations were considered.
+Table \ref{tab:variables} shows the perturbations made to the system - only the variables in this table changed and all the other initial
+conditions remained the same.
+\begin{table}[ht!]
+  \centering
+  \caption{Configurations}
+  \label{tab:variables}
+  \begin{tabular}{ccccccccc}
+   Config. & m3 & m4 & vy1 & vy2 & x3 & x4 & vy3 & vy4\\
+    \hline
+   1 & .002 & .002 & -.5 & .5 & -.001 & .001 & -.5 & .5\\
+   2 & .003 & .003 & -.5 & .5 & -.001 & .001 & -.5 & .5\\
+   3 & .004 & .004 & -.5 & .5 & -.004 & .004 & -.5 & .5\\
+   4 & .004 & .004 & -.55 & .55 & -.004 & .004 & -.5 & .5\\
+   5 & .004 & .004 & -.57 & .57 & -.004 & .004 & -.5 & .5\\
+   6 & .005 & .005 & -.58 & .58 & -.005 & .005 & -.3 & .3\\
+   7 & .005 & .005 & -.58 & .58 & -.005 & .005 & -.4 & .4\\
+   8 & .005 & .005 & -.58 & .58 & -.005 & .005 & -.35 & .35\\
+   9 & .006 & .006 & -.6 & .6 & -.006 & .006 & -.3 & .3\\
+   10 & .01 & .01 & -.7 & .7 & -.01 & .01 & -.2 & .2\\
+   11 & .02 & .02 & -.75 & .75 & -.02 & .02 & -.1 & .1\\
+   12 & .025 & .025 & -.65 & .65 & -.02 & .02 & -.5 & .5\\
+   13 & .05 & .05 & -.9 & .9 & -.05 & .05 & -.1 & .1\\
+   14 & .05 & .05 & -.9 & .9 & -.05 & .05 & -.15 & .15\\
+   15 & .06 & .06 & -.95 & .95 & -.06 & .06 & -.15 & .15\\
+   16 & .07 & .07 & -.1 & .1 & -.07 & .07 & -.15 & .15\\
+   17 & .08 & .08 & -.105 & .105 & -.08 & .08 & -.12 & .12\\
+  \end{tabular}
+\end{table}
+
+\section{Results}
+As can be seen from Fig. \ref{fig:stablebase} even a neglible mass inner binary causes the outer binary to deviate from a circular orbit.
+Figures Fig. \ref{fig:config1} to \ref{fig:config17} show plots of the double binary using the parameters given in Table \ref{tab:variables}.
+As the mass of the inner binary increased the system became increasingly unstable and the effect on the outer binary became more pronounced.
+Even the 'stable' configurations listed in Table \ref{tab:variables} hold for only a few orbits.
+I was unable to recreate a stable system for a mass $>.08$ for the inner bar.
+The plots below reveal that increasing the mass of the inner binary causes the outer binary to separate and
+form wider orbits.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/002-5-001/Orbit.eps}
+\caption{Configuration 1}
+\label{fig:config1}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/003-5-001/Orbit.eps}
+\caption{Configuration 2}
+\label{fig:config2}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/004-5-004/Orbit.eps}
+\caption{Configuration 3}
+\label{fig:config3}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/004-55-004/Orbit.eps}
+\caption{Configuration 4}
+\label{fig:config4}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/004-57-004/Orbit.eps}
+\caption{Configuration 5}
+\label{fig:config5}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/005-58-005-3/Orbit.eps}
+\caption{Configuration 6}
+\label{fig:config6}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/005-58-005-4/Orbit.eps}
+\caption{Configuration 7}
+\label{fig:config7}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/005-58-005-35/Orbit.eps}
+\caption{Configuration 8}
+\label{fig:config8}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/006-6-006-3/Orbit.eps}
+\caption{Configuration 9}
+\label{fig:config9}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/01-7-01-2/Orbit.eps}
+\caption{Configuration 10}
+\label{fig:config10}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/02-75-02-1/Orbit.eps}
+\caption{Configuration 11}
+\label{fig:config11}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/025-65-02/Orbit.eps}
+\caption{Configuration 12}
+\label{fig:config12}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/05-9-05-1/Orbit.eps}
+\caption{Configuration 13}
+\label{fig:config13}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/05-9-05-15/Orbit.eps}
+\caption{Configuration 14}
+\label{fig:config14}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/06-95-06-15/Orbit.eps}
+\caption{Configuration 15}
+\label{fig:config15}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/07-1-07-15/Orbit.eps}
+\caption{Configuration 16}
+\label{fig:config16}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./results/08-105-08-12/Orbit.eps}
+\caption{Configuration 17}
+\label{fig:config17}
+\end{figure}
+\end{document}
