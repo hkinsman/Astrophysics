@@ -21,7 +21,7 @@
 
    subroutine initialconditions
 
-     step = 1.e-5 !vary step size
+     step = 1.e-6 !vary step size
      start=0.
      end=50 !vary end time
 !     m1 = 1
@@ -30,10 +30,10 @@
 !     m4 = .000005
 !      m1=.5
 !      m2=.5
-		m1=.75   !blue
-		m2=.25  !red
-      m3=0!.001    !black
-      m4=0!.001   !orange
+		m1=0!.5   !blue
+		m2=0!.5  !red
+      m3=.001    !black
+      m4=.001   !orange
 
      ys(1) = -.5     ! m1,x
      ys(2) = 0  ! m1,vx
