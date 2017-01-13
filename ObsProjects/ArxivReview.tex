@@ -1,0 +1,55 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{listings}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+\author{Howard Kinsman}
+\title{A review of 'Searching for Primordial Black Holes in the radio and X-ray sky'}
+\begin{document}
+\maketitle
+'Searching for Primordial Black Holes in the radio and X-ray sky' is a short paper \citep{gaggero} published on Arxiv on 1st December 2016 - https://arxiv.org/pdf/1612.00457v1.pdf.
+It describes a technique for modelling primordial black holes (PBHs) and then comparing the 
+model with observational measurements in both the radio and X-ray of potential PBH candidates in the Milky Way.
+The recent LIGO detection of gravitational waves \citep{abbott}  has inferred the existence of $\approx30M_{\odot}$ black holes and prompted 
+the suggestion that these may be PBHs \citep{bird}. 
+A PBH is a hypothetical black hole that supposedly formed from the very dense matter found during the universe's early expansion. 
+The idea that PBHs can account for the dark matter in the universe is not new e.g. \citep{bertone1} and \citep{bertone2}.
+
+The study focuses on the galactic centre of the Milky Way and, given current estimates of the mass of the inner bulge, in order 
+to account for all the dark matter there should be approximately $10^9$ PBHs in that vicinity. As the galactic centre contains
+much high energy gas it is probable that a large portion of these PBHs would form accretion disks which would 
+emit radiation at a wide range of wavelengths. This paper is restricted to radio and X-ray.
+This study modelled PBHs using a Monte Carlo simulation which is a computer simulation based on sampling many random 
+events and is widely used in astrophysics. A model of a galaxy was then built populated by PBHs. The accretion rate, radio
+and X-ray emissions were then calculated.
+These results were then compared with observations. For the radio candidates a VLA (Very Large Array) survey was used
+to identify possible PBH candidates. A total of 24 possible PBHs were identified. These were compared with X-Ray sources from Chandra.
+However the paper suggests that these candidates have to be ruled out as their X-Ray and radio fluxes do not lie together on the fundamental plane - 
+a empirical relation familiar to MSc students from the Galaxy module. 
+X-Ray candidates were selected from a survey carried out by the NuSTAR space telescope - a total of 70 were found to
+be potential PBHs. However when compared with the VLA survey again no matches were found and so all these candidates were ruled out.
+The paper concludes by saying that their accretion model has added more constraints on the possibility for PBHs to account for dark matter and suggests
+that PBHs may only account for less than 20\% of dark matter. The study suggests that this technique
+could be utilised further with the new radio telescopes such as MeerKat (South Africa) and the planned Square Kilometer
+Array (SKA - South Africa and Australia) which could detect fainter sources.
+
+As a newcomer to this field I found the paper readable and the introduction explained the background and purpose of the 
+paper well. Although the conclusion was ultimately a negative one, the authors went on to investigate how the 
+study could be repeated with new planned telescopes. The references indicate quite a substantial literature review
+for such a small paper. I found the paper to be concise and informative. The reader could easily consult the references
+if any further information on this subject was needed. I couldn't find any references to whether it
+has been accepted by any refereed journals. I just have one criticism and that for me there wasm't a clear explanation as how they
+reached the conclusion that $\approx30M_{\odot}$ PBHs account for less than $20\%$ of dark matter in the Milky Way.
+
+\begin{thebibliography}{1}
+\bibitem[Gaggero et al.(2016)]{gaggero}D. Gaggero, G. Bertone, F. Calore, R. M. T. Connors, M. Lovell, S. Marko, E. Storm Searching for Primordial Black Holes in the radio and X-ray sky (2016), arXiv:1612.00457 
+\bibitem[Abbott et al.(2016)]{abbott}B. P. Abbott et al. (Virgo, LIGO Scientific), Phys. Rev. Lett. 116, 061102 (2016), arXiv:1602.03837 
+\bibitem[Bird et al.(2016)]{bird}S. Bird, I. Cholis, J. B. Munoz, Y. Ali-Haimoud, M. Kamionkowski, E. D. Kovetz, A. Raccanelli, and A. G. Riess, Phys. Rev. Lett. 116, 201301 (2016), ArXiv:1603.00464
+\bibitem[Bertone et al.(2005)]{bertone1}G. Bertone, D. Hooper, and J. Silk, Phys. Rept. 405, 279 (2005), arXiv:hep-ph/0404175
+\bibitem[Bertone(2010)]{bertone2}G. Bertone, Nature 468, 389 (2010), arXiv:1011.3532
+\end{thebibliography}
+\end{document} 
