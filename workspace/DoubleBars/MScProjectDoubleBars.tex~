@@ -5,8 +5,10 @@
 \usepackage{float}
 \usepackage{natbib}
 \usepackage{listings}
+\usepackage[skip=0pt]{caption}
 \graphicspath{{./}}
 \DeclareGraphicsExtensions{.eps}
+%\setlength\abovecaptionskip{-5pt}
 \author{Howard Kinsman}
 \title{MSc Project - Modelling a Double Barred Galaxy as a Double Binary}
 \begin{document}
@@ -58,13 +60,13 @@ Plots of the two initial binaries are shown in Fig. \ref{fig:outerbinary} and
 to see in GnuPlot.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/outerbinary/Orbit.eps}
+\includegraphics[width=.9\textwidth]{./results/outerbinary/Orbit.eps}
 \caption{Outer Binary}
 \label{fig:outerbinary}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/innerbinary/Orbit.eps}
+\includegraphics[width=.9\textwidth]{./results/innerbinary/Orbit.eps}
 \caption{Inner Binary}
 \label{fig:innerbinary}
 \end{figure}
@@ -107,120 +109,247 @@ version of OdeInt with mine. I was compiling with GFortran and the Fortran 77 ve
 I then compiled the Fortran 77 version with GFortran. The results were identical to mine, which satisified me that I hadn't introduced any errors.
 
 \section{Results}
-As can be seen from Fig. \ref{fig:config1} even a neglible mass inner binary causes the outer binary to deviate from a circular orbit.
-Figures Fig. \ref{fig:config1} to \ref{fig:config18} show plots of the double binary using the parameters given in Table \ref{tab:variables}.
+As can be seen from Fig. \ref{fig:config1} even a neglible mass inner binary causes the outer binary to begin to separate and become less tightly bound.
+Figures Fig. \ref{fig:config1} to \ref{fig:config18i} show plots of the double binary using the parameters given in Table \ref{tab:variables}.
 In many cases the inner binary is only visible as a point at the centre of the outer binary.
-As the mass of the inner binary increased the system became increasingly unstable and the effect on the outer binary became more pronounced.
+As the mass of the inner binary increased the system became increasingly unstablle and the effect on the outer binary became more pronounced.
 Even the 'stable' configurations listed in Table \ref{tab:variables} hold for only a few orbits.
 I was unable to recreate a stable system for a mass $>.08$ for the inner bar.
 The plots below reveal that increasing the mass of the inner binary causes the outer binary to separate and
 form wider orbits.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/stablebase/Orbit.eps}
 \caption{Configuration 1}
+\includegraphics[width=.9\textwidth]{./results/stablebase/Orbit.eps}
 \label{fig:config1}
 \end{figure}
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/002-5-001/Orbit.eps}
+\caption{Configuration 1 - Inner Bar}
+\includegraphics[width=.9\textwidth]{./results/stablebase/Inner.eps}
+\label{fig:config1i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
 \caption{Configuration 2}
+\includegraphics[width=.9\textwidth]{./results/002-5-001/Orbit.eps}
 \label{fig:config2}
 \end{figure}
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/003-5-001/Orbit.eps}
+\caption{Configuration 2 - Inner Bar}
+\includegraphics[width=.9\textwidth]{./results/002-5-001/Inner.eps}
+\label{fig:config2i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.9\textwidth]{./results/003-5-001/Orbit.eps}
 \caption{Configuration 3}
 \label{fig:config3}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/004-5-004/Orbit.eps}
+\includegraphics[width=.9\textwidth]{./results/003-5-001/Inner.eps}
+\caption{Configuration 3 - Inner Bar}
+\label{fig:config3i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/004-5-004/Orbit.eps}
 \caption{Configuration 4}
 \label{fig:config4}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/004-55-004/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/004-5-004/Inner.eps}
+\caption{Configuration 4 - Inner Bar}
+\label{fig:config4i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/004-55-004/Orbit.eps}
 \caption{Configuration 5}
 \label{fig:config5}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/004-57-004/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/004-55-004/Inner.eps}
+\caption{Configuration 5 - Inner Bar}
+\label{fig:config5i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/004-57-004/Orbit.eps}
 \caption{Configuration 6}
 \label{fig:config6}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/005-58-005-3/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/004-57-004/Inner.eps}
+\caption{Configuration 6 - Inner Bar}
+\label{fig:config6i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/005-58-005-3/Orbit.eps}
 \caption{Configuration 7}
 \label{fig:config7}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/005-58-005-4/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/005-58-005-3/Inner.eps}
+\caption{Configuration 7 - Inner Bar}
+\label{fig:config7i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/005-58-005-4/Orbit.eps}
 \caption{Configuration 8}
 \label{fig:config8}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/005-58-005-35/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/005-58-005-4/Inner.eps}
+\caption{Configuration 8 - Inner Bar}
+\label{fig:config8i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/005-58-005-35/Orbit.eps}
 \caption{Configuration 9}
 \label{fig:config9}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/006-6-006-3/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/005-58-005-35/Inner.eps}
+\caption{Configuration 9 - Inner Bar}
+\label{fig:config9i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/006-6-006-3/Orbit.eps}
 \caption{Configuration 10}
 \label{fig:config10}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/01-7-01-2/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/006-6-006-3/Inner.eps}
+\caption{Configuration 10 - Inner Bar}
+\label{fig:config10i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/01-7-01-2/Orbit.eps}
 \caption{Configuration 11}
 \label{fig:config11}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/02-75-02-1/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/01-7-01-2/Inner.eps}
+\caption{Configuration 11 - Inner Bar}
+\label{fig:config11i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/02-75-02-1/Orbit.eps}
 \caption{Configuration 12}
 \label{fig:config12}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/025-65-02/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/02-75-02-1/Inner.eps}
+\caption{Configuration 12 - Inner Bar}
+\label{fig:config12i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/025-65-02/Orbit.eps}
 \caption{Configuration 13}
 \label{fig:config13}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/05-9-05-1/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/025-65-02/Inner.eps}
+\caption{Configuration 13 - Inner Bar}
+\label{fig:config13i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/05-9-05-1/Orbit.eps}
 \caption{Configuration 14}
 \label{fig:config14}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/05-9-05-15/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/05-9-05-1/Inner.eps}
+\caption{Configuration 14 - Inner Bar}
+\label{fig:config14i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/05-9-05-15/Orbit.eps}
 \caption{Configuration 15}
 \label{fig:config15}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/06-95-06-15/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/05-9-05-15/Inner.eps}
+\caption{Configuration 15 - Inner Bar}
+\label{fig:config15i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/06-95-06-15/Orbit.eps}
 \caption{Configuration 16}
 \label{fig:config16}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/07-1-07-15/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/06-95-06-15/Inner.eps}
+\caption{Configuration 16 - Inner Bar}
+\label{fig:config16i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/07-1-07-15/Orbit.eps}
 \caption{Configuration 17}
 \label{fig:config17}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{./results/08-105-08-12/Orbit.eps}
+\includegraphics[width=0.9\textwidth]{./results/07-1-07-15/Inner.eps}
+\caption{Configuration 17 - Inner Bar}
+\label{fig:config17i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/08-105-08-12/Orbit.eps}
 \caption{Configuration 18}
 \label{fig:config18}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./results/08-105-08-12/Inner.eps}
+\caption{Configuration 18 - Inner Bar}
+\label{fig:config18i}
 \end{figure}
 \end{document}

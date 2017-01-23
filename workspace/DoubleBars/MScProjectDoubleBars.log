@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2016.8.9)  29 NOV 2016 11:41
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2016.8.9)  23 JAN 2017 15:44
 entering extended mode
  %&-line parsing enabled.
 **MScProjectDoubleBars.tex
@@ -106,35 +106,75 @@ File: lstmisc.sty 2004/09/07 1.3 (Carsten Heinz)
 File: listings.cfg 2004/09/05 1.3 listings configuration
 ))
 Package: listings 2004/10/17 1.3b (Carsten Heinz)
- (./MScProjectDoubleBars.aux)
+
+(/usr/share/texmf/tex/latex/caption/caption.sty
+Package: caption 2007/01/07 v3.0k Customising captions (AR)
+
+(/usr/share/texmf/tex/latex/caption/caption3.sty
+Package: caption3 2007/01/07 v3.0k caption3 kernel (AR)
+\captionmargin=\dimen111
+\captionmarginx=\dimen112
+\captionwidth=\dimen113
+\captionindent=\dimen114
+\captionparindent=\dimen115
+\captionhangindent=\dimen116
+)
+Package caption Info: float package v1.3 (or newer) detected on input line 275.
+
+Package caption Info: listings package v1.2 (or newer) detected on input line 3
+38.
+) (./MScProjectDoubleBars.aux)
 \openout1 = `MScProjectDoubleBars.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+(/usr/share/texmf/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2003/03/25 v2.04 ragged2e Package (MS)
+
+(/usr/share/texmf/tex/latex/everysel/everysel.sty
+Package: everysel 1999/06/08 v1.03 EverySelectfont Package (MS)
+LaTeX Info: Redefining \selectfont on input line 125.
+)
+\CenteringLeftskip=\skip45
+\RaggedLeftLeftskip=\skip46
+\RaggedRightLeftskip=\skip47
+\CenteringRightskip=\skip48
+\RaggedLeftRightskip=\skip49
+\RaggedRightRightskip=\skip50
+\CenteringParfillskip=\skip51
+\RaggedLeftParfillskip=\skip52
+\RaggedRightParfillskip=\skip53
+\JustifyingParfillskip=\skip54
+\CenteringParindent=\skip55
+\RaggedLeftParindent=\skip56
+\RaggedRightParindent=\skip57
+\JustifyingParindent=\skip58
+)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 13.
+(Font)              <14.4> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 13.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 13.
- (/usr/share/texmf/tex/latex/base/ulasy.fd
+(Font)              <7> on input line 15.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 15.
+
+(/usr/share/texmf/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 23.
+(Font)              <12> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 23.
+(Font)              <8> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 23.
+(Font)              <6> on input line 25.
  [1
 
 ]
@@ -145,57 +185,102 @@ File: ./results/innerbinary/Orbit.eps Graphic file (type eps)
  <./results/innerbinary/Orbit.eps> [2]
 File: ./results/stablebase/Orbit.eps Graphic file (type eps)
 
-<./results/stablebase/Orbit.eps> [3]
+<./results/stablebase/Orbit.eps> [3] [4]
+File: ./results/stablebase/Inner.eps Graphic file (type eps)
+ <./results/stablebase/Inner.eps>
 File: ./results/002-5-001/Orbit.eps Graphic file (type eps)
- <./results/002-5-001/Orbit.eps> [4]
+
+<./results/002-5-001/Orbit.eps> [5]
+File: ./results/002-5-001/Inner.eps Graphic file (type eps)
+ <./results/002-5-001/Inner.eps>
 File: ./results/003-5-001/Orbit.eps Graphic file (type eps)
 
 <./results/003-5-001/Orbit.eps>
+File: ./results/003-5-001/Inner.eps Graphic file (type eps)
+ <./results/003-5-001/Inner.eps> [6]
 File: ./results/004-5-004/Orbit.eps Graphic file (type eps)
- <./results/004-5-004/Orbit.eps> [5]
+
+<./results/004-5-004/Orbit.eps>
+File: ./results/004-5-004/Inner.eps Graphic file (type eps)
+ <./results/004-5-004/Inner.eps> [7]
 File: ./results/004-55-004/Orbit.eps Graphic file (type eps)
 
 <./results/004-55-004/Orbit.eps>
+File: ./results/004-55-004/Inner.eps Graphic file (type eps)
+ <./results/004-55-004/Inner.eps> [8]
 File: ./results/004-57-004/Orbit.eps Graphic file (type eps)
- <./results/004-57-004/Orbit.eps> [6]
+
+<./results/004-57-004/Orbit.eps>
+File: ./results/004-57-004/Inner.eps Graphic file (type eps)
+ <./results/004-57-004/Inner.eps> [9]
 File: ./results/005-58-005-3/Orbit.eps Graphic file (type eps)
 
 <./results/005-58-005-3/Orbit.eps>
+File: ./results/005-58-005-3/Inner.eps Graphic file (type eps)
+ <./results/005-58-005-3/Inner.eps> [10]
 File: ./results/005-58-005-4/Orbit.eps Graphic file (type eps)
- <./results/005-58-005-4/Orbit.eps> [7]
+
+<./results/005-58-005-4/Orbit.eps>
+File: ./results/005-58-005-4/Inner.eps Graphic file (type eps)
+ <./results/005-58-005-4/Inner.eps> [11]
 File: ./results/005-58-005-35/Orbit.eps Graphic file (type eps)
 
 <./results/005-58-005-35/Orbit.eps>
+File: ./results/005-58-005-35/Inner.eps Graphic file (type eps)
+ <./results/005-58-005-35/Inner.eps>
+[12]
 File: ./results/006-6-006-3/Orbit.eps Graphic file (type eps)
- <./results/006-6-006-3/Orbit.eps> [8]
+ <./results/006-6-006-3/Orbit.eps>
+File: ./results/006-6-006-3/Inner.eps Graphic file (type eps)
+ <./results/006-6-006-3/Inner.eps>
+[13]
 File: ./results/01-7-01-2/Orbit.eps Graphic file (type eps)
-
-<./results/01-7-01-2/Orbit.eps>
+ <./results/01-7-01-2/Orbit.eps>
+File: ./results/01-7-01-2/Inner.eps Graphic file (type eps)
+ <./results/01-7-01-2/Inner.eps> [14]
 File: ./results/02-75-02-1/Orbit.eps Graphic file (type eps)
- <./results/02-75-02-1/Orbit.eps> [9]
+
+<./results/02-75-02-1/Orbit.eps>
+File: ./results/02-75-02-1/Inner.eps Graphic file (type eps)
+ <./results/02-75-02-1/Inner.eps> [15]
 File: ./results/025-65-02/Orbit.eps Graphic file (type eps)
 
 <./results/025-65-02/Orbit.eps>
+File: ./results/025-65-02/Inner.eps Graphic file (type eps)
+ <./results/025-65-02/Inner.eps> [16]
 File: ./results/05-9-05-1/Orbit.eps Graphic file (type eps)
- <./results/05-9-05-1/Orbit.eps> [10]
+
+<./results/05-9-05-1/Orbit.eps>
+File: ./results/05-9-05-1/Inner.eps Graphic file (type eps)
+ <./results/05-9-05-1/Inner.eps> [17]
 File: ./results/05-9-05-15/Orbit.eps Graphic file (type eps)
 
 <./results/05-9-05-15/Orbit.eps>
+File: ./results/05-9-05-15/Inner.eps Graphic file (type eps)
+ <./results/05-9-05-15/Inner.eps> [18]
 File: ./results/06-95-06-15/Orbit.eps Graphic file (type eps)
- <./results/06-95-06-15/Orbit.eps> [11]
+
+<./results/06-95-06-15/Orbit.eps>
+File: ./results/06-95-06-15/Inner.eps Graphic file (type eps)
+ <./results/06-95-06-15/Inner.eps> [19]
 File: ./results/07-1-07-15/Orbit.eps Graphic file (type eps)
 
 <./results/07-1-07-15/Orbit.eps>
+File: ./results/07-1-07-15/Inner.eps Graphic file (type eps)
+ <./results/07-1-07-15/Inner.eps> [20]
 File: ./results/08-105-08-12/Orbit.eps Graphic file (type eps)
- <./results/08-105-08-12/Orbit.eps> [12]
-[13] (./MScProjectDoubleBars.aux) ) 
+
+<./results/08-105-08-12/Orbit.eps>
+File: ./results/08-105-08-12/Inner.eps Graphic file (type eps)
+ <./results/08-105-08-12/Inner.eps> [21]
+[22] (./MScProjectDoubleBars.aux) ) 
 Here is how much of TeX's memory you used:
- 2159 strings out of 256215
- 29651 string characters out of 1917024
- 84255 words of memory out of 1500000
- 5442 multiletter control sequences out of 10000+200000
+ 2668 strings out of 256215
+ 39364 string characters out of 1917024
+ 95691 words of memory out of 1500000
+ 5936 multiletter control sequences out of 10000+200000
  10065 words of font info for 39 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 26i,8n,32p,216b,845s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 35i,8n,38p,218b,847s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on MScProjectDoubleBars.dvi (13 pages, 13264 bytes).
+Output written on MScProjectDoubleBars.dvi (22 pages, 16864 bytes).

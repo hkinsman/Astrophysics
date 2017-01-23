@@ -1,24 +1,30 @@
 reset
 #set term png #output terminal and file
-set term postscript eps enhanced color
-set output "Orbit.eps"
-set tics out nomirror
 
-set output "Orbit.eps"
+set term postscript #enhanced size 3in,3in
+#set term epslatex size 8.89cm,6.65cm color colortext
+#set term o
+set output "Orbit.ps"
+set tics out nomirror
+#set term x11
+#set terminal png size 350,262 enhanced font 'Verdana,10'
+
 set ylabel "Y position"
 set xlabel "X position"
-
-plot "fort.9" using 2:4 lc rgb "#000000" notitle  with dots, \
- "fort.9" using 6:8 lc rgb "#FF7F50" notitle  with dots
+set size square
+#set size 1,1
+#plot sin(x)
+#plot "fort.9" using 10:12 lc rgb "#0000FF" notitle  with dots, \
+# "fort.9" using 14:16 lc rgb "#DC143C" notitle  with dots
 #plot "fort.9" using 10:12 lc rgb "#000000" notitle  with dots, \
 # "fort.9" using 14:16 lc rgb "#FF7F50" notitle  with dots
-#plot "fort.9" using 2:4 lc rgb "#0000FF" notitle  with dots, \
-# "fort.9" using 6:8 lc rgb "#DC143C" notitle  with dots
+plot "fort.9" using 2:4 lc rgb "#0000FF" notitle  with dots, \
+ "fort.9" using 6:8 lc rgb "#DC143C" notitle  with dots
 #plot "fort.9" using 2:4 lc rgb "#0000FF" notitle  with dots, \
 # "fort.9" using 6:8 lc rgb "#DC143C" notitle  with dots, \
 #"fort.9" using 10:12 lc rgb "#000000" notitle  with dots, \
 # "fort.9" using 14:16 lc rgb "#FF7F50" notitle  with dots
-
+#pause -1
 #set output "Graph3.eps"
 #set ylabel "dY/dT"
 #set xlabel "dX/dT"
