@@ -1,0 +1,125 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{listings}
+\usepackage{amsmath}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+\author{Howard Kinsman}
+\title{Cosmology Tutorial 4}
+\begin{document}
+\maketitle
+This was challenging. I attempted all questions but some results are wrong.
+\section{}
+I attempted this without looking at notes but didn't get very far.
+\subsection{}
+\begin{flalign*}
+&\rho=0, k<0 &\\
+&\dot{R}^2=kc^2 &\\ 
+&\dot{R}=\pm\sqrt{k}c
+\end{flalign*}
+integrating both sides gives
+\begin{flalign*}
+&R=\pm\sqrt{k}ct +C &\\
+&R\propto t
+\end{flalign*}
+\subsection{}
+\begin{flalign*}
+&\rho>0, k=0 &\\
+&\rho\propto R^{-3} &\\
+&\rho\left(t\right)=\frac{\rho_0R_0^3}{R} &\\
+&\dot{R}^2=\frac{8\pi G}{3}\frac{\rho_0 R_0^3}{R} &\\
+&\dot{R}=\sqrt{\frac{8\pi G\rho_0 R_0^3}{3}}\frac{1}{R^{1/2}} &\\
+&R^{1/2}dR=\pm\left(\frac{8\pi G\rho_0 R_0^3}{3}\right)^{1/2}dt
+\end{flalign*}
+integrating both sides gives
+\begin{flalign*}
+&\frac{2}{3}R^{3/2}=\pm\left(\frac{8\pi G\rho_0 R_0^3}{3}\right)^{1/2}t+C &\\
+&\frac{2}{3}R=\pm\left(\frac{8\pi G\rho_0 R_0^3}{3}\right)^{1/3}t^{2/3}+C &\\
+&R=\pm\left(4\pi G\rho_0 R_0^3\right)^{1/3}t^{2/3}+C &\\
+&R\propto t^{2/3}
+\end{flalign*}
+Obviously something wrong with my maths (constant is wrong).
+\subsection{}
+\begin{flalign*}
+&k=0, p_m>>p_r &\\
+&\rho_r\propto R^{-4} &\\
+&\rho\left(t\right)=\frac{\rho_0R_0^4}{R} &\\
+&\dot{R}^2=\frac{8\pi G}{3}\frac{\rho_{r,0} R_0^4}{R^2} &\\
+&\dot{R}=\pm\left(\frac{8\pi G}{3}\rho_{r,0} R_0^4\right)^{1/2}\frac{1}{R} &\\
+&R\dot{R}=\pm\left(\frac{8\pi G}{3}\rho_{r,0} R_0^4\right)^{1/2} &\\
+&R dR=\pm\left(\frac{8\pi G}{3}\rho_{r,0} R_0^4\right)^{1/2}dt &\\
+\end{flalign*}
+integrating both sides gives
+\begin{flalign*}
+&1/2R^2=\pm\left(\frac{8\pi G}{3}\rho_{r,0} R_0^4\right)^{1/2}t &\\
+&R=\pm\left(\frac{16\pi G}{3}\rho_{r,0} R_0^4\right)^{1/4}t^{1/2} &\\
+&R\propto t^{1/2}
+\end{flalign*}
+\subsection{}
+\begin{flalign*}
+&\dot{R}^2=\frac{\Lambda}{3}R^2 &\\
+&\dot{R}=\pm\sqrt{\frac{\Lambda}{3}} &\\
+&\frac{1}{R}dR=\pm\sqrt{\frac{\Lambda}{3}}dt &\\
+&log R = \pm\sqrt{\frac{\Lambda}{3}}t &\\
+&R=e^{\sqrt{\frac{\Lambda}{3}}t} &\\
+\end{flalign*}
+\section{}
+\subsection{}
+\begin{flalign*}
+&R=\pm\left(6\pi G\rho_0 R_0^3\right)^{1/3}t^{2/3} &\\
+&R=R_0\left(\frac{t}{t_0}\right)^{2/3} &\\
+&R_0\left(\frac{t}{t_0}\right)^{2/3}=\pm\left(6\pi G\rho_0 R_0^3\right)^{1/3}t^{2/3} &\\
+&R_0t_0^{2/3}=\pm\left(\frac{1}{6}\pi G\rho_0 R_0^3\right)^{1/3}R_0 &\\
+&t_0=\pm\left(\frac{1}{6}\pi G\rho_0 R_0^3\right)^{1/2}
+\end{flalign*}
+\subsection{}
+\begin{flalign*}
+&R=\pm\left(\frac{16\pi G}{3}\rho_0 R_0^4\right)^{1/4}t^{1/2} &\\
+&R=R_0\left(\frac{t}{t_0}\right)^{1/2} &\\
+&R_0\left(\frac{t}{t_0}\right)^{1/2}=\pm\left(\frac{16\pi G}{3}\rho_0 R_0^3\right)^{1/4}t^{1/2} &\\
+&R_0t_0^{1/2}=\pm\left(\frac{16\pi G}{3}\rho_0 R_0^3\right)^{1/4}R_0 &\\
+&t_0=\pm\left(\frac{16\pi G}{3}\rho_0\right)^{1/2}
+\end{flalign*}
+Not quite.
+\section{}
+\begin{flalign*}
+&\dot{R}^2=\frac{8\pi G}{3}\rho R^2-kc^2 &\\
+&H^2=\left(\frac{\dot{R}}{R}\right)=\frac{8\pi G}{3}\rho-\frac{kc^2}{R^2} &\\
+&\frac{kc^2}{R^2}=\frac{8\pi G\rho}{3}-H^2 &\\
+&\frac{8\pi G\rho}{3}-H^2=0 &\\
+&8\pi G\rho=H^2 &\\
+&8\pi G\rho=3H^2 &\\
+&\rho=\frac{3H^2}{8\pi G}
+\end{flalign*}
+$1Mpc=3.09\times10^{19}km$ and $H_0=68000/3.09\times10^{19}=2.2\times10^{-18} m/s$.
+\begin{flalign*}
+&\frac{3\times 4.84\times 10^{-36}}{8\pi 6.67\times 10^{-11}}=8.66\times 10^{-27} kg/m^3
+\end{flalign*}
+\section{}
+\begin{flalign*}
+&\omega=\frac{P}{\rho c^2} &\\
+&PV=NkT &\\
+&P=\frac{NkT}{V} &\\
+&\omega=\frac{\frac{NkT}{V}}{\rho c^2} &\\
+&\omega=\frac{kT}{c^2} &&\\
+&\omega=\frac{1.38\times 10^{-23}}{8.94\times 10^{16}}=10^{-40}
+\end{flalign*}
+Ideal gas law is more acccurate with high temperatures due to more kinetic energy.
+\section{}
+Not too sure about this one! I looked it up.
+Integrating the Planck function gives:
+\begin{flalign*}
+&E_{rad}=\alpha T^4 &\\
+&\alpha=\frac{\pi^2 k^4}{15\hbar^3c^3} &\\
+&n_{\lambda}\propto R^{3}\propto \left(1+z\right)^3 &\\
+&E=h\nu\propto h\lambda^{-1}\propto(1+z) &\\
+&E_{rad}=E n_{\lambda}\propto\left(1+z\right)^4 &\\
+&T\propto(1+z)
+\end{flalign*}
+%\begin{thebibliography}{1}
+%\end{thebibliography}
+\end{document} 

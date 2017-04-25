@@ -1,0 +1,122 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{listings}
+\usepackage{amsmath}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+\author{Howard Kinsman}
+\title{Cosmology Tutorial 6}
+\begin{document}
+\maketitle
+\section{}
+\subsection{}
+\begin{flalign*}
+& dE=-PdV &\\
+& d(\rho c^2V)=-PdV &\\
+& d(\rho V)=\frac{-P}{c^2}dV &\\
+& Vd\rho + \rho dV=\frac{-P}{c^2}dV &\\
+& Vd\rho = \frac{-P}{c^2}dV-\rho dV &\\
+& Vd\rho=\left(\frac{-P}{c^2}-\rho\right)dV &\\
+& d\rho=-\left(\rho+\frac{P}{c^2}\right)\frac{dV}{V} 
+\end{flalign*}
+\subsection{}
+$V\propto R^3$ so
+\begin{flalign*}
+& \frac{d\rho}{\left(\rho + \frac{P}{c^2}\right)}=\frac{-dV}{V} &\\
+& =\frac{-dR^3}{R^3} &\\
+& =-3\frac{dR}{R}
+\end{flalign*}
+$d\rho=\frac{d\rho}{dt}dt$ so
+\begin{flalign*}
+& \frac{\frac{d\rho}{dt}dt}{\left(\rho+\frac{P}{c^2}\right)}=-3\frac{dR}{R} &\\
+& \frac{d\rho}{dt}dt=\left(\rho+\frac{P}{c^2}\right)\frac{-3dR}{R} &\\
+& R\frac{d\rho}{dt}=-3\left(\rho+\frac{P}{c^2}\right)\frac{dR}{dt} &\\
+& \dot{\rho}=-3\left(\rho+\frac{P}{c^2}\right)\frac{\dot{R}}{R} &\\
+& -3\left(\rho+\frac{P}{c^2}\right)\frac{\dot{R}}{R}=0 &\\
+& \dot{\rho}+\frac{3\dot{R}}{R}\left(\rho+\frac{P}{c^2}\right)=0
+\end{flalign*}
+\subsection{}
+$P=0$ so
+\begin{flalign*}
+& \dot{\rho}=\frac{3\dot{R}}{R}\rho &\\
+& \frac{\dot{\rho}}{\rho}=\frac{-3\dot{R}}{R} &\\
+& \frac{1}{\rho}\frac{d\rho}{dt}=-3\frac{1}{R}\frac{dR}{dt}
+\end{flalign*}
+integrating gives
+\begin{flalign*}
+& ln(\rho)=-3ln(R)+C &\\
+& \rho\propto R^{-3}
+\end{flalign*}
+\subsection{}
+$\rho=\frac{3P}{c^2}$ so
+\begin{flalign*}
+& \dot{\rho}+\frac{\dot{R}}{R}\left(3\rho + \rho\right)=0 &\\
+& \dot{\rho}+\frac{\dot{R}}{R}4\rho=0 &\\
+& \frac{\dot{\rho}}{\rho}=\frac{-4\dot{R}}{R}=0 &\\
+& ln(\rho)=-4ln(R)+C &\\
+& \rho\propto R^{-4}
+\end{flalign*}
+\subsection{}
+$\rho$ is constant by definition so
+\begin{flalign*}
+& \rho+\frac{P}{c^2}=0 &\\
+& \frac{P}{c^2}=-\rho &\\
+& P=-\rho c^2 &\\
+\end{flalign*}
+So we have negative pressure - as the universe expands work is done on cosmological constant fluid allowing the energy density to remain constant whilst volume of 
+universe increases (from Liddle).
+\section{}
+Flat galaxy rotation curves - spiral galaxies rotate faster at their edges than predicted from their observed mass, indicating there is some 'hidden' mass.
+\newline
+Gravitational lensing - GR predicts that light is bent by gravity - the light from galaxies behind galaxy clusters is bent more than predicted by GR again indicating some 'hidden' mass.
+\newline
+X-Ray observations - very hot gas within galaxy cluseters have been observed in X-Ray and the mass calculated from luminosity and temperature. The observed mass of the galaxies and this hot gas
+again does not account for the total mass of the cluster indicating that the hidden mass in non-baryonic.
+\section{}
+\begin{flalign*}
+& n_b=\frac{\Omega_{b,0} \rho_{crit,0}}{m_H} &\\
+& n_b=\frac{.04\times 10^{-23} g/m^{-3}}{1.67\times 10^{-24}g} &\\
+& n_b=.24 m^{-3} &\\
+\end{flalign*}
+I had to go to Weinberg for this one! For photons we integrate Planck function to get Stefan-Boltzman law $u\propto T^4$
+\begin{flalign*}
+& n_{\gamma}=\frac{30\zeta(3)}{\pi^4}\frac{\alpha_{rad}T^4_{CMB}}{k_B T_{CMB}} &\\
+& n_{\gamma}=.3702\frac{\alpha_{rad}T^3}{k_B} &\\
+& n_{\gamma}=\frac{7.56\times 10^{-16} 2.7^3}{1.38\times 10^{-23}} &\\
+& n_{\gamma}=4\times 10^8 m^{-3}
+\end{flalign*}
+The results are quite suprising considering the ratio of photons to baryons is about $10^9$ and we have already determined that we are now in a matter dominated universe. How can that be?
+\begin{flalign*}
+& \Omega_{dm}\approx .3-.04=.26 &\\
+\end{flalign*}
+so the mass of dark matter particles:
+\begin{flalign*}
+& \frac{.26\times 10^{-23}}{.24}=1.08\times 10^{-23} g
+\end{flalign*}
+\section{}
+\begin{flalign*}
+& M=\frac{V^2 R}{G} &\\
+& M=\frac{150,000^2 \times 1.5\times 10^{20}}{6.67\times 10^{-11}} &\\
+& M=5\times 10^40 kg = 2.5\times 10^{10} M_{\odot} &\\
+& \frac{M}{L}=\frac{2.5 \times 10^{10}}{6.5\times 10^{10}}=.39 &\\
+\end{flalign*}
+so mass at 50kpc:
+\begin{flalign*}
+& .39\times 1.3\times 10^{11}=5\times 10^{10} M_{\odot}
+\end{flalign*}
+\section{}
+\subsection{}
+I'm not sure what assumptions are being made.
+\subsection{}
+The mass was measured using weak gravitational lensing from more distant galaxies which lie beyond the merging clusters. This favours dark matter because the during a merger the stellar component of the 
+clusters is collisionless whilst the plasma component is not and so they become separated. By mapping the gravitational lensing the study shows that the gravitational potential does not follow
+plasma. This implies therefore that there is some 'hidden' mass.
+\subsection{}
+The title is quite bold. I think the study is a good case for the existence of dark matter but is not necessarily 'direct empirical proof'.
+%\begin{thebibliography}{1}
+%\end{thebibliography}
+\end{document} 

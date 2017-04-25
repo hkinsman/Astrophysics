@@ -1,0 +1,124 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{listings}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+\author{Howard Kinsman}
+\title{Cosmology Tutorial 2}
+\begin{document}
+\maketitle
+
+\section{}
+Gravitational mass is the mass in Newton's inverse square law i.e. $F=\frac{GMM}{r^2}$ (either the active or passive mass
+under the influence of a gravitational field) whilst inertial mass is the mass in
+Newton's 2nd law of motion ie. $F=Ma$ (the mass which resists motion). In Newtonian mechanics there is no obvious reason
+or explanation as to why these are the same thing.
+Two other problems with Newtonian mechanics are the difference in the predicted and observed precession of the 
+perihelion of Mercury according to classical mechanics; and, as Newtonian mechanics rely on inertial frames, there is no
+simple definition as to what an inertial frame is within the context of Newton's equations.
+
+\section{}
+Starting with energy $E=mc^2$ an object falling in a gravitational field will lose potential energy $E_p=mgh$ but gain
+the opposite in kinetic energy so will now have energy $E=mc^2+mgh$. Converting this into photon energy and letting photon
+rise back in gravitational field it would obviously have gained energy - not possible according to conservation of energy.
+So redshift is given by
+\begin{equation}
+z=\frac{\delta\lambda}{\lambda}
+\end{equation}
+and can also be written as 
+\begin{equation}
+1+z=\frac{\lambda'}{\lambda}
+\end{equation}
+reversing the fraction now (as the photon is rising) the above is equivalent to
+\begin{equation}
+1+z=\frac{\nu'}{\nu}
+\end{equation}
+and as $E=h\nu$ we get
+\begin{equation}
+1+z=\frac{E'}{E}
+\end{equation}
+or
+\begin{equation}
+1+z=\frac{mc^2+mgh}{mc^2}
+\end{equation} 
+giving 
+\begin{equation}
+1+z=1+\frac{gh}{c^2}
+\end{equation}
+and finally 
+\begin{equation}
+z=\frac{gh}{c^2}
+\end{equation}
+It is the same result as the Equivalence Principle.
+
+\section{}
+Curved space is a universe where space (and time) deviates from a Euclidean metric. There are two main types of curvature for
+a homogeneous and isotropic universe: positive curvature or spherical geometry e.g. a sphere where $C<2\pi a$ and $k>0$;
+and negative curvature or hyperbolic geometry e.g. saddle shaped where $C>2\pi a$ and $k<0$.
+
+\section{}
+\begin{equation}
+k=\frac{3}{\pi}\lim_{a\to 0}\left(\frac{2\pi a - C}{a^3}\right)
+\end{equation}
+and
+\begin{equation}
+C=2\pi x = 2\pi R sin\frac{a}{R}
+\end{equation}
+however
+\begin{equation}
+sin x \approx x-\frac{x^3}{3!}
+\end{equation}
+so that
+\begin{equation}
+C\approx 2\pi a\left(1-\frac{a^2}{6R^2}\right)
+\end{equation}
+giving
+\begin{equation}
+k=\frac{3}{\pi}\lim_{a\to 0}\left(\frac{2\pi a - 2\pi a\left(1-\frac{a^2}{6R^2}\right)}{a^3}\right)
+\end{equation}
+which simplifies to
+\begin{equation}
+k=\frac{3}{\pi}\lim_{a\to 0}\left(\frac{\frac{2\pi a^3}{6R^2}}{a^3}\right)
+\end{equation}
+The $a^3$ cancel giving
+\begin{equation}
+k=\frac{3}{\pi}\frac{2\pi}{6R^2}
+\end{equation}
+and finally $6\pi$ cancels leaving
+\begin{equation}
+k=\frac{1}{R^2}
+\end{equation}
+
+\section{}
+As the coordinates $\theta$ and $\phi$ represent angles and we know that the universe is isotropic therefore looks the same from all
+directions and so the distance cannot depend on direction therefore the metric can be simplified into 
+$ds^2=f(r)dr^2+r^2d\theta^2+r^2sin^2\theta d\phi^2$ where $f(r,\theta,\phi)$ only
+depends on r or distance $f(r)$ and also that $f'(r)=f''(r)$.
+As the universe is homogeneous then the curvature k will be the same everywhere in space and time so we can use Gauss'
+formula to calculate k which ultimately gives
+\begin{equation}
+\frac{1}{f^2dr}\frac{df}{dr}=2kr
+\end{equation}
+Integrating the above gives
+\begin{equation}
+\int\frac{1}{f^2}df=k\int 2r dr
+\end{equation}
+\begin{equation}
+-\frac{1}{f}=kr^2-C
+\end{equation}
+which finally gives
+\begin{equation}
+f(r)=\frac{1}{C-kr^2}
+\end{equation}
+and setting $C=1$ because $f=1$ and $k=0$ for flat space we arrive at
+\begin{equation}
+f(r)=\frac{1}{1-kr^2}
+\end{equation}
+k determines the curvature of the universe and hence whether the universe is flat ($k=0$), open ($k<0$) or closed ($k>0$).
+%\begin{thebibliography}{1}
+%\end{thebibliography}
+\end{document} 

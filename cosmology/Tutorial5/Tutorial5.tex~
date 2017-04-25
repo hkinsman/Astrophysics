@@ -1,0 +1,82 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{listings}
+\usepackage{amsmath}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+\author{Howard Kinsman}
+\title{Cosmology Tutorial 5}
+\begin{document}
+\maketitle
+\section{}
+\subsection{}
+For EDS universe $\Omega=1$ so
+\begin{flalign*}
+& rR_0=\frac{2c}{H_0}\left(\frac{z-(1+z)^{-1/2}-1}{1+z}\right)
+\end{flalign*}
+\subsection{}
+Making the following substitutions: $\Theta=\frac{2c}{H_0}$ and $a=1+z$:
+\begin{flalign*}
+& d_A=\Theta\frac{1}{a}\left(1-a^{1/2}\right)
+\end{flalign*}
+The derivative is:
+\begin{flalign*}
+& \frac{dd_A}{da}=\frac{3\Theta}{2a^{5/2}}-\frac{\Theta}{a^2}
+\end{flalign*}
+and then setting to zero to get the maximum:
+\begin{flalign*}
+& \frac{a^2 3\Theta}{2a^{5/2}}=\Theta &\\
+& \frac{3\Theta}{2\sqrt{a}}=0 &\\
+& 2\sqrt{a}=3 &\\
+& a=9/4 &\\
+& z=5/4
+\end{flalign*}
+\subsection{}
+\begin{flalign*}
+& \frac{2 \times 2.99\times10^8}{70 \times 1001}\left(1-1001^{-1/2}\right) &\\
+& \frac{2 \times 2.99\times10^8 \times .968}{70070}=8264 &\\
+& \tan\theta=\frac{D}{d_A} &\\
+& \tan\theta=\frac{2.99\times10^8 \times 3.8\times10^5}{8264} &\\
+& \theta=63 radians &\\
+& \theta=3609^\circ
+\end{flalign*}
+\section{}
+I got a maximum angular diameter distance of 1744.31Mpc with a $z=1.75$.
+From the plots the radiation era ($\Omega_R>0.9$) lasted up until approximately $10^{-6} Gyr$ which is 1000 years.
+\section{}
+Einstein seemed to like the idea of a static universe i.e. one that is neither expanding or contracting, therefore he added the cosmological constant to counteract gravity.
+\newline
+A. The expansion rate in the early universe would be similar to models with $\Lambda>0$.
+\newline
+B. The EDS model of the universe results in a universe which is too young to have the observed old globular clusters. It predicts the age of the universe to be about
+$8.1\times10^9$ years however globular clusters have been observed older than this.
+\newline
+C. The EDS model assumes the universe is very close to the critical density and so this model would continue to expand indefinitely because there is no cosmological constant term to prevent it.
+\section{}
+\begin{flalign*}
+& \frac{\Omega_m}{2}-\Omega_\Lambda<0 &\\
+& \frac{\Omega_m}{2}<\Omega_\Lambda &\\
+& \Omega_\Lambda>\frac{1}{3}
+\end{flalign*}
+\section{}
+Parallax measurements are a geometrical method of determining distance. As the Earth orbits the Sun it does so at a distance of 1AU so the apparent position of a distant star is altered slightly.
+This can be measured and used to determine distance to that star. The distance of 1pc is equal to the distance a star would have to be to subtend 1 arcsec per 1AU.
+An example of a standard candle method of determing distance is that of supernovae. As a supernova erupts it becomes very luminous and this luminosity can be used to determine its absolute
+magnitude (and therefore distance) by using models of core collapse. They are however rare events.
+\section{}
+To be within 10\% of 5000pc the distance measured would need to be at least 4500pc:
+\begin{flalign*}
+& d=1/p &\\
+& 1/4500=.2222"
+\end{flalign*}
+The International Celestial Reference Frame (ICRF) has been setup as a standard reference frame of astrometry and is based on 212 compact extragalactic radio sources (mainly quasars).
+\section{}
+The Malmquist bias means that as we look at greater distances we are biased towards the most luminous objects and so we miss greater numbers of fainter objects with increasing distances.
+The Scott effect is similar but this time picking up more luminous objects due to the larger volume of space.
+%\begin{thebibliography}{1}
+%\end{thebibliography}
+\end{document} 

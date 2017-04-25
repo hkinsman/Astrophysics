@@ -1,0 +1,45 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{listings}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+\author{Howard Kinsman}
+\title{Cosmology Tutorial 1'}
+\begin{document}
+\maketitle
+
+\section{}
+\begin{equation}
+f=\frac{L}{4\pi r^2}
+\end{equation}
+and differentiating
+\begin{equation}
+\frac{df}{dr}=-\frac{L}{2\pi r^3}
+\end{equation}
+Number density = $frac{1}{r}$ so
+\begin{equation}
+N=\frac{4}{3}\pi r^3 \times \frac{1}{r}
+\end{equation}
+\begin{equation}
+N=\frac{4\pi r^2}{3}
+\end{equation}
+and differentiating
+\begin{equation}
+\frac{dN}{dr}=\frac{8\pi r}{L}
+\end{equation}
+dividing equation by gives
+\begin{equation}
+\frac{dN}{df}=\frac{-48\pi^2 r^4}{L}
+\end{equation}
+so that
+\begin{equation}
+\frac{dN}{df}\propto r^4
+\end{equation}
+
+%\begin{thebibliography}{1}
+%\end{thebibliography}
+\end{document} 

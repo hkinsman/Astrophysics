@@ -1,0 +1,64 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{listings}
+\usepackage{amsmath}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+\author{Howard Kinsman}
+\title{Cosmology Tutorial 3}
+\begin{document}
+\maketitle
+
+\section{}
+Here goes:
+\begin{flalign*}
+&s^2=\left(ct\right)^2-x^2 \\
+&=c^2\gamma^2\left(t'-\frac{v'x'}{c^2}\right)-\gamma^2\left(x'-v't'\right)^2 &\\
+&=\gamma^2\left(ct'-\frac{v'x'}{c}\right)^2-\gamma^2\left(t'^2v'^2-2t'v'x'+x'^2\right) &\\
+&=\gamma^2\left(c^2t'^2+\frac{v'^2x'^2}{c^2}-2t'v'x'\right)-\gamma^2\left(t'^2v'^2-2t'v'x'+x'^2\right) &\\
+&=\gamma^2\left(c^2t'^2+\frac{v'^2x'^2}{c^2}\right)-\gamma^2\left(t'^2v'^2+x'^2\right) &\\
+&=\gamma^2\left[\left(c^2t'^2-t'^2v'^2\right)-x'^2\left(1-\frac{v'^2}{c^2}\right)\right] &\\
+&=\gamma^2\left[\left(1-\frac{v'^2}{c^2}\right)c^2t'^2-x^2\left(1-\frac{v'^2}{c^2}\right)\right] &\\
+&=\gamma^2\left[\left(\frac{1}{\gamma^2}c^2t'^2-x'^2\frac{1}{\gamma^2}\right)\right] &\\
+&=c^2t'^2-x'^2
+\end{flalign*}
+\section{}
+In special relativity time doesn't have a preferred frame but in cosmology, with an homogeneous and isotropic universe, then all observers can agree on a preferred
+frame e.g. the temperature of the cosmic microwave background which decreases with the age of the universe.
+\section{}
+\begin{flalign*}
+&dA=\frac{R_0r}{1+z} &\\
+&dL=R_0r(1+z)
+\end{flalign*}
+so combining these gives
+\begin{flalign*}
+&dA/dL=\frac{\frac{R_0r}{1+z}}{R_0r(1+z)} &\\
+&=(1+z)^2
+\end{flalign*}
+Both angular diameter distance and luminosity distance both assume a static Euclidean universe. Angular diameter distance is the distance
+an object would have to be for its measured angular size. Luminosity distance is the distance an object would have to be to measure its
+known luminosity. Proper distance is the actual distance an object would be according to a moment in 
+time and varies with expansion of the universe. Light travel distance is the time it took light to reach the observer multiplied by the speed of light.
+For low values of z then these distances are similar but for higher z they are different. As z increases the proper distance increases but tends towards a maximum because
+the observable universe is finite,
+the luminosity distances increases indefinitely because the 1+z term can increase indefinitely, whilst the angular diameter distance reaches a maximum and then decreases,
+because at great distances the universe was smaller and so the angular diameter occupied a larger fraction of the universe.
+\section{}
+Proper distance is the actual distance an object would be according to a moment in 
+time and varies with expansion of the universe. It would be the actual distance measured if one were to actually pace it out!
+\begin{flalign*}
+&d_{pr}(t_0)=R_0(f) &\\
+&d_pr(t)=Rf(r) &\\
+&d_pr(t_0)=\frac{R_0}{R}d_{pr}(t) &\\
+&V_r=\frac{d}{dt}d_{pr}=\dot{R}f(r) &\\
+&V_r=\frac{\dot{R}}{R}d_pr
+\end{flalign*}
+At small scales the Hubble law breaks down due to perculiar velocities (movements not associated with expansion of universe) e.g. the Andromeda galaxy is moving towards the
+Milky Way. At large scales the Hubble parameter is different as to what it is now, plus the curvature of the universe affects the results.
+%\begin{thebibliography}{1}
+%\end{thebibliography}
+\end{document} 
