@@ -1,0 +1,136 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{listings}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+\author{Howard Kinsman}
+\title{Cosmology Essay: A review of Dark Matter and Dark Energy}
+\begin{document}
+\maketitle
+\section{Introduction}
+Many observations and theories of the universe have found that approximately 95\% of the mass and energy in the universe is dark and invisible and furthermore the true nature of
+both dark matter and dark energy is unknown. This is a brief review of the history and current status of dark matter and dark energy.
+\section{Dark Matter}
+Dark Matter (DM) has a surprisingly long and interesting history. In 1937 Fritz Zwicky published a paper on the velocity dispersion of galaxies within the Coma cluster. He found
+that the velocity dispersion of galaxies within the cluster was so high that in order for the system to remain stable there must be some ``missing mass'' i.e. mass which
+is not detectable optically. Further research in this area continued but it wasn't until the 1970s when astronomers began accurately measuring the rotation curves of spiral galaxies,
+with the discovery of H1 21cm radio emission, that interest in this area became of great importance.
+Rotation curves are a measure of the orbital velocity of the stars and gas in a galaxy plotted as a function of distance from the galactic centre. According to
+Keplerian laws rotation curves would be expected to decline with increasing radius however it was found that they remain flat i.e. constant, all the way out to the largest radii observed, 
+both optically and with 21 cm. According to Newtonian gravity this implies that there must be some ``hidden mass'' within the galaxies exerting a gravitational effect on the system resulting
+in these flat rotation curves. This ``hidden mass'' was termed dark matter.
+
+Apart from high velocity dispersions in galaxy clusters and flat rotation curves other evidence for DM includes gravitational lensing, hot gas in clusters, the Cosmic Microwave Background (CMB)
+ and through computer modelling of the growth of 
+large scale structure in the early universe (discussed later). Gravitational lensing occurs when light from distant galaxies behind a galaxy cluster is distorted due to the 
+large gravitational pull of the cluster. This is known as strong lensing and is quite rare, however weak lensing also occurs where there is just a small distortion of the galaxies size
+and shape. 
+The mass of the galaxy cluster can be measured and compared to how much the light is expected to be bent by gravity. The results show that there must be far more mass in the cluster 
+than can be detected. Galaxy clusters when viewed in X-ray reveal huge amounts of hot gas which can be explained by large amounts of DM which provide a potential well to hold the gas.
+The CMB is the remnants of radiation from the early universe. Anisotropies in the CMB reveal evidence for DM. Before decoupling from baryonic matter, photons underwent oscillations that froze in
+at redshift $z\approx1100$. By studying the height of the peaks in these oscillations it has been found that the universe is comprised of approximately 5\% baryonic matter, 26\% dark matter
+and the remainder dark energy (discussed later). Some authors \citep{freese} regard the evidence of DM from the CMB as ``irrefutable''.
+
+Further evidence of DM, which has been described as ``direct empirical proof'' \citep{clowe}, has been found in observations of the Bullet cluster of galaxies. The Chandra X-ray observatory 
+has detected the baryonic matter in the merger of two smaller clusters, whilst DM has been deduced from gravitational lensing, and they clearly show that are behaving differently.
+At the collision point the baryonic matter has slowed down due to friction whilst the DM has passed through this point.
+
+With the growing evidence for the existence of DM, obvious questions to ask are ``What is it made of?'' and ``Is it baryonic?''. About twenty years ago it was suggested that dark matter is
+comprised of objects such as faint stars, sub-stellar objects or stellar remnants. Collectively these came to be known as massive compact halo objects (MACHOs). However recent studies 
+\citep{freese} have found that these objects couldn't account for all the DM in the universe. This then suggests that if DM exists it must be non-baryonic.
+
+Particle physicists have postulated many possible candidates for non-baryonic DM particles. These include neutrinos, primordial black holes (PBHs), magnetic monopoles, neutalinos and photinos.
+However, many of these have been effectively ruled out by research e.g. \cite{gaggero} who concluded that PBHs couldn't account for more than 20\% of DM in the universe.
+Two of the most popular non-baryonic DM candidates currently are: Axions and Weakly Interacting Massive Particles (WIMPs). These are both hypothetical particles invented by particle 
+physicists for other reasons than DM, which relieves cosmologists of having to invent new particles. Axions arise from a problem in quantum chromodynamics but have interesting 
+consequences for cosmology as they are predicted to be stable over cosmological timescales \citep{bertone1} and could therefore theoretically constitute DM. WIMPs have been the source
+of many theoretical studies of DM and are now considered to be the leading class of DM particles. 
+
+There are currently four main approaches to discovering WIMPs. There are ongoing experiments, with ever increasing sensitivity, at CERN, using
+the Large Hadron Collider. One of the goals of the two detectors, ATLAS and CMS, was specifically to try and discover the nature of DM. It has so far been unsuccessful in that respect.
+There are also attempts to directly detect WIMPs in underground DM laboratories worldwide. So far there has been no confirmed detection of WIMPs. Indirect detection of WIMPs is also being
+carried out in objects such as the galactic centre, galaxy clusters and dwarf galaxies i.e. objects with a predicted overdensity of WIMPs. Again there has been no confirmed detection.
+
+An interesting fourth approach to the hunt for DM is to discover dark stars. It is predicted that the first stars to form in the early universe, redshift $z\approx 10-50$, may have been 
+comprised of mainly hydrogen and helium and yet were powered by DM heating rather than nuclear fusion. These are believed to have formed when the universe was much denser than now and 
+consisted of high density DM halos. It is hoped that the James Webb Space Telescope will be able to detect dark stars and so enable us to study WIMPs in more detail.
+
+With the advent of numerical simulations, models that involve DM have been extensively explored. Currently a very popular model of the evolution of structure in the universe is
+the Lambda Cold Dark Matter ($\Lambda CDM$) model. Computer simulations have shown that if the DM particles are relativistic (``hot'') then, on small scales, density fluctuations are Silk damped, or
+washed out, the random thermal motion of DM particles. This results in small scale structure fluctuations to be suppressed. However, if the DM particles are ``cold'' i.e. cold dark matter (CDM), then
+they undergo a very different structure formation because they have smaller free-streaming length and can form low mass halos which can gradually build up into larger DM
+structures. These DM structures provide a gravitational well that baryonic particles can fall into to form baryonic structure. This results in a bottom-up process of structure 
+formation which is very different to the top-down sequence predicted for hot DM. These simulations have further convinced cosmologists that CDM comprised of WIMPs are the best
+explanation for the growth of large scale structure in the universe. In fact, the $\Lambda CDM$ model agrees so well with observations that it is often regarded as the ``standard model
+of cosmology''.
+
+Even though the evidence for DM is growing, there has been no confirmed detection of DM or WIMPs and the theory of DM leads to a number of problems \citep{sellwood} which I don't
+have space to detail here. This has led some cosmologists to believe that the Newtonian theory of gravity may need to be amended. This theory is called Modified Newtonian
+Dynamics (MOND). It is a conceptually simple idea but it has some far-reaching consequences. The basic idea is that Newton's second law be amended from $F=ma$ to $F=ma^2/a_0$ in the
+limit of very low accelerations ($a<<a_0\approx 1.2\times10^{-10}m/s^2$). This could then account for the observed motions of stars within galaxies without having to introduce
+DM. MOND has been quite successful with explaining flat rotation curves but less successful with galaxy clusters. MOND, however, is not without its own problems particularly when it
+comes to integrating MOND with General Relativity, explaining the growth of large scale structure, and explaining the first CMB acoustic peak.
+It would appear that either the LHC, or any detection methods previously described, will eventually detect WIMPs and confirm the existence of DM and MOND will die out as a theory or, if
+no detection of DM is forthcoming then the theory of MOND may well grow.
+
+\section{Dark Energy}
+Dark energy (DE) actually has a longer history than DM. As Einstein was forming his field equations for general relativity he realised that this would result in a universe that would
+gravitationally attract and therefore contract. He therefore introduced the cosmological constant to balance gravity and ensure a static universe. When observations by Hubble in 1929
+revealed that the universe is expanding, Einstein referred to his failure to predict a dynamic universe has his biggest blunder. The cosmological constant therefore fell into disuse.
+However in 1980 Alan Guth and Alexei Starobinsky proposed the idea of cosmic inflation which involved an exponential expansion of the universe immediately after the Big Bang. The theory
+of inflation involves a negative pressure field which creates a repulsive force. This idea is similar to DE, however even when inflation became widely accepted the 
+cosmological constant was considered irrelevant. This changed however in 1998 when observations of supernovae revealed that the universal expansion is accelerating. This was the first
+direct evidence of DE.
+
+Type Ia supernovae can be considered as standard candles and enable astronomers to obtain a luminosity distance when measured correctly. To measure cosmic expansion the apparent magnitude
+of distant supernovae is compared to those of more local supernovae which are not affected by DE. Since 1998 there have been many more supernova surveys and it is has become an active
+area of observational cosmology. 
+
+
+
+Theoretical models
+Observational aspects: Type 1a supernova, CMB, BAO, Weak lensing
+DE projects
+Vacuum energy
+
+% \begin{equation}
+% \frac{dN}{df}=\frac{-48\pi^2 r^4}{L}
+% \end{equation}
+% 
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width=.9\textwidth]{./NearestGalaxies.eps}
+% \caption{2MRS}
+% \label{fig:4}
+% \end{figure}
+
+
+\begin{thebibliography}{1}
+\bibitem[Abbott et al(2015)]{abbott}Abott, T., et al (Dark Energy Survey Collaboration), 2015, The Dark Energy Survey: more than dark energy - an overview, arXiv:1601.00329v3
+\bibitem[Arun et al(2017)]{arun}Arun, K., Gudennavar, S., B., Sivaram, C., 2017, Dark Matter, Dark Energy, and Alternate Models: A Review, arXiv:1704.06155
+\bibitem[Baldry(2016)]{baldry}Baldry, I., Cosmology lecture notes - MSc AStrophysics, 2016, Not in public domain
+\bibitem[Bergstrom(2012)]{bergstrom}Bergstrom L., 2012,  Dark Matter Evidence, Particle Physics Candidates and Detection Methods, arXiv:1205.4882
+\bibitem[Bertone et al(2004)]{bertone2}Bertone, G., Hooper, D., Silk, J., 2004, Particle Dark Matter: Evidence, Candidates and Constraints, arXiv:hep-ph/0404175v2
+\bibitem[Bertone and Hooper(2016)]{bertone1}Bertone, G., Hooper, D., 2016, A History of Dark Matter, arXiv:1605.04909v2
+\bibitem[Calmet and Kuntz(2017)]{calmet}Calmet, X., Kuntz, I., 2017, What is modified gravity and how to differentiate it from particle dark matter?, arXiv:1702.03832v2
+\bibitem[Clowe et al(2006)]{clowe}Clowe, D., Bradac, M., Gonzalez, A., H., Markevitch, M., Randall, S., W., Jones, C., Zaritsky, D., 2006, A Direct Empirical Proof of the Existence of Dark Matter, arXiv:astro-ph/0608407v1
+\bibitem[Cohen-Tannoudji(2015)]{cohen}Cohen-Tannoudji, G., 2015, The dark universe and quantum vacuum, arXiv:1507.00460
+\bibitem[Fornengo(2017)]{forengo}Fornengo, N., 2017, Dark matter overview, arXiv:1701.00119v3
+\bibitem[Freese(2017)]{freese}Freese, K., 2017, Status of dark matter in the universe, arXiv:1701.01840v1
+\bibitem[Gaggero et al(2016)]{gaggero}Gaggero, D., Bertone, G., Calore, F., Connors, R., M., T., Lovell, M., Markoff, S., Storm E., 2016, Searching for Primodial Black Holes in the radio and X-ray sky, arXiv:1612.00457v1
+\bibitem[He Zhang(2017)]{he}He, H., Zhang, Z., 2017, Direct Probe of Dark Energy through Gravitational Lensing Effect, arXiv:1701.03418v2
+\bibitem[Li et al(2012)]{li}Li, M., Li., X.,Wang, S., Wang, Y., 2012, Dark Energy: a Brief Review, arXiv:1209.0922v1
+\bibitem[Liddle(2015)]{liddle}Liddle, A.,2015, An Introduction to Modern Cosmology, Wiley & Sons, 3rd Edition
+\bibitem[Lisanti(2016)]{lisanti}Lisante M, 2016, Lectures on Dark Matter Physics, arXiv:1603.03797v2
+\bibitem[Mortonson et al(2013)]{mortonson}Mortonson, M., J., Weinberg, D., H., White, M., 2013, Dark Energy: A Short Review, arXiv:1401.0046v1
+\bibitem[Sellwood and Kosowsky(2000)]{sellwood}Sellwood, J., A., Kosowsky, A., 2000, Does Dark Matter Exist?, arXiv:astro-ph/0009074v1
+\bibitem[de Swart et al(2017)]{swart}de Swart, J., Bertone, G., van Dongen, J., 2017, How Dark Matter Came to Matter, arXiv:1703.00013v1
+\bibitem[Novosyadlyj et al(2013)]{novos}Novosyadlyj, B., Pelykh, V., Zhuk, A., 2013, Dark Energy: Observational Evidence and Theoretical Models, arXiv:1502.04177
+\bibitem[Weinberg(2008)]{weinberg1}Weinberg, S., 2008, Cosmology, Oxford, 1st Edition
+\bibitem[Weinberg et al(2013)]{weinberg2}Weinberg, D., H., Mortonson, M., J., Eisenstein, D., J.,Hirata, C., Riess, A., G., Rozo, E., 2013, Observational Probes of Cosmic Acceleration, arXiv:1201.2434v2
+\end{thebibliography}
+\end{document} 

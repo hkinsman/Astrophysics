@@ -1,0 +1,29 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{listings}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.eps}
+\author{Howard Kinsman}
+\title{Cosmology Essay: A review of Dark Matter and Dark Energy}
+\begin{document}
+\maketitle
+
+% \begin{equation}
+% \frac{dN}{df}=\frac{-48\pi^2 r^4}{L}
+% \end{equation}
+% 
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width=.9\textwidth]{./NearestGalaxies.eps}
+% \caption{2MRS}
+% \label{fig:4}
+% \end{figure}
+
+
+%\begin{thebibliography}{1}
+%\end{thebibliography}
+\end{document} 
