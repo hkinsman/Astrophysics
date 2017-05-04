@@ -12,10 +12,11 @@
 \begin{document}
 \maketitle
 \section{Introduction}
-Many observations and theories of the universe have found that approximately 95\% of the mass and energy in the universe is dark and invisible and furthermore the true nature of
-both dark matter and dark energy is unknown. This is a brief review of the history and current status of dark matter and dark energy.
+Many observations and theories of the universe have found that approximately 95\% of the mass and energy in the universe is dark and invisible, the true nature of which is
+largely unknown. The matter component is known as dark matter (DM) and the energy component dark energy (DE) This is a brief review of the history and current status of 
+DM and DE.
 \section{Dark Matter}
-Dark Matter (DM) has a surprisingly long and interesting history. In 1937 Fritz Zwicky published a paper on the velocity dispersion of galaxies within the Coma cluster. He found
+DM has a surprisingly long and interesting history. In 1937 Fritz Zwicky published a paper on the velocity dispersion of galaxies within the Coma cluster. He found
 that the velocity dispersion of galaxies within the cluster was so high that in order for the system to remain stable there must be some ``missing mass'' i.e. mass which
 is not detectable optically. Further research in this area continued but it wasn't until the 1970s when astronomers began accurately measuring the rotation curves of spiral galaxies,
 with the discovery of H1 21cm radio emission, that interest in this area became of great importance.
@@ -31,7 +32,8 @@ large gravitational pull of the cluster. This is known as strong lensing and is 
 and shape. 
 The mass of the galaxy cluster can be measured and compared to how much the light is expected to be bent by gravity. The results show that there must be far more mass in the cluster 
 than can be detected. Galaxy clusters when viewed in X-ray reveal huge amounts of hot gas which can be explained by large amounts of DM which provide a potential well to hold the gas.
-The CMB is the remnants of radiation from the early universe. Anisotropies in the CMB reveal evidence for DM. Before decoupling from baryonic matter, photons underwent oscillations that froze in
+The CMB is the remnants of radiation from the early universe. Anisotropies in the CMB reveal evidence for DM. Before decoupling from baryonic matter (i.e. protons and neutrons),
+ photons underwent oscillations that froze in
 at redshift $z\approx1100$. By studying the height of the peaks in these oscillations it has been found that the universe is comprised of approximately 5\% baryonic matter, 26\% dark matter
 and the remainder dark energy (discussed later). Some authors \citep{freese} regard the evidence of DM from the CMB as ``irrefutable''.
 
@@ -53,7 +55,7 @@ of many theoretical studies of DM and are now considered to be the leading class
 There are currently four main approaches to discovering WIMPs. There are ongoing experiments, with ever increasing sensitivity, at CERN, using
 the Large Hadron Collider. One of the goals of the two detectors, ATLAS and CMS, was specifically to try and discover the nature of DM. It has so far been unsuccessful in that respect.
 There are also attempts to directly detect WIMPs in underground DM laboratories worldwide. So far there has been no confirmed detection of WIMPs. Indirect detection of WIMPs is also being
-carried out in objects such as the galactic centre, galaxy clusters and dwarf galaxies i.e. objects with a predicted overdensity of WIMPs. Again there has been no confirmed detection.
+carried out in objects such as the galactic centre, galaxy clusters and dwarf galaxies i.e. objects with a predicted over-density of WIMPs. Again, there has been no confirmed detection.
 
 An interesting fourth approach to the hunt for DM is to discover dark stars. It is predicted that the first stars to form in the early universe, redshift $z\approx 10-50$, may have been 
 comprised of mainly hydrogen and helium and yet were powered by DM heating rather than nuclear fusion. These are believed to have formed when the universe was much denser than now and 
@@ -78,28 +80,79 @@ It would appear that either the LHC, or any detection methods previously describ
 no detection of DM is forthcoming then the theory of MOND may well grow.
 
 \section{Dark Energy}
-Dark energy (DE) actually has a longer history than DM. As Einstein was forming his field equations for general relativity he realised that this would result in a universe that would
+DE and cosmic acceleration is arguably one of the greatest unsolved problems in contemporary physics. DE actually has a longer history than DM. As Einstein was forming his 
+field equations for general relativity he realised that this would result in a universe that would
 gravitationally attract and therefore contract. He therefore introduced the cosmological constant to balance gravity and ensure a static universe. When observations by Hubble in 1929
 revealed that the universe is expanding, Einstein referred to his failure to predict a dynamic universe has his biggest blunder. The cosmological constant therefore fell into disuse.
-However in 1980 Alan Guth and Alexei Starobinsky proposed the idea of cosmic inflation which involved an exponential expansion of the universe immediately after the Big Bang. The theory
+However, in 1980 Alan Guth and Alexei Starobinsky proposed the idea of cosmic inflation which involved an exponential expansion of the universe immediately after the Big Bang. The theory
 of inflation involves a negative pressure field which creates a repulsive force. This idea is similar to DE, however even when inflation became widely accepted the 
 cosmological constant was considered irrelevant. This changed however in 1998 when observations of supernovae revealed that the universal expansion is accelerating. This was the first
 direct evidence of DE.
 
-Type Ia supernovae can be considered as standard candles and enable astronomers to obtain a luminosity distance when measured correctly. To measure cosmic expansion the apparent magnitude
-of distant supernovae is compared to those of more local supernovae which are not affected by DE. Since 1998 there have been many more supernova surveys and it is has become an active
-area of observational cosmology. 
+Type Ia supernovae occur when a white dwarf in a binary pair accretes enough mass so that it goes over the Chandrasekhar mass and triggers a supernova. The supernova therefore doesn't
+depend on the mass of the white dwarf on the other star in the binary. Type Ia supernovae can be considered as standard candles and enable astronomers to obtain a luminosity distance.
+To measure cosmic expansion the apparent magnitude of distant supernovae are compared to those of more local supernovae which are not affected by DE. The Supernova Cosmology Project
+which carried out one of the surveys in 1998 found that, flat cosmology ($\Omega_{\Lambda}+\Omega_m=1$), that $\Omega_m=.28$ and so that $\Omega_{\Lambda}=.72$. $\Omega$ is the
+density parameter and is defined as the ratio of the observed density to the critical density. $\Omega_m$ here is 
+the proportion of matter in universe (DM and baryonic) whilst $\Omega_{\Lambda}$ represents the proportion of DE in universe. The deceleration parameter is calculated as follows:
+\begin{equation}
+\frac{1}{2}(\Omega_m-2\Omega_{\Lambda}+2\Omega_R) 
+\end{equation}
+This then results in a negative deceleration parameter indicating that the expansion of the universe is accelerating.
+Since 1998 there have been many more supernova surveys and it is has become an active area of observational cosmology. All this supernova data indicates that the apparent luminosity
+of Type Ia supernovae declines more rapidly with increasing redshift than would be expected if $\Omega_M=1$ and $\Omega_{\Lambda}=0$ i.e. an Einstein-de Sitter universe, or the 
+luminosity distance is greater than expected. Of course, this data could be interpreted as being due to other effects such as dust. More evidence is required.
+
+Although it doesn't directly constrain DE, data obtained from CMB anisotropies does provide accurate figures for parameters that are needed in order to study DE. By measuring anisotropies 
+within the CMB data, from WMAP and Planck satellites, accurate figures for $\Omega_B$ and $\Omega_{DM}$ have been obtained. Similarly, Baryonic Acoustic Oscillations (BAO) also
+help the study of DE by constraining cosmological parameters. BAOs are regular and periodic fluctuations in the density of baryonic matter. In a similar way that Type Ia supernovae
+are standard candles, BAOs are standard rulers. By comparing the clustering of galaxies today (using redshift surveys like SDSS) and comparing it with data from CMB cosmologists
+have a way of measuring DE that is independent of the supernova method.
+
+Unlike DM, where particle physicists and cosmologists have established theories as to what it is comprised of, the nature of DE is completely unknown. DE is often referred to as
+vacuum energy. According to quantum field theory a vacuum or empty space actually consists of virtual particles. It has been suggested that these virtual particles may give
+rise to DE. However, the density of virtual particles is about 120 times larger than the DE density. There is currently no explanation for this. The DE density is believed
+to be $\approx10^{-27}kg/m^3$ which is low but it has such a profound effect on the universe because it fills all of empty space.
+
+There are many theories for DE. However, the simplest one is that it is constant i.e. a cosmological constant. The cosmological constant has a negative pressure equal to
+its energy density and so exerts a repulsive force causing the expansion of the universe to accelerate i.e. $P=-\rho$. The previously mentioned $\Lambda CDM$ model uses
+this form of DE and is the currently preferred cosmological model. An important parameter in the study of DE is the equation of state parameter $\omega$. This comes from: 
+\begin{equation}
+P=\omega\rho c^2
+\end{equation}
+where P is pressue, $\rho$ is density, c is speed of light and $\omega$ is the equation of state parameter.
+\begin{equation}
+\dot{\rho}+3\frac{\dot{R}}{R}\left(1+\omega\right)\rho=0
+\end{equation}
+\begin{equation}
+\rho\propto R^{-3\left(1+\rho\right)}
+\end{equation}
+In the $\Lambda CDM$ model $\omega$ is assumed to be -1.
+
+Another theory of DE is quintessence. In this theory, DE is assumed to be a scalar field and unlike the 
+cosmological constant can vary in time and space. However, there is currently no evidence to support this theory.
+It has been suggested that instead of vacuum energy, cosmic acceleration can be explained by a modified version of GR. Tests of GR within the solar system have proven the theory
+to be accurate but it may be the case that GR breaks down on cosmological scales. However there currently is no viable theory of GR that can fully explain cosmic acceleration
+without introducing some form of DE. However, this doesn't preclude a theory arising in the future as, for example, it wasn't until the advent of GR in 1915 that the precession
+of Mercury's orbit could be fully explained.
+
+The Dark Energy Survey (DES) was specifically created to probe DE. Using a wide-field camera on the 4m Blanco Telescope in Chile the project aims to catalogue 300 million
+galaxies. The main goals of the survey are to characterise DE and DM and also to test alternative theories of gravity. The survey takes photometric redshifts of galaxies and
+also carries out galaxy-galaxy weak lensing measurements i.e. where both the lenses and sources are galaxies. It is also carrying out a time domain survey of Type Ia supernovae.
+Last year the project reported that they had constrained $\Omega_m=0.31\pm0.09$. The Sloan Digital Sky Survey (SDSS) is also carrying out DE probes with the Extended Baryon Oscillation
+Spectroscopic Survey (eBOSS). The main goals of eBOSS are to measure clustering on large scales and to measure BAOs. Other projects include Panoramic Survey Telescope and Rapid 
+Response System (Pan-STARRS) and the Hobby-Eberly Telescope Dark Energy Experiment (HETDEX). 
+One of the aims of Pan-STARRS was to constrain the equation of state parameter for DE ($\omega$) which was found to be $\omega=-1.14$ \citep{zheng}. The Hobby-Eberly Telescope 
+has recently been upgraded for HETDEX and will probe DE through spectrographs of galaxies over the redshift $0<z<4$ and also analysing BAOs. The aim of HETDEX is to provide a
+direct detection of DE at $z\approx3$ \citep{hill}.
+
+DE may well have a profound effect on the final fate of the universe. Observations suggest that the expansion of the universe will continue to accelerate forever and so the 
+universe will cool as it expands. Redshift will eventually stretch photons to undetectable wavelengths and star formation will cease as gas supply runs out. As stars will
+eventually die out one by one leaving stellar remnants. Some theories even predict that stellar remnants will disappear due to proton decay leaving only black holes,
+which themselves will eventually disappear due to Hawking radiation. Hawking radiation is blackbody radiation believed to be emitted by black holes because of quantum
+effects near the event horizon. This is often referred to as the heat death of the universe.
 
 
-
-Theoretical models
-Observational aspects: Type 1a supernova, CMB, BAO, Weak lensing
-DE projects
-Vacuum energy
-
-% \begin{equation}
-% \frac{dN}{df}=\frac{-48\pi^2 r^4}{L}
-% \end{equation}
 % 
 % \begin{figure}[H]
 % \centering
@@ -123,8 +176,9 @@ Vacuum energy
 \bibitem[Freese(2017)]{freese}Freese, K., 2017, Status of dark matter in the universe, arXiv:1701.01840v1
 \bibitem[Gaggero et al(2016)]{gaggero}Gaggero, D., Bertone, G., Calore, F., Connors, R., M., T., Lovell, M., Markoff, S., Storm E., 2016, Searching for Primodial Black Holes in the radio and X-ray sky, arXiv:1612.00457v1
 \bibitem[He Zhang(2017)]{he}He, H., Zhang, Z., 2017, Direct Probe of Dark Energy through Gravitational Lensing Effect, arXiv:1701.03418v2
+\bibitem[Hill et al(2008)]{hill}Hill,G., J., et al, 2008, The Hobby-Eberly Telescope Dark Energy Experiment (HETDEX): Description and Early Pilot Survey Results, arXiv:0806.0183v1
 \bibitem[Li et al(2012)]{li}Li, M., Li., X.,Wang, S., Wang, Y., 2012, Dark Energy: a Brief Review, arXiv:1209.0922v1
-\bibitem[Liddle(2015)]{liddle}Liddle, A.,2015, An Introduction to Modern Cosmology, Wiley & Sons, 3rd Edition
+\bibitem[Liddle(2015)]{liddle}Liddle, A.,2015, An Introduction to Modern Cosmology, Wiley and Sons, 3rd Edition
 \bibitem[Lisanti(2016)]{lisanti}Lisante M, 2016, Lectures on Dark Matter Physics, arXiv:1603.03797v2
 \bibitem[Mortonson et al(2013)]{mortonson}Mortonson, M., J., Weinberg, D., H., White, M., 2013, Dark Energy: A Short Review, arXiv:1401.0046v1
 \bibitem[Sellwood and Kosowsky(2000)]{sellwood}Sellwood, J., A., Kosowsky, A., 2000, Does Dark Matter Exist?, arXiv:astro-ph/0009074v1
@@ -132,5 +186,6 @@ Vacuum energy
 \bibitem[Novosyadlyj et al(2013)]{novos}Novosyadlyj, B., Pelykh, V., Zhuk, A., 2013, Dark Energy: Observational Evidence and Theoretical Models, arXiv:1502.04177
 \bibitem[Weinberg(2008)]{weinberg1}Weinberg, S., 2008, Cosmology, Oxford, 1st Edition
 \bibitem[Weinberg et al(2013)]{weinberg2}Weinberg, D., H., Mortonson, M., J., Eisenstein, D., J.,Hirata, C., Riess, A., G., Rozo, E., 2013, Observational Probes of Cosmic Acceleration, arXiv:1201.2434v2
+\bibitem[Zheng et al(2014)]{zheng}Zheng, W., Li, S., Xia, J., Li, M., Lu, T., 2014, Constraints on Dark Energy new New Observations including Pan-STARRS, arXiv:1405.2724v2
 \end{thebibliography}
 \end{document} 
