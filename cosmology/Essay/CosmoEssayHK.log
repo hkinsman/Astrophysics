@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2016.8.9)  4 MAY 2017 16:11
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2016.8.9)  5 MAY 2017 12:57
 entering extended mode
  %&-line parsing enabled.
 **CosmoEssayHK.tex
@@ -131,43 +131,54 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 13.
 (/usr/share/texmf/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 37.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 37.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 37.
- [1
+<./rotationcurves.jpg, id=1, 361.35pt x 258.36525pt>
+File: ./rotationcurves.jpg Graphic file (type jpg)
 
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+<use ./rotationcurves.jpg> [1
+
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 45.
+ [2 <./rotationcurves.jpg>]
+<./bullet.jpg, id=12, 470.9595pt x 153.57375pt>
+File: ./bullet.jpg Graphic file (type jpg)
+ <use ./bullet.jpg> [3 <./bullet.jpg>] [4] [5] <./planck2.jpg, id=26, 1195.4662
+5pt x 845.1575pt>
+File: ./planck2.jpg Graphic file (type jpg)
+
+<use ./planck2.jpg> [6] [7 <./planck2.jpg>] [8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 []\OT1/cmr/m/n/12 Bertone, G., Hooper, D., 2016, A His-tory of Dark Mat-ter,
  []
 
-[7]
-Underfull \hbox (badness 1735) in paragraph at lines 179--180
+
+Underfull \hbox (badness 1735) in paragraph at lines 207--208
 \OT1/cmr/m/n/12 per-i-ment (HET-DEX): De-scrip-tion and Early Pi-lot Sur-vey Re
 -sults,
  []
 
-[8] [9] (./CosmoEssayHK.aux) ) 
+[10] [11] (./CosmoEssayHK.aux) ) 
 Here is how much of TeX's memory you used:
- 2151 strings out of 256214
- 28798 string characters out of 1917001
- 84874 words of memory out of 1500000
- 5455 multiletter control sequences out of 10000+200000
+ 2174 strings out of 256214
+ 29141 string characters out of 1917001
+ 84955 words of memory out of 1500000
+ 5475 multiletter control sequences out of 10000+200000
  8830 words of font info for 35 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 26i,6n,32p,251b,239s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.p
-fb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf/fonts/
-type1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb><
-/usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/texmf/fonts/type1
-/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/
-share/texmf/fonts/type1/bluesky/cm/cmsy8.pfb>
-Output written on CosmoEssayHK.pdf (9 pages, 71389 bytes).
+ 26i,6n,32p,465b,229s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbx12
+.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf/font
+s/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb
+></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/texmf/fonts/typ
+e1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></us
+r/share/texmf/fonts/type1/bluesky/cm/cmsy8.pfb>
+Output written on CosmoEssayHK.pdf (11 pages, 425550 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
