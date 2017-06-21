@@ -23,32 +23,32 @@
 
      step = 1.e-7 !vary step size
      start=0.
-     end=25 !vary end time
+     end=15 !vary end time
 
       m1=.5   !blue
       m2=.5  !red
-      m3=0.12    !black
-      m4=0.12   !yellow
+      m3=0.1    !black
+      m4=0.1   !yellow
 
      ys(1) = -.5     ! m1,x
      ys(2) = 0  ! m1,vx
      ys(3) = 0       ! m1,y
-     ys(4) = -1.1		!m1,vy
+     ys(4) = -1		!m1,vy
      
      ys(5) = .5         ! m2,x
      ys(6) = 0          ! m2,vx
      ys(7) = 0         ! m2,y
-     ys(8) = 1.1	!m2,vy
+     ys(8) = 1		!m2,vy
 
-     ys(9) = -.12     ! m3,x
+     ys(9) = -.1     ! m3,x
      ys(10) = 0       ! m3,vx
      ys(11) = 0        ! m3,y
-     ys(12) = -.015		!m3, vy
+     ys(12) = -.02		!m3, vy
 
-     ys(13) = .12     ! m4,x
+     ys(13) = .1     ! m4,x
      ys(14) = 0      ! m4,vx
      ys(15) = 0        ! m4,y
-     ys(16) = .015		!m4, vy
+     ys(16) = .02		!m4, vy
 
    end subroutine initialconditions
 
