@@ -1,9 +1,8 @@
  program doublebars
    implicit none
    integer, parameter :: NVAR=16 ,NMAX=50,KMAXX=10000
-   integer :: kmax=0,i,j,k
+   integer :: kmax=0,i,j
    real :: ys(NVAR),xp(KMAXX),yp(NMAX,KMAXX),m1,m2,m3,m4,m, start, end, step, energy(KMAXX)
-  real :: period(4, KMAXX)
    real, parameter :: PI=4*ATAN(1.)
 
    call initialconditions
@@ -11,13 +10,12 @@
 
    do i=1,kmax
       call calcenergy
-      call calcperiod
-      write(13,33) xp(i), (yp(j,i),j=1,NVAR),i,energy(i), (period(k,i), k=1,4)
+      write(9,33) xp(i), (yp(j,i),j=1,NVAR),i,energy(i)
       if(xp(i)==end) then
           exit
       end if
    end do
- 33 format(17f10.4,i5,f10.4, 4f10.4)
+ 33 format(17f10.4,i5,f10.4)
 
  contains
 
@@ -25,7 +23,7 @@
 
      step = 1.e-7 !vary step size
      start=0.
-     end=2.22 !vary end time
+     end=25 !vary end time
 
       m1=.5   !blue
       m2=.5  !red
@@ -53,13 +51,6 @@
      ys(16) = .1		!m4, vy
 
    end subroutine initialconditions
-
-  subroutine calcperiod()
-    period(1,i) = ATAN(yp(3,i)/yp(1,i))
-    period(2,i) = ATAN(yp(7,i)/yp(5,i))
-    period(3,i) = ATAN(yp(11,i)/yp(9,i))
-    period(4,i) = ATAN(yp(15,i)/yp(13,i))
-  end subroutine calcperiod
 
    subroutine derivs(x,y,dydx)
      real, intent(in) :: x,y(NVAR)

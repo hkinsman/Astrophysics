@@ -1,0 +1,3428 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: Orbit.eps
+%%Creator: gnuplot 4.2 patchlevel 6 
+%%CreationDate: Fri Jul  7 16:07:13 2017
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 410 302
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following 6 true/false flags may be edited by hand if required
+% The unit line width may also be changed
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Rounded false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+%
+/vshift -46 def
+/dl1 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+Level1 {} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (Orbit.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 4.2 patchlevel 6 )
+  /Author (LJMU Astrophysics v2.3DL 2015/16)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Fri Jul  7 16:07:13 2017)
+  /DOCINFO pdfmark
+end
+} ifelse
+%
+% Gnuplot Prolog Version 4.2 (August 2006)
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+% Default Line colors
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default Line Types
+/LTw {PL [] 1 setgray} def
+/LTb {BL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [4 dl1 2 dl2] LC1 DL} def
+/LT2 {PL [2 dl1 3 dl2] LC2 DL} def
+/LT3 {PL [1 dl1 1.5 dl2] LC3 DL} def
+/LT4 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC5 DL} def
+/LT6 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 4 dl2] LC8 DL} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  gsave 1 setgray fill grestore clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+ 2 lt
+	{/InterpretLevel1 true def}
+	{/InterpretLevel1 Level1 def}
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {show} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     show 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} bind def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get stringwidth pop add} {pop} ifelse} ifelse} forall} bind def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+end
+%%EndProlog
+gnudict begin
+gsave
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+1.000 UL
+LTb
+1542 560 M
+-63 0 V
+stroke
+1395 560 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-2)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1542 1111 M
+-63 0 V
+stroke
+1395 1111 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-1.5)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1542 1662 M
+-63 0 V
+stroke
+1395 1662 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-1)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1542 2213 M
+-63 0 V
+stroke
+1395 2213 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.5)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1542 2765 M
+-63 0 V
+stroke
+1395 2765 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1542 3316 M
+-63 0 V
+stroke
+1395 3316 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.5)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1542 3867 M
+-63 0 V
+stroke
+1395 3867 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1542 4418 M
+-63 0 V
+stroke
+1395 4418 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1.5)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1542 4969 M
+-63 0 V
+stroke
+1395 4969 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 2)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1542 560 M
+0 -63 V
+stroke
+1542 357 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-2)]
+] -46.7 MCshow
+1.000 UL
+LTb
+2093 560 M
+0 -63 V
+stroke
+2093 357 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-1.5)]
+] -46.7 MCshow
+1.000 UL
+LTb
+2645 560 M
+0 -63 V
+stroke
+2645 357 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-1)]
+] -46.7 MCshow
+1.000 UL
+LTb
+3196 560 M
+0 -63 V
+stroke
+3196 357 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.5)]
+] -46.7 MCshow
+1.000 UL
+LTb
+3747 560 M
+0 -63 V
+stroke
+3747 357 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0)]
+] -46.7 MCshow
+1.000 UL
+LTb
+4298 560 M
+0 -63 V
+stroke
+4298 357 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.5)]
+] -46.7 MCshow
+1.000 UL
+LTb
+4850 560 M
+0 -63 V
+stroke
+4850 357 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1)]
+] -46.7 MCshow
+1.000 UL
+LTb
+5401 560 M
+0 -63 V
+stroke
+5401 357 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1.5)]
+] -46.7 MCshow
+1.000 UL
+LTb
+5952 560 M
+0 -63 V
+stroke
+5952 357 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 2)]
+] -46.7 MCshow
+1.000 UL
+LTb
+1.000 UL
+LTb
+1542 4969 N
+0 -4409 V
+4410 0 V
+0 4409 V
+-4410 0 V
+Z stroke
+LCb setrgbcolor
+905 2764 M
+currentpoint gsave translate 90 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (Y position)]
+] -46.7 MCshow
+grestore
+LTb
+LCb setrgbcolor
+3747 147 M
+[ [(Helvetica) 140.0 0.0 true true 0 (X position)]
+] -46.7 MCshow
+LTb
+1.000 UP
+1.000 UL
+LTb
+1.000 UP
+1.000 UL
+LT0
+0.00 0.00 1.00 C 3196 2765 Pnt
+3196 2764 Pnt
+3196 2764 Pnt
+3196 2764 Pnt
+3196 2764 Pnt
+3196 2764 Pnt
+3196 2764 Pnt
+3196 2764 Pnt
+3196 2764 Pnt
+3196 2763 Pnt
+3196 2763 Pnt
+3196 2763 Pnt
+3196 2763 Pnt
+3196 2763 Pnt
+3196 2763 Pnt
+3196 2762 Pnt
+3196 2762 Pnt
+3196 2762 Pnt
+3196 2762 Pnt
+3196 2762 Pnt
+3196 2762 Pnt
+3196 2761 Pnt
+3196 2761 Pnt
+3196 2761 Pnt
+3196 2761 Pnt
+3196 2761 Pnt
+3196 2760 Pnt
+3196 2760 Pnt
+3196 2760 Pnt
+3196 2760 Pnt
+3196 2760 Pnt
+3196 2759 Pnt
+3196 2759 Pnt
+3196 2759 Pnt
+3196 2758 Pnt
+3196 2758 Pnt
+3196 2758 Pnt
+3196 2757 Pnt
+3196 2757 Pnt
+3196 2757 Pnt
+3196 2756 Pnt
+3196 2756 Pnt
+3196 2756 Pnt
+3196 2755 Pnt
+3196 2755 Pnt
+3196 2754 Pnt
+3196 2754 Pnt
+3196 2753 Pnt
+3196 2752 Pnt
+3196 2752 Pnt
+3196 2751 Pnt
+3196 2751 Pnt
+3196 2750 Pnt
+3196 2749 Pnt
+3196 2749 Pnt
+3196 2748 Pnt
+3196 2748 Pnt
+3196 2747 Pnt
+3196 2746 Pnt
+3196 2746 Pnt
+3196 2745 Pnt
+3196 2744 Pnt
+3196 2743 Pnt
+3196 2743 Pnt
+3196 2742 Pnt
+3196 2741 Pnt
+3196 2741 Pnt
+3196 2740 Pnt
+3196 2739 Pnt
+3196 2738 Pnt
+3196 2738 Pnt
+3196 2737 Pnt
+3196 2736 Pnt
+3196 2735 Pnt
+3196 2734 Pnt
+3196 2733 Pnt
+3196 2731 Pnt
+3197 2729 Pnt
+3197 2728 Pnt
+3197 2726 Pnt
+3197 2724 Pnt
+3197 2723 Pnt
+3197 2721 Pnt
+3197 2720 Pnt
+3197 2718 Pnt
+3197 2715 Pnt
+3197 2713 Pnt
+3198 2710 Pnt
+3198 2708 Pnt
+3198 2705 Pnt
+3198 2703 Pnt
+3198 2700 Pnt
+3198 2698 Pnt
+3199 2695 Pnt
+3199 2693 Pnt
+3199 2690 Pnt
+3199 2688 Pnt
+3199 2686 Pnt
+3200 2683 Pnt
+3200 2680 Pnt
+3200 2676 Pnt
+3201 2673 Pnt
+3201 2669 Pnt
+3202 2665 Pnt
+3202 2661 Pnt
+3203 2657 Pnt
+3203 2653 Pnt
+3204 2649 Pnt
+3204 2645 Pnt
+3205 2640 Pnt
+3206 2635 Pnt
+3207 2629 Pnt
+3208 2623 Pnt
+3209 2616 Pnt
+3210 2608 Pnt
+3212 2600 Pnt
+3214 2592 Pnt
+3215 2584 Pnt
+3217 2575 Pnt
+3219 2567 Pnt
+3222 2557 Pnt
+3224 2548 Pnt
+3227 2539 Pnt
+3229 2530 Pnt
+3232 2520 Pnt
+3235 2510 Pnt
+3239 2499 Pnt
+3242 2488 Pnt
+3246 2477 Pnt
+3251 2465 Pnt
+3255 2453 Pnt
+3260 2441 Pnt
+3265 2429 Pnt
+3270 2418 Pnt
+3275 2407 Pnt
+3279 2397 Pnt
+3284 2388 Pnt
+3287 2380 Pnt
+3291 2373 Pnt
+3294 2367 Pnt
+3297 2361 Pnt
+3300 2356 Pnt
+3302 2351 Pnt
+3304 2348 Pnt
+3306 2344 Pnt
+3307 2342 Pnt
+3308 2340 Pnt
+3309 2339 Pnt
+3309 2338 Pnt
+3309 2338 Pnt
+3310 2338 Pnt
+3310 2337 Pnt
+3310 2337 Pnt
+3310 2337 Pnt
+3310 2337 Pnt
+3310 2337 Pnt
+3310 2336 Pnt
+3310 2336 Pnt
+3310 2336 Pnt
+3311 2336 Pnt
+3311 2336 Pnt
+3311 2335 Pnt
+3311 2335 Pnt
+3311 2335 Pnt
+3311 2334 Pnt
+3312 2334 Pnt
+3312 2333 Pnt
+3312 2333 Pnt
+3313 2332 Pnt
+3313 2332 Pnt
+3313 2331 Pnt
+3314 2330 Pnt
+3314 2329 Pnt
+3315 2328 Pnt
+3316 2327 Pnt
+3316 2325 Pnt
+3317 2324 Pnt
+3318 2323 Pnt
+3319 2321 Pnt
+3320 2320 Pnt
+3321 2318 Pnt
+3322 2316 Pnt
+3323 2314 Pnt
+3324 2312 Pnt
+3325 2310 Pnt
+3327 2308 Pnt
+3328 2306 Pnt
+3329 2304 Pnt
+3330 2303 Pnt
+3331 2301 Pnt
+3331 2300 Pnt
+3332 2299 Pnt
+3333 2298 Pnt
+3333 2297 Pnt
+3334 2296 Pnt
+3334 2296 Pnt
+3334 2295 Pnt
+3335 2295 Pnt
+3335 2295 Pnt
+3335 2295 Pnt
+3335 2295 Pnt
+3335 2295 Pnt
+3335 2295 Pnt
+3335 2294 Pnt
+3335 2294 Pnt
+3335 2294 Pnt
+3335 2294 Pnt
+3335 2294 Pnt
+3335 2294 Pnt
+3335 2294 Pnt
+3336 2294 Pnt
+3336 2293 Pnt
+3336 2293 Pnt
+3336 2293 Pnt
+3336 2293 Pnt
+3336 2293 Pnt
+3336 2292 Pnt
+3336 2292 Pnt
+3337 2292 Pnt
+3337 2292 Pnt
+3337 2291 Pnt
+3337 2291 Pnt
+3338 2290 Pnt
+3338 2290 Pnt
+3338 2289 Pnt
+3339 2289 Pnt
+3339 2288 Pnt
+3339 2287 Pnt
+3340 2287 Pnt
+3340 2286 Pnt
+3340 2286 Pnt
+3341 2285 Pnt
+3341 2285 Pnt
+3341 2285 Pnt
+3341 2284 Pnt
+3342 2284 Pnt
+3342 2284 Pnt
+3342 2284 Pnt
+3342 2283 Pnt
+3342 2283 Pnt
+3342 2283 Pnt
+3342 2283 Pnt
+3342 2283 Pnt
+3342 2283 Pnt
+3342 2283 Pnt
+3342 2283 Pnt
+3342 2283 Pnt
+3342 2283 Pnt
+3342 2282 Pnt
+3343 2282 Pnt
+3343 2282 Pnt
+3343 2282 Pnt
+3343 2282 Pnt
+3343 2282 Pnt
+3343 2282 Pnt
+3343 2281 Pnt
+3343 2281 Pnt
+3343 2281 Pnt
+3343 2281 Pnt
+3344 2281 Pnt
+3344 2280 Pnt
+3344 2280 Pnt
+3344 2280 Pnt
+3345 2279 Pnt
+3345 2279 Pnt
+3345 2278 Pnt
+3345 2278 Pnt
+3346 2278 Pnt
+3346 2277 Pnt
+3346 2276 Pnt
+3347 2276 Pnt
+3347 2275 Pnt
+3347 2275 Pnt
+3348 2275 Pnt
+3348 2274 Pnt
+3348 2274 Pnt
+3348 2274 Pnt
+3348 2274 Pnt
+3348 2273 Pnt
+3348 2273 Pnt
+3349 2273 Pnt
+3349 2273 Pnt
+3349 2273 Pnt
+3349 2273 Pnt
+3349 2273 Pnt
+3349 2273 Pnt
+3349 2273 Pnt
+3349 2272 Pnt
+3349 2272 Pnt
+3349 2272 Pnt
+3349 2272 Pnt
+3349 2272 Pnt
+3350 2272 Pnt
+3350 2272 Pnt
+3350 2271 Pnt
+3350 2271 Pnt
+3350 2271 Pnt
+3350 2270 Pnt
+3351 2270 Pnt
+3351 2270 Pnt
+3351 2269 Pnt
+3352 2269 Pnt
+3352 2268 Pnt
+3352 2268 Pnt
+3353 2267 Pnt
+3353 2266 Pnt
+3354 2265 Pnt
+3355 2264 Pnt
+3355 2263 Pnt
+3356 2262 Pnt
+3357 2261 Pnt
+3358 2260 Pnt
+3359 2258 Pnt
+3360 2257 Pnt
+3360 2255 Pnt
+3361 2254 Pnt
+3362 2253 Pnt
+3363 2252 Pnt
+3364 2251 Pnt
+3365 2250 Pnt
+3365 2249 Pnt
+3365 2249 Pnt
+3365 2249 Pnt
+3365 2249 Pnt
+3365 2248 Pnt
+3365 2248 Pnt
+3366 2248 Pnt
+3366 2248 Pnt
+3366 2248 Pnt
+3366 2248 Pnt
+3366 2248 Pnt
+3366 2248 Pnt
+3366 2247 Pnt
+3366 2247 Pnt
+3366 2247 Pnt
+3367 2247 Pnt
+3367 2247 Pnt
+3367 2246 Pnt
+3367 2246 Pnt
+3367 2245 Pnt
+3368 2245 Pnt
+3368 2244 Pnt
+3369 2244 Pnt
+3369 2243 Pnt
+3370 2242 Pnt
+3370 2242 Pnt
+3371 2241 Pnt
+3372 2239 Pnt
+3373 2238 Pnt
+3374 2237 Pnt
+3375 2235 Pnt
+3376 2233 Pnt
+3378 2231 Pnt
+3379 2229 Pnt
+3381 2226 Pnt
+3384 2223 Pnt
+3386 2220 Pnt
+3389 2216 Pnt
+3392 2212 Pnt
+3395 2208 Pnt
+3399 2203 Pnt
+3403 2198 Pnt
+3407 2193 Pnt
+3411 2188 Pnt
+3415 2184 Pnt
+3419 2179 Pnt
+3423 2174 Pnt
+3426 2170 Pnt
+3430 2166 Pnt
+3432 2163 Pnt
+3434 2161 Pnt
+3435 2159 Pnt
+3436 2159 Pnt
+3436 2158 Pnt
+3436 2158 Pnt
+3436 2158 Pnt
+3436 2158 Pnt
+3436 2158 Pnt
+3436 2158 Pnt
+3436 2158 Pnt
+3436 2158 Pnt
+3437 2158 Pnt
+3437 2158 Pnt
+3437 2157 Pnt
+3437 2157 Pnt
+3437 2157 Pnt
+3437 2157 Pnt
+3437 2157 Pnt
+3437 2157 Pnt
+3438 2157 Pnt
+3438 2156 Pnt
+3438 2156 Pnt
+3438 2156 Pnt
+3438 2156 Pnt
+3439 2155 Pnt
+3439 2155 Pnt
+3439 2154 Pnt
+3440 2154 Pnt
+3440 2153 Pnt
+3441 2153 Pnt
+3441 2152 Pnt
+3442 2151 Pnt
+3443 2150 Pnt
+3444 2150 Pnt
+3444 2149 Pnt
+3445 2148 Pnt
+3446 2147 Pnt
+3447 2146 Pnt
+3447 2146 Pnt
+3447 2146 Pnt
+3447 2145 Pnt
+3447 2145 Pnt
+3448 2145 Pnt
+3448 2145 Pnt
+3448 2145 Pnt
+3448 2145 Pnt
+3448 2145 Pnt
+3448 2145 Pnt
+3448 2145 Pnt
+3448 2145 Pnt
+3448 2144 Pnt
+3448 2144 Pnt
+3448 2144 Pnt
+3448 2144 Pnt
+3449 2144 Pnt
+3449 2144 Pnt
+3449 2144 Pnt
+3449 2144 Pnt
+3449 2143 Pnt
+3449 2143 Pnt
+3450 2143 Pnt
+3450 2143 Pnt
+3450 2142 Pnt
+3451 2142 Pnt
+3451 2141 Pnt
+3452 2141 Pnt
+3452 2140 Pnt
+3453 2140 Pnt
+3453 2139 Pnt
+3454 2138 Pnt
+3455 2137 Pnt
+3455 2136 Pnt
+3457 2135 Pnt
+3458 2134 Pnt
+3459 2132 Pnt
+3461 2131 Pnt
+3462 2129 Pnt
+3464 2127 Pnt
+3466 2125 Pnt
+3469 2122 Pnt
+3471 2119 Pnt
+3474 2116 Pnt
+3478 2113 Pnt
+3482 2109 Pnt
+3486 2105 Pnt
+3490 2100 Pnt
+3495 2095 Pnt
+3501 2090 Pnt
+3506 2085 Pnt
+3512 2079 Pnt
+3517 2074 Pnt
+3522 2070 Pnt
+3527 2065 Pnt
+3531 2061 Pnt
+3535 2058 Pnt
+3538 2055 Pnt
+3540 2053 Pnt
+3542 2051 Pnt
+3543 2051 Pnt
+3543 2050 Pnt
+3544 2050 Pnt
+3544 2050 Pnt
+3544 2050 Pnt
+3544 2050 Pnt
+3544 2050 Pnt
+3544 2050 Pnt
+3544 2050 Pnt
+3544 2049 Pnt
+3544 2049 Pnt
+3544 2049 Pnt
+3544 2049 Pnt
+3545 2049 Pnt
+3545 2049 Pnt
+3545 2049 Pnt
+3545 2049 Pnt
+3545 2049 Pnt
+3545 2049 Pnt
+3545 2048 Pnt
+3546 2048 Pnt
+3546 2048 Pnt
+3546 2048 Pnt
+3547 2048 Pnt
+3547 2047 Pnt
+3547 2047 Pnt
+3548 2047 Pnt
+3548 2046 Pnt
+3549 2046 Pnt
+3549 2045 Pnt
+3550 2045 Pnt
+3551 2044 Pnt
+3552 2043 Pnt
+3552 2042 Pnt
+3553 2042 Pnt
+3555 2041 Pnt
+3556 2039 Pnt
+3557 2038 Pnt
+3559 2037 Pnt
+3561 2035 Pnt
+3562 2034 Pnt
+3564 2033 Pnt
+3565 2032 Pnt
+3566 2031 Pnt
+3567 2030 Pnt
+3568 2029 Pnt
+3569 2029 Pnt
+3569 2028 Pnt
+3569 2028 Pnt
+3569 2028 Pnt
+3569 2028 Pnt
+3569 2028 Pnt
+3569 2028 Pnt
+3570 2028 Pnt
+3570 2028 Pnt
+3570 2028 Pnt
+3570 2028 Pnt
+3570 2028 Pnt
+3570 2027 Pnt
+3570 2027 Pnt
+3570 2027 Pnt
+3570 2027 Pnt
+3571 2027 Pnt
+3571 2027 Pnt
+3571 2027 Pnt
+3571 2027 Pnt
+3571 2026 Pnt
+3572 2026 Pnt
+3572 2026 Pnt
+3572 2026 Pnt
+3573 2025 Pnt
+3573 2025 Pnt
+3574 2025 Pnt
+3574 2024 Pnt
+3575 2024 Pnt
+3575 2023 Pnt
+3576 2022 Pnt
+3577 2022 Pnt
+3578 2021 Pnt
+3579 2020 Pnt
+3580 2019 Pnt
+3581 2018 Pnt
+3582 2017 Pnt
+3583 2017 Pnt
+3584 2016 Pnt
+3585 2015 Pnt
+3586 2014 Pnt
+3587 2013 Pnt
+3588 2013 Pnt
+3589 2012 Pnt
+3589 2012 Pnt
+3590 2012 Pnt
+3590 2011 Pnt
+3590 2011 Pnt
+3590 2011 Pnt
+3590 2011 Pnt
+3590 2011 Pnt
+3590 2011 Pnt
+3590 2011 Pnt
+3591 2011 Pnt
+3591 2011 Pnt
+3591 2011 Pnt
+3591 2011 Pnt
+3591 2011 Pnt
+3591 2010 Pnt
+3591 2010 Pnt
+3591 2010 Pnt
+3591 2010 Pnt
+3591 2010 Pnt
+3591 2010 Pnt
+3592 2010 Pnt
+3592 2010 Pnt
+3592 2010 Pnt
+3592 2010 Pnt
+3592 2009 Pnt
+3592 2009 Pnt
+3593 2009 Pnt
+3593 2009 Pnt
+3593 2009 Pnt
+3594 2008 Pnt
+3594 2008 Pnt
+3594 2008 Pnt
+3595 2008 Pnt
+3595 2007 Pnt
+3596 2007 Pnt
+3596 2006 Pnt
+3597 2006 Pnt
+3598 2005 Pnt
+3599 2004 Pnt
+3600 2004 Pnt
+3600 2003 Pnt
+3601 2002 Pnt
+3603 2001 Pnt
+3604 2001 Pnt
+3605 2000 Pnt
+3606 1999 Pnt
+3607 1998 Pnt
+3608 1997 Pnt
+3609 1996 Pnt
+3610 1996 Pnt
+3610 1996 Pnt
+3610 1995 Pnt
+3610 1995 Pnt
+3611 1995 Pnt
+3611 1995 Pnt
+3611 1995 Pnt
+3611 1995 Pnt
+3611 1995 Pnt
+3611 1995 Pnt
+3611 1995 Pnt
+3611 1995 Pnt
+3611 1995 Pnt
+3611 1995 Pnt
+3612 1994 Pnt
+3612 1994 Pnt
+3612 1994 Pnt
+3612 1994 Pnt
+3612 1994 Pnt
+3612 1994 Pnt
+3612 1994 Pnt
+3613 1994 Pnt
+3613 1993 Pnt
+3613 1993 Pnt
+3613 1993 Pnt
+3614 1993 Pnt
+3614 1992 Pnt
+3615 1992 Pnt
+3615 1992 Pnt
+3616 1991 Pnt
+3616 1991 Pnt
+3617 1990 Pnt
+3618 1990 Pnt
+3619 1989 Pnt
+3620 1988 Pnt
+3621 1987 Pnt
+3622 1987 Pnt
+3623 1986 Pnt
+3625 1984 Pnt
+3626 1983 Pnt
+3628 1982 Pnt
+3630 1981 Pnt
+3631 1980 Pnt
+3632 1979 Pnt
+3633 1978 Pnt
+3633 1978 Pnt
+3633 1978 Pnt
+3633 1978 Pnt
+3634 1978 Pnt
+3634 1978 Pnt
+3634 1978 Pnt
+3634 1978 Pnt
+3634 1978 Pnt
+3634 1978 Pnt
+3634 1977 Pnt
+3634 1977 Pnt
+3635 1977 Pnt
+3635 1977 Pnt
+3635 1977 Pnt
+3635 1977 Pnt
+3635 1977 Pnt
+3636 1977 Pnt
+3636 1976 Pnt
+3636 1976 Pnt
+3637 1976 Pnt
+3637 1975 Pnt
+3638 1975 Pnt
+3638 1975 Pnt
+3639 1974 Pnt
+3640 1974 Pnt
+3641 1973 Pnt
+3642 1972 Pnt
+3643 1971 Pnt
+3644 1970 Pnt
+3646 1969 Pnt
+3647 1968 Pnt
+3649 1967 Pnt
+3651 1966 Pnt
+3653 1964 Pnt
+3656 1962 Pnt
+3659 1960 Pnt
+3662 1958 Pnt
+3666 1955 Pnt
+3671 1952 Pnt
+3676 1949 Pnt
+3679 1947 Pnt
+1.000 UP
+1.000 UL
+LT1
+0.86 0.08 0.24 C 4298 2765 Pnt
+4298 2765 Pnt
+4298 2765 Pnt
+4298 2765 Pnt
+4298 2765 Pnt
+4298 2765 Pnt
+4298 2765 Pnt
+4298 2765 Pnt
+4298 2765 Pnt
+4298 2766 Pnt
+4298 2766 Pnt
+4298 2766 Pnt
+4298 2766 Pnt
+4298 2766 Pnt
+4298 2766 Pnt
+4298 2767 Pnt
+4298 2767 Pnt
+4298 2767 Pnt
+4298 2767 Pnt
+4298 2767 Pnt
+4298 2767 Pnt
+4298 2768 Pnt
+4298 2768 Pnt
+4298 2768 Pnt
+4298 2768 Pnt
+4298 2768 Pnt
+4298 2769 Pnt
+4298 2769 Pnt
+4298 2769 Pnt
+4298 2769 Pnt
+4298 2769 Pnt
+4298 2770 Pnt
+4298 2770 Pnt
+4298 2770 Pnt
+4298 2771 Pnt
+4298 2771 Pnt
+4298 2771 Pnt
+4298 2772 Pnt
+4298 2772 Pnt
+4298 2772 Pnt
+4298 2773 Pnt
+4298 2773 Pnt
+4298 2773 Pnt
+4298 2774 Pnt
+4298 2774 Pnt
+4298 2775 Pnt
+4298 2775 Pnt
+4298 2776 Pnt
+4298 2777 Pnt
+4298 2777 Pnt
+4298 2778 Pnt
+4298 2778 Pnt
+4298 2779 Pnt
+4298 2780 Pnt
+4298 2780 Pnt
+4298 2781 Pnt
+4298 2781 Pnt
+4298 2782 Pnt
+4298 2783 Pnt
+4298 2783 Pnt
+4298 2784 Pnt
+4298 2785 Pnt
+4298 2786 Pnt
+4298 2786 Pnt
+4298 2787 Pnt
+4298 2788 Pnt
+4298 2788 Pnt
+4298 2789 Pnt
+4298 2790 Pnt
+4298 2791 Pnt
+4298 2791 Pnt
+4298 2792 Pnt
+4298 2793 Pnt
+4298 2794 Pnt
+4298 2795 Pnt
+4298 2796 Pnt
+4298 2798 Pnt
+4297 2800 Pnt
+4297 2801 Pnt
+4297 2803 Pnt
+4297 2805 Pnt
+4297 2806 Pnt
+4297 2808 Pnt
+4297 2809 Pnt
+4297 2811 Pnt
+4297 2814 Pnt
+4297 2816 Pnt
+4296 2819 Pnt
+4296 2821 Pnt
+4296 2824 Pnt
+4296 2826 Pnt
+4296 2829 Pnt
+4296 2831 Pnt
+4295 2834 Pnt
+4295 2836 Pnt
+4295 2839 Pnt
+4295 2841 Pnt
+4295 2843 Pnt
+4294 2846 Pnt
+4294 2849 Pnt
+4294 2853 Pnt
+4293 2856 Pnt
+4293 2860 Pnt
+4292 2864 Pnt
+4292 2868 Pnt
+4291 2872 Pnt
+4291 2876 Pnt
+4290 2880 Pnt
+4290 2884 Pnt
+4289 2889 Pnt
+4288 2894 Pnt
+4287 2900 Pnt
+4286 2906 Pnt
+4285 2913 Pnt
+4284 2921 Pnt
+4282 2929 Pnt
+4280 2937 Pnt
+4279 2945 Pnt
+4277 2954 Pnt
+4275 2962 Pnt
+4272 2972 Pnt
+4270 2981 Pnt
+4267 2990 Pnt
+4265 2999 Pnt
+4262 3009 Pnt
+4259 3019 Pnt
+4255 3030 Pnt
+4252 3041 Pnt
+4248 3052 Pnt
+4243 3064 Pnt
+4239 3076 Pnt
+4234 3088 Pnt
+4229 3100 Pnt
+4224 3111 Pnt
+4219 3122 Pnt
+4215 3132 Pnt
+4210 3141 Pnt
+4207 3149 Pnt
+4203 3156 Pnt
+4200 3162 Pnt
+4197 3168 Pnt
+4194 3173 Pnt
+4192 3178 Pnt
+4190 3181 Pnt
+4188 3185 Pnt
+4187 3187 Pnt
+4186 3189 Pnt
+4185 3190 Pnt
+4185 3191 Pnt
+4185 3191 Pnt
+4184 3191 Pnt
+4184 3192 Pnt
+4184 3192 Pnt
+4184 3192 Pnt
+4184 3192 Pnt
+4184 3192 Pnt
+4184 3193 Pnt
+4184 3193 Pnt
+4184 3193 Pnt
+4183 3193 Pnt
+4183 3193 Pnt
+4183 3194 Pnt
+4183 3194 Pnt
+4183 3194 Pnt
+4183 3195 Pnt
+4182 3195 Pnt
+4182 3196 Pnt
+4182 3196 Pnt
+4181 3197 Pnt
+4181 3197 Pnt
+4181 3198 Pnt
+4180 3199 Pnt
+4180 3200 Pnt
+4179 3201 Pnt
+4178 3202 Pnt
+4178 3204 Pnt
+4177 3205 Pnt
+4176 3206 Pnt
+4175 3208 Pnt
+4174 3209 Pnt
+4173 3211 Pnt
+4172 3213 Pnt
+4171 3215 Pnt
+4170 3217 Pnt
+4169 3219 Pnt
+4167 3221 Pnt
+4166 3223 Pnt
+4165 3225 Pnt
+4164 3226 Pnt
+4163 3228 Pnt
+4163 3229 Pnt
+4162 3230 Pnt
+4161 3231 Pnt
+4161 3232 Pnt
+4160 3233 Pnt
+4160 3233 Pnt
+4160 3234 Pnt
+4159 3234 Pnt
+4159 3234 Pnt
+4159 3234 Pnt
+4159 3234 Pnt
+4159 3234 Pnt
+4159 3234 Pnt
+4159 3235 Pnt
+4159 3235 Pnt
+4159 3235 Pnt
+4159 3235 Pnt
+4159 3235 Pnt
+4159 3235 Pnt
+4159 3235 Pnt
+4158 3235 Pnt
+4158 3236 Pnt
+4158 3236 Pnt
+4158 3236 Pnt
+4158 3236 Pnt
+4158 3236 Pnt
+4158 3237 Pnt
+4158 3237 Pnt
+4157 3237 Pnt
+4157 3237 Pnt
+4157 3238 Pnt
+4157 3238 Pnt
+4156 3239 Pnt
+4156 3239 Pnt
+4156 3240 Pnt
+4155 3240 Pnt
+4155 3241 Pnt
+4155 3242 Pnt
+4154 3242 Pnt
+4154 3243 Pnt
+4154 3243 Pnt
+4153 3244 Pnt
+4153 3244 Pnt
+4153 3244 Pnt
+4153 3245 Pnt
+4152 3245 Pnt
+4152 3245 Pnt
+4152 3245 Pnt
+4152 3246 Pnt
+4152 3246 Pnt
+4152 3246 Pnt
+4152 3246 Pnt
+4152 3246 Pnt
+4152 3246 Pnt
+4152 3246 Pnt
+4152 3246 Pnt
+4152 3246 Pnt
+4152 3246 Pnt
+4152 3247 Pnt
+4151 3247 Pnt
+4151 3247 Pnt
+4151 3247 Pnt
+4151 3247 Pnt
+4151 3247 Pnt
+4151 3247 Pnt
+4151 3248 Pnt
+4151 3248 Pnt
+4151 3248 Pnt
+4151 3248 Pnt
+4150 3248 Pnt
+4150 3249 Pnt
+4150 3249 Pnt
+4150 3249 Pnt
+4149 3250 Pnt
+4149 3250 Pnt
+4149 3251 Pnt
+4149 3251 Pnt
+4148 3251 Pnt
+4148 3252 Pnt
+4148 3253 Pnt
+4147 3253 Pnt
+4147 3254 Pnt
+4147 3254 Pnt
+4146 3254 Pnt
+4146 3255 Pnt
+4146 3255 Pnt
+4146 3255 Pnt
+4146 3255 Pnt
+4146 3256 Pnt
+4146 3256 Pnt
+4145 3256 Pnt
+4145 3256 Pnt
+4145 3256 Pnt
+4145 3256 Pnt
+4145 3256 Pnt
+4145 3256 Pnt
+4145 3256 Pnt
+4145 3257 Pnt
+4145 3257 Pnt
+4145 3257 Pnt
+4145 3257 Pnt
+4145 3257 Pnt
+4144 3257 Pnt
+4144 3257 Pnt
+4144 3258 Pnt
+4144 3258 Pnt
+4144 3258 Pnt
+4144 3259 Pnt
+4143 3259 Pnt
+4143 3259 Pnt
+4143 3260 Pnt
+4142 3260 Pnt
+4142 3261 Pnt
+4142 3261 Pnt
+4141 3262 Pnt
+4141 3263 Pnt
+4140 3264 Pnt
+4139 3265 Pnt
+4139 3266 Pnt
+4138 3267 Pnt
+4137 3268 Pnt
+4136 3269 Pnt
+4135 3271 Pnt
+4134 3272 Pnt
+4134 3274 Pnt
+4133 3275 Pnt
+4132 3276 Pnt
+4131 3277 Pnt
+4130 3278 Pnt
+4129 3279 Pnt
+4129 3280 Pnt
+4129 3280 Pnt
+4129 3280 Pnt
+4129 3280 Pnt
+4129 3281 Pnt
+4129 3281 Pnt
+4128 3281 Pnt
+4128 3281 Pnt
+4128 3281 Pnt
+4128 3281 Pnt
+4128 3281 Pnt
+4128 3281 Pnt
+4128 3282 Pnt
+4128 3282 Pnt
+4128 3282 Pnt
+4127 3282 Pnt
+4127 3282 Pnt
+4127 3283 Pnt
+4127 3283 Pnt
+4127 3284 Pnt
+4126 3284 Pnt
+4126 3285 Pnt
+4125 3285 Pnt
+4125 3286 Pnt
+4124 3287 Pnt
+4124 3287 Pnt
+4123 3288 Pnt
+4122 3290 Pnt
+4121 3291 Pnt
+4120 3292 Pnt
+4119 3294 Pnt
+4118 3296 Pnt
+4116 3298 Pnt
+4115 3300 Pnt
+4113 3303 Pnt
+4110 3306 Pnt
+4108 3309 Pnt
+4105 3313 Pnt
+4102 3317 Pnt
+4099 3321 Pnt
+4095 3326 Pnt
+4091 3331 Pnt
+4087 3336 Pnt
+4083 3341 Pnt
+4079 3345 Pnt
+4075 3350 Pnt
+4071 3355 Pnt
+4068 3359 Pnt
+4064 3363 Pnt
+4062 3366 Pnt
+4060 3368 Pnt
+4059 3370 Pnt
+4058 3370 Pnt
+4058 3371 Pnt
+4058 3371 Pnt
+4058 3371 Pnt
+4058 3371 Pnt
+4058 3371 Pnt
+4058 3371 Pnt
+4058 3371 Pnt
+4058 3371 Pnt
+4057 3371 Pnt
+4057 3371 Pnt
+4057 3372 Pnt
+4057 3372 Pnt
+4057 3372 Pnt
+4057 3372 Pnt
+4057 3372 Pnt
+4057 3372 Pnt
+4056 3372 Pnt
+4056 3373 Pnt
+4056 3373 Pnt
+4056 3373 Pnt
+4056 3373 Pnt
+4055 3374 Pnt
+4055 3374 Pnt
+4055 3375 Pnt
+4054 3375 Pnt
+4054 3376 Pnt
+4053 3376 Pnt
+4053 3377 Pnt
+4052 3378 Pnt
+4051 3379 Pnt
+4050 3379 Pnt
+4050 3380 Pnt
+4049 3381 Pnt
+4048 3382 Pnt
+4047 3383 Pnt
+4047 3383 Pnt
+4047 3383 Pnt
+4047 3384 Pnt
+4047 3384 Pnt
+4046 3384 Pnt
+4046 3384 Pnt
+4046 3384 Pnt
+4046 3384 Pnt
+4046 3384 Pnt
+4046 3384 Pnt
+4046 3384 Pnt
+4046 3384 Pnt
+4046 3385 Pnt
+4046 3385 Pnt
+4046 3385 Pnt
+4046 3385 Pnt
+4045 3385 Pnt
+4045 3385 Pnt
+4045 3385 Pnt
+4045 3385 Pnt
+4045 3386 Pnt
+4045 3386 Pnt
+4044 3386 Pnt
+4044 3386 Pnt
+4044 3387 Pnt
+4043 3387 Pnt
+4043 3388 Pnt
+4042 3388 Pnt
+4042 3389 Pnt
+4041 3389 Pnt
+4041 3390 Pnt
+4040 3391 Pnt
+4039 3392 Pnt
+4039 3393 Pnt
+4037 3394 Pnt
+4036 3395 Pnt
+4035 3397 Pnt
+4033 3398 Pnt
+4032 3400 Pnt
+4030 3402 Pnt
+4028 3404 Pnt
+4025 3407 Pnt
+4023 3410 Pnt
+4020 3413 Pnt
+4016 3416 Pnt
+4012 3420 Pnt
+4008 3424 Pnt
+4004 3429 Pnt
+3999 3434 Pnt
+3993 3439 Pnt
+3988 3444 Pnt
+3982 3450 Pnt
+3977 3455 Pnt
+3972 3459 Pnt
+3967 3464 Pnt
+3963 3468 Pnt
+3959 3471 Pnt
+3956 3474 Pnt
+3954 3476 Pnt
+3952 3478 Pnt
+3951 3478 Pnt
+3951 3479 Pnt
+3950 3479 Pnt
+3950 3479 Pnt
+3950 3479 Pnt
+3950 3479 Pnt
+3950 3479 Pnt
+3950 3479 Pnt
+3950 3479 Pnt
+3950 3480 Pnt
+3950 3480 Pnt
+3950 3480 Pnt
+3950 3480 Pnt
+3949 3480 Pnt
+3949 3480 Pnt
+3949 3480 Pnt
+3949 3480 Pnt
+3949 3480 Pnt
+3949 3480 Pnt
+3949 3481 Pnt
+3948 3481 Pnt
+3948 3481 Pnt
+3948 3481 Pnt
+3947 3481 Pnt
+3947 3482 Pnt
+3947 3482 Pnt
+3946 3482 Pnt
+3946 3483 Pnt
+3945 3483 Pnt
+3945 3484 Pnt
+3944 3484 Pnt
+3943 3485 Pnt
+3942 3486 Pnt
+3942 3487 Pnt
+3941 3487 Pnt
+3939 3488 Pnt
+3938 3490 Pnt
+3937 3491 Pnt
+3935 3492 Pnt
+3933 3494 Pnt
+3932 3495 Pnt
+3930 3496 Pnt
+3929 3497 Pnt
+3928 3498 Pnt
+3927 3499 Pnt
+3926 3500 Pnt
+3925 3500 Pnt
+3925 3501 Pnt
+3925 3501 Pnt
+3925 3501 Pnt
+3925 3501 Pnt
+3925 3501 Pnt
+3925 3501 Pnt
+3924 3501 Pnt
+3924 3501 Pnt
+3924 3501 Pnt
+3924 3501 Pnt
+3924 3501 Pnt
+3924 3502 Pnt
+3924 3502 Pnt
+3924 3502 Pnt
+3924 3502 Pnt
+3923 3502 Pnt
+3923 3502 Pnt
+3923 3502 Pnt
+3923 3502 Pnt
+3923 3503 Pnt
+3922 3503 Pnt
+3922 3503 Pnt
+3922 3503 Pnt
+3921 3504 Pnt
+3921 3504 Pnt
+3920 3504 Pnt
+3920 3505 Pnt
+3919 3505 Pnt
+3919 3506 Pnt
+3918 3507 Pnt
+3917 3507 Pnt
+3916 3508 Pnt
+3915 3509 Pnt
+3914 3510 Pnt
+3913 3511 Pnt
+3912 3512 Pnt
+3911 3512 Pnt
+3910 3513 Pnt
+3909 3514 Pnt
+3908 3515 Pnt
+3907 3516 Pnt
+3906 3516 Pnt
+3905 3517 Pnt
+3905 3517 Pnt
+3904 3517 Pnt
+3904 3518 Pnt
+3904 3518 Pnt
+3904 3518 Pnt
+3904 3518 Pnt
+3904 3518 Pnt
+3904 3518 Pnt
+3904 3518 Pnt
+3903 3518 Pnt
+3903 3518 Pnt
+3903 3518 Pnt
+3903 3518 Pnt
+3903 3518 Pnt
+3903 3519 Pnt
+3903 3519 Pnt
+3903 3519 Pnt
+3903 3519 Pnt
+3903 3519 Pnt
+3903 3519 Pnt
+3902 3519 Pnt
+3902 3519 Pnt
+3902 3519 Pnt
+3902 3519 Pnt
+3902 3520 Pnt
+3902 3520 Pnt
+3901 3520 Pnt
+3901 3520 Pnt
+3901 3520 Pnt
+3900 3521 Pnt
+3900 3521 Pnt
+3900 3521 Pnt
+3899 3521 Pnt
+3899 3522 Pnt
+3898 3522 Pnt
+3898 3523 Pnt
+3897 3523 Pnt
+3896 3524 Pnt
+3895 3525 Pnt
+3894 3525 Pnt
+3894 3526 Pnt
+3893 3527 Pnt
+3891 3528 Pnt
+3890 3528 Pnt
+3889 3529 Pnt
+3888 3530 Pnt
+3887 3531 Pnt
+3886 3532 Pnt
+3885 3533 Pnt
+3884 3533 Pnt
+3884 3533 Pnt
+3884 3534 Pnt
+3884 3534 Pnt
+3883 3534 Pnt
+3883 3534 Pnt
+3883 3534 Pnt
+3883 3534 Pnt
+3883 3534 Pnt
+3883 3534 Pnt
+3883 3534 Pnt
+3883 3534 Pnt
+3883 3534 Pnt
+3883 3534 Pnt
+3882 3535 Pnt
+3882 3535 Pnt
+3882 3535 Pnt
+3882 3535 Pnt
+3882 3535 Pnt
+3882 3535 Pnt
+3882 3535 Pnt
+3881 3535 Pnt
+3881 3536 Pnt
+3881 3536 Pnt
+3881 3536 Pnt
+3880 3536 Pnt
+3880 3537 Pnt
+3879 3537 Pnt
+3879 3537 Pnt
+3878 3538 Pnt
+3878 3538 Pnt
+3877 3539 Pnt
+3876 3539 Pnt
+3875 3540 Pnt
+3874 3541 Pnt
+3873 3542 Pnt
+3872 3542 Pnt
+3871 3543 Pnt
+3869 3545 Pnt
+3868 3546 Pnt
+3866 3547 Pnt
+3864 3548 Pnt
+3863 3549 Pnt
+3862 3550 Pnt
+3861 3551 Pnt
+3861 3551 Pnt
+3861 3551 Pnt
+3861 3551 Pnt
+3860 3551 Pnt
+3860 3551 Pnt
+3860 3551 Pnt
+3860 3551 Pnt
+3860 3551 Pnt
+3860 3551 Pnt
+3860 3552 Pnt
+3860 3552 Pnt
+3859 3552 Pnt
+3859 3552 Pnt
+3859 3552 Pnt
+3859 3552 Pnt
+3859 3552 Pnt
+3858 3552 Pnt
+3858 3553 Pnt
+3858 3553 Pnt
+3857 3553 Pnt
+3857 3554 Pnt
+3856 3554 Pnt
+3856 3554 Pnt
+3855 3555 Pnt
+3854 3555 Pnt
+3853 3556 Pnt
+3852 3557 Pnt
+3851 3558 Pnt
+3850 3559 Pnt
+3848 3560 Pnt
+3847 3561 Pnt
+3845 3562 Pnt
+3843 3563 Pnt
+3841 3565 Pnt
+3838 3567 Pnt
+3835 3569 Pnt
+3832 3571 Pnt
+3828 3574 Pnt
+3823 3577 Pnt
+3818 3580 Pnt
+3815 3582 Pnt
+1.000 UP
+1.000 UL
+LT2
+0.00 0.00 0.00 C 3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2765 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3630 2764 Pnt
+3631 2764 Pnt
+3631 2764 Pnt
+3631 2764 Pnt
+3631 2764 Pnt
+3631 2764 Pnt
+3631 2764 Pnt
+3631 2764 Pnt
+3631 2764 Pnt
+3631 2764 Pnt
+3631 2764 Pnt
+3631 2763 Pnt
+3631 2763 Pnt
+3631 2763 Pnt
+3631 2763 Pnt
+3631 2763 Pnt
+3632 2763 Pnt
+3632 2762 Pnt
+3632 2762 Pnt
+3632 2762 Pnt
+3633 2761 Pnt
+3633 2761 Pnt
+3633 2760 Pnt
+3634 2760 Pnt
+3634 2759 Pnt
+3635 2759 Pnt
+3636 2758 Pnt
+3636 2757 Pnt
+3637 2756 Pnt
+3638 2755 Pnt
+3639 2754 Pnt
+3641 2752 Pnt
+3642 2751 Pnt
+3644 2750 Pnt
+3646 2748 Pnt
+3648 2746 Pnt
+3651 2744 Pnt
+3654 2742 Pnt
+3657 2740 Pnt
+3661 2738 Pnt
+3665 2737 Pnt
+3669 2735 Pnt
+3673 2734 Pnt
+3676 2733 Pnt
+3680 2732 Pnt
+3683 2731 Pnt
+3687 2730 Pnt
+3690 2730 Pnt
+3693 2729 Pnt
+3695 2729 Pnt
+3697 2729 Pnt
+3699 2729 Pnt
+3700 2729 Pnt
+3701 2729 Pnt
+3702 2729 Pnt
+3702 2729 Pnt
+3702 2729 Pnt
+3703 2729 Pnt
+3703 2729 Pnt
+3703 2729 Pnt
+3703 2729 Pnt
+3703 2729 Pnt
+3703 2729 Pnt
+3703 2729 Pnt
+3704 2729 Pnt
+3704 2729 Pnt
+3704 2729 Pnt
+3704 2729 Pnt
+3705 2729 Pnt
+3705 2729 Pnt
+3705 2729 Pnt
+3705 2729 Pnt
+3706 2729 Pnt
+3706 2729 Pnt
+3707 2729 Pnt
+3707 2729 Pnt
+3708 2729 Pnt
+3709 2729 Pnt
+3710 2729 Pnt
+3711 2729 Pnt
+3712 2729 Pnt
+3713 2730 Pnt
+3714 2730 Pnt
+3715 2730 Pnt
+3716 2730 Pnt
+3718 2730 Pnt
+3720 2731 Pnt
+3721 2731 Pnt
+3723 2732 Pnt
+3726 2732 Pnt
+3728 2733 Pnt
+3730 2734 Pnt
+3732 2735 Pnt
+3735 2735 Pnt
+3737 2736 Pnt
+3738 2737 Pnt
+3740 2738 Pnt
+3741 2739 Pnt
+3743 2740 Pnt
+3744 2740 Pnt
+3745 2741 Pnt
+3746 2742 Pnt
+3746 2742 Pnt
+3747 2743 Pnt
+3747 2743 Pnt
+3747 2743 Pnt
+3747 2743 Pnt
+3747 2743 Pnt
+3747 2743 Pnt
+3747 2743 Pnt
+3748 2743 Pnt
+3748 2744 Pnt
+3748 2744 Pnt
+3748 2744 Pnt
+3748 2744 Pnt
+3748 2744 Pnt
+3749 2744 Pnt
+3749 2745 Pnt
+3749 2745 Pnt
+3749 2745 Pnt
+3749 2745 Pnt
+3750 2746 Pnt
+3750 2746 Pnt
+3750 2746 Pnt
+3751 2747 Pnt
+3751 2747 Pnt
+3752 2748 Pnt
+3752 2748 Pnt
+3753 2749 Pnt
+3753 2750 Pnt
+3754 2751 Pnt
+3755 2752 Pnt
+3755 2753 Pnt
+3756 2754 Pnt
+3756 2755 Pnt
+3757 2756 Pnt
+3757 2757 Pnt
+3758 2759 Pnt
+3758 2760 Pnt
+3758 2761 Pnt
+3758 2762 Pnt
+3758 2762 Pnt
+3758 2763 Pnt
+3758 2763 Pnt
+3758 2763 Pnt
+3758 2764 Pnt
+3758 2764 Pnt
+3758 2764 Pnt
+3758 2764 Pnt
+3758 2765 Pnt
+3758 2765 Pnt
+3758 2765 Pnt
+3758 2765 Pnt
+3758 2766 Pnt
+3758 2766 Pnt
+3758 2766 Pnt
+3758 2767 Pnt
+3758 2767 Pnt
+3758 2767 Pnt
+3758 2768 Pnt
+3758 2768 Pnt
+3758 2768 Pnt
+3758 2769 Pnt
+3757 2769 Pnt
+3757 2770 Pnt
+3757 2771 Pnt
+3757 2771 Pnt
+3756 2772 Pnt
+3756 2773 Pnt
+3756 2774 Pnt
+3755 2774 Pnt
+3754 2775 Pnt
+3754 2776 Pnt
+3753 2777 Pnt
+3753 2778 Pnt
+3752 2779 Pnt
+3751 2780 Pnt
+3750 2780 Pnt
+3749 2781 Pnt
+3749 2782 Pnt
+3748 2782 Pnt
+3748 2782 Pnt
+3747 2783 Pnt
+3747 2783 Pnt
+3747 2783 Pnt
+3747 2783 Pnt
+3747 2783 Pnt
+3747 2783 Pnt
+3746 2783 Pnt
+3746 2783 Pnt
+3746 2784 Pnt
+3746 2784 Pnt
+3746 2784 Pnt
+3745 2784 Pnt
+3745 2784 Pnt
+3745 2784 Pnt
+3745 2784 Pnt
+3745 2785 Pnt
+3744 2785 Pnt
+3744 2785 Pnt
+3744 2785 Pnt
+3743 2785 Pnt
+3743 2786 Pnt
+3742 2786 Pnt
+3742 2786 Pnt
+3741 2786 Pnt
+3740 2787 Pnt
+3740 2787 Pnt
+3739 2787 Pnt
+3738 2788 Pnt
+3737 2788 Pnt
+3736 2789 Pnt
+3734 2789 Pnt
+3733 2789 Pnt
+3732 2790 Pnt
+3730 2790 Pnt
+3728 2791 Pnt
+3727 2791 Pnt
+3725 2791 Pnt
+3723 2792 Pnt
+3722 2792 Pnt
+3720 2792 Pnt
+3718 2792 Pnt
+3717 2792 Pnt
+3716 2792 Pnt
+3715 2792 Pnt
+3714 2792 Pnt
+3714 2792 Pnt
+3714 2792 Pnt
+3714 2792 Pnt
+3713 2792 Pnt
+3713 2792 Pnt
+3713 2792 Pnt
+3713 2792 Pnt
+3713 2792 Pnt
+3713 2792 Pnt
+3713 2792 Pnt
+3713 2792 Pnt
+3712 2792 Pnt
+3712 2792 Pnt
+3712 2792 Pnt
+3712 2792 Pnt
+3711 2792 Pnt
+3711 2792 Pnt
+3711 2792 Pnt
+3710 2792 Pnt
+3710 2792 Pnt
+3709 2792 Pnt
+3709 2792 Pnt
+3708 2792 Pnt
+3707 2792 Pnt
+3707 2792 Pnt
+3706 2792 Pnt
+3705 2792 Pnt
+3703 2791 Pnt
+3702 2791 Pnt
+3701 2791 Pnt
+3699 2791 Pnt
+3697 2790 Pnt
+3695 2790 Pnt
+3693 2789 Pnt
+3691 2788 Pnt
+3689 2788 Pnt
+3686 2787 Pnt
+3684 2785 Pnt
+3681 2784 Pnt
+3679 2783 Pnt
+3676 2781 Pnt
+3674 2779 Pnt
+3672 2777 Pnt
+3670 2775 Pnt
+3669 2773 Pnt
+3668 2771 Pnt
+3667 2769 Pnt
+3666 2768 Pnt
+3665 2766 Pnt
+3665 2765 Pnt
+3665 2765 Pnt
+3665 2765 Pnt
+3665 2765 Pnt
+3665 2765 Pnt
+3665 2765 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2764 Pnt
+3665 2763 Pnt
+3665 2763 Pnt
+3665 2763 Pnt
+3664 2763 Pnt
+3664 2763 Pnt
+3664 2763 Pnt
+3664 2762 Pnt
+3664 2762 Pnt
+3664 2762 Pnt
+3664 2761 Pnt
+3664 2761 Pnt
+3664 2761 Pnt
+3664 2760 Pnt
+3664 2760 Pnt
+3664 2759 Pnt
+3664 2759 Pnt
+3664 2759 Pnt
+3664 2759 Pnt
+3664 2759 Pnt
+3664 2759 Pnt
+3664 2759 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2758 Pnt
+3664 2757 Pnt
+3664 2757 Pnt
+3664 2757 Pnt
+3664 2757 Pnt
+3664 2757 Pnt
+3664 2756 Pnt
+3664 2756 Pnt
+3664 2756 Pnt
+3664 2756 Pnt
+3664 2755 Pnt
+3664 2755 Pnt
+3664 2754 Pnt
+3665 2754 Pnt
+3665 2753 Pnt
+3665 2752 Pnt
+3665 2752 Pnt
+3665 2751 Pnt
+3666 2750 Pnt
+3666 2749 Pnt
+3667 2748 Pnt
+3667 2746 Pnt
+3668 2745 Pnt
+3669 2743 Pnt
+3670 2741 Pnt
+3672 2739 Pnt
+3674 2737 Pnt
+3676 2735 Pnt
+3679 2733 Pnt
+3683 2731 Pnt
+3686 2729 Pnt
+3690 2727 Pnt
+3694 2725 Pnt
+3698 2724 Pnt
+3702 2723 Pnt
+3706 2723 Pnt
+3709 2723 Pnt
+3711 2722 Pnt
+3713 2722 Pnt
+3714 2722 Pnt
+3715 2722 Pnt
+3715 2722 Pnt
+3715 2722 Pnt
+3715 2722 Pnt
+3715 2722 Pnt
+3715 2722 Pnt
+3715 2722 Pnt
+3715 2722 Pnt
+3715 2722 Pnt
+3716 2722 Pnt
+3716 2722 Pnt
+3716 2722 Pnt
+3716 2722 Pnt
+3716 2722 Pnt
+3716 2722 Pnt
+3716 2722 Pnt
+3716 2722 Pnt
+3717 2722 Pnt
+3717 2722 Pnt
+3717 2722 Pnt
+3717 2722 Pnt
+3718 2722 Pnt
+3718 2722 Pnt
+3718 2722 Pnt
+3719 2722 Pnt
+3719 2722 Pnt
+3720 2722 Pnt
+3721 2722 Pnt
+3721 2723 Pnt
+3722 2723 Pnt
+3723 2723 Pnt
+3724 2723 Pnt
+3725 2723 Pnt
+3726 2723 Pnt
+3728 2723 Pnt
+3729 2724 Pnt
+3731 2724 Pnt
+3733 2725 Pnt
+3735 2725 Pnt
+3738 2726 Pnt
+3740 2727 Pnt
+3741 2728 Pnt
+3743 2729 Pnt
+3744 2729 Pnt
+3746 2730 Pnt
+3746 2730 Pnt
+3747 2731 Pnt
+3747 2731 Pnt
+3747 2731 Pnt
+3747 2731 Pnt
+3747 2731 Pnt
+3747 2731 Pnt
+3748 2731 Pnt
+3748 2731 Pnt
+3748 2731 Pnt
+3748 2731 Pnt
+3748 2732 Pnt
+3748 2732 Pnt
+3748 2732 Pnt
+3749 2732 Pnt
+3749 2732 Pnt
+3749 2732 Pnt
+3749 2732 Pnt
+3750 2732 Pnt
+3750 2733 Pnt
+3750 2733 Pnt
+3751 2733 Pnt
+3751 2733 Pnt
+3751 2734 Pnt
+3752 2734 Pnt
+3752 2735 Pnt
+3753 2735 Pnt
+3754 2736 Pnt
+3754 2736 Pnt
+3755 2737 Pnt
+3756 2738 Pnt
+3757 2739 Pnt
+3759 2741 Pnt
+3760 2742 Pnt
+3761 2744 Pnt
+3763 2746 Pnt
+3764 2748 Pnt
+3765 2750 Pnt
+3765 2752 Pnt
+3766 2754 Pnt
+3767 2756 Pnt
+3767 2758 Pnt
+3767 2759 Pnt
+3768 2761 Pnt
+3768 2762 Pnt
+3768 2763 Pnt
+3768 2763 Pnt
+3768 2764 Pnt
+3768 2764 Pnt
+3768 2764 Pnt
+3768 2764 Pnt
+3768 2765 Pnt
+3768 2765 Pnt
+3768 2765 Pnt
+3768 2765 Pnt
+3768 2765 Pnt
+3768 2765 Pnt
+3768 2765 Pnt
+3768 2766 Pnt
+3768 2766 Pnt
+3768 2766 Pnt
+3768 2766 Pnt
+3768 2766 Pnt
+3768 2767 Pnt
+3768 2767 Pnt
+3768 2767 Pnt
+3767 2768 Pnt
+3767 2768 Pnt
+3767 2768 Pnt
+3767 2769 Pnt
+3767 2769 Pnt
+3767 2770 Pnt
+3767 2771 Pnt
+3767 2771 Pnt
+3767 2772 Pnt
+3766 2773 Pnt
+3766 2774 Pnt
+3766 2775 Pnt
+3765 2776 Pnt
+3765 2777 Pnt
+3764 2778 Pnt
+3764 2780 Pnt
+3763 2781 Pnt
+3762 2783 Pnt
+3761 2785 Pnt
+3759 2786 Pnt
+3758 2788 Pnt
+3757 2789 Pnt
+3755 2791 Pnt
+3753 2792 Pnt
+3752 2793 Pnt
+3751 2794 Pnt
+3749 2795 Pnt
+3748 2796 Pnt
+3748 2796 Pnt
+3747 2796 Pnt
+3747 2796 Pnt
+3747 2796 Pnt
+3747 2797 Pnt
+3747 2797 Pnt
+3747 2797 Pnt
+3746 2797 Pnt
+3746 2797 Pnt
+3746 2797 Pnt
+3746 2797 Pnt
+3746 2797 Pnt
+3746 2797 Pnt
+3746 2797 Pnt
+3745 2797 Pnt
+3745 2797 Pnt
+3745 2798 Pnt
+3745 2798 Pnt
+3745 2798 Pnt
+3744 2798 Pnt
+3744 2798 Pnt
+3744 2798 Pnt
+3743 2799 Pnt
+3743 2799 Pnt
+3742 2799 Pnt
+3742 2799 Pnt
+3741 2799 Pnt
+3740 2800 Pnt
+3740 2800 Pnt
+3739 2800 Pnt
+3738 2801 Pnt
+3737 2801 Pnt
+3735 2802 Pnt
+3734 2802 Pnt
+3733 2802 Pnt
+3731 2803 Pnt
+3729 2803 Pnt
+3727 2803 Pnt
+3726 2804 Pnt
+3724 2804 Pnt
+3722 2804 Pnt
+3720 2804 Pnt
+3718 2804 Pnt
+3718 2804 Pnt
+3717 2804 Pnt
+3717 2804 Pnt
+3717 2804 Pnt
+3717 2804 Pnt
+3717 2804 Pnt
+3717 2804 Pnt
+3717 2804 Pnt
+3716 2804 Pnt
+3716 2804 Pnt
+3716 2804 Pnt
+3716 2804 Pnt
+3716 2804 Pnt
+3716 2804 Pnt
+3715 2804 Pnt
+3715 2804 Pnt
+3715 2804 Pnt
+3715 2804 Pnt
+3714 2804 Pnt
+3714 2804 Pnt
+3713 2804 Pnt
+3713 2804 Pnt
+3712 2804 Pnt
+3712 2804 Pnt
+3711 2804 Pnt
+3710 2804 Pnt
+3709 2804 Pnt
+3708 2804 Pnt
+3707 2803 Pnt
+3706 2803 Pnt
+3704 2803 Pnt
+3703 2802 Pnt
+3701 2802 Pnt
+3699 2802 Pnt
+3697 2801 Pnt
+3695 2800 Pnt
+3693 2799 Pnt
+3690 2798 Pnt
+3688 2797 Pnt
+3685 2795 Pnt
+3682 2793 Pnt
+3680 2792 Pnt
+1.000 UP
+1.000 UL
+LT3
+1.00 0.50 0.31 C 3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3864 2765 Pnt
+3863 2765 Pnt
+3863 2765 Pnt
+3863 2765 Pnt
+3863 2765 Pnt
+3863 2765 Pnt
+3863 2765 Pnt
+3863 2765 Pnt
+3863 2765 Pnt
+3863 2765 Pnt
+3863 2765 Pnt
+3863 2766 Pnt
+3863 2766 Pnt
+3863 2766 Pnt
+3863 2766 Pnt
+3863 2766 Pnt
+3862 2766 Pnt
+3862 2767 Pnt
+3862 2767 Pnt
+3862 2767 Pnt
+3861 2768 Pnt
+3861 2768 Pnt
+3861 2769 Pnt
+3860 2769 Pnt
+3860 2770 Pnt
+3859 2770 Pnt
+3858 2771 Pnt
+3858 2772 Pnt
+3857 2773 Pnt
+3856 2774 Pnt
+3855 2775 Pnt
+3853 2777 Pnt
+3852 2778 Pnt
+3850 2779 Pnt
+3848 2781 Pnt
+3846 2783 Pnt
+3843 2785 Pnt
+3840 2787 Pnt
+3837 2789 Pnt
+3833 2791 Pnt
+3829 2792 Pnt
+3825 2794 Pnt
+3821 2795 Pnt
+3818 2796 Pnt
+3814 2797 Pnt
+3811 2798 Pnt
+3807 2799 Pnt
+3804 2799 Pnt
+3801 2800 Pnt
+3799 2800 Pnt
+3797 2800 Pnt
+3795 2800 Pnt
+3794 2800 Pnt
+3793 2800 Pnt
+3792 2800 Pnt
+3792 2800 Pnt
+3792 2800 Pnt
+3791 2800 Pnt
+3791 2800 Pnt
+3791 2800 Pnt
+3791 2800 Pnt
+3791 2800 Pnt
+3791 2800 Pnt
+3791 2800 Pnt
+3790 2800 Pnt
+3790 2800 Pnt
+3790 2800 Pnt
+3790 2800 Pnt
+3789 2800 Pnt
+3789 2800 Pnt
+3789 2800 Pnt
+3789 2800 Pnt
+3788 2800 Pnt
+3788 2800 Pnt
+3787 2800 Pnt
+3787 2800 Pnt
+3786 2800 Pnt
+3785 2800 Pnt
+3784 2800 Pnt
+3783 2800 Pnt
+3782 2800 Pnt
+3781 2799 Pnt
+3780 2799 Pnt
+3779 2799 Pnt
+3778 2799 Pnt
+3776 2799 Pnt
+3774 2798 Pnt
+3773 2798 Pnt
+3771 2797 Pnt
+3768 2797 Pnt
+3766 2796 Pnt
+3764 2795 Pnt
+3762 2794 Pnt
+3759 2794 Pnt
+3757 2793 Pnt
+3756 2792 Pnt
+3754 2791 Pnt
+3753 2790 Pnt
+3751 2789 Pnt
+3750 2789 Pnt
+3749 2788 Pnt
+3748 2787 Pnt
+3748 2787 Pnt
+3747 2786 Pnt
+3747 2786 Pnt
+3747 2786 Pnt
+3747 2786 Pnt
+3747 2786 Pnt
+3747 2786 Pnt
+3747 2786 Pnt
+3746 2786 Pnt
+3746 2785 Pnt
+3746 2785 Pnt
+3746 2785 Pnt
+3746 2785 Pnt
+3746 2785 Pnt
+3745 2785 Pnt
+3745 2784 Pnt
+3745 2784 Pnt
+3745 2784 Pnt
+3745 2784 Pnt
+3744 2783 Pnt
+3744 2783 Pnt
+3744 2783 Pnt
+3743 2782 Pnt
+3743 2782 Pnt
+3742 2781 Pnt
+3742 2781 Pnt
+3741 2780 Pnt
+3741 2779 Pnt
+3740 2778 Pnt
+3739 2777 Pnt
+3739 2776 Pnt
+3738 2775 Pnt
+3738 2774 Pnt
+3737 2773 Pnt
+3737 2772 Pnt
+3736 2770 Pnt
+3736 2769 Pnt
+3736 2768 Pnt
+3736 2767 Pnt
+3736 2767 Pnt
+3736 2766 Pnt
+3736 2766 Pnt
+3736 2766 Pnt
+3736 2765 Pnt
+3736 2765 Pnt
+3736 2765 Pnt
+3736 2765 Pnt
+3736 2764 Pnt
+3736 2764 Pnt
+3736 2764 Pnt
+3736 2764 Pnt
+3736 2763 Pnt
+3736 2763 Pnt
+3736 2763 Pnt
+3736 2762 Pnt
+3736 2762 Pnt
+3736 2762 Pnt
+3736 2761 Pnt
+3736 2761 Pnt
+3736 2761 Pnt
+3736 2760 Pnt
+3737 2760 Pnt
+3737 2759 Pnt
+3737 2758 Pnt
+3737 2758 Pnt
+3738 2757 Pnt
+3738 2756 Pnt
+3738 2755 Pnt
+3739 2755 Pnt
+3740 2754 Pnt
+3740 2753 Pnt
+3741 2752 Pnt
+3741 2751 Pnt
+3742 2750 Pnt
+3743 2749 Pnt
+3744 2749 Pnt
+3745 2748 Pnt
+3745 2747 Pnt
+3746 2747 Pnt
+3746 2747 Pnt
+3747 2746 Pnt
+3747 2746 Pnt
+3747 2746 Pnt
+3747 2746 Pnt
+3747 2746 Pnt
+3747 2746 Pnt
+3748 2746 Pnt
+3748 2746 Pnt
+3748 2745 Pnt
+3748 2745 Pnt
+3748 2745 Pnt
+3749 2745 Pnt
+3749 2745 Pnt
+3749 2745 Pnt
+3749 2745 Pnt
+3749 2744 Pnt
+3750 2744 Pnt
+3750 2744 Pnt
+3750 2744 Pnt
+3751 2744 Pnt
+3751 2743 Pnt
+3752 2743 Pnt
+3752 2743 Pnt
+3753 2743 Pnt
+3754 2742 Pnt
+3754 2742 Pnt
+3755 2742 Pnt
+3756 2741 Pnt
+3757 2741 Pnt
+3758 2740 Pnt
+3760 2740 Pnt
+3761 2740 Pnt
+3762 2739 Pnt
+3764 2739 Pnt
+3766 2738 Pnt
+3767 2738 Pnt
+3769 2738 Pnt
+3771 2737 Pnt
+3772 2737 Pnt
+3774 2737 Pnt
+3776 2737 Pnt
+3777 2737 Pnt
+3778 2737 Pnt
+3779 2737 Pnt
+3780 2737 Pnt
+3780 2737 Pnt
+3780 2737 Pnt
+3780 2737 Pnt
+3781 2737 Pnt
+3781 2737 Pnt
+3781 2737 Pnt
+3781 2737 Pnt
+3781 2737 Pnt
+3781 2737 Pnt
+3781 2737 Pnt
+3781 2737 Pnt
+3782 2737 Pnt
+3782 2737 Pnt
+3782 2737 Pnt
+3782 2737 Pnt
+3783 2737 Pnt
+3783 2737 Pnt
+3783 2737 Pnt
+3784 2737 Pnt
+3784 2737 Pnt
+3785 2737 Pnt
+3785 2737 Pnt
+3786 2737 Pnt
+3787 2737 Pnt
+3787 2737 Pnt
+3788 2737 Pnt
+3789 2737 Pnt
+3791 2738 Pnt
+3792 2738 Pnt
+3793 2738 Pnt
+3795 2738 Pnt
+3797 2739 Pnt
+3799 2739 Pnt
+3801 2740 Pnt
+3803 2741 Pnt
+3805 2741 Pnt
+3808 2742 Pnt
+3810 2744 Pnt
+3813 2745 Pnt
+3815 2746 Pnt
+3818 2748 Pnt
+3820 2750 Pnt
+3822 2752 Pnt
+3824 2754 Pnt
+3825 2756 Pnt
+3826 2758 Pnt
+3827 2760 Pnt
+3828 2761 Pnt
+3829 2763 Pnt
+3829 2764 Pnt
+3829 2764 Pnt
+3829 2764 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2765 Pnt
+3829 2766 Pnt
+3829 2766 Pnt
+3829 2766 Pnt
+3830 2766 Pnt
+3830 2766 Pnt
+3830 2766 Pnt
+3830 2767 Pnt
+3830 2767 Pnt
+3830 2767 Pnt
+3830 2768 Pnt
+3830 2768 Pnt
+3830 2768 Pnt
+3830 2769 Pnt
+3830 2769 Pnt
+3830 2770 Pnt
+3830 2770 Pnt
+3830 2770 Pnt
+3830 2770 Pnt
+3830 2770 Pnt
+3830 2770 Pnt
+3830 2770 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2771 Pnt
+3830 2772 Pnt
+3830 2772 Pnt
+3830 2772 Pnt
+3830 2772 Pnt
+3830 2772 Pnt
+3830 2773 Pnt
+3830 2773 Pnt
+3830 2773 Pnt
+3830 2773 Pnt
+3830 2774 Pnt
+3830 2774 Pnt
+3830 2775 Pnt
+3829 2775 Pnt
+3829 2776 Pnt
+3829 2777 Pnt
+3829 2777 Pnt
+3829 2778 Pnt
+3828 2779 Pnt
+3828 2780 Pnt
+3827 2781 Pnt
+3827 2783 Pnt
+3826 2784 Pnt
+3825 2786 Pnt
+3824 2788 Pnt
+3822 2790 Pnt
+3820 2792 Pnt
+3818 2794 Pnt
+3815 2796 Pnt
+3811 2798 Pnt
+3808 2800 Pnt
+3804 2802 Pnt
+3800 2804 Pnt
+3796 2805 Pnt
+3792 2806 Pnt
+3788 2806 Pnt
+3785 2806 Pnt
+3783 2807 Pnt
+3781 2807 Pnt
+3780 2807 Pnt
+3779 2807 Pnt
+3779 2807 Pnt
+3779 2807 Pnt
+3779 2807 Pnt
+3779 2807 Pnt
+3779 2807 Pnt
+3779 2807 Pnt
+3779 2807 Pnt
+3779 2807 Pnt
+3778 2807 Pnt
+3778 2807 Pnt
+3778 2807 Pnt
+3778 2807 Pnt
+3778 2807 Pnt
+3778 2807 Pnt
+3778 2807 Pnt
+3778 2807 Pnt
+3777 2807 Pnt
+3777 2807 Pnt
+3777 2807 Pnt
+3777 2807 Pnt
+3776 2807 Pnt
+3776 2807 Pnt
+3776 2807 Pnt
+3775 2807 Pnt
+3775 2807 Pnt
+3774 2807 Pnt
+3773 2807 Pnt
+3773 2806 Pnt
+3772 2806 Pnt
+3771 2806 Pnt
+3770 2806 Pnt
+3769 2806 Pnt
+3768 2806 Pnt
+3766 2806 Pnt
+3765 2805 Pnt
+3763 2805 Pnt
+3761 2804 Pnt
+3759 2804 Pnt
+3756 2803 Pnt
+3754 2802 Pnt
+3753 2801 Pnt
+3751 2800 Pnt
+3750 2800 Pnt
+3748 2799 Pnt
+3748 2799 Pnt
+3747 2798 Pnt
+3747 2798 Pnt
+3747 2798 Pnt
+3747 2798 Pnt
+3747 2798 Pnt
+3747 2798 Pnt
+3746 2798 Pnt
+3746 2798 Pnt
+3746 2798 Pnt
+3746 2798 Pnt
+3746 2797 Pnt
+3746 2797 Pnt
+3746 2797 Pnt
+3745 2797 Pnt
+3745 2797 Pnt
+3745 2797 Pnt
+3745 2797 Pnt
+3744 2797 Pnt
+3744 2796 Pnt
+3744 2796 Pnt
+3743 2796 Pnt
+3743 2796 Pnt
+3743 2795 Pnt
+3742 2795 Pnt
+3742 2794 Pnt
+3741 2794 Pnt
+3740 2793 Pnt
+3740 2793 Pnt
+3739 2792 Pnt
+3738 2791 Pnt
+3737 2790 Pnt
+3735 2788 Pnt
+3734 2787 Pnt
+3733 2785 Pnt
+3731 2783 Pnt
+3730 2781 Pnt
+3729 2779 Pnt
+3729 2777 Pnt
+3728 2775 Pnt
+3727 2773 Pnt
+3727 2771 Pnt
+3727 2770 Pnt
+3726 2768 Pnt
+3726 2767 Pnt
+3726 2766 Pnt
+3726 2766 Pnt
+3726 2765 Pnt
+3726 2765 Pnt
+3726 2765 Pnt
+3726 2765 Pnt
+3726 2765 Pnt
+3726 2764 Pnt
+3726 2764 Pnt
+3726 2764 Pnt
+3726 2764 Pnt
+3726 2764 Pnt
+3726 2764 Pnt
+3726 2763 Pnt
+3726 2763 Pnt
+3726 2763 Pnt
+3726 2763 Pnt
+3726 2763 Pnt
+3726 2762 Pnt
+3726 2762 Pnt
+3726 2762 Pnt
+3727 2761 Pnt
+3727 2761 Pnt
+3727 2761 Pnt
+3727 2760 Pnt
+3727 2760 Pnt
+3727 2759 Pnt
+3727 2758 Pnt
+3727 2758 Pnt
+3727 2757 Pnt
+3728 2756 Pnt
+3728 2755 Pnt
+3728 2754 Pnt
+3729 2753 Pnt
+3729 2752 Pnt
+3730 2751 Pnt
+3730 2749 Pnt
+3731 2748 Pnt
+3732 2746 Pnt
+3733 2744 Pnt
+3735 2743 Pnt
+3736 2741 Pnt
+3737 2740 Pnt
+3739 2738 Pnt
+3741 2737 Pnt
+3742 2736 Pnt
+3743 2735 Pnt
+3745 2734 Pnt
+3746 2733 Pnt
+3746 2733 Pnt
+3747 2733 Pnt
+3747 2733 Pnt
+3747 2733 Pnt
+3747 2732 Pnt
+3747 2732 Pnt
+3747 2732 Pnt
+3748 2732 Pnt
+3748 2732 Pnt
+3748 2732 Pnt
+3748 2732 Pnt
+3748 2732 Pnt
+3748 2732 Pnt
+3748 2732 Pnt
+3749 2732 Pnt
+3749 2732 Pnt
+3749 2731 Pnt
+3749 2731 Pnt
+3749 2731 Pnt
+3750 2731 Pnt
+3750 2731 Pnt
+3750 2731 Pnt
+3751 2730 Pnt
+3751 2730 Pnt
+3752 2730 Pnt
+3752 2730 Pnt
+3753 2730 Pnt
+3754 2729 Pnt
+3754 2729 Pnt
+3755 2729 Pnt
+3756 2728 Pnt
+3757 2728 Pnt
+3759 2727 Pnt
+3760 2727 Pnt
+3761 2727 Pnt
+3763 2726 Pnt
+3765 2726 Pnt
+3767 2726 Pnt
+3768 2725 Pnt
+3770 2725 Pnt
+3772 2725 Pnt
+3774 2725 Pnt
+3776 2725 Pnt
+3776 2725 Pnt
+3777 2725 Pnt
+3777 2725 Pnt
+3777 2725 Pnt
+3777 2725 Pnt
+3777 2725 Pnt
+3777 2725 Pnt
+3777 2725 Pnt
+3778 2725 Pnt
+3778 2725 Pnt
+3778 2725 Pnt
+3778 2725 Pnt
+3778 2725 Pnt
+3778 2725 Pnt
+3779 2725 Pnt
+3779 2725 Pnt
+3779 2725 Pnt
+3779 2725 Pnt
+3780 2725 Pnt
+3780 2725 Pnt
+3781 2725 Pnt
+3781 2725 Pnt
+3782 2725 Pnt
+3782 2725 Pnt
+3783 2725 Pnt
+3784 2725 Pnt
+3785 2725 Pnt
+3786 2725 Pnt
+3787 2726 Pnt
+3788 2726 Pnt
+3790 2726 Pnt
+3791 2727 Pnt
+3793 2727 Pnt
+3795 2727 Pnt
+3797 2728 Pnt
+3799 2729 Pnt
+3801 2730 Pnt
+3804 2731 Pnt
+3806 2732 Pnt
+3809 2734 Pnt
+3812 2736 Pnt
+3814 2737 Pnt
+1.000 UL
+LTb
+1542 4969 N
+0 -4409 V
+4410 0 V
+0 4409 V
+-4410 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica

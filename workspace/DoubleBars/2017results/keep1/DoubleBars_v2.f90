@@ -1,9 +1,9 @@
  program doublebars
    implicit none
    integer, parameter :: NVAR=16 ,NMAX=50,KMAXX=10000
-   integer :: kmax=0,i,j,k
-   real :: ys(NVAR),xp(KMAXX),yp(NMAX,KMAXX),m1,m2,m3,m4,m, start, end, step, energy(KMAXX)
-  real :: period(4, KMAXX)
+   integer :: kmax=0,i,j, period1, period2, period3, period4
+   real :: ys(NVAR),xp(KMAXX),yp(NMAX,KMAXX),m1,m2,m3,m4,m, start, end, step, energy(KMAXX), initialx1,initialx2
+    real :: initialx3,initialx4
    real, parameter :: PI=4*ATAN(1.)
 
    call initialconditions
@@ -11,13 +11,12 @@
 
    do i=1,kmax
       call calcenergy
-      call calcperiod
-      write(13,33) xp(i), (yp(j,i),j=1,NVAR),i,energy(i), (period(k,i), k=1,4)
+      write(9,33) xp(i), (yp(j,i),j=1,NVAR),i,energy(i)
       if(xp(i)==end) then
           exit
       end if
    end do
- 33 format(17f10.4,i5,f10.4, 4f10.4)
+ 33 format(17f10.4,i5,f10.4)
 
  contains
 
@@ -25,41 +24,38 @@
 
      step = 1.e-7 !vary step size
      start=0.
-     end=2.22 !vary end time
+     end=20 !vary end time
 
       m1=.5   !blue
       m2=.5  !red
-      m3=0.1    !black
-      m4=0.1   !yellow
+      m3=0.09    !black
+      m4=0.09   !yellow
 
      ys(1) = -.5     ! m1,x
+     initialx1=ys(1)
      ys(2) = 0  ! m1,vx
      ys(3) = 0       ! m1,y
      ys(4) = -1		!m1,vy
      
      ys(5) = .5         ! m2,x
+    initialx2=ys(5)
      ys(6) = 0          ! m2,vx
      ys(7) = 0         ! m2,y
      ys(8) = 1	!m2,vy
 
-     ys(9) = -.1     ! m3,x
+     ys(9) = -.106     ! m3,x
+    initialx3=ys(9)
      ys(10) = 0       ! m3,vx
      ys(11) = 0        ! m3,y
-     ys(12) = -.1		!m3, vy
+     ys(12) = -.001		!m3, vy
 
-     ys(13) = .1     ! m4,x
+     ys(13) = .106     ! m4,x
+  !initialx4=ys(13)
      ys(14) = 0      ! m4,vx
      ys(15) = 0        ! m4,y
-     ys(16) = .1		!m4, vy
+     ys(16) = .001		!m4, vy
 
    end subroutine initialconditions
-
-  subroutine calcperiod()
-    period(1,i) = ATAN(yp(3,i)/yp(1,i))
-    period(2,i) = ATAN(yp(7,i)/yp(5,i))
-    period(3,i) = ATAN(yp(11,i)/yp(9,i))
-    period(4,i) = ATAN(yp(15,i)/yp(13,i))
-  end subroutine calcperiod
 
    subroutine derivs(x,y,dydx)
      real, intent(in) :: x,y(NVAR)

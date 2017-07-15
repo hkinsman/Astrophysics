@@ -12,11 +12,11 @@ set ylabel "Y position"
 set xlabel "X position"
 set size square 
 
-#plot [-.6:.6] [-.6:.6] "fort.9" using 10:12 lc rgb "#000000" notitle  with dots, \
-# "fort.9" using 14:16 lc rgb "#FF7F50" notitle  with dots
-#plot [-.6:.6] [-.6:.6] "fort.9" using 2:4 lc rgb "#0000FF" notitle  with dots, \
-# "fort.9" using 6:8 lc rgb "#DC143C" notitle  with dots
-plot [-2:2] [-2:2] "fort.9" using 2:4 lc rgb "#0000FF" notitle  with dots, \
- "fort.9" using 6:8 lc rgb "#DC143C" notitle  with dots, \
-"fort.9" using 10:12 lc rgb "#000000" notitle  with dots, \
- "fort.9" using 14:16 lc rgb "#FF7F50" notitle  with dots
+#plot [-.6:.6] [-.6:.6] "fort.13" using 10:12 lc rgb "#000000" notitle  with dots, \
+# "fort.13" using 14:16 lc rgb "#FF7F50" notitle  with dots
+#plot [-.6:.6] [-.6:.6] "fort.13" using 2:4 lc rgb "#0000FF" notitle  with dots, \
+# "fort.13" using 6:8 lc rgb "#DC143C" notitle  with dots
+plot [-2:2] [-2:2] "fort.13" using 2:4 lc rgb "#0000FF" notitle  with dots, \
+ "fort.13" using 6:8 lc rgb "#DC143C" notitle  with dots, \
+"fort.13" using 10:12 lc rgb "#000000" notitle  with dots, \
+ "fort.13" using 14:16 lc rgb "#FF7F50" notitle  with dots
