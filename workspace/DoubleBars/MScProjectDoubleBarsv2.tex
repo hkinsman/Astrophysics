@@ -125,7 +125,9 @@ conditions remained the same.
    27 & .12 & .12 & -1.1 & 1.1 & -.11 & .11 & -.015 & .015\\
    28 & .12 & .12 & -1.1 & 1.1 & -.115 & .115 & -.015 & .015\\
    29 & .12 & .12 & -1.1 & 1.1 & -.12 & .12 & -.015 & .015\\
-   30 & .1 & .1 & -1 & 1 &-1. & .1 & -.1 & .1\\
+   30 & .1 & .1 & -1 & 1 & -.1 & .1 & -.1 & .1\\
+   31 & .1 & .1 & -1 & 1 & -.102 & .102 & -.1 & .1\\
+   31 & .1 & .1 & -1 & 1 & -.1021 & .1021 & -.1 & .1\\
   \end{tabular}
 \end{table}
 
@@ -534,11 +536,52 @@ form wider orbits.
 \includegraphics[width=0.9\textwidth]{./2017results/1-1-1-1/Inner.eps}
 \caption{Configuration 30 - Inner Bar}
 \label{fig:config30i}
-\end{figure}l
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./2017results/1-1-102-1/Orbit.eps}
+\caption{Configuration 31}
+\label{fig:config31}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./2017results/1-1-102-1/Inner.eps}
+\caption{Configuration 31 - Inner Bar}
+\label{fig:config31i}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./2017results/1-1-1021-1/Orbit.eps}
+\caption{Configuration 32}
+\label{fig:config32}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{./2017results/1-1-1021-1/Inner.eps}
+\caption{Configuration 32 - Inner Bar}
+\label{fig:config32i}
+\end{figure}
 
 \newpage
 \section{Disussion}
-TODO
+The final three runs (configurations 30, 31, and 32) were by far the most stable. The orbital periods vary slightly with time so it is difficult to give accurate figures, so
+I am using the periods of the first orbit. The following table shows the periods of the two binaries together with the ratios of the corresponding periods.
+\begin{table}[ht!]
+  \centering
+  \caption{Periods}
+  \label{tab:periods}
+  \begin{tabular}{ccccc}
+   Config. & Inner & Outer & Ratio & Length of simulation\\
+    \hline
+   30 & .51 & 11.56 & 1:22.7 & 25\\
+   31 & .54 & 11.5 & 1:21.3 & 25\\
+   32 & .55 & 11.5 & 1:20.9 & 35\\
+  \end{tabular}
+\end{table}
+The data shows that as the periodic ratios tends towards 1:21 the system considerably stabilises. Run 32 was by far the most stable run and the orbits persisted until the integrator
+errored with a 'Step size underflow'. 1:21 could possibly be an orbital resonance.
 
 \newpage
 \begin{thebibliography}{1}
@@ -547,27 +590,30 @@ TODO
 \bibitem[Binney and Tremaine(2008)]{binney}Binney, J., Tremaine, S., Galactic Dynamics, 2008, Princeton University Press
 \bibitem[Collins(2004)]{collins}Collins, G., The Foundations Of Celestial Mechanics, 2004, Pachart Publishing House TODO
 \bibitem[Debattista and Shen(2007)]{debattista}Debattista, V., Shen, J., Long-Lived Double-Barred Galaxies from Psuedobulges, 2007, The Astrophysical Journal, 654: L127–L130, 2007 January 10
-
-Kimematic PROPERTIES OF DOUBLE-BARRED GALAXIES: SIMULATIONS VS. INTEGRAL-FIELD
-OBSERVATIONS
-\bibitem[Du et. al.(2015)]{du}Du, M., Shen, J., Debattista, V., Forming Double-Barred Galaxies from Dynamically Cool Inner Disks, 2015, The Astrophysical Journal, 804:139 (10pp), 2015 May 10 
-\bibitem[Erwin(2011)]{erwin3}Erwin, P., Double-Barred Galaxies, 2011, Mem. S.A.It. Suppl. Vol. 18, 145
-\bibitem[Erwin and Sparke(2002)]{erwin2}Erwin, P., Sparke, L., Double Bars, Inner Disks, and Nuclear Rings in Early-Type Disk Galaxies, 2002, The Astronomical Journal, 124:65–77, 2002 July
+\bibitem[Du et. al.(2015)]{du1}Du, M., Shen, J., Debattista, V., Forming Double-Barred Galaxies from Dynamically Cool Inner Disks, 2015, The Astrophysical Journal, 804:139 (10pp), 2015 May 10 
+\bibitem[Du et. al.(2016)]{du2}Du, M., Debattista, V., Shen, J., Kimematic Properties of Double-Barred Galaxies: Simulations vs. Integral-Field Observations, 2016, arXiv:1607.00585v1
+\bibitem[Erwin(2003)]{erwin3}Erwin, P., Double-Barred Galaxies I. A Catalog of Barred Galaxies with Stellar Secondary Bars and Inner Disks, 2003, arXiv:astro-ph/0310806v2
+\bibitem[Erwin(2011)]{erwin2}Erwin, P., Double-Barred Galaxies, 2011, Mem. S.A.It. Suppl. Vol. 18, 145
+\bibitem[Erwin and Sparke(2002)]{erwin1}Erwin, P., Sparke, L., Double Bars, Inner Disks, and Nuclear Rings in Early-Type Disk Galaxies, 2002, The Astronomical Journal, 124:65–77, 2002 July
 \bibitem[Garzon(2014)]{garzon}Garzon, F., Lopez-Corredoira, M., Dynamical evolution of two associated galactic bars, 2014, arXiv:1409.1916.v1
 \bibitem[Heggie and Hut(2002)]{heggie}Heggie D., Hut, P., The Gravitational Million-Body Problem, 2002, TODO
-\bibitem[Maciejewski(2003)]{macie1}Maciejewski, W., Chaos or Order in Double Barred Galaxies?, 2003, arXiv:astro-ph/0304432v1
-\bibitem[Maciejewski and Athanassoula(2008)]{macie1}Maciejewski, W., Athanassoula, A., Regular motions in double bars. II. Survey of trajectories and 23 models, 2008, arXiv:0805.3967v1
-\bibitem[Maciejewski and Small(2010)]{macie2}Maciejewski, W., Small, E., Orbital Support of Fast and Slow Inner Bars in Double Barred Galaxies, 2010, arXiv:1006.4574v1
-\bibitem[Maciejewski and Sparke(1998)]{macie3}Maciejewski, W., Sparke, L., Bars within Bars in Galaxies, 1998, arXiv:astro-ph/9812228v1
-\bibitem[Maciejewski and Sparke(1999)]{macie4}Maciejewski, W., Sparke, L., Orbits Supporting Bars within Bars, 1999, arXiv:astro-ph/9911281v1
+\bibitem[Lorenzo-Caceres et. al.(2002)]{lorenzo1}de Lorenzo-Caceres, A., Vazdekis, A., Aguerri, K., A., L., Corsini, E., M., Debattista, V., P., Constraining the formation of inner bars. Photometry, kinematics and stellar populations in NGC357⋆, 2002, arXiv:1111.1718v1
+\bibitem[Lorenzo-Caceres et. al.(2013)]{lorenzo2}de Lorenzo-Caceres, A., Falcon-Barroso, J., Vazdekis, A., Distinct stellar populations in the inner bars of double-barred galaxies, 2013, arXiv:1302.5701v1
+\bibitem[Maciejewski(2002)]{macie1}Maciejewski, W., Constraints on nested bars – implications for gas inflow, 2002, arXiv:astro-ph/0202110v1
+\bibitem[Maciejewski(2003)]{macie2}Maciejewski, W., Chaos or Order in Double Barred Galaxies?, 2003, arXiv:astro-ph/0304432v1
+\bibitem[Maciejewski(2008)]{macie3}Maciejewski, W., Orbits in corotating and counterrotating double bars, 2008, arXiv:0801.1471v1
+\bibitem[Maciejewski and Athanassoula(2008)]{macie4}Maciejewski, W., Athanassoula, A., Regular motions in double bars. II. Survey of trajectories and 23 models, 2008, arXiv:0805.3967v1
+\bibitem[Maciejewski and Small(2010)]{macie5}Maciejewski, W., Small, E., Orbital Support of Fast and Slow Inner Bars in Double Barred Galaxies, 2010, arXiv:1006.4574v1
+\bibitem[Maciejewski and Sparke(1998)]{macie6}Maciejewski, W., Sparke, L., Bars within Bars in Galaxies, 1998, arXiv:astro-ph/9812228v1
+\bibitem[Maciejewski and Sparke(1999)]{macie7}Maciejewski, W., Sparke, L., Orbits Supporting Bars within Bars, 1999, arXiv:astro-ph/9911281v1
 \bibitem[Malhotra(1998)]{malhotra}Malhotra, R., Orbital Resonances and Chaos in the Solar System, 1998, Solar system Formation and Evolution ASP Conference Series, Vol. 149, 1998
 \bibitem[Manos and Athanassoula(2011)]{manos}Manos, T., Athanassoula, E., Regular and chaotic orbits in barred galaxies - I. Applying the SALI/GALI method to explore their distribution in several models, 2011, arXiv:1102.1157v2
+\bibitem[Moiseev(2001)]{moiseev}Moiseev, A., V., Velocity dispersion of stars and gas motion in double-barred galaxies, 2001, arXiv:astro-ph/0111220v1
 \bibitem[Moulton(1914)]{moulton}Moulton, F., An Introduction to Celestial Mechanics, 1914, Palmyrin Library TODO
 \bibitem[Saha and Maciejewski(2013)]{saha}Saha, K., Maciejewski, W., Spontaneous formation of double bars in dark matter dominated galaxies, 2013, arXiv:1304.7108v1
 \bibitem[Sellwood and Wilkinson(2006)]{sellwood}Sellwood, J., Wilkinson, A., Dynamics of Barred Galaxies, 2006, arXiv:astro-ph/0608665v1
 \bibitem[Shen and Debattista(2008)]{shen1}Shen, J., Debattista, V., Long-lived double-barred galaxies in N-body simulations, 2008, Mem. S.A.It. Vol. 00, 169
 \bibitem[Shen and Debattista(2009)]{shen2}Shen, J., Debattista, V., Observable Properties of Double-Barred Galaxies in N-Body Simulations, 2009, The Astrophysical Journal, 690:758–772, 2009 January 1
-
 \bibitem[Steves and Roy(1998)]{steves}Steves, B., Roy, A., Some special restricted four-body problems-I. Modelling the Caledonian problem, 1998, Phrt. Spucx, Si., Vol. 46. No. I I /) 12, pp. 1465-1474, 1998
 \bibitem[Szell et. al.(2004)]{szell}Szell, A., Erdi, B., Sandor, Zs., Steves, B., Chaotic and stable behaviour in the Caledonian Symmetric Four-Body Problem, 2004, Mon. Not. R. Astron. Soc. 347, 380Ð388 (2004)
 \bibitem[Trenti and Hut(2008)]{trenti}Trenti, M., Hut, P., Gravitational N-body Simulations, 2008, arXiv:0806.3950v1
