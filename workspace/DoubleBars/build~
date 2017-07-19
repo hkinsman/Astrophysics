@@ -13,7 +13,7 @@ then
    cp DoubleBars_v2.f90 2017results/$orbitname/DoubleBars_v2.f90
    cp plot 2017results/$orbitname/plot
    cp plotInner 2017results/$orbitname/plotInner
-   mv fort.9 2017results/$orbitname/fort.9
+   mv fort.13 2017results/$orbitname/fort.13
    mv Inner.eps 2017results/$orbitname/Inner.eps
    mv Orbit.eps 2017results/$orbitname/Orbit.eps
 fi

@@ -10,7 +10,7 @@
 \DeclareGraphicsExtensions{.eps}
 %\setlength\abovecaptionskip{-5pt}
 \author{Howard Kinsman}
-\title{MSc Project - Modelling a Double Barred Galaxy as a Double Binary}
+\title{MSc Project - Modelling a Double-Barred Galaxy as a Double Binary}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -18,7 +18,16 @@ TODO
 \end{abstract}
 {\bf Keywords:} TODO
 \section{Introduction}
-The aim of this project was to create a simple model of a double barred galaxy using a double binary.
+\subsection{Double-Barred Galaxies}
+Double-barred galaxies, where a smaller inner bar is nested inside a larger outer bar, were first observed in 1975 by de Vaucouleurs, however it was only in the 1990s that double-barred galaxies
+were recognsied as being a distinct category of galaxies. The current estimates of double-barred galaxy frequencies are $\approx30\%$ of barred galaxies and $\approx20\%$ of all galaxies \citep{erwin3}.
+\cite{erwin2} surveyed 38 barred galaxies and found a total of 10 double-barred galaxies with no preference for Hubble type. They found that inner bars were about 12\% the size of the outer bars with
+semi-major axes from $\approx250$pc to 1 kpc. Secondary bars probably rotate independently of, but in the same direction as their associated primary bars \cite{erwin2}.
+
+\subsection{N-Body Simulations}
+
+
+\subsection{Orbits and Resonances}
 
 \section{Methods}
 Fortran 90 was selected as the language of choice in order to avoid the fixed line limitations of Fortran 77.
@@ -525,34 +534,43 @@ form wider orbits.
 \includegraphics[width=0.9\textwidth]{./2017results/1-1-1-1/Inner.eps}
 \caption{Configuration 30 - Inner Bar}
 \label{fig:config30i}
-\end{figure}
+\end{figure}l
 
+\newpage
+\section{Disussion}
+TODO
+
+\newpage
 \begin{thebibliography}{1}
-\bibitem[Erwin(2008)]{erwin1}Erwin, P., Double-Barred Galaxies, 2008, Mem. S.A.It. Vol. 75, 282
-\bibitem[Du et. al.(2015)]{du}Du, M., Shen, J., Debattista, V., Forming Double-Barred Galaxies from Dynamically Cool Inner Disks, 2015, The Astrophysical Journal, 804:139 (10pp), 2015 May 10
-\bibitem[Wozniak(2015)]{wozniak}Wozniak, H., How can double-barred galaxies be long-lived?, 2015, A and A 575, A7 (2015)
-\bibitem[Debattista and Shen(2007)]{debattista}Debattista, V., Shen, J., Long-Lived Double-Barred Galaxies from Psuedobulges, 2007, The Astrophysical Journal, 654: L127–L130, 2007 January 10
-\bibitem[Garzon(2014)]{garzon}Garzon, F., Lopez-Corredoira, M., Dynamical evolution of two associated galactic bars, 2014, arXiv:1409.1916.v1
-\bibitem[Alvarez–Ramirez and Medina(2014)]{alvarez}Alvarez–Ramirez, M., Medina, M., A Review of the Planar Caledonian Four-Body Problem, 2014, TODO
-\bibitem[Szell et. al.(2004)]{szell}Szell, A., Erdi, B., Sandor, Zs., Steves, B., Chaotic and stable behaviour in the Caledonian Symmetric Four-Body Problem, 2004, Mon. Not. R. Astron. Soc. 347, 380Ð388 (2004)
-\bibitem[Steves and Roy(1998)]{steves}Steves, B., Roy, A., Some special restricted four-body problems-I. Modelling the Caledonian problem, 1998, Phrt. Spucx, Si., Vol. 46. No. I I /) 12, pp. 1465-1474, 1998
-\bibitem[Shen and Debattista(2009)]{shen}Shen, J., Debattista, V., Observable Properties of Double-Barred Galaxies in N-Body Simulations, 2009, The Astrophysical Journal, 690:758–772, 2009 January 1
-\bibitem[Erwin and Sparke(2002)]{erwin2}Erwin, P., Sparke, L., Double Bars, Inner Disks, and Nuclear Rings in Early-Type Disk Galaxies, 2002, The Astronomical Journal, 124:65–77, 2002 July
-\bibitem[Binney and Tremaine(2008)]{binney}Binney, J., Tremaine, S., Galactic Dynamics, 2008, Princeton University Press
 \bibitem[Aarseth(2003)]{aarseth}Aarseth, S., Gravitational N-Body Simulations, 2003, Cambridge University Press
-\bibitem[Heggie and Hut(2002)]{heggie}Heggie D., Hut, P., The Gravitational Million-Body Problem, 2002, TODO
+\bibitem[Alvarez–Ramirez and Medina(2014)]{alvarez}Alvarez–Ramirez, M., Medina, M., A Review of the Planar Caledonian Four-Body Problem, 2014, TODO
+\bibitem[Binney and Tremaine(2008)]{binney}Binney, J., Tremaine, S., Galactic Dynamics, 2008, Princeton University Press
+\bibitem[Collins(2004)]{collins}Collins, G., The Foundations Of Celestial Mechanics, 2004, Pachart Publishing House TODO
+\bibitem[Debattista and Shen(2007)]{debattista}Debattista, V., Shen, J., Long-Lived Double-Barred Galaxies from Psuedobulges, 2007, The Astrophysical Journal, 654: L127–L130, 2007 January 10
+
+Kimematic PROPERTIES OF DOUBLE-BARRED GALAXIES: SIMULATIONS VS. INTEGRAL-FIELD
+OBSERVATIONS
+\bibitem[Du et. al.(2015)]{du}Du, M., Shen, J., Debattista, V., Forming Double-Barred Galaxies from Dynamically Cool Inner Disks, 2015, The Astrophysical Journal, 804:139 (10pp), 2015 May 10 
 \bibitem[Erwin(2011)]{erwin3}Erwin, P., Double-Barred Galaxies, 2011, Mem. S.A.It. Suppl. Vol. 18, 145
+\bibitem[Erwin and Sparke(2002)]{erwin2}Erwin, P., Sparke, L., Double Bars, Inner Disks, and Nuclear Rings in Early-Type Disk Galaxies, 2002, The Astronomical Journal, 124:65–77, 2002 July
+\bibitem[Garzon(2014)]{garzon}Garzon, F., Lopez-Corredoira, M., Dynamical evolution of two associated galactic bars, 2014, arXiv:1409.1916.v1
+\bibitem[Heggie and Hut(2002)]{heggie}Heggie D., Hut, P., The Gravitational Million-Body Problem, 2002, TODO
 \bibitem[Maciejewski(2003)]{macie1}Maciejewski, W., Chaos or Order in Double Barred Galaxies?, 2003, arXiv:astro-ph/0304432v1
 \bibitem[Maciejewski and Athanassoula(2008)]{macie1}Maciejewski, W., Athanassoula, A., Regular motions in double bars. II. Survey of trajectories and 23 models, 2008, arXiv:0805.3967v1
 \bibitem[Maciejewski and Small(2010)]{macie2}Maciejewski, W., Small, E., Orbital Support of Fast and Slow Inner Bars in Double Barred Galaxies, 2010, arXiv:1006.4574v1
 \bibitem[Maciejewski and Sparke(1998)]{macie3}Maciejewski, W., Sparke, L., Bars within Bars in Galaxies, 1998, arXiv:astro-ph/9812228v1
 \bibitem[Maciejewski and Sparke(1999)]{macie4}Maciejewski, W., Sparke, L., Orbits Supporting Bars within Bars, 1999, arXiv:astro-ph/9911281v1
-\bibitem[Moulton(1914)]{moulton}Moulton, F., An Introduction to Celestial Mechanics, 1914, Palmyrin Library TODO
-\bibitem[Trenti and Hut(2008)]{trenti}Trenti, M., Hut, P., Gravitational N-body Simulations, 2008, arXiv:0806.3950v1
 \bibitem[Malhotra(1998)]{malhotra}Malhotra, R., Orbital Resonances and Chaos in the Solar System, 1998, Solar system Formation and Evolution ASP Conference Series, Vol. 149, 1998
 \bibitem[Manos and Athanassoula(2011)]{manos}Manos, T., Athanassoula, E., Regular and chaotic orbits in barred galaxies - I. Applying the SALI/GALI method to explore their distribution in several models, 2011, arXiv:1102.1157v2
+\bibitem[Moulton(1914)]{moulton}Moulton, F., An Introduction to Celestial Mechanics, 1914, Palmyrin Library TODO
 \bibitem[Saha and Maciejewski(2013)]{saha}Saha, K., Maciejewski, W., Spontaneous formation of double bars in dark matter dominated galaxies, 2013, arXiv:1304.7108v1
 \bibitem[Sellwood and Wilkinson(2006)]{sellwood}Sellwood, J., Wilkinson, A., Dynamics of Barred Galaxies, 2006, arXiv:astro-ph/0608665v1
-\bibitem[Collins(2004)]{collins}Collins, G., The Foundations Of Celestial Mechanics, 2004, Pachart Publishing House TODO
+\bibitem[Shen and Debattista(2008)]{shen1}Shen, J., Debattista, V., Long-lived double-barred galaxies in N-body simulations, 2008, Mem. S.A.It. Vol. 00, 169
+\bibitem[Shen and Debattista(2009)]{shen2}Shen, J., Debattista, V., Observable Properties of Double-Barred Galaxies in N-Body Simulations, 2009, The Astrophysical Journal, 690:758–772, 2009 January 1
+
+\bibitem[Steves and Roy(1998)]{steves}Steves, B., Roy, A., Some special restricted four-body problems-I. Modelling the Caledonian problem, 1998, Phrt. Spucx, Si., Vol. 46. No. I I /) 12, pp. 1465-1474, 1998
+\bibitem[Szell et. al.(2004)]{szell}Szell, A., Erdi, B., Sandor, Zs., Steves, B., Chaotic and stable behaviour in the Caledonian Symmetric Four-Body Problem, 2004, Mon. Not. R. Astron. Soc. 347, 380Ð388 (2004)
+\bibitem[Trenti and Hut(2008)]{trenti}Trenti, M., Hut, P., Gravitational N-body Simulations, 2008, arXiv:0806.3950v1
+\bibitem[Wozniak(2015)]{wozniak}Wozniak, H., How can double-barred galaxies be long-lived?, 2015, A and A 575, A7 (2015)
 \end{thebibliography}
 \end{document}
