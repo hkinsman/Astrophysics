@@ -1,10 +1,10 @@
-cd ~/git/workspace/DoubleBars
+cd ~/git/Astrophysics/workspace/DoubleBars
 gfortran -g DoubleBars_v2.f90 -o doublebars
 ./doublebars
 gnuplot plot
 gnuplot plotInner
-okular Orbit.eps
-okular Inner.eps
+evince Orbit.eps
+evince Inner.eps
 read -p "Stable orbit? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
