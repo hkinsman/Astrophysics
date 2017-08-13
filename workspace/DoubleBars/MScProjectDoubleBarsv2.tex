@@ -19,23 +19,34 @@ TODO
 \section{Introduction}
 \subsection{Double-Barred Galaxies}
 Double-barred galaxies, where a smaller inner bar is nested inside a larger outer bar, were first observed in 1975 by de Vaucouleurs, however it was only in the 1990s that double-barred galaxies
-were recognsied as being a distinct category of galaxies. The current estimates of double-barred galaxy frequencies are $\approx30\%$ of barred galaxies and $\approx20\%$ of all galaxies \citep{erwin3}.
+were recognised as being a distinct category of galaxies. The current estimates of double-barred galaxy frequencies are $\approx30\%$ of barred galaxies and $\approx20\%$ of all galaxies \citep{erwin3}.
 \cite{erwin2} surveyed 38 barred galaxies and found a total of 10 double-barred galaxies with no preference for Hubble type. They found that inner bars were about 12\% the size of the outer bars with
 semi-major axes from $\approx250$pc to 1 kpc. Secondary bars probably rotate independently of, but in the same direction as their associated primary bars \cite{erwin2}.
+\cite{erwin1} believe that innder bars probably rotate independently of their outer bars and suggest that they are relatively long-lived strucutures.
+Inner bar size has been found to correlate slightly with outer bar size \citep{erwin3}. The median size ratio is $\approx0.12$ with an upper limit of $\approx0.25$ which is consistent with the theory that
+inner bars cannot be too large without disrupting the orbit of the outer bar.
 
-\citep{erwin3}, \citep{erwin2}, \citep{erwin1}, \citep{lorenzo1}, \citep{lorenzo2}, \citep{moiseev}, \citep{saha}, \citep{sellwood}
+It has been suggested that nested bars may provide a mechanism for fueling active galactic nuclei (Shlosman 1989) however more recently \citep{erwin3} believe that inner bars only play a minor role in this 
+activity. \citep{erwin1} compared single and double-barred galaxies and found that there was no significant difference in nuclear activity. To investigate this theory further \cite{lorenzo1} carried out a 
+study of NGC 357. This study aimed to present the first detailed morhpological, kinematical and stellar population analysis of the bulge, inner and outer bars of a double-barred galaxy. They concluded that
+the bulge and inner bar show similar stellar population properties whilst the outer bar was less metal-rich. This result implied that, for the case of NGC 357, the outer bar was formed in a shorter timescale than
+the inner structures and so disagrees with traditional idea that gas flown along the outer structure triggers star formation causing the formation of the inner structure. This was strengthened by a further study of
+four double-barred galaxies by \cite{lorenzo2} where they concluded that the stellar populations of inner bars are younger and more metal-rich than the outer bars. This suggests that at present inner bars play a
+moderate or even minor role in the morphological evolution of double-barred galaxies \citep{lorenzo2}.
+
+Through the use of computer modeeling \cite{saha} showed that double bars can form without gas in a dark matter dominated halo. They produced a model where the inner bar was rotating at almost as slowly as the 
+outer bar. The route to the formation of double bars maybe very different to that of a single bar.
+
+Photos!
+
+ \citep{moiseev}, , \citep{sellwood}
 
 \subsection{N-Body Simulations and the Four-Body Problem}
-\citep{aarseth}, \citep{alvarez}, \citep{heggie}, \citep{binney}, \citep{collins}, \citep{moulton}, \citep{steves}, \citep{szell}, \citep{trenti}
-
-\subsection{Orbits, Loops, Resonances and Double-Barred Galaxy Simulations}
-\citep{debattista}, \citep{du1}, \citep{du2}, \citep{erwin1}, \citep{macie1}, \citep{macie2}, \citep{macie3}, \citep{macie4}
-\citep{macie5}, \citep{macie6}, \citep{macie7}, \citep{malhotra}, \citep{manos}, \citep{shen1}, \citep{shen2}, \citep{wozniak}
-
-\section{Methods}
-Fortran 90 was selected as the language of choice in order to avoid the fixed line limitations of Fortran 77.
-The model was created using OdeInt from Numerical Recipes. I first converted OdeInt to Fortran 90 for this purpose.
-Please see the Compilers subsection for a few notes on compilers - may or may not be relevant to the project.
+Studies of three or more bodies interacting gravitationally dates back to the time of Newton. However it is only with the widespread use of computers that orbits of more than three bodies have been extensively studied. Today
+N-body simulations are an essential tool in the study of solar system dynamics and galactic dynamics \citep{binney}. Celestial mechanics during the preceding centuries has mainly focussed on the three body problem
+due to the complexities involved in adding more bodies. It is estimated that within the Milky Way approximately two thirds of all stars exist in binary systems and a further one fifth of these are in triple systems whilst a
+further fifth still exist in systems with more than three bodies \citep{steves}. \cite{steves} estimate that $\approx2\times10^9$ quadruple systems exist in the Milky Way galaxy. They found that quadruple systems exist in two
+forms: a double binary or linear.
 \newline
 The classical equations of motion for an n-body problem are:
 \begin{equation}
@@ -57,6 +68,29 @@ this equation results in the following:
 \begin{equation}
 \ddot{\mathbf{r_4}}=\frac{m_1\mathbf{r}_{41}}{r^3_{41}}+\frac{m_2\mathbf{r}_{42}}{r^3_{42}}+\frac{m_3\mathbf{r}_{43}}{r^3_{43}}
 \end{equation}
+The units have been selected so that the gravitational constant (G) is equal to one.
+
+The four body problem, specifically, has been studied extensively by \cite{steves}. Here they model four equal mass bodies orbiting in circular coplanar orbits. This model they term the Caledonian problem, because
+their research is being carried out at Glasgow Caledonian University.
+Approximately a century ago the Copenhagen problem was studied extensively in Copenhagen which consisted of a three body problem: two equal mass bodies and an infinitesimally small test particle. \cite{szell} also
+studied the Caledonian problem and found that the stability of the system is dependent upon a constant termed the Szebehely constant.
+
+Methods for the study of N-body simulations have changed considerably since the advent of computers. In a study of N-body simulations \cite{trenti} mentions a pioneering attempt by Holmberg in 1941 which used 
+light bulbs and galvanometers to track the evolution of 37 particles. Nowadays simulations can contain millions of particles \citep{heggie}.
+
+
+
+\citep{aarseth}, \citep{alvarez}, \citep{heggie}, \citep{collins}, \citep{moulton}
+
+\subsection{Orbits, Loops, Resonances and Double-Barred Galaxy Simulations}
+\citep{debattista}, \citep{du1}, \citep{du2}, \citep{erwin1}, \citep{macie1}, \citep{macie2}, \citep{macie3}, \citep{macie4}
+\citep{macie5}, \citep{macie6}, \citep{macie7}, \citep{malhotra}, \citep{manos}, \citep{shen1}, \citep{shen2}, \citep{wozniak}
+
+\section{Methods}
+Fortran 90 was selected as the language of choice in order to avoid the fixed line limitations of Fortran 77.
+The model was created using OdeInt from Numerical Recipes. I first converted OdeInt to Fortran 90 for this purpose.
+Please see the Compilers subsection for a few notes on compilers - may or may not be relevant to the project.
+
 The above equations were encoded into Fortran. A full code listing is supplied in a separate file.
 \subsection{Initial Conditions}
 As a starting point both the outer binary and inner binary were placed in circular orbits and tested separately and then combined to ensure a stable
@@ -585,6 +619,8 @@ I am using the periods of the first orbit. The following table shows the periods
 \end{table}
 The data shows that as the periodic ratios tends towards 1:21 the system considerably stabilises. Run 32 was by far the most stable run and the orbits persisted until the integrator
 errored with a 'Step size underflow'. 1:21 could possibly be an orbital resonance.
+Fourier analysis?
+Rewrite in Python, automate, introduce machine laerning algoriythm 
 
 \citep{garzon}, \citep{erwin1}, \citep{macie1}, \citep{macie2}, \citep{macie3}, \citep{macie4}, \citep{macie5}
 \citep{macie6}, \citep{macie7}, \citep{manos}, \citep{shen1}, \citep{shen2}, \citep{debattista}, 
@@ -624,5 +660,6 @@ errored with a 'Step size underflow'. 1:21 could possibly be an orbital resonanc
 \bibitem[Szell et. al.(2004)]{szell}Szell, A., Erdi, B., Sandor, Zs., Steves, B., Chaotic and stable behaviour in the Caledonian Symmetric Four-Body Problem, 2004, Mon. Not. R. Astron. Soc. 347, 380Ð388 (2004)
 \bibitem[Trenti and Hut(2008)]{trenti}Trenti, M., Hut, P., Gravitational N-body Simulations, 2008, arXiv:0806.3950v1
 \bibitem[Wozniak(2015)]{wozniak}Wozniak, H., How can double-barred galaxies be long-lived?, 2015, A and A 575, A7 (2015)
+Numerical Recipes
 \end{thebibliography}
 \end{document}

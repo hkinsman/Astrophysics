@@ -1,20 +1,16 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2016.8.9)  20 JUL 2017 11:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2017.7.29)  13 AUG 2017 10:54
 entering extended mode
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **MScProjectDoubleBarsv2.tex
 (./MScProjectDoubleBarsv2.tex
-LaTeX2e <2005/12/01>
-Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
-erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
- french, greek, monogreek, ancientgreek, croatian, hungarian, interlingua, ibyc
-us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
-tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
-turkish, ukenglish, ukrainian, loaded.
-(/usr/share/texmf/tex/latex/base/article.cls
-Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
-(/usr/share/texmf/tex/latex/base/size12.clo
-File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -28,42 +24,42 @@ File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texmf/tex/latex/base/latexsym.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
 )
-(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texmf/tex/latex/graphics/graphics.sty
-Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: dvips.def on input line 90.
+Package graphics Info: Driver file: dvips.def on input line 91.
 
-(/usr/share/texmf/tex/latex/graphics/dvips.def
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/share/texmf/tex/latex/graphics/epsfig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen105
 \epsfysize=\dimen106
 )
-(/usr/share/texmf/tex/latex/float/float.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count87
 \float@exts=\toks15
@@ -71,14 +67,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks16
 \@floatcapt=\box27
 )
-(/usr/share/texmf/tex/latex/natbib/natbib.sty
-Package: natbib 2007/02/05 8.0 (PWD)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
-LaTeX Info: Redefining \cite on input line 602.
+LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count88
 )
-(/usr/share/texmf/tex/latex/listings/listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count89
 \lst@gtempboxa=\box28
 \lst@token=\toks17
@@ -90,39 +86,35 @@ LaTeX Info: Redefining \cite on input line 602.
 \lst@width=\dimen109
 \lst@newlines=\count93
 \lst@lineno=\count94
-\c@lstlisting=\count95
 \lst@maxwidth=\dimen110
 
-(/usr/share/texmf/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2004/10/17 1.3b (Carsten Heinz)
-)
-(/usr/share/texmf/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2004/09/07 1.3 (Carsten Heinz)
-\c@lstnumber=\count96
-\lst@skipnumbers=\count97
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count95
+\lst@skipnumbers=\count96
 \lst@framebox=\box29
 )
-(/usr/share/texmf/tex/latex/listings/listings.cfg
-File: listings.cfg 2004/09/05 1.3 listings configuration
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
-Package: listings 2004/10/17 1.3b (Carsten Heinz)
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
-(/usr/share/texmf/tex/latex/caption/caption.sty
-Package: caption 2007/01/07 v3.0k Customising captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/02/03 v3.3-65 Customizing captions (AR)
 
-(/usr/share/texmf/tex/latex/caption/caption3.sty
-Package: caption3 2007/01/07 v3.0k caption3 kernel (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/02/03 v1.5-62 caption3 kernel (AR)
 \captionmargin=\dimen111
-\captionmarginx=\dimen112
+\captionmargin@=\dimen112
 \captionwidth=\dimen113
-\captionindent=\dimen114
-\captionparindent=\dimen115
-\captionhangindent=\dimen116
+\caption@tempdima=\dimen114
+\caption@indent=\dimen115
+\caption@parindent=\dimen116
+\caption@hangindent=\dimen117
 )
-Package caption Info: float package v1.3 (or newer) detected on input line 275.
-
-Package caption Info: listings package v1.2 (or newer) detected on input line 3
-38.
+\c@ContinuedFloat=\count97
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
 )
 (./MScProjectDoubleBarsv2.aux)
 \openout1 = `MScProjectDoubleBarsv2.aux'.
@@ -139,36 +131,16 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
-
-(/usr/share/texmf/tex/latex/ragged2e/ragged2e.sty
-Package: ragged2e 2003/03/25 v2.04 ragged2e Package (MS)
-
-(/usr/share/texmf/tex/latex/everysel/everysel.sty
-Package: everysel 1999/06/08 v1.03 EverySelectfont Package (MS)
-LaTeX Info: Redefining \selectfont on input line 125.
-)
-\CenteringLeftskip=\skip45
-\RaggedLeftLeftskip=\skip46
-\RaggedRightLeftskip=\skip47
-\CenteringRightskip=\skip48
-\RaggedLeftRightskip=\skip49
-\RaggedRightRightskip=\skip50
-\CenteringParfillskip=\skip51
-\RaggedLeftParfillskip=\skip52
-\RaggedRightParfillskip=\skip53
-\JustifyingParfillskip=\skip54
-\CenteringParindent=\skip55
-\RaggedLeftParindent=\skip56
-\RaggedRightParindent=\skip57
-\JustifyingParindent=\skip58
-)
+\c@lstlisting=\count98
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 15.
 LaTeX Font Info:    Try loading font information for U+lasy on input line 15.
 
-(/usr/share/texmf/tex/latex/base/ulasy.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -177,201 +149,196 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 22.
+ [1
 
-Overfull \hbox (1.19736pt too wide) in paragraph at lines 26--27
-[]\OT1/cmr/m/n/12 (Erwin, 2003), (Er-win, 2011), (Er-win and Sparke, 2002), (Lo
-renzo-Caceres
- []
-
+] [2]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
 
-Overfull \hbox (1.689pt too wide) in paragraph at lines 29--30
+Overfull \hbox (1.689pt too wide) in paragraph at lines 71--72
 \OT1/cmr/m/n/12 2002), (Bin-ney and Tremaine, 2008), (Collins, 2004), (Moul-ton
 , 1914), (Steves
  []
 
 
-Overfull \hbox (22.97128pt too wide) in paragraph at lines 31--31
+Overfull \hbox (22.97128pt too wide) in paragraph at lines 73--73
 []\OT1/cmr/bx/n/14.4 Orbits, Loops, Res-o-nances and Double-Barred Galaxy
  []
 
-[1
-
-] [2]
+[3]
 File: ./2016results/outerbinary/Orbit.eps Graphic file (type eps)
  <./2016results/outerbinary/Orbit.eps>
 File: ./2016results/innerbinary/Orbit.eps Graphic file (type eps)
 
-<./2016results/innerbinary/Orbit.eps> [3] [4] [5]
+<./2016results/innerbinary/Orbit.eps> [4] [5] [6]
 File: ./2016results/stablebase/Orbit.eps Graphic file (type eps)
 
 <./2016results/stablebase/Orbit.eps>
 File: ./2016results/stablebase/Inner.eps Graphic file (type eps)
  <./2016results/stablebase/Inner.eps>
-[6]
+[7]
 File: ./2016results/002-5-001/Orbit.eps Graphic file (type eps)
  <./2016results/002-5-001/Orbit.eps>
 File: ./2016results/002-5-001/Inner.eps Graphic file (type eps)
  <./2016results/002-5-001/Inner.eps>
-[7]
+[8]
 File: ./2016results/003-5-001/Orbit.eps Graphic file (type eps)
  <./2016results/003-5-001/Orbit.eps>
 File: ./2016results/003-5-001/Inner.eps Graphic file (type eps)
  <./2016results/003-5-001/Inner.eps>
-[8]
+[9]
 File: ./2016results/004-5-004/Orbit.eps Graphic file (type eps)
  <./2016results/004-5-004/Orbit.eps>
 File: ./2016results/004-5-004/Inner.eps Graphic file (type eps)
  <./2016results/004-5-004/Inner.eps>
-[9]
+[10]
 File: ./2016results/004-55-004/Orbit.eps Graphic file (type eps)
  <./2016results/004-55-004/Orbit.eps>
 File: ./2016results/004-55-004/Inner.eps Graphic file (type eps)
  <./2016results/004-55-004/Inner.eps>
-[10]
+[11]
 File: ./2016results/004-57-004/Orbit.eps Graphic file (type eps)
  <./2016results/004-57-004/Orbit.eps>
 File: ./2016results/004-57-004/Inner.eps Graphic file (type eps)
  <./2016results/004-57-004/Inner.eps>
-[11]
+[12]
 File: ./2016results/005-58-005-3/Orbit.eps Graphic file (type eps)
  <./2016results/005-58-005-3/Orbit.eps>
 File: ./2016results/005-58-005-3/Inner.eps Graphic file (type eps)
 
-<./2016results/005-58-005-3/Inner.eps> [12]
+<./2016results/005-58-005-3/Inner.eps> [13]
 File: ./2016results/005-58-005-4/Orbit.eps Graphic file (type eps)
 
 <./2016results/005-58-005-4/Orbit.eps>
 File: ./2016results/005-58-005-4/Inner.eps Graphic file (type eps)
  <./2016results/005-58-005-4/Inner.eps>
-[13]
+[14]
 File: ./2016results/005-58-005-35/Orbit.eps Graphic file (type eps)
  <./2016results/005-58-005-35/Orbit.eps>
 File: ./2016results/005-58-005-35/Inner.eps Graphic file (type eps)
 
-<./2016results/005-58-005-35/Inner.eps> [14]
+<./2016results/005-58-005-35/Inner.eps> [15]
 File: ./2016results/006-6-006-3/Orbit.eps Graphic file (type eps)
 
 <./2016results/006-6-006-3/Orbit.eps>
 File: ./2016results/006-6-006-3/Inner.eps Graphic file (type eps)
  <./2016results/006-6-006-3/Inner.eps>
-[15]
+[16]
 File: ./2016results/025-65-02/Orbit.eps Graphic file (type eps)
  <./2016results/025-65-02/Orbit.eps>
 File: ./2016results/025-65-02/Inner.eps Graphic file (type eps)
  <./2016results/025-65-02/Inner.eps>
-[16]
+[17]
 File: ./2017results/025-7-025-5/Orbit.eps Graphic file (type eps)
  <./2017results/025-7-025-5/Orbit.eps>
 File: ./2017results/025-7-025-5/Inner.eps Graphic file (type eps)
 
-<./2017results/025-7-025-5/Inner.eps> [17]
+<./2017results/025-7-025-5/Inner.eps> [18]
 File: ./2017results/03-7-03-5/Orbit.eps Graphic file (type eps)
  <./2017results/03-7-03-5/Orbit.eps>
 File: ./2017results/03-7-03-5/Inner.eps Graphic file (type eps)
 
-<./2017results/03-7-03-5/Inner.eps> [18]
+<./2017results/03-7-03-5/Inner.eps> [19]
 File: ./2017results/035-75-04-4/Orbit.eps Graphic file (type eps)
  <./2017results/035-75-04-4/Orbit.eps>
 File: ./2017results/035-75-04-4/Inner.eps Graphic file (type eps)
 
-<./2017results/035-75-04-4/Inner.eps> [19]
+<./2017results/035-75-04-4/Inner.eps> [20]
 File: ./2017results/04-75-045-4/Orbit.eps Graphic file (type eps)
 
 <./2017results/04-75-045-4/Orbit.eps>
 File: ./2017results/04-75-045-4/Inner.eps Graphic file (type eps)
  <./2017results/04-75-045-4/Inner.eps>
-[20]
+[21]
 File: ./2017results/05-75-045-4/Orbit.eps Graphic file (type eps)
  <./2017results/05-75-045-4/Orbit.eps>
 File: ./2017results/05-75-045-4/Inner.eps Graphic file (type eps)
 
-<./2017results/05-75-045-4/Inner.eps> [21]
+<./2017results/05-75-045-4/Inner.eps> [22]
 File: ./2017results/05-75-05-35/Orbit.eps Graphic file (type eps)
 
 <./2017results/05-75-05-35/Orbit.eps>
 File: ./2017results/05-75-05-35/Inner.eps Graphic file (type eps)
  <./2017results/05-75-05-35/Inner.eps>
-[22]
+[23]
 File: ./2017results/05-75-05-3/Orbit.eps Graphic file (type eps)
  <./2017results/05-75-05-3/Orbit.eps>
 File: ./2017results/05-75-05-3/Inner.eps Graphic file (type eps)
  <./2017results/05-75-05-3/Inner.eps>
-[23]
+[24]
 File: ./2017results/06-8-06-25/Orbit.eps Graphic file (type eps)
  <./2017results/06-8-06-25/Orbit.eps>
 File: ./2017results/06-8-06-25/Inner.eps Graphic file (type eps)
  <./2017results/06-8-06-25/Inner.eps>
-[24]
+[25]
 File: ./2017results/08-9-08-15/Orbit.eps Graphic file (type eps)
  <./2017results/08-9-08-15/Orbit.eps>
 File: ./2017results/08-9-08-15/Inner.eps Graphic file (type eps)
  <./2017results/08-9-08-15/Inner.eps>
-[25]
+[26]
 File: ./2017results/09-95-09-1/Orbit.eps Graphic file (type eps)
  <./2017results/09-95-09-1/Orbit.eps>
 File: ./2017results/09-95-09-1/Inner.eps Graphic file (type eps)
  <./2017results/09-95-09-1/Inner.eps>
-[26]
+[27]
 File: ./2017results/1-1-1-05/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1-05/Orbit.eps>
 File: ./2017results/1-1-1-05/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1-05/Inner.eps>
-[27]
+[28]
 File: ./2017results/1-1-1-04/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1-04/Orbit.eps>
 File: ./2017results/1-1-1-04/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1-04/Inner.eps>
-[28]
+[29]
 File: ./2017results/1-1-1-03/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1-03/Orbit.eps>
 File: ./2017results/1-1-1-03/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1-03/Inner.eps>
-[29]
+[30]
 File: ./2017results/1-1-1-02/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1-02/Orbit.eps>
 File: ./2017results/1-1-1-02/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1-02/Inner.eps>
-[30]
+[31]
 File: ./2017results/12-105-11-015/Orbit.eps Graphic file (type eps)
  <./2017results/12-105-11-015/Orbit.eps>
 File: ./2017results/12-105-11-015/Inner.eps Graphic file (type eps)
 
-<./2017results/12-105-11-015/Inner.eps> [31]
+<./2017results/12-105-11-015/Inner.eps> [32]
 File: ./2017results/12-11-11-015/Orbit.eps Graphic file (type eps)
 
 <./2017results/12-11-11-015/Orbit.eps>
 File: ./2017results/12-11-11-015/Inner.eps Graphic file (type eps)
  <./2017results/12-11-11-015/Inner.eps>
-[32]
+[33]
 File: ./2017results/12-11-115-015/Orbit.eps Graphic file (type eps)
  <./2017results/12-11-115-015/Orbit.eps>
 File: ./2017results/12-11-115-015/Inner.eps Graphic file (type eps)
 
-<./2017results/12-11-115-015/Inner.eps> [33]
+<./2017results/12-11-115-015/Inner.eps> [34]
 File: ./2017results/12-11-12-015/Orbit.eps Graphic file (type eps)
 
 <./2017results/12-11-12-015/Orbit.eps>
 File: ./2017results/12-11-12-015/Inner.eps Graphic file (type eps)
  <./2017results/12-11-12-015/Inner.eps>
-[34]
+[35]
 File: ./2017results/1-1-1-1/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1-1/Orbit.eps>
 File: ./2017results/1-1-1-1/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1-1/Inner.eps>
-[35]
+[36]
 File: ./2017results/1-1-102-1/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-102-1/Orbit.eps>
 File: ./2017results/1-1-102-1/Inner.eps Graphic file (type eps)
  <./2017results/1-1-102-1/Inner.eps>
-[36]
+[37]
 File: ./2017results/1-1-1021-1/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1021-1/Orbit.eps>
 File: ./2017results/1-1-1021-1/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1021-1/Inner.eps>
-[37] [38] [39]
+[38] [39] [40]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
@@ -379,13 +346,13 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
 
-Underfull \hbox (badness 1168) in paragraph at lines 600--601
+Underfull \hbox (badness 1168) in paragraph at lines 624--625
 []\OT1/cmr/m/n/12 Du, M., De-bat-tista, V., Shen, J., Kimematic Prop-er-ties of
  Double-
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 600--601
+Underfull \hbox (badness 1097) in paragraph at lines 624--625
 \OT1/cmr/m/n/12 Barred Galax-ies: Sim-u-la-tions vs. Integral-Field Ob-ser-va-t
 ions, 2016,
  []
@@ -397,7 +364,7 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no ã in font cmr12!
 Missing character: There is no Ü in font cmr12!
 
-Underfull \hbox (badness 1509) in paragraph at lines 607--608
+Underfull \hbox (badness 1509) in paragraph at lines 631--632
 \OT1/cmr/m/n/12 lar pop-u-la-tions in the in-ner bars of double-barred galax-ie
 s, 2013,
  []
@@ -405,27 +372,27 @@ s, 2013,
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
-[40]
+[41]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
- [41]
+ [42]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ê in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 625--626
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
 []\OT1/cmr/m/n/12 Trenti, M., Hut, P., Grav-i-ta-tional N-body Sim-u-la-tions, 
 2008,
  []
 
-[42] (./MScProjectDoubleBarsv2.aux) ) 
+[43] (./MScProjectDoubleBarsv2.aux) ) 
 Here is how much of TeX's memory you used:
- 2775 strings out of 256215
- 41761 string characters out of 1917024
- 98691 words of memory out of 1500000
- 6028 multiletter control sequences out of 10000+200000
- 10673 words of font info for 41 fonts, out of 1200000 for 2000
- 645 hyphenation exceptions out of 8191
- 35i,8n,38p,311b,1387s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 3466 strings out of 495064
+ 54037 string characters out of 3182224
+ 119844 words of memory out of 3000000
+ 6628 multiletter control sequences out of 15000+200000
+ 10673 words of font info for 41 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 36i,8n,38p,320b,845s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on MScProjectDoubleBarsv2.dvi (42 pages, 33380 bytes).
+Output written on MScProjectDoubleBarsv2.dvi (43 pages, 37224 bytes).
