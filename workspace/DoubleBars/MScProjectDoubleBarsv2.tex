@@ -47,7 +47,9 @@ outer bar. The route to the formation of double bars maybe very different to tha
 
 \subsection{N-Body Simulations and the Four-Body Problem}
 Studies of three or more bodies interacting gravitationally dates back to the time of Newton. However it is only with the widespread use of computers that orbits of more than three bodies have been extensively studied. Today
-N-body simulations are an essential tool in the study of solar system dynamics and galactic dynamics \citep{binney}. Celestial mechanics during the preceding centuries has mainly focussed on the three body problem
+N-body simulations are an essential tool in the study of solar system dynamics and galactic dynamics. The orbit-integration problems we have to address
+vary in complexity from following a single particle in a given, smooth galactic potential, to tens of thousands of interacting stars in a globular cluster, to billions of dark-matter particles in a 
+simulation of cosmological clustering \citep{binney}. Celestial mechanics during the preceding centuries has mainly focussed on the three body problem
 due to the complexities involved in adding more bodies. It is estimated that within the Milky Way approximately two thirds of all stars exist in binary systems and a further one fifth of these are in triple systems whilst a
 further fifth still exist in systems with more than three bodies \citep{steves}. \cite{steves} estimate that $\approx2\times10^9$ quadruple systems exist in the Milky Way galaxy. They found that quadruple systems exist in two
 forms: a double binary or linear.
@@ -100,11 +102,16 @@ rotation of deformable rotation. They found that the bars oscillate in size acco
 What follows is an attempt to verify the calculations in \citep{garzon} but using a simpler model of a double-barred galaxy using a double binary.
  %\citep{du2}, \citep{macie1}, \citep{macie2},  \citep{macie4}
  %\citep{malhotra}, \citep{manos}, \citep{shen2}
-
+\newpage
 \section{Methods}
-The model was created using OdeInt from Numerical Recipes. I first converted OdeInt to Fortran 90 for this purpose.
+The model was created using OdeInt from Numerical Recipes \citep{press}. I first converted OdeInt to Fortran 90 for this purpose.
 Fortran 90 was selected as the language of choice in order to avoid the fixed line limitations of Fortran 77.
-For a four body problem Equation 1 results in the following:
+OdeInt performs integration using the Runge-Kutta method. The Runge-Kutta method is an extension of the Euler method of solving differential equations. However the Euler method
+is an example of first-order integration whilst Runge-Kutta is second and higher order and so is mcuh more accurate. The OdeInt uses a subroutine called RK4 which utilises fourth-order Runge-Kutta integration.
+It also uses a technique known as adaptive stepsize. This involves adjusting the size of the integration steps to ensure the same level of accuracy however rapidly the function being integrated changes.
+Many small steps should tiptoe through treacherous terrain, while a few great strides should speed through smooth uninteresting countryside \citep{press}.
+
+For a four body problem, Equation 1 results in the following:
 \begin{equation}
 \ddot{\mathbf{r_1}}=\frac{m_2\mathbf{r}_{12}}{r^3_{12}}+\frac{m_3\mathbf{r}_{13}}{r^3_{13}}+\frac{m_4\mathbf{r}_{14}}{r^3_{14}}
 \end{equation}
@@ -117,10 +124,14 @@ For a four body problem Equation 1 results in the following:
 \begin{equation}
 \ddot{\mathbf{r_4}}=\frac{m_1\mathbf{r}_{41}}{r^3_{41}}+\frac{m_2\mathbf{r}_{42}}{r^3_{42}}+\frac{m_3\mathbf{r}_{43}}{r^3_{43}}
 \end{equation}
-The above equations were encoded into Fortran. A full code listing is supplied in a separate file.
+These equations of motion are second-order ordinary differential equations (ODE) but any second-oder ODE can be written as a system
+of two coupled first-order ODEs. As there are four bodies in the system and and x and y components for both of these we have a total of eight second-order 
+ODEs which then gives us sixteen first-order ODEs to solve.
+These equations were encoded into Fortran. 
+A full code listing is supplied in a separate file.
 \subsection{Initial Conditions}
 As a starting point both the outer binary and inner binary were placed in circular orbits and tested separately and then combined to ensure a stable
-starting point. The inner binary had initially a neglible mass.
+starting point. The inner binary had an initial neglible mass.
 The outer binary initial conditions were:
 \begin{lstlisting}
 m1=.5, m2=.5, x1=-.5, x2=.5, y1=0, y2=0,
@@ -132,8 +143,7 @@ m3=.001, m4=.001, x3=-.001, x4=.001, y3=0, y4=0,
 vx3=0, vx4=0, vy3=-.5, vy4=.5
 \end{lstlisting}
 Plots of the two initial binaries are shown in Fig. \ref{fig:outerbinary} and 
-\ref{fig:innerbinary}. The scale of the inner binary is so small that it is difficult
-to see in GnuPlot.
+\ref{fig:innerbinary}. The velocity of the inner binary is high and therefore few points are seen in this initial plot.
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\textwidth]{./2016results/outerbinary/Orbit.eps}
@@ -193,16 +203,13 @@ conditions remained the same.
    31 & .1 & .1 & -1 & 1 & -.1021 & .1021 & -.1 & .1\\
   \end{tabular}
 \end{table}
-
+\newpage
 \section{Results}
 As can be seen from Fig. \ref{fig:config1} even a neglible mass inner binary causes the outer binary to begin to separate and become less tightly bound.
-Figures Fig. \ref{fig:config1} to \ref{fig:config18i} show plots of the double binary using the parameters given in Table \ref{tab:variables}.
+Figures Fig. \ref{fig:config1} to \ref{fig:config32i} show plots of the double binary using the parameters given in Table \ref{tab:variables}.
 In many cases the inner binary is only visible as a point at the centre of the outer binary.
-As the mass of the inner binary increased the system became increasingly unstablle and the effect on the outer binary became more pronounced.
-Even the 'stable' configurations listed in Table \ref{tab:variables} hold for only a few orbits.
-I was unable to recreate a stable system for a mass $>.08$ for the inner bar.
-The plots below reveal that increasing the mass of the inner binary causes the outer binary to separate and
-form wider orbits.
+As the mass of the inner binary increased the system became increasingly unstable and the effect on the outer binary became more pronounced.
+Even the `stable' configurations listed in Table \ref{tab:variables} hold for only a few orbits.
 
 \begin{figure}[H]
 \centering
@@ -210,13 +217,13 @@ form wider orbits.
 \caption{Configuration 1}
 \label{fig:config1}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\textwidth]{./2016results/stablebase/Inner.eps}
 \caption{Configuration 1 - Inner Bar}
 \label{fig:config1i}
 \end{figure}
+\ref{fig:config1} and \ref{fig:config1i} show the inital orbits when the circular inner binary is placed within the outer binary.
 
 \begin{figure}[H]
 \centering
@@ -224,14 +231,12 @@ form wider orbits.
 \caption{Configuration 2}
 \label{fig:config2}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\textwidth]{./2016results/002-5-001/Inner.eps}
 \caption{Configuration 2 - Inner Bar}
 \label{fig:config2i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\textwidth]{./2016results/003-5-001/Orbit.eps}
@@ -244,6 +249,8 @@ form wider orbits.
 \caption{Configuration 3 - Inner Bar}
 \label{fig:config3i}
 \end{figure}
+\ref{fig:config2} to \ref{fig:config3i} show plots where just the mass of the inner binary has been gradually increased. Nothing else was changed.
+By \ref{fig:config3i}, the inner binary can clearly be seen to be pulled apart by the gravitational affect of the outer binary.
 
 \begin{figure}[H]
 \centering
@@ -257,7 +264,9 @@ form wider orbits.
 \caption{Configuration 4 - Inner Bar}
 \label{fig:config4i}
 \end{figure}
-l
+To counteract the effect of the increased mass of the inner binary in \ref{fig:config4} and \ref{fig:config4i} the initial separation of the 
+inner binary has been increased.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2016results/004-55-004/Orbit.eps}
@@ -270,7 +279,6 @@ l
 \caption{Configuration 5 - Inner Bar}
 \label{fig:config5i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2016results/004-57-004/Orbit.eps}
@@ -283,7 +291,6 @@ l
 \caption{Configuration 6 - Inner Bar}
 \label{fig:config6i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2016results/005-58-005-3/Orbit.eps}
@@ -296,7 +303,6 @@ l
 \caption{Configuration 7 - Inner Bar}
 \label{fig:config7i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2016results/005-58-005-4/Orbit.eps}
@@ -309,7 +315,6 @@ l
 \caption{Configuration 8 - Inner Bar}
 \label{fig:config8i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2016results/005-58-005-35/Orbit.eps}
@@ -322,7 +327,6 @@ l
 \caption{Configuration 9 - Inner Bar}
 \label{fig:config9i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2016results/006-6-006-3/Orbit.eps}
@@ -335,6 +339,9 @@ l
 \caption{Configuration 10 - Inner Bar}
 \label{fig:config10i}
 \end{figure}
+In \ref{fig:config5} to \ref{fig:config10i} the initial velocity of the outer binary has also been gradually increased to also counteract the effect
+of the increased mass of the inner binary. In order for these systems to be relatively stable the initial velocity of the inner binary was reduced. At this point 
+both the inner and outer binaries had started to separate and become increasingly elliptical.
 
 \begin{figure}[H]
 \centering
@@ -348,6 +355,8 @@ l
 \caption{Configuration 11 - Inner Bar}
 \label{fig:config11i}
 \end{figure}
+In order to bring the orbits back into approximate circularity it was necessary to again increase the velocity of the inner binary. This is illustrated
+in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has also increased considerably from the previous configurations.
 
 \begin{figure}[H]
 \centering
@@ -638,6 +647,7 @@ I am using the periods of the first orbit. The following table shows the periods
    32 & .55 & 11.5 & 1:20.9 & 35\\
   \end{tabular}
 \end{table}
+Discuss mass of inner bar ration of outer bar
 The data shows that as the periodic ratios tends towards 1:21 the system considerably stabilises. Run 32 was by far the most stable run and the orbits persisted until the integrator
 errored with a 'Step size underflow'. 1:21 could possibly be an orbital resonance.
 Fourier analysis?
@@ -677,7 +687,7 @@ Rewrite in Python, automate, introduce machine laerning algoriythm
 %\bibitem[Moulton(1914)]{moulton}Moulton, F., An Introduction to Celestial Mechanics, 1914, Palmyrin Library 
 \bibitem[Press et. al.(1992)]{press}Press, W., H., Teukolsky, S., A., Vetterling, W., T., Flannery, B., P., Numerical Recipes in Fortran 77 The Art of Scientific Computing, 2nd edition
 \bibitem[Saha and Maciejewski(2013)]{saha}Saha, K., Maciejewski, W., Spontaneous formation of double bars in dark matter dominated galaxies, 2013, arXiv:1304.7108v1
-\bibitem[Sellwood and Wilkinson(2006)]{sellwood}Sellwood, J., Wilkinson, A., Dynamics of Barred Galaxies, 2006, arXiv:astro-ph/0608665v1
+%\bibitem[Sellwood and Wilkinson(2006)]{sellwood}Sellwood, J., Wilkinson, A., Dynamics of Barred Galaxies, 2006, arXiv:astro-ph/0608665v1
 \bibitem[Shen and Debattista(2008)]{shen1}Shen, J., Debattista, V., Long-lived double-barred galaxies in N-body simulations, 2008, Mem. S.A.It. Vol. 00, 169
 \bibitem[Shen and Debattista(2009)]{shen2}Shen, J., Debattista, V., Observable Properties of Double-Barred Galaxies in N-Body Simulations, 2009, The Astrophysical Journal, 690:758–772, 2009 January 1
 \bibitem[Shlosman et. al.(1989)]{shlosman}Shlosman, I., Frank, J., Begeman, M.,C., 1989, Nature, 338, 45
