@@ -53,7 +53,7 @@ simulation of cosmological clustering \citep{binney}. Celestial mechanics during
 due to the complexities involved in adding more bodies. It is estimated that within the Milky Way approximately two thirds of all stars exist in binary systems and a further one fifth of these are in triple systems whilst a
 further fifth still exist in systems with more than three bodies \citep{steves}. \cite{steves} estimate that $\approx2\times10^9$ quadruple systems exist in the Milky Way galaxy. They found that quadruple systems exist in two
 forms: a double binary or linear.
-\newline
+
 The classical equations of motion for an N-body problem are:
 \begin{equation}
 m_i\mathbf{\ddot{r}}=\sum_{i\neq{j}}\frac{{m_i}{m_j}}{r^3_{ij}}\mathbf{r_{ij}}
@@ -104,7 +104,7 @@ What follows is an attempt to verify the calculations in \citep{garzon} but usin
  %\citep{malhotra}, \citep{manos}, \citep{shen2}
 \newpage
 \section{Methods}
-The model was created using OdeInt from Numerical Recipes \citep{press}. I first converted OdeInt to Fortran 90 for this purpose.
+The model was created using OdeInt from Numerical Recipes \citep{press}. OdeInt was first converted to Fortran 90 for this purpose.
 Fortran 90 was selected as the language of choice in order to avoid the fixed line limitations of Fortran 77.
 OdeInt performs integration using the Runge-Kutta method. The Runge-Kutta method is an extension of the Euler method of solving differential equations. However the Euler method
 is an example of first-order integration whilst Runge-Kutta is second and higher order and so is mcuh more accurate. The OdeInt uses a subroutine called RK4 which utilises fourth-order Runge-Kutta integration.
@@ -124,9 +124,9 @@ For a four body problem, Equation 1 results in the following:
 \begin{equation}
 \ddot{\mathbf{r_4}}=\frac{m_1\mathbf{r}_{41}}{r^3_{41}}+\frac{m_2\mathbf{r}_{42}}{r^3_{42}}+\frac{m_3\mathbf{r}_{43}}{r^3_{43}}
 \end{equation}
-These equations of motion are second-order ordinary differential equations (ODE) but any second-oder ODE can be written as a system
-of two coupled first-order ODEs. As there are four bodies in the system and and x and y components for both of these we have a total of eight second-order 
-ODEs which then gives us sixteen first-order ODEs to solve.
+These equations of motion are second-order ordinary differential equations (ODEs) but any second-oder ODE can be written as a system
+of two coupled first-order ODEs. As there are four bodies in the system, and they all have x and y positional components, this gives eight second-order 
+ODEs which leaves us with a total of sixteen simultanious first-order ODEs to solve.
 These equations were encoded into Fortran. 
 A full code listing is supplied in a separate file.
 \subsection{Initial Conditions}
@@ -159,7 +159,7 @@ Plots of the two initial binaries are shown in Fig. \ref{fig:outerbinary} and
 I then proceeded to perturb the system by gradually increasing the mass of the inner binary. As the system became unstable I componensated for
 the increasing mass of the inner binary by increasing the velocity of the outer binary and also decreasing the velocity and increasing the binary 
 separation of the inner binary. In many of the configurations the systems were inherently unstable and produced collisions with some 
-or all of the bodies being ejected from the system. These were rejected and only 'stable' configurations were considered.
+or all of the bodies being ejected from the system. These were rejected and only `stable' configurations were considered.
 Table \ref{tab:variables} shows the perturbations made to the system - only the variables in this table changed and all the other initial
 conditions remained the same.
 \begin{table}[ht!]
@@ -203,6 +203,7 @@ conditions remained the same.
    31 & .1 & .1 & -1 & 1 & -.1021 & .1021 & -.1 & .1\\
   \end{tabular}
 \end{table}
+
 \newpage
 \section{Results}
 As can be seen from Fig. \ref{fig:config1} even a neglible mass inner binary causes the outer binary to begin to separate and become less tightly bound.
@@ -370,7 +371,6 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 12 - Inner Bar}
 \label{fig:config12i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/03-7-03-5/Orbit.eps}
@@ -384,6 +384,9 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \label{fig:config13i}
 \end{figure}
 
+Figs. \ref{fig:config12} to \ref{fig:config13i} show the mass of the inner binary slowly increasing and adjustments made to both velocity of outer binary
+and separation of inner binary.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/035-75-04-4/Orbit.eps}
@@ -396,7 +399,6 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 14 - Inner Bar}
 \label{fig:config14i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/04-75-045-4/Orbit.eps}
@@ -410,6 +412,8 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \label{fig:config15i}
 \end{figure}
 
+As the mass of the inner binary was increased, it became necessary to reduce the velocity of the inner binary, Figs. \ref{fig:config14} to \ref{fig:config15i}.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/05-75-045-4/Orbit.eps}
@@ -422,7 +426,6 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 16 - Inner Bar}
 \label{fig:config16i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/05-75-05-35/Orbit.eps}
@@ -435,7 +438,6 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 17 - Inner Bar}
 \label{fig:config17i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/05-75-05-3/Orbit.eps}
@@ -449,6 +451,8 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \label{fig:config18i}
 \end{figure}
 
+Holding the mass of the inner binary at .05 the system showed signs of more stability if the velocity of the inner binary was further reduced, Figs. \ref{fig:config16} to \ref{fig:config18i}.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/06-8-06-25/Orbit.eps}
@@ -461,7 +465,6 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 19 - Inner Bar}
 \label{fig:config19i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/08-9-08-15/Orbit.eps}
@@ -474,7 +477,6 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 20 - Inner Bar}
 \label{fig:config20i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/09-95-09-1/Orbit.eps}
@@ -488,6 +490,8 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \label{fig:config21i}
 \end{figure}
 
+Further reduction of the velocity of the inner binary allowed further increase of inner binary mass without losing stability, Figs. \ref{fig:config19} to \ref{fig:config21i}.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/1-1-1-05/Orbit.eps}
@@ -500,7 +504,6 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 22 - Inner Bar}
 \label{fig:config22i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/1-1-1-04/Orbit.eps}
@@ -513,7 +516,6 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 23 - Inner Bar}
 \label{fig:config23i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/1-1-1-03/Orbit.eps}
@@ -526,7 +528,6 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 24 - Inner Bar}
 \label{fig:config24i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/1-1-1-02/Orbit.eps}
@@ -540,6 +541,8 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \label{fig:config25i}
 \end{figure}
 
+With the mass of the inner binary now a quite considerable .1, the system showed more signs of stability if the velocity of the inner binary was further reduced, Figs. \ref{fig:config22} to \ref{fig:config25i}.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/12-105-11-015/Orbit.eps}
@@ -552,7 +555,6 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 26 - Inner Bar}
 \label{fig:config26i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/12-11-11-015/Orbit.eps}
@@ -565,7 +567,6 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 27 - Inner Bar}
 \label{fig:config27i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/12-11-115-015/Orbit.eps}
@@ -578,7 +579,6 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 28 - Inner Bar}
 \label{fig:config28i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/12-11-12-015/Orbit.eps}
@@ -591,6 +591,8 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 29 - Inner Bar}
 \label{fig:config29i}
 \end{figure}
+
+In Figs. \ref{fig:config26} to \ref{fig:config29i} the mass of the inner binary was increased to .12, and various adjustments made to inner separation, velocity and outer velocity to maintain stability.
 
 \begin{figure}[H]
 \centering
@@ -605,6 +607,9 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \label{fig:config30i}
 \end{figure}
 
+Having increased the mass of the inner binary to .12 on the previous three plots it was decided, that as inner bars are generally $\approx12\%$ of the mass of the outer bar, the mass of the inner binary could stay at .1
+as this is 20\% of the mass of the outer binary, Figs. \ref{fig:config30} and \ref{fig:config30i}.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/1-1-102-1/Orbit.eps}
@@ -617,7 +622,6 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 31 - Inner Bar}
 \label{fig:config31i}
 \end{figure}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/1-1-1021-1/Orbit.eps}
@@ -630,6 +634,10 @@ in \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has 
 \caption{Configuration 32 - Inner Bar}
 \label{fig:config32i}
 \end{figure}
+
+Finally, Figs. \ref{fig:config31} to \ref{fig:config32i} show the mass of the inner binary held at .1, but with minor adjustments made to the inner binary separation to enhance stability.
+The final plot was very stable and allowed the simulation to run for far longer than all the other runs. This may be a resonance, please see Discussion. Although this final system was
+very stable, even minor deviations from the initial conditions immediately resulted in destabilisation of the system, and chaos.
 
 \newpage
 \section{Disussion}
@@ -647,14 +655,19 @@ I am using the periods of the first orbit. The following table shows the periods
    32 & .55 & 11.5 & 1:20.9 & 35\\
   \end{tabular}
 \end{table}
-Discuss mass of inner bar ration of outer bar
+Discuss mass of inner bar ratio of outer bar
 The data shows that as the periodic ratios tends towards 1:21 the system considerably stabilises. Run 32 was by far the most stable run and the orbits persisted until the integrator
 errored with a 'Step size underflow'. 1:21 could possibly be an orbital resonance.
-Fourier analysis?
-Rewrite in Python, automate, introduce machine laerning algoriythm 
+%Fourier analysis?
+%Rewrite in Python, automate, introduce machine laerning algoriythm 
 
-\citep{garzon}, \citep{erwin1}, \citep{macie1}, \citep{macie2}, \citep{macie3}, \citep{macie4}, \citep{macie5}
-\citep{macie6}, \citep{macie7}, \citep{manos}, \citep{shen1}, \citep{shen2}, \citep{debattista}, \citep{malhotra}
+\subsection{Future Work}
+As this system has a multi-dimensional parameter space, finding stable configurations was very time consuming. I suggest further studies in this area try to automate this process.
+It may be possible for an automated process to automatically reject systems in which there are collisions, or if any of the bodies exits the system, or if the system fails 
+to persist for a certain number of orbits.
+
+%\citep{garzon}, \citep{erwin1}, \citep{macie1}, \citep{macie2}, \citep{macie3}, \citep{macie4}, \citep{macie5}
+%\citep{macie6}, \citep{macie7}, \citep{manos}, \citep{shen1}, \citep{shen2}, \citep{debattista}, \citep{malhotra}
 
 \newpage
 \begin{thebibliography}{1}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2017.7.29)  14 AUG 2017 15:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2017.7.29)  17 AUG 2017 11:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -158,200 +158,196 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
  [3]
-Overfull \hbox (22.97128pt too wide) in paragraph at lines 77--77
+Overfull \hbox (22.97128pt too wide) in paragraph at lines 79--79
 []\OT1/cmr/bx/n/14.4 Orbits, Loops, Res-o-nances and Double-Barred Galaxy
  []
 
-[4] [5]
+[4] [5] [6]
 File: ./2016results/outerbinary/Orbit.eps Graphic file (type eps)
  <./2016results/outerbinary/Orbit.eps>
 File: ./2016results/innerbinary/Orbit.eps Graphic file (type eps)
 
-<./2016results/innerbinary/Orbit.eps> [6] [7]
+<./2016results/innerbinary/Orbit.eps> [7] [8] [9]
 File: ./2016results/stablebase/Orbit.eps Graphic file (type eps)
 
-<./2016results/stablebase/Orbit.eps> [8]
-Overfull \vbox (177.59991pt too high) has occurred while \output is active []
-
-
-[9]
+<./2016results/stablebase/Orbit.eps>
 File: ./2016results/stablebase/Inner.eps Graphic file (type eps)
  <./2016results/stablebase/Inner.eps>
+[10]
 File: ./2016results/002-5-001/Orbit.eps Graphic file (type eps)
  <./2016results/002-5-001/Orbit.eps>
 File: ./2016results/002-5-001/Inner.eps Graphic file (type eps)
-
-<./2016results/002-5-001/Inner.eps> [10]
+ <./2016results/002-5-001/Inner.eps>
 File: ./2016results/003-5-001/Orbit.eps Graphic file (type eps)
- <./2016results/003-5-001/Orbit.eps>
-File: ./2016results/003-5-001/Inner.eps Graphic file (type eps)
 
-<./2016results/003-5-001/Inner.eps> [11]
+<./2016results/003-5-001/Orbit.eps> [11]
+File: ./2016results/003-5-001/Inner.eps Graphic file (type eps)
+ <./2016results/003-5-001/Inner.eps>
+[12]
 File: ./2016results/004-5-004/Orbit.eps Graphic file (type eps)
  <./2016results/004-5-004/Orbit.eps>
 File: ./2016results/004-5-004/Inner.eps Graphic file (type eps)
-
-<./2016results/004-5-004/Inner.eps> [12]
+ <./2016results/004-5-004/Inner.eps>
+[13]
 File: ./2016results/004-55-004/Orbit.eps Graphic file (type eps)
  <./2016results/004-55-004/Orbit.eps>
 File: ./2016results/004-55-004/Inner.eps Graphic file (type eps)
-
-<./2016results/004-55-004/Inner.eps> [13]
+ <./2016results/004-55-004/Inner.eps>
 File: ./2016results/004-57-004/Orbit.eps Graphic file (type eps)
- <./2016results/004-57-004/Orbit.eps>
-File: ./2016results/004-57-004/Inner.eps Graphic file (type eps)
 
-<./2016results/004-57-004/Inner.eps> [14]
+<./2016results/004-57-004/Orbit.eps> [14]
+File: ./2016results/004-57-004/Inner.eps Graphic file (type eps)
+ <./2016results/004-57-004/Inner.eps>
 File: ./2016results/005-58-005-3/Orbit.eps Graphic file (type eps)
 
-<./2016results/005-58-005-3/Orbit.eps>
+<./2016results/005-58-005-3/Orbit.eps> [15]
 File: ./2016results/005-58-005-3/Inner.eps Graphic file (type eps)
- <./2016results/005-58-005-3/Inner.eps>
-[15]
+
+<./2016results/005-58-005-3/Inner.eps>
 File: ./2016results/005-58-005-4/Orbit.eps Graphic file (type eps)
  <./2016results/005-58-005-4/Orbit.eps>
+[16]
 File: ./2016results/005-58-005-4/Inner.eps Graphic file (type eps)
-
-<./2016results/005-58-005-4/Inner.eps> [16]
+ <./2016results/005-58-005-4/Inner.eps>
 File: ./2016results/005-58-005-35/Orbit.eps Graphic file (type eps)
 
-<./2016results/005-58-005-35/Orbit.eps>
+<./2016results/005-58-005-35/Orbit.eps> [17]
 File: ./2016results/005-58-005-35/Inner.eps Graphic file (type eps)
 
-<./2016results/005-58-005-35/Inner.eps> [17]
+<./2016results/005-58-005-35/Inner.eps>
 File: ./2016results/006-6-006-3/Orbit.eps Graphic file (type eps)
-
-<./2016results/006-6-006-3/Orbit.eps>
-File: ./2016results/006-6-006-3/Inner.eps Graphic file (type eps)
- <./2016results/006-6-006-3/Inner.eps>
+ <./2016results/006-6-006-3/Orbit.eps>
 [18]
+File: ./2016results/006-6-006-3/Inner.eps Graphic file (type eps)
+ <./2016results/006-6-006-3/Inner.eps> [19]
 File: ./2016results/025-65-02/Orbit.eps Graphic file (type eps)
- <./2016results/025-65-02/Orbit.eps>
+
+<./2016results/025-65-02/Orbit.eps>
 File: ./2016results/025-65-02/Inner.eps Graphic file (type eps)
  <./2016results/025-65-02/Inner.eps>
-[19]
+[20] [21]
 File: ./2017results/025-7-025-5/Orbit.eps Graphic file (type eps)
  <./2017results/025-7-025-5/Orbit.eps>
 File: ./2017results/025-7-025-5/Inner.eps Graphic file (type eps)
 
-<./2017results/025-7-025-5/Inner.eps> [20]
+<./2017results/025-7-025-5/Inner.eps>
 File: ./2017results/03-7-03-5/Orbit.eps Graphic file (type eps)
  <./2017results/03-7-03-5/Orbit.eps>
 File: ./2017results/03-7-03-5/Inner.eps Graphic file (type eps)
 
-<./2017results/03-7-03-5/Inner.eps> [21]
+<./2017results/03-7-03-5/Inner.eps> [22]
 File: ./2017results/035-75-04-4/Orbit.eps Graphic file (type eps)
  <./2017results/035-75-04-4/Orbit.eps>
 File: ./2017results/035-75-04-4/Inner.eps Graphic file (type eps)
 
-<./2017results/035-75-04-4/Inner.eps> [22]
+<./2017results/035-75-04-4/Inner.eps> [23]
 File: ./2017results/04-75-045-4/Orbit.eps Graphic file (type eps)
 
 <./2017results/04-75-045-4/Orbit.eps>
 File: ./2017results/04-75-045-4/Inner.eps Graphic file (type eps)
  <./2017results/04-75-045-4/Inner.eps>
-[23]
+[24]
 File: ./2017results/05-75-045-4/Orbit.eps Graphic file (type eps)
  <./2017results/05-75-045-4/Orbit.eps>
 File: ./2017results/05-75-045-4/Inner.eps Graphic file (type eps)
 
-<./2017results/05-75-045-4/Inner.eps> [24]
+<./2017results/05-75-045-4/Inner.eps> [25]
 File: ./2017results/05-75-05-35/Orbit.eps Graphic file (type eps)
 
 <./2017results/05-75-05-35/Orbit.eps>
 File: ./2017results/05-75-05-35/Inner.eps Graphic file (type eps)
  <./2017results/05-75-05-35/Inner.eps>
-[25]
+[26]
 File: ./2017results/05-75-05-3/Orbit.eps Graphic file (type eps)
  <./2017results/05-75-05-3/Orbit.eps>
 File: ./2017results/05-75-05-3/Inner.eps Graphic file (type eps)
  <./2017results/05-75-05-3/Inner.eps>
-[26]
+[27]
 File: ./2017results/06-8-06-25/Orbit.eps Graphic file (type eps)
  <./2017results/06-8-06-25/Orbit.eps>
 File: ./2017results/06-8-06-25/Inner.eps Graphic file (type eps)
  <./2017results/06-8-06-25/Inner.eps>
-[27]
+[28]
 File: ./2017results/08-9-08-15/Orbit.eps Graphic file (type eps)
  <./2017results/08-9-08-15/Orbit.eps>
 File: ./2017results/08-9-08-15/Inner.eps Graphic file (type eps)
  <./2017results/08-9-08-15/Inner.eps>
-[28]
+[29]
 File: ./2017results/09-95-09-1/Orbit.eps Graphic file (type eps)
  <./2017results/09-95-09-1/Orbit.eps>
 File: ./2017results/09-95-09-1/Inner.eps Graphic file (type eps)
  <./2017results/09-95-09-1/Inner.eps>
-[29]
+[30]
 File: ./2017results/1-1-1-05/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1-05/Orbit.eps>
 File: ./2017results/1-1-1-05/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1-05/Inner.eps>
-[30]
+[31]
 File: ./2017results/1-1-1-04/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1-04/Orbit.eps>
 File: ./2017results/1-1-1-04/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1-04/Inner.eps>
-[31]
+[32]
 File: ./2017results/1-1-1-03/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1-03/Orbit.eps>
 File: ./2017results/1-1-1-03/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1-03/Inner.eps>
-[32]
+[33]
 File: ./2017results/1-1-1-02/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1-02/Orbit.eps>
 File: ./2017results/1-1-1-02/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1-02/Inner.eps>
-[33]
+[34]
 File: ./2017results/12-105-11-015/Orbit.eps Graphic file (type eps)
  <./2017results/12-105-11-015/Orbit.eps>
 File: ./2017results/12-105-11-015/Inner.eps Graphic file (type eps)
 
-<./2017results/12-105-11-015/Inner.eps> [34]
+<./2017results/12-105-11-015/Inner.eps> [35]
 File: ./2017results/12-11-11-015/Orbit.eps Graphic file (type eps)
 
 <./2017results/12-11-11-015/Orbit.eps>
 File: ./2017results/12-11-11-015/Inner.eps Graphic file (type eps)
  <./2017results/12-11-11-015/Inner.eps>
-[35]
+[36]
 File: ./2017results/12-11-115-015/Orbit.eps Graphic file (type eps)
  <./2017results/12-11-115-015/Orbit.eps>
 File: ./2017results/12-11-115-015/Inner.eps Graphic file (type eps)
 
-<./2017results/12-11-115-015/Inner.eps> [36]
+<./2017results/12-11-115-015/Inner.eps> [37]
 File: ./2017results/12-11-12-015/Orbit.eps Graphic file (type eps)
 
 <./2017results/12-11-12-015/Orbit.eps>
 File: ./2017results/12-11-12-015/Inner.eps Graphic file (type eps)
  <./2017results/12-11-12-015/Inner.eps>
-[37]
+[38]
 File: ./2017results/1-1-1-1/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1-1/Orbit.eps>
 File: ./2017results/1-1-1-1/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1-1/Inner.eps>
-[38]
+[39]
 File: ./2017results/1-1-102-1/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-102-1/Orbit.eps>
 File: ./2017results/1-1-102-1/Inner.eps Graphic file (type eps)
  <./2017results/1-1-102-1/Inner.eps>
-[39]
+[40]
 File: ./2017results/1-1-1021-1/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1021-1/Orbit.eps>
 File: ./2017results/1-1-1021-1/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1021-1/Inner.eps>
-[40] [41]
+[41] [42]
 
-Package natbib Warning: Citation `macie1' on page 42 undefined on input line 65
-3.
-
-
-Package natbib Warning: Citation `macie2' on page 42 undefined on input line 65
-3.
+Package natbib Warning: Citation `macie1' on page 43 undefined on input line 65
+7.
 
 
-Package natbib Warning: Citation `macie4' on page 42 undefined on input line 65
-3.
+Package natbib Warning: Citation `macie2' on page 43 undefined on input line 65
+7.
 
-[42]
+
+Package natbib Warning: Citation `macie4' on page 43 undefined on input line 65
+7.
+
+[43]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
@@ -365,39 +361,35 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no ã in font cmr12!
 Missing character: There is no Ü in font cmr12!
 
-Underfull \hbox (badness 1509) in paragraph at lines 672--673
+Underfull \hbox (badness 1509) in paragraph at lines 676--677
 \OT1/cmr/m/n/12 lar pop-u-la-tions in the in-ner bars of double-barred galax-ie
 s, 2013,
  []
 
-[43]
+[44]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ê in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
+Underfull \hbox (badness 10000) in paragraph at lines 697--698
 []\OT1/cmr/m/n/12 Trenti, M., Hut, P., Grav-i-ta-tional N-body Sim-u-la-tions, 
 2008,
  []
 
-[44]
+[45]
 
 Package natbib Warning: There were undefined citations.
 
-[45] (./MScProjectDoubleBarsv2.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[46] (./MScProjectDoubleBarsv2.aux) ) 
 Here is how much of TeX's memory you used:
- 3466 strings out of 495064
- 54039 string characters out of 3182224
- 119844 words of memory out of 3000000
- 6627 multiletter control sequences out of 15000+200000
+ 3463 strings out of 495064
+ 53991 string characters out of 3182224
+ 117844 words of memory out of 3000000
+ 6624 multiletter control sequences out of 15000+200000
  10673 words of font info for 41 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,8n,38p,320b,845s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on MScProjectDoubleBarsv2.dvi (45 pages, 44020 bytes).
+Output written on MScProjectDoubleBarsv2.dvi (46 pages, 46312 bytes).
