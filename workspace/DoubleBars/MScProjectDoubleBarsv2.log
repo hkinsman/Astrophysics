@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2017.7.29)  18 AUG 2017 10:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2017.7.29)  21 AUG 2017 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -119,36 +119,36 @@ Package caption Info: listings package is loaded.
 (./MScProjectDoubleBarsv2.aux)
 \openout1 = `MScProjectDoubleBarsv2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 \c@lstlisting=\count98
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 15.
+(Font)              <14.4> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 15.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 15.
+(Font)              <7> on input line 14.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 22.
+(Font)              <12> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 22.
+(Font)              <8> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 22.
+(Font)              <6> on input line 21.
 File: ./eso0128d.eps Graphic file (type eps)
  <./eso0128d.eps>
 [1
@@ -158,7 +158,7 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
  [3]
-Overfull \hbox (22.97128pt too wide) in paragraph at lines 79--79
+Overfull \hbox (22.97128pt too wide) in paragraph at lines 77--77
 []\OT1/cmr/bx/n/14.4 Orbits, Loops, Res-o-nances and Double-Barred Galaxy
  []
 
@@ -192,47 +192,48 @@ File: ./2016results/004-5-004/Inner.eps Graphic file (type eps)
  <./2016results/004-5-004/Inner.eps>
 [13]
 File: ./2016results/004-55-004/Orbit.eps Graphic file (type eps)
- <./2016results/004-55-004/Orbit.eps>
+ <./2016results/004-55-004/Orbit.eps> [14]
 File: ./2016results/004-55-004/Inner.eps Graphic file (type eps)
- <./2016results/004-55-004/Inner.eps>
-[14]
+
+<./2016results/004-55-004/Inner.eps>
 File: ./2016results/004-57-004/Orbit.eps Graphic file (type eps)
  <./2016results/004-57-004/Orbit.eps>
+[15]
 File: ./2016results/004-57-004/Inner.eps Graphic file (type eps)
  <./2016results/004-57-004/Inner.eps>
-[15]
 File: ./2016results/005-58-005-3/Orbit.eps Graphic file (type eps)
- <./2016results/005-58-005-3/Orbit.eps>
+
+<./2016results/005-58-005-3/Orbit.eps> [16]
 File: ./2016results/005-58-005-3/Inner.eps Graphic file (type eps)
 
-<./2016results/005-58-005-3/Inner.eps> [16]
+<./2016results/005-58-005-3/Inner.eps>
 File: ./2016results/005-58-005-4/Orbit.eps Graphic file (type eps)
-
-<./2016results/005-58-005-4/Orbit.eps>
+ <./2016results/005-58-005-4/Orbit.eps>
+[17]
 File: ./2016results/005-58-005-4/Inner.eps Graphic file (type eps)
  <./2016results/005-58-005-4/Inner.eps>
-[17]
 File: ./2016results/005-58-005-35/Orbit.eps Graphic file (type eps)
- <./2016results/005-58-005-35/Orbit.eps>
+
+<./2016results/005-58-005-35/Orbit.eps> [18]
 File: ./2016results/005-58-005-35/Inner.eps Graphic file (type eps)
 
-<./2016results/005-58-005-35/Inner.eps> [18]
+<./2016results/005-58-005-35/Inner.eps>
 File: ./2016results/006-6-006-3/Orbit.eps Graphic file (type eps)
-
-<./2016results/006-6-006-3/Orbit.eps>
+ <./2016results/006-6-006-3/Orbit.eps>
+[19]
 File: ./2016results/006-6-006-3/Inner.eps Graphic file (type eps)
- <./2016results/006-6-006-3/Inner.eps>
-[19] [20]
+ <./2016results/006-6-006-3/Inner.eps> [20]
 File: ./2016results/025-65-02/Orbit.eps Graphic file (type eps)
- <./2016results/025-65-02/Orbit.eps>
-File: ./2016results/025-65-02/Inner.eps Graphic file (type eps)
 
-<./2016results/025-65-02/Inner.eps> [21]
+<./2016results/025-65-02/Orbit.eps>
+File: ./2016results/025-65-02/Inner.eps Graphic file (type eps)
+ <./2016results/025-65-02/Inner.eps>
+[21]
 File: ./2017results/025-7-025-5/Orbit.eps Graphic file (type eps)
- <./2017results/025-7-025-5/Orbit.eps>
+ <./2017results/025-7-025-5/Orbit.eps> [22]
 File: ./2017results/025-7-025-5/Inner.eps Graphic file (type eps)
 
-<./2017results/025-7-025-5/Inner.eps> [22]
+<./2017results/025-7-025-5/Inner.eps>
 File: ./2017results/03-7-03-5/Orbit.eps Graphic file (type eps)
  <./2017results/03-7-03-5/Orbit.eps>
 File: ./2017results/03-7-03-5/Inner.eps Graphic file (type eps)
@@ -250,18 +251,18 @@ File: ./2017results/04-75-045-4/Inner.eps Graphic file (type eps)
  <./2017results/04-75-045-4/Inner.eps>
 [25]
 File: ./2017results/05-75-045-4/Orbit.eps Graphic file (type eps)
- <./2017results/05-75-045-4/Orbit.eps>
+ <./2017results/05-75-045-4/Orbit.eps> [26]
 File: ./2017results/05-75-045-4/Inner.eps Graphic file (type eps)
 
-<./2017results/05-75-045-4/Inner.eps> [26]
+<./2017results/05-75-045-4/Inner.eps>
 File: ./2017results/05-75-05-35/Orbit.eps Graphic file (type eps)
-
-<./2017results/05-75-05-35/Orbit.eps>
+ <./2017results/05-75-05-35/Orbit.eps>
 File: ./2017results/05-75-05-35/Inner.eps Graphic file (type eps)
- <./2017results/05-75-05-35/Inner.eps>
-[27]
+
+<./2017results/05-75-05-35/Inner.eps> [27]
 File: ./2017results/05-75-05-3/Orbit.eps Graphic file (type eps)
- <./2017results/05-75-05-3/Orbit.eps>
+
+<./2017results/05-75-05-3/Orbit.eps>
 File: ./2017results/05-75-05-3/Inner.eps Graphic file (type eps)
  <./2017results/05-75-05-3/Inner.eps>
 [28]
@@ -282,9 +283,9 @@ File: ./2017results/09-95-09-1/Inner.eps Graphic file (type eps)
 <./2017results/09-95-09-1/Inner.eps> [31]
 File: ./2017results/1-1-1-05/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1-05/Orbit.eps>
+[32]
 File: ./2017results/1-1-1-05/Inner.eps Graphic file (type eps)
-
-<./2017results/1-1-1-05/Inner.eps> [32]
+ <./2017results/1-1-1-05/Inner.eps>
 File: ./2017results/1-1-1-04/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1-04/Orbit.eps>
 File: ./2017results/1-1-1-04/Inner.eps Graphic file (type eps)
@@ -327,9 +328,9 @@ File: ./2017results/1-1-1-1/Orbit.eps Graphic file (type eps)
  <./2017results/1-1-1-1/Orbit.eps> [40]
 File: ./2017results/1-1-1-1/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1-1/Inner.eps>
-[41]
 File: ./2017results/1-1-102-1/Orbit.eps Graphic file (type eps)
- <./2017results/1-1-102-1/Orbit.eps>
+
+<./2017results/1-1-102-1/Orbit.eps> [41]
 File: ./2017results/1-1-102-1/Inner.eps Graphic file (type eps)
  <./2017results/1-1-102-1/Inner.eps>
 File: ./2017results/1-1-1021-1/Orbit.eps Graphic file (type eps)
@@ -337,7 +338,7 @@ File: ./2017results/1-1-1021-1/Orbit.eps Graphic file (type eps)
 <./2017results/1-1-1021-1/Orbit.eps> [42]
 File: ./2017results/1-1-1021-1/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1021-1/Inner.eps>
-[43] [44] [45]
+[43] [44] [45] [46]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
@@ -351,31 +352,31 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no ã in font cmr12!
 Missing character: There is no Ü in font cmr12!
 
-Underfull \hbox (badness 1509) in paragraph at lines 691--692
+Underfull \hbox (badness 1509) in paragraph at lines 683--684
 \OT1/cmr/m/n/12 lar pop-u-la-tions in the in-ner bars of double-barred galax-ie
 s, 2013,
  []
 
-[46]
+[47]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ê in font cmr12!
- [47]
-Underfull \hbox (badness 10000) in paragraph at lines 712--713
+
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
 []\OT1/cmr/m/n/12 Trenti, M., Hut, P., Grav-i-ta-tional N-body Sim-u-la-tions, 
 2008,
  []
 
-[48] (./MScProjectDoubleBarsv2.aux) ) 
+[48] [49] (./MScProjectDoubleBarsv2.aux) ) 
 Here is how much of TeX's memory you used:
- 3466 strings out of 495064
- 54045 string characters out of 3182224
+ 3463 strings out of 495064
+ 54006 string characters out of 3182224
  117844 words of memory out of 3000000
- 6627 multiletter control sequences out of 15000+200000
+ 6624 multiletter control sequences out of 15000+200000
  10673 words of font info for 41 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,8n,38p,320b,845s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on MScProjectDoubleBarsv2.dvi (48 pages, 50388 bytes).
+Output written on MScProjectDoubleBarsv2.dvi (49 pages, 52348 bytes).

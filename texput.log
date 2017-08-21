@@ -1,20 +1,21 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2016.8.9)  25 NOV 2016 14:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2017.7.29)  21 AUG 2017 14:25
 entering extended mode
+ restricted \write18 enabled.
  %&-line parsing enabled.
-**MScProjectDoubleBars.tex
+**MScProjectDoubleBarsv2.tex
 
 ! Emergency stop.
-<*> MScProjectDoubleBars.tex
-                            
+<*> MScProjectDoubleBarsv2.tex
+                              
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 4 strings out of 256214
- 128 string characters out of 1917001
- 48804 words of memory out of 1500000
- 3390 multiletter control sequences out of 10000+200000
- 3640 words of font info for 14 fonts, out of 1200000 for 2000
- 645 hyphenation exceptions out of 8191
- 0i,0n,0p,28b,6s stack positions out of 5000i,500n,6000p,200000b,15000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 3 strings out of 495064
+ 116 string characters out of 3182224
+ 45057 words of memory out of 3000000
+ 3288 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 0i,0n,0p,29b,6s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.
