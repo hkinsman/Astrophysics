@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2017.7.29)  21 AUG 2017 15:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2017.7.29)  7 SEP 2017 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -144,11 +144,11 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 14.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 21.
+(Font)              <12> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 21.
+(Font)              <8> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 21.
+(Font)              <6> on input line 22.
 File: ./eso0128d.eps Graphic file (type eps)
  <./eso0128d.eps>
 [1
@@ -158,7 +158,7 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
  [3]
-Overfull \hbox (22.97128pt too wide) in paragraph at lines 77--77
+Overfull \hbox (22.97128pt too wide) in paragraph at lines 78--78
 []\OT1/cmr/bx/n/14.4 Orbits, Loops, Res-o-nances and Double-Barred Galaxy
  []
 
@@ -352,7 +352,7 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no ã in font cmr12!
 Missing character: There is no Ü in font cmr12!
 
-Underfull \hbox (badness 1509) in paragraph at lines 683--684
+Underfull \hbox (badness 1509) in paragraph at lines 685--686
 \OT1/cmr/m/n/12 lar pop-u-la-tions in the in-ner bars of double-barred galax-ie
 s, 2013,
  []
@@ -364,7 +364,7 @@ Missing character: There is no ì in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ê in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--702
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
 []\OT1/cmr/m/n/12 Trenti, M., Hut, P., Grav-i-ta-tional N-body Sim-u-la-tions, 
 2008,
  []
@@ -379,4 +379,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  36i,8n,38p,320b,845s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on MScProjectDoubleBarsv2.dvi (49 pages, 52348 bytes).
+Output written on MScProjectDoubleBarsv2.dvi (49 pages, 53040 bytes).

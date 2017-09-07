@@ -13,7 +13,8 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-TODO
+A brief literature review of double-barred galaxies and N-body simulations followed by an attempt at modelling a double-barred galaxy using a 4-body simulation of a double binary.  The aim of the project was to
+find orbital resonances which may be responsible for the stability of double-barred galaxies. A 1:21 resonance was found but this is not representative of the observed pattern speeds of nested bars.
 \end{abstract}
 \section{Introduction}
 \subsection{Double-Barred Galaxies} 
@@ -32,15 +33,15 @@ inner bars cannot be too large without disrupting the orbit of the outer bar.
 \label{fig:doublepic}
 \end{figure}
 
-It has been suggested that nested bars may provide a mechanism for fueling active galactic nuclei \citep{shlosman} however more recently, \citep{erwin3}, it was found that inner bars only play a minor role in this 
+It has been suggested that nested bars may provide a mechanism for fuelling active galactic nuclei \citep{shlosman} however more recently, \citep{erwin3}, it was found that inner bars only play a minor role in this 
 activity. \cite{erwin1} compared single and double-barred galaxies and found that there was no significant difference in nuclear activity. To investigate this theory further \cite{lorenzo1} carried out a 
 study of NGC 357. This study aimed to present the first detailed morphological, kinematical and stellar population analysis of the bulge, inner and outer bars of a double-barred galaxy. They concluded that
-the bulge and inner bar show similar stellar population properties whilst the outer bar was less metal-rich. This result implied that, for the case of NGC 357, the outer bar was formed in a shorter timescale than
+the bulge and inner bar show similar stellar population properties whilst the outer bar was less metal-rich. This result implied that, for the case of NGC 357, the outer bar was formed in a shorter time-scale than
 the inner structures and so disagrees with traditional idea that gas flown along the outer structure triggers star formation causing the formation of the inner structure. This was strengthened by a further study of
 four double-barred galaxies by \cite{lorenzo2} where they concluded that the stellar populations of inner bars are younger and more metal-rich than the outer bars. This suggests that at present inner bars play a
 moderate or even minor role in the morphological evolution of double-barred galaxies \citep{lorenzo2}.
 
-Through the use of computer modeling \cite{saha} showed that double bars can form without gas in a dark matter dominated halo. They produced a model where the inner bar was rotating at almost as slowly as the 
+Through the use of computer modelling \cite{saha} showed that double bars can form without gas in a dark matter dominated halo. They produced a model where the inner bar was rotating at almost as slowly as the 
 outer bar. The route to the formation of double bars maybe very different to that of a single bar.
 %\citep{moiseev}
 
@@ -81,22 +82,22 @@ and the effect this has on secondary bars. They concluded that the secondary bar
 that inner bars can form spontaneously without requiring gas. They also found that secondary bars rotate faster that primary bars and that the secondary bars pulsate. This is considered further in the Discussion.
 
 In an attempt to explain the dynamics of the orbits of nested bars \cite{macie7} introduced the concept of `loops'. They wanted to investigate how two independently rotating bars can maintain
-themselves as gravitating systems. A gravitational potential consisting of two concentric bisymmetric bars that are independently rotating is not stationary in any reference frame \citep{macie7}. In the potential
+themselves as gravitating systems. A gravitational potential consisting of two concentric bi-symmetric bars that are independently rotating is not stationary in any reference frame \citep{macie7}. In the potential
 of a single bar particles would stay on a stable closed periodic orbit but with nested bars orbits will not be closed because the particles would be experience two separate forces. The `loop' therefore was
 introduced as an extension of the concept of orbit. Particles in a `loop' would return to their original positions every time the bars come back to the same relative orientation \citep{macie7}. This lead to
-the conclusion that loops supporting the inner bar are thicker with parallel bars and thinner with perpendicular bars \citep{macie3}. This also suggets that the two bars do not rotate through each other as rigid bodies
-but the inner bar should pulsate and that the bars should spend more time nearly orthognal\citep{macie3}. These predictions were confirmed by \citep{debattista} and \citep{shen1}. 
+the conclusion that loops supporting the inner bar are thicker with parallel bars and thinner with perpendicular bars \citep{macie3}. This also suggests that the two bars do not rotate through each other as rigid bodies
+but the inner bar should pulsate and that the bars should spend more time nearly orthogonal\citep{macie3}. These predictions were confirmed by \cite{debattista} and \cite{shen1}. 
 This was further confirmed by \cite{macie5} who found
-that the inner bar should end well within its corotation radius and that the inner bar extends further out for lower pattern speeds than higher ones; the inner bar pulsates; and that the angular velocity of the inner
+that the inner bar should end well within its co-rotation radius and that the inner bar extends further out for lower pattern speeds than higher ones; the inner bar pulsates; and that the angular velocity of the inner
 bar is not uniform and that faster inner bars rotate more coherently.
 
 \cite{wozniak} also carried out double-barred galaxy simulations and achieved long-lived inner bars lasting for up to 7 Gyr. These were N-body/hydrodynamical simulations. He found that the two bar lengths, ratio of
 pattern speeds, as well as the age of the inner stellar bar populations in the simulations matched well with observations. He concluded that because, unlike previous simulations, there was no overlap between primary bar 
-inner Lindblad resonance (ILR) and the inner bar corotation (CR) or any kind of resonance overlap, then some other kind of mechanism must feed the central waves \citep{wozniak}. It is suggested that star 
+inner Lindblad resonance (ILR) and the inner bar co-rotation (CR) or any kind of resonance overlap, then some other kind of mechanism must feed the central waves \citep{wozniak}. It is suggested that star 
 formation may be responsible for bringing energy into the inner bar.
 
 \cite{garzon} studied the dynamical evolution of two isolated bars, within the same galaxy, under their mutual gravitational interaction. They considered two cases purely analytically: rotation of rigid bodies and
-rotation of deformable rotation. They found that the bars oscillate in size according to the relative angle between the bars. This is broadly in agreement with \citep{debattista}.
+rotation of deformable rotation. They found that the bars oscillate in size according to the relative angle between the bars. This is broadly in agreement with \cite{debattista}.
 What follows is an attempt to verify the calculations in \cite{garzon} but using a simpler model of a double-barred galaxy using a double binary.
 
 \newpage
@@ -105,7 +106,7 @@ The model was created using OdeInt from Numerical Recipes \citep{press}. OdeInt 
 Fortran 90 was selected as the language of choice in order to avoid the fixed line limitations of Fortran 77.
 OdeInt performs integration using the Runge-Kutta method. The Runge-Kutta method is an extension of the Euler method of solving differential equations. However the Euler method
 is an example of first-order integration whilst Runge-Kutta is second and higher order and so is much more accurate. The OdeInt uses a subroutine called RK4 which utilizes fourth-order Runge-Kutta integration.
-It also uses a technique known as adaptive stepsize. This involves adjusting the size of the integration steps to ensure the same level of accuracy however rapidly the function being integrated changes.
+It also uses a technique known as adaptive step-size. This involves adjusting the size of the integration steps to ensure the same level of accuracy however rapidly the function being integrated changes.
 Many small steps should tiptoe through treacherous terrain, while a few great strides should speed through smooth uninteresting countryside \citep{press}.
 
 For a four-body problem, Equation 1 results in the following:
@@ -140,7 +141,7 @@ m3=.001, m4=.001, x3=-.001, x4=.001, y3=0, y4=0,
 vx3=0, vx4=0, vy3=-.5, vy4=.5
 \end{lstlisting}
 Plots of the two initial binaries are shown in Fig. \ref{fig:outerbinary} and 
-\ref{fig:innerbinary}. The velocity of the inner binary is high and therefore few points are seen in this initial plot.
+\ref{fig:innerbinary}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\textwidth]{./2016results/outerbinary/Orbit.eps}
@@ -249,7 +250,7 @@ By Fig. \ref{fig:config3i}, the inner binary has been pulled apart by the gravit
 \end{figure}
 
 To counteract the effect of the increased mass of the inner binary in Figs. \ref{fig:config4} and \ref{fig:config4i} the initial separation of the 
-inner binary has been increased. This has a noticeable stabilizing effect on the inner binary which has regained approximate circularity.
+inner binary has been increased. This has a noticeable stabilising effect on the inner binary which has regained approximate circularity.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2016results/004-5-004/Orbit.eps}
@@ -603,7 +604,7 @@ as this is 20\% of the mass of the outer binary, Figs. \ref{fig:config30} and \r
 
 Finally, Figs. \ref{fig:config31} to \ref{fig:config32i} show the mass of the inner binary held at .1, but with minor adjustments made to the inner binary separation to enhance stability.
 The final plot was very stable and allowed the simulation to run for far longer than all the other runs. This may be a resonance, please see Discussion. Although this final system was
-very stable, even minor deviations from the initial conditions immediately resulted in destabilization of the system, and chaos.
+very stable, even minor deviations from the initial conditions immediately resulted in destabilisation of the system, and chaos.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/1-1-102-1/Orbit.eps}
@@ -646,22 +647,23 @@ periods of the first orbit were used to calculate the ratio of the periods betwe
   \end{tabular}
 \end{table}
 
-Configuration 32 was by far the longest running simulation showing almost three complete orbits of the outer binary and many orbits of the inner binary. It showed no signs of destabilizing and the 
-simulation only ended because of a `Step size underflow' in the integrator. This error occurs when the adaptive stepsize becomes too small and the integrator is effectively not making any
-progress with the integration and so ends the simulation. The data shows that as the periodic ratios tends towards 1:21 the system considerably stabilizes. 1:21 could therefore possibly be an orbital resonance. 
+Configuration 32 was by far the longest running simulation showing almost three complete orbits of the outer binary and many orbits of the inner binary. It showed no signs of destabilising and the 
+simulation only ended because of a `Step size underflow' in the integrator. This error occurs when the adaptive step-size becomes too small and the integrator is effectively not making any
+progress with the integration and so ends the simulation. The data shows that as the periodic ratios tends towards 1:21 the system considerably stabilises. 1:21 could therefore possibly be an orbital resonance. 
 Attempts at modifying the initial conditions of configuration 32 even slightly resulted in chaotic systems. The concept of a resonance is very familiar to us all: pushing someone on a playground swing at its natural
 frequency will rapidly increase the swing amplitude \citep{malhotra}. Resonances occur naturally in the Solar system and there are three main types of resonance: spin-orbit, secular and mean motion \citep{malhotra}.
 The most obvious example of a spin-orbit resonance is the Earth/Moon system where the Moon is spin-locked and only one side of the Moon is visible from the Earth. Secular resonances occur where the precession of two
 orbits is synchronised. However, the 1:21 resonance, is an example of a mean-motion resonance where the orbital period of two bodies are close to a ratio of small integer \citep{malhotra}. Orbital resonances
-generally results in destabilizing a system however occasionally they may be stable and remain in resonance.
+generally results in destabilising a system however occasionally they may be stable and remain in resonance.
 In the standard model of double-barred galaxies \citep{macie7} it is assumed that resonant coupling between bars is present: CR of the inner bar coincides with the ILR of the outer bar. Although \cite{macie4} 
 found that resonant coupling between the bars may not be the dominant factor reducing chaos in the system.
 
 Unfortunately, a 1:21 resonance doesn't represent the observational data of double-barred galaxies. \cite{font} found that the inner bar rotates more rapidly than the outer bar by a factor between 3.3 and 3.6.
-Whilst \cite{macie4} predicted values for the ratio of bar angular rates between 1.6 and 2.7.
+Whilst \cite{macie4} predicted values for the ratio of bar angular rates between 1.6 and 2.7. With these studies in mind it may be worthwhile exploring the double binary model further and searching for stable
+resonances around the 1:2 or 1:3 parameter space - see next section.
 
 \subsection{Future Work}
-As this system has a multi-dimensional parameter space, finding stable configurations was very time consuming. I suggest further studies in this area try to automate this process.
+As this system has a multidimensional parameter space, finding stable configurations was very time consuming. I suggest further studies in this area try to automate this process.
 It may be possible for an automated process to automatically reject systems in which there are collisions, or if any of the bodies exit the system, or if the system fails 
 to persist for a certain number of orbits. In this way, it may be possible to find further orbital resonances.
 
