@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2017.7.29)  7 SEP 2017 16:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2017.7.29)  13 SEP 2017 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -144,21 +144,17 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 14.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 22.
+(Font)              <12> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 22.
+(Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 22.
+(Font)              <6> on input line 23.
 File: ./eso0128d.eps Graphic file (type eps)
  <./eso0128d.eps>
 [1
 
-] [2]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
- [3]
-Overfull \hbox (22.97128pt too wide) in paragraph at lines 78--78
+] [2] [3]
+Overfull \hbox (22.97128pt too wide) in paragraph at lines 79--79
 []\OT1/cmr/bx/n/14.4 Orbits, Loops, Res-o-nances and Double-Barred Galaxy
  []
 
@@ -273,75 +269,72 @@ File: ./2017results/06-8-06-25/Inner.eps Graphic file (type eps)
 <./2017results/06-8-06-25/Inner.eps>
 File: ./2017results/08-9-08-15/Orbit.eps Graphic file (type eps)
  <./2017results/08-9-08-15/Orbit.eps>
+[30]
 File: ./2017results/08-9-08-15/Inner.eps Graphic file (type eps)
-
-<./2017results/08-9-08-15/Inner.eps> [30]
+ <./2017results/08-9-08-15/Inner.eps>
 File: ./2017results/09-95-09-1/Orbit.eps Graphic file (type eps)
  <./2017results/09-95-09-1/Orbit.eps>
+[31]
 File: ./2017results/09-95-09-1/Inner.eps Graphic file (type eps)
-
-<./2017results/09-95-09-1/Inner.eps> [31]
+ <./2017results/09-95-09-1/Inner.eps> [32]
 File: ./2017results/1-1-1-05/Orbit.eps Graphic file (type eps)
- <./2017results/1-1-1-05/Orbit.eps>
-[32]
+
+<./2017results/1-1-1-05/Orbit.eps>
 File: ./2017results/1-1-1-05/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1-05/Inner.eps>
 File: ./2017results/1-1-1-04/Orbit.eps Graphic file (type eps)
- <./2017results/1-1-1-04/Orbit.eps>
+
+<./2017results/1-1-1-04/Orbit.eps> [33]
 File: ./2017results/1-1-1-04/Inner.eps Graphic file (type eps)
-
-<./2017results/1-1-1-04/Inner.eps> [33]
+ <./2017results/1-1-1-04/Inner.eps>
 File: ./2017results/1-1-1-03/Orbit.eps Graphic file (type eps)
- <./2017results/1-1-1-03/Orbit.eps>
+
+<./2017results/1-1-1-03/Orbit.eps> [34]
 File: ./2017results/1-1-1-03/Inner.eps Graphic file (type eps)
-
-<./2017results/1-1-1-03/Inner.eps> [34]
+ <./2017results/1-1-1-03/Inner.eps>
 File: ./2017results/1-1-1-02/Orbit.eps Graphic file (type eps)
- <./2017results/1-1-1-02/Orbit.eps>
+
+<./2017results/1-1-1-02/Orbit.eps> [35]
 File: ./2017results/1-1-1-02/Inner.eps Graphic file (type eps)
-
-<./2017results/1-1-1-02/Inner.eps> [35]
+ <./2017results/1-1-1-02/Inner.eps>
+[36]
 File: ./2017results/12-105-11-015/Orbit.eps Graphic file (type eps)
-
-<./2017results/12-105-11-015/Orbit.eps> [36]
+ <./2017results/12-105-11-015/Orbit.eps>
 File: ./2017results/12-105-11-015/Inner.eps Graphic file (type eps)
 
-<./2017results/12-105-11-015/Inner.eps>
+<./2017results/12-105-11-015/Inner.eps> [37]
 File: ./2017results/12-11-11-015/Orbit.eps Graphic file (type eps)
- <./2017results/12-11-11-015/Orbit.eps>
+
+<./2017results/12-11-11-015/Orbit.eps>
 File: ./2017results/12-11-11-015/Inner.eps Graphic file (type eps)
-
-<./2017results/12-11-11-015/Inner.eps> [37]
+ <./2017results/12-11-11-015/Inner.eps>
+[38]
 File: ./2017results/12-11-115-015/Orbit.eps Graphic file (type eps)
-
-<./2017results/12-11-115-015/Orbit.eps>
+ <./2017results/12-11-115-015/Orbit.eps>
 File: ./2017results/12-11-115-015/Inner.eps Graphic file (type eps)
 
-<./2017results/12-11-115-015/Inner.eps> [38]
+<./2017results/12-11-115-015/Inner.eps> [39]
 File: ./2017results/12-11-12-015/Orbit.eps Graphic file (type eps)
 
 <./2017results/12-11-12-015/Orbit.eps>
 File: ./2017results/12-11-12-015/Inner.eps Graphic file (type eps)
  <./2017results/12-11-12-015/Inner.eps>
-[39]
+[40]
 File: ./2017results/1-1-1-1/Orbit.eps Graphic file (type eps)
- <./2017results/1-1-1-1/Orbit.eps> [40]
+ <./2017results/1-1-1-1/Orbit.eps> [41]
 File: ./2017results/1-1-1-1/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1-1/Inner.eps>
 File: ./2017results/1-1-102-1/Orbit.eps Graphic file (type eps)
 
-<./2017results/1-1-102-1/Orbit.eps> [41]
+<./2017results/1-1-102-1/Orbit.eps> [42]
 File: ./2017results/1-1-102-1/Inner.eps Graphic file (type eps)
  <./2017results/1-1-102-1/Inner.eps>
 File: ./2017results/1-1-1021-1/Orbit.eps Graphic file (type eps)
 
-<./2017results/1-1-1021-1/Orbit.eps> [42]
+<./2017results/1-1-1021-1/Orbit.eps> [43]
 File: ./2017results/1-1-1021-1/Inner.eps Graphic file (type eps)
  <./2017results/1-1-1021-1/Inner.eps>
-[43] [44] [45] [46]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
+[44] [45] [46] [47]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
@@ -352,31 +345,31 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no ã in font cmr12!
 Missing character: There is no Ü in font cmr12!
 
-Underfull \hbox (badness 1509) in paragraph at lines 685--686
+Underfull \hbox (badness 1509) in paragraph at lines 689--690
 \OT1/cmr/m/n/12 lar pop-u-la-tions in the in-ner bars of double-barred galax-ie
 s, 2013,
  []
 
-[47]
+[48]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ê in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 703--704
+ [49]
+Underfull \hbox (badness 10000) in paragraph at lines 706--707
 []\OT1/cmr/m/n/12 Trenti, M., Hut, P., Grav-i-ta-tional N-body Sim-u-la-tions, 
 2008,
  []
 
-[48] [49] (./MScProjectDoubleBarsv2.aux) ) 
+[50] (./MScProjectDoubleBarsv2.aux) ) 
 Here is how much of TeX's memory you used:
- 3463 strings out of 495064
- 54006 string characters out of 3182224
+ 3466 strings out of 495064
+ 54048 string characters out of 3182224
  117844 words of memory out of 3000000
- 6624 multiletter control sequences out of 15000+200000
+ 6627 multiletter control sequences out of 15000+200000
  10673 words of font info for 41 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,8n,38p,320b,845s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on MScProjectDoubleBarsv2.dvi (49 pages, 53040 bytes).
+Output written on MScProjectDoubleBarsv2.dvi (50 pages, 54252 bytes).

@@ -14,7 +14,8 @@
 \maketitle
 \begin{abstract}
 A brief literature review of double-barred galaxies and N-body simulations followed by an attempt at modelling a double-barred galaxy using a 4-body simulation of a double binary.  The aim of the project was to
-find orbital resonances which may be responsible for the stability of double-barred galaxies. A 1:21 resonance was found but this is not representative of the observed pattern speeds of nested bars.
+find orbital resonances which may be responsible for the stability of double-barred galaxies and attempt at verifying the calculations carried out by \cite{garzon}. 
+A 1:21 resonance was found but this is not representative of the observed pattern speeds of nested bars.
 \end{abstract}
 \section{Introduction}
 \subsection{Double-Barred Galaxies} 
@@ -250,7 +251,7 @@ By Fig. \ref{fig:config3i}, the inner binary has been pulled apart by the gravit
 \end{figure}
 
 To counteract the effect of the increased mass of the inner binary in Figs. \ref{fig:config4} and \ref{fig:config4i} the initial separation of the 
-inner binary has been increased. This has a noticeable stabilising effect on the inner binary which has regained approximate circularity.
+inner binary has been increased by .003 to .004. This has a noticeable stabilising effect on the inner binary which has regained approximate circularity.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2016results/004-5-004/Orbit.eps}
@@ -264,7 +265,7 @@ inner binary has been increased. This has a noticeable stabilising effect on the
 \label{fig:config4i}
 \end{figure}
 
-In figs. \ref{fig:config5} to \ref{fig:config10i} the initial velocity of the outer binary has also been gradually increased to also counteract the effect
+In Figs. \ref{fig:config5} to \ref{fig:config10i} the initial velocity of the outer binary has also been gradually increased to also counteract the effect
 of the increased mass of the inner binary. In order for these systems to be relatively stable the initial velocity of the inner binary was reduced. At this point 
 both the inner and outer binaries had started to separate and the inner binary became increasingly elliptical.
 \begin{figure}[H]
@@ -341,7 +342,7 @@ both the inner and outer binaries had started to separate and the inner binary b
 \end{figure}
 
 In order to bring the orbits back into approximate circularity it was necessary to again increase the velocity of the inner binary. This is illustrated
-in Figs. \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has also increased considerably from the previous configurations.
+in Figs. \ref{fig:config11} and \ref{fig:config11i}. The mass of the inner binary has also increased considerably from the previous configurations to .025.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2016results/025-65-02/Orbit.eps}
@@ -448,7 +449,8 @@ Whilst holding the mass of the inner binary at .05, the system showed signs of m
 \end{figure}
 
 Further reduction of the velocity of the inner binary allowed further increase of inner binary mass without losing stability, Figs. \ref{fig:config19} to \ref{fig:config21i}. The simulation is
-now stable enough for the outer binary to complete one orbit and proceed with a second.
+now stable enough for the outer binary to complete one orbit and proceed with a second. It was found that by increasing the mass and separation of the inner binary by .01, and increasing the 
+velocity of the outer binary by .05, whilst steadily reducing the velocity of the inner binary resulted in the fairly stable configurations shown here.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{./2017results/06-8-06-25/Orbit.eps}
@@ -653,16 +655,18 @@ progress with the integration and so ends the simulation. The data shows that as
 Attempts at modifying the initial conditions of configuration 32 even slightly resulted in chaotic systems. The concept of a resonance is very familiar to us all: pushing someone on a playground swing at its natural
 frequency will rapidly increase the swing amplitude \citep{malhotra}. Resonances occur naturally in the Solar system and there are three main types of resonance: spin-orbit, secular and mean motion \citep{malhotra}.
 The most obvious example of a spin-orbit resonance is the Earth/Moon system where the Moon is spin-locked and only one side of the Moon is visible from the Earth. Secular resonances occur where the precession of two
-orbits is synchronised. However, the 1:21 resonance, is an example of a mean-motion resonance where the orbital period of two bodies are close to a ratio of small integer \citep{malhotra}. Orbital resonances
+orbits are synchronised. However, the 1:21 resonance, is an example of a mean-motion resonance where the orbital period of two bodies are close to a ratio of small integer \citep{malhotra}. Orbital resonances
 generally results in destabilising a system however occasionally they may be stable and remain in resonance.
 In the standard model of double-barred galaxies \citep{macie7} it is assumed that resonant coupling between bars is present: CR of the inner bar coincides with the ILR of the outer bar. Although \cite{macie4} 
 found that resonant coupling between the bars may not be the dominant factor reducing chaos in the system.
 
 Unfortunately, a 1:21 resonance doesn't represent the observational data of double-barred galaxies. \cite{font} found that the inner bar rotates more rapidly than the outer bar by a factor between 3.3 and 3.6.
 Whilst \cite{macie4} predicted values for the ratio of bar angular rates between 1.6 and 2.7. With these studies in mind it may be worthwhile exploring the double binary model further and searching for stable
-resonances around the 1:2 or 1:3 parameter space - see next section.
+resonances around the 1:2 or 1:3 parameter space - see next section. A comparison with the calculations carried out by \cite{garzon} was not completed because the results here seem to be dominated by free
+oscillations rather than forced oscillations generated by the inner bar \citep{macie1}.
 
 \subsection{Future Work}
+As time constraints prevented the Garzon comparison from being carried out, a future project would need to minimise the free oscillations in order to compare it with Garzon's prediction.
 As this system has a multidimensional parameter space, finding stable configurations was very time consuming. I suggest further studies in this area try to automate this process.
 It may be possible for an automated process to automatically reject systems in which there are collisions, or if any of the bodies exit the system, or if the system fails 
 to persist for a certain number of orbits. In this way, it may be possible to find further orbital resonances.
@@ -670,7 +674,7 @@ to persist for a certain number of orbits. In this way, it may be possible to fi
 \newpage
 \begin{thebibliography}{1}
 \bibitem[Aarseth(2003)]{aarseth}Aarseth, S., Gravitational N-Body Simulations, 2003, Cambridge University Press
-\bibitem[Alvarez–Ramirez and Medina(2014)]{alvarez}Alvarez–Ramirez, M., Medina, M., A Review of the Planar Caledonian Four-Body Problem, 2014
+\bibitem[Alvarez-Ramirez and Medina(2014)]{alvarez}Alvarez-Ramirez, M., Medina, M., A Review of the Planar Caledonian Four-Body Problem, 2014
 \bibitem[Binney and Tremaine(2008)]{binney}Binney, J., Tremaine, S., Galactic Dynamics, 2008, Princeton University Press
 \bibitem[de Vaucouleurs(1975)]{vaucouleurs}de Vaucouleurs, G., 1975, ApJS,29, 193
 \bibitem[Debattista and Shen(2007)]{debattista}Debattista, V., Shen, J., Long-Lived Double-Barred Galaxies from Psuedobulges, 2007, The Astrophysical Journal, 654: L127–L130, 2007 January 10
@@ -684,9 +688,8 @@ to persist for a certain number of orbits. In this way, it may be possible to fi
 \bibitem[Lorenzo-Caceres et. al.(2002)]{lorenzo1}de Lorenzo-Caceres, A., Vazdekis, A., Aguerri, K., A., L., Corsini, E., M., Debattista, V., P., Constraining the formation of inner bars. Photometry, kinematics and stellar populations in NGC357⋆, 2002, arXiv:1111.1718v1
 \bibitem[Lorenzo-Caceres et. al.(2013)]{lorenzo2}de Lorenzo-Caceres, A., Falcon-Barroso, J., Vazdekis, A., Distinct stellar populations in the inner bars of double-barred galaxies, 2013, arXiv:1302.5701v1
 \bibitem[Maciejewski et. al.(2001)]{macie8}Maciejewski, W., Teuben, P., J., Sparke, L., S., Stone, J., M., Gas Inflow in Barred Galaxies - Effects of Secondary Bars, arXiv:astro-ph/0109431v1
-%\bibitem[Maciejewski(2002)]{macie1}Maciejewski, W., Constraints on nested bars – implications for gas inflow, 2002, arXiv:astro-ph/0202110v1
-%\bibitem[Maciejewski(2003)]{macie2}Maciejewski, W., Chaos or Order in Double Barred Galaxies?, 2003, arXiv:astro-ph/0304432v1
 \bibitem[Maciejewski(2008)]{macie3}Maciejewski, W., Orbits in corotating and counterrotating double bars, 2008, arXiv:0801.1471v1
+\bibitem[Maciejewski(2017)]{macie1}Maciejewski, W., 11th September 2017 [email]
 \bibitem[Maciejewski and Athanassoula(2008)]{macie4}Maciejewski, W., Athanassoula, A., Regular motions in double bars. II. Survey of trajectories and 23 models, 2008, arXiv:0805.3967v1
 \bibitem[Maciejewski and Small(2010)]{macie5}Maciejewski, W., Small, E., Orbital Support of Fast and Slow Inner Bars in Double Barred Galaxies, 2010, arXiv:1006.4574v1
 \bibitem[Maciejewski and Sparke(1998)]{macie6}Maciejewski, W., Sparke, L., Bars within Bars in Galaxies, 1998, arXiv:astro-ph/9812228v1
